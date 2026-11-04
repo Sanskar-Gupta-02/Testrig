@@ -4,6 +4,7 @@ Feature: Audit History API
   Background:
     Given user is authorized using an 'APIKEY'
 
+  @Test
   Scenario: 001 Audit History getall should work as intened #ENG-T1249
     Given user has a service named "/api/v1/client/entity/audit/getall"
     And user has a query params from the file "AuditHistory" with selected keys "BusinessUnitID,UserID,FromDate,ToDate,ReturnFormat"

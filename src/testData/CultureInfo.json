@@ -1,4 +1,4 @@
 {
-  "locale": "en-GB",
-  "shortDatePattern": "dd/MM/yyyy"
+  "locale": "en-US",
+  "shortDatePattern": "MM/dd/yyyy"
 }
