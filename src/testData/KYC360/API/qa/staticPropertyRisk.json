@@ -1,0 +1,96 @@
+{
+    "payload": {
+        "ListDataID": "0",
+        "IntegerStart": "1",
+        "IntegerEnd": "25",
+        "DecimalStart": "1",
+        "DecimalEnd": "1",
+        "DateOperator": "0",
+        "DateMagnitude": "0",
+        "DateTimespan": "0",
+        "DateMode": "0",
+        "DateSpecificdate": "2025-01-29",
+        "RiskMarker": "40",
+        "WeightedRiskScore": "0",
+        "RiskFactorOverride": "false",
+        "ActionUserID": "521",
+        "ReturnFormat": "Json"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "OnboardingTypeID": {
+                "type": "number"
+            },
+            "OnboardingPropertyGroupID": {
+                "type": "number"
+            },
+            "OnboardingPropertyID": {
+                "type": "number"
+            },
+            "UniqueID": {
+                "type": "number"
+            },
+            "ListDataID": {
+                "type": "number"
+            },
+            "IntegerStart": {
+                "type": "number"
+            },
+            "IntegerEnd": {
+                "type": "number"
+            },
+            "DecimalStart": {
+                "type": "number"
+            },
+            "DecimalEnd": {
+                "type": "number"
+            },
+            "DateOperator": {
+                "type": "number"
+            },
+            "DateMagnitude": {
+                "type": "number"
+            },
+            "DateTimespan": {
+                "type": "number"
+            },
+            "DateMode": {
+                "type": "number"
+            },
+            "DateSpecificdate": {
+                "type": "string"
+            },
+            "RiskRuleDate": {},
+            "RiskMarker": {
+                "type": "number"
+            },
+            "WeightedRiskScore": {
+                "type": "number"
+            },
+            "RiskFactorOverride": {
+                "type": "boolean"
+            }
+        },
+        "required": [
+            "OnboardingTypeID",
+            "OnboardingPropertyGroupID",
+            "OnboardingPropertyID",
+            "UniqueID",
+            "ListDataID",
+            "IntegerStart",
+            "IntegerEnd",
+            "DecimalStart",
+            "DecimalEnd",
+            "DateOperator",
+            "DateMagnitude",
+            "DateTimespan",
+            "DateMode",
+            "DateSpecificdate",
+            "RiskRuleDate",
+            "RiskMarker",
+            "WeightedRiskScore",
+            "RiskFactorOverride"
+        ]
+    }
+}

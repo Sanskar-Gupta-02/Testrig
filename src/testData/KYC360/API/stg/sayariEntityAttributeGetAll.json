@@ -1,0 +1,47 @@
+{
+    "schema": {
+        "type": "array",
+        "minItems": 1,
+        "items": [
+            {
+                "type": "object",
+                "properties": {
+                    "BusinessUnitID": {
+                        "type": "integer"
+                    },
+                    "ClientProspectGroupID": {
+                        "type": "integer"
+                    },
+                    "SayariEntityID": {
+                        "type": "integer"
+                    },
+                    "AttributeID": {
+                        "type": "integer"
+                    },
+                    "SayariEntityAttributeTypeID": {
+                        "type": "integer"
+                    },
+                    "Name": {
+                        "type": "string"
+                    },
+                    "Value": {
+                        "type": "string"
+                    },
+                    "Type": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "BusinessUnitID",
+                    "ClientProspectGroupID",
+                    "SayariEntityID",
+                    "AttributeID",
+                    "SayariEntityAttributeTypeID",
+                    "Name",
+                    "Value",
+                    "Type"
+                ]
+            }
+        ]
+    }
+}

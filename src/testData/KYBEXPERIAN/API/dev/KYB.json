@@ -1,0 +1,156 @@
+{
+  "payload": {
+    "countryCode": "NZ",
+    "searchTerm": "SWIGGS CONSULTING LIMITED",
+    "searchType": 0,
+    "tenantId": "<TenantID>"
+  },
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "success",
+      "providerName"
+    ],
+    "properties": {
+      "success": {
+        "type": "boolean"
+      },
+      "errors": {
+        "type": [
+          "array",
+          "null"
+        ]
+      },
+      "providerName": {
+        "type": "string"
+      },
+      "rawResponse": {
+        "type": [
+          "object",
+          "string",
+          "null"
+        ]
+      },
+      "totalResults": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "companies": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "companyId",
+            "companyName",
+            "registrationNumber",
+            "status",
+            "address"
+          ],
+          "properties": {
+            "companyId": {
+              "type": "string"
+            },
+            "companyName": {
+              "type": "string"
+            },
+            "registrationNumber": {
+              "type": "string"
+            },
+            "countryCode": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "countryName": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "state": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "lastUpdated": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
+      },
+      "providerReference": {
+        "type": "string"
+      },
+      "companyInformation": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "companyName": {
+            "type": "string"
+          },
+          "registrationNumber": {
+            "type": "string"
+          },
+          "incorporationDate": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "address": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "line1": {
+                "type": "string"
+              },
+              "town": {
+                "type": "string"
+              },
+              "postcode": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "keyParties": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "appointmentDate": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "creditConsumptionFailed": {
+        "type": "boolean"
+      }
+    }
+  }
+}

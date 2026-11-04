@@ -1,0 +1,109 @@
+{
+  "payload": {
+    "BusinessUnitID": 10,
+    "OnboardingTypeID": 457,
+    "OnboardingStageID": 0,
+    "HandledByUserGroupID": 325,
+    "HandledByUserID": 521,
+    "IsTestSystem": true,
+    "FromDate": "2024-12-16",
+    "ToDate": "2024-12-16",
+    "ReturnFormat": "Json"
+  },
+  "expectedData": {
+    "ReportDataSources": [
+      {
+        "Name": "ReportDataSet1",
+        "Value": "[{\"ClientID\":116,\"BusinessUnitID\":10,\"ClientName\":\"STGLOADTEST-NONPKYC - Automation\",\"BusinessUnitName\":\"Default\",\"ClientProspectID\":584900,\"ClientProspectName\":\"Summary Onboarding\",\"ClientOnboardingTypeName\":\"Automation(DoNotTouch)\",\"ClientOnboardingID\":318204,\"ClientOnboardingStageStatusName\":\"Onboarded\",\"ClientOnboardingIDPalUUID\":\"xk4mvl3t\",\"HandledByUserGroupName\":\"Handler Group\",\"HandledByUserName\":\"Automation User\",\"ClientProspectAddedDate\":\"16/12/2024\",\"ClientOnboardingAddedDate\":\"16/12/2024\",\"ClientOnboardingURL\":\"https://stgloadTest-batch.kyc360.com/onboarding/edit/318204?prospectid=584900&__BusinessUnit=10\",\"ClientOnboardingIntiatedOnDate\":\"16/12/2024\",\"ClientOnboardingDataRequestedOnDate\":\"16/12/2024 10:09:09\",\"ClientOnboardingDataSubmittedOnDate\":\"16/12/2024 10:10:23\",\"ClientOnboardingDataApprovalOnDate\":\"16/12/2024 10:10:23\",\"ClientOnboardingIDPalSentOnDate\":\"16/12/2024 10:18:01\",\"ClientOnboardingIdentitySubmissionReceivedOnDate\":\"16/12/2024 10:18:01\",\"ClientOnboardingIdentityApprovalOnDate\":\"16/12/2024 10:24:54\",\"ClientOnboardingScreeningOnDate\":\"16/12/2024 10:25:33\",\"ClientOnboardingComplianceApprovalOnDate\":\"16/12/2024 10:25:45\",\"ClientOnboardingOnboardedRejectedOnDate\":\"16/12/2024 10:25:45\"}]"
+      }
+    ],
+    "ParameterList": null,
+    "SubreportDataSources": [
+      {
+        "key": "ClientOnboardingSummary_SR0-ClientID-116-BusinessUnitID-10-ClientProspectID-584900-ClientOnboardingID-318204",
+        "value": [
+          {
+            "Name": "ReportDataSet1",
+            "Value": "[{\"ClientProspectID\":584900,\"ClientOnboardingID\":318204,\"ClientOnboardingApprovalUserRole\":\"STP\",\"ClientOnboardingApprovalStatusName\":\"Approved\",\"ClientOnboardingApprovalNotes\":\"\",\"ClientOnboardingApprovalUserName\":\"STP Approval\",\"ClientOnboardingApprovalAuthDate\":\"0001-01-01T00:00:00\"},{\"ClientProspectID\":584900,\"ClientOnboardingID\":318204,\"ClientOnboardingApprovalUserRole\":\"Handler\",\"ClientOnboardingApprovalStatusName\":\"Submitted for approval\",\"ClientOnboardingApprovalNotes\":\"abc\",\"ClientOnboardingApprovalUserName\":\"Automation User\",\"ClientOnboardingApprovalAuthDate\":\"2024-12-16T10:25:44.913\"}]"
+          },
+          {
+            "Name": "ReportDataSet2",
+            "Value": "[{\"ClientProspectID\":584900,\"ClientOnboardingID\":318204,\"ClientOnboardingAuditAction\":\"Add\",\"ClientOnboardingAuditDate\":\"2024-12-16T10:08:01.11\",\"ClientOnboardingAuditActioningUserName\":\"Automation User\",\"ClientOnboardingAuditDataChanges\":\"\"},{\"ClientProspectID\":584900,\"ClientOnboardingID\":318204,\"ClientOnboardingAuditAction\":\"Update\",\"ClientOnboardingAuditDate\":\"2024-12-16T10:10:23.68\",\"ClientOnboardingAuditActioningUserName\":\"Automation User\",\"ClientOnboardingAuditDataChanges\":\"[Stage : Data Collection-->Data Approval] || [Assessed Risk Value: 0-->25] || [Weighted Risk Score: 0.00-->25.00] || [Weighted Risk Score Band: None-->Low]\"},{\"ClientProspectID\":584900,\"ClientOnboardingID\":318204,\"ClientOnboardingAuditAction\":\"Update\",\"ClientOnboardingAuditDate\":\"2024-12-16T10:10:51.57\",\"ClientOnboardingAuditActioningUserName\":\"Automation User\",\"ClientOnboardingAuditDataChanges\":\"[Stage : Data Approval-->Identity Verification]\"},{\"ClientProspectID\":584900,\"ClientOnboardingID\":318204,\"ClientOnboardingAuditAction\":\"Update\",\"ClientOnboardingAuditDate\":\"2024-12-16T10:18:01.91\",\"ClientOnboardingAuditActioningUserName\":\"Automation User\",\"ClientOnboardingAuditDataChanges\":\"[IDPalUUID: -->xk4mvl3t]\"},{\"ClientProspectID\":584900,\"ClientOnboardingID\":318204,\"ClientOnboardingAuditAction\":\"Update\",\"ClientOnboardingAuditDate\":\"2024-12-16T10:24:54.21\",\"ClientOnboardingAuditActioningUserName\":\"Automation User\",\"ClientOnboardingAuditDataChanges\":\"[Stage : Identity Verification-->Identity Approval] || [Identity Verification Sent Date: Dec 16 2024 10:18AM-->Dec 16 2024 10:18AM]\"},{\"ClientProspectID\":584900,\"ClientOnboardingID\":318204,\"ClientOnboardingAuditAction\":\"Update\",\"ClientOnboardingAuditDate\":\"2024-12-16T10:25:33.123\",\"ClientOnboardingAuditActioningUserName\":\"Automation User\",\"ClientOnboardingAuditDataChanges\":\"[Stage : Identity Approval-->Screening]\"},{\"ClientProspectID\":584900,\"ClientOnboardingID\":318204,\"ClientOnboardingAuditAction\":\"Update\",\"ClientOnboardingAuditDate\":\"2024-12-16T10:25:33.317\",\"ClientOnboardingAuditActioningUserName\":\"Automation User\",\"ClientOnboardingAuditDataChanges\":\"[Stage : Screening-->Compliance Approval]\"},{\"ClientProspectID\":584900,\"ClientOnboardingID\":318204,\"ClientOnboardingAuditAction\":\"Update\",\"ClientOnboardingAuditDate\":\"2024-12-16T10:25:45.15\",\"ClientOnboardingAuditActioningUserName\":\"Automation User\",\"ClientOnboardingAuditDataChanges\":\"[Status: Awaiting Handler Submission-->Onboarded]\"}]"
+          }
+        ]
+      }
+    ],
+    "MainReportDataRowCount": 0,
+    "ReportLanguage": "en-GB"
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "ReportDataSources": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Name": {
+              "type": "string"
+            },
+            "Value": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "Name",
+            "Value"
+          ]
+        }
+      },
+      "ParameterList": {},
+      "SubreportDataSources": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "key": {
+              "type": "string"
+            },
+            "value": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Name": {
+                    "type": "string"
+                  },
+                  "Value": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "Name",
+                  "Value"
+                ]
+              }
+            }
+          },
+          "required": [
+            "key",
+            "value"
+          ]
+        }
+      },
+      "MainReportDataRowCount": {
+        "type": "number"
+      },
+      "ReportLanguage": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "ReportDataSources",
+      "ParameterList",
+      "SubreportDataSources",
+      "MainReportDataRowCount",
+      "ReportLanguage"
+    ]
+  }
+}

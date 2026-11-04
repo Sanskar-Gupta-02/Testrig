@@ -1,0 +1,74 @@
+{
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "BusinessUnitID": {
+        "type": "integer"
+      },
+      "BusinessUnitName": {
+        "type": "string"
+      },
+      "ClientEntityID": {
+        "type": "integer"
+      },
+      "ClientEntityInterfaceReference": {
+        "type": "string"
+      },
+      "ClientEntityLastName": {
+        "type": "string"
+      },
+      "ClientEntityFirstName": {
+        "type": "string"
+      },
+      "ClientEntityMiddleName": {
+        "type": "string"
+      },
+      "GeneratedDate": {
+        "type": "string"
+      },
+      "LatestRecordDate": {
+        "type": "string"
+      },
+      "DaysOutstanding": {
+        "type": "integer"
+      },
+      "MatchPotentialVolume": {
+        "type": "integer"
+      },
+      "HandledByUserGroupID": {
+        "type": "integer"
+      },
+      "HandledByUserGroupName": {
+        "type": "string"
+      },
+      "HandledByUserID": {
+        "type": "integer"
+      },
+      "HandledByUserName": {
+        "type": "string"
+      },
+      "Priority": {
+        "type": "integer"
+      }
+    },
+    "required": [
+      "BusinessUnitID",
+      "BusinessUnitName",
+      "ClientEntityID",
+      "ClientEntityInterfaceReference",
+      "ClientEntityLastName",
+      "ClientEntityFirstName",
+      "ClientEntityMiddleName",
+      "GeneratedDate",
+      "LatestRecordDate",
+      "DaysOutstanding",
+      "MatchPotentialVolume",
+      "HandledByUserGroupID",
+      "HandledByUserGroupName",
+      "HandledByUserID",
+      "HandledByUserName",
+      "Priority"
+    ]
+  }
+}

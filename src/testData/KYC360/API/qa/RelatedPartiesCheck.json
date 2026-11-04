@@ -1,0 +1,25 @@
+{
+    "payload": {
+     "clientProspectId": 616062,
+     "ReturnFormat": "json"
+    },
+    "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+            "IsIntermediary",
+            "ProspectGroupNames"
+        ],
+        "properties": {
+            "IsIntermediary": {
+                "type": "boolean"
+            },
+            "ProspectGroupNames": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

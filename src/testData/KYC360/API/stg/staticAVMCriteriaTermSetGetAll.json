@@ -1,0 +1,25 @@
+{
+    "schema": {
+        "minItems": 1,
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "TermsSetID": {
+                    "type": "number"
+                },
+                "TermsSetName": {
+                    "type": "string"
+                },
+                "Terms": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "TermsSetID",
+                "TermsSetName",
+                "Terms"
+            ]
+        }
+    }
+}

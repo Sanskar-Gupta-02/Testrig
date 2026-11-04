@@ -1,0 +1,452 @@
+{
+    "payload": {
+        "OnboardingTypeIDs": "465,457",
+        "ReturnFormat": "Json",
+        "ActionUserID": "521"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "ProspectOnboardingData": {
+                "type": "object",
+                "properties": {
+                    "ClientProspectID": {
+                        "type": "integer"
+                    },
+                    "ClientOnboardingID": {
+                        "type": "integer"
+                    },
+                    "ProspectRef": {
+                        "type": "null"
+                    },
+                    "ClientEntityRef": {
+                        "type": "null"
+                    },
+                    "FirstName": {
+                        "type": "null"
+                    },
+                    "LastName": {
+                        "type": "null"
+                    },
+                    "MiddleName": {
+                        "type": "null"
+                    },
+                    "Email": {
+                        "type": "null"
+                    },
+                    "AdditionalEmails": {
+                        "type": "null"
+                    },
+                    "MobilePhone": {
+                        "type": "null"
+                    },
+                    "OnboardingTypeID": {
+                        "type": "integer"
+                    },
+                    "ProspectStatus": {
+                        "type": "integer"
+                    },
+                    "AllowManageProspect": {
+                        "type": "boolean"
+                    },
+                    "DateAdded": {
+                        "type": "null"
+                    },
+                    "HandledByUserGroupID": {
+                        "type": "integer"
+                    },
+                    "HandledByUserID": {
+                        "type": "integer"
+                    },
+                    "OnboardingStageID": {
+                        "type": "integer"
+                    },
+                    "OnboardingAdditionalEmailOverrides": {
+                        "type": "null"
+                    },
+                    "RiskModelType": {
+                        "type": "null"
+                    },
+                    "ReferrenceIDs": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "additionalProperties": false
+            },
+            "ProspectRelationshipData": {
+                "type": "object",
+                "properties": {
+                    "ClientProspectGroupID": {
+                        "type": "integer"
+                    },
+                    "ClientProspectInterfaceReference": {
+                        "type": "null"
+                    },
+                    "ProspectRelationshipID": {
+                        "type": "integer"
+                    },
+                    "ParentProspectInterfaceReference": {
+                        "type": "null"
+                    },
+                    "ParentUniqueID": {
+                        "type": "integer"
+                    },
+                    "OriginClientProspectID": {
+                        "type": "integer"
+                    },
+                    "UBOOwnershipPercentage": {
+                        "type": "integer"
+                    },
+                    "DirectOwnershipPercentage": {
+                        "type": "integer"
+                    },
+                    "Value1": {
+                        "type": "integer"
+                    },
+                    "Value2": {
+                        "type": "integer"
+                    },
+                    "Value3": {
+                        "type": "integer"
+                    },
+                    "Value4": {
+                        "type": "integer"
+                    },
+                    "Value5": {
+                        "type": "integer"
+                    },
+                    "Value6": {
+                        "type": "integer"
+                    },
+                    "Value7": {
+                        "type": "integer"
+                    },
+                    "UseLeadProspectEmailAddress": {
+                        "type": "boolean"
+                    },
+                    "ProspectEmailAddress": {
+                        "type": "null"
+                    }
+                },
+                "additionalProperties": false
+            },
+            "ScreeningData": {
+                "type": "object",
+                "properties": {
+                    "ClientProspectInterfaceReference": {
+                        "type": "null"
+                    },
+                    "DataSourceID": {
+                        "type": "integer"
+                    },
+                    "FlagCategoryID": {
+                        "type": "integer"
+                    },
+                    "DiscountCategoryID": {
+                        "type": "integer"
+                    },
+                    "Reason": {
+                        "type": "null"
+                    },
+                    "ValidToDate": {
+                        "type": "string"
+                    },
+                    "Notify": {
+                        "type": "boolean"
+                    }
+                },
+                "additionalProperties": false
+            },
+            "MappingTable": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "ReferenceID": {
+                            "type": "string"
+                        },
+                        "OnboardingTypeID": {
+                            "type": "integer"
+                        },
+                        "OnboardingTypeName": {
+                            "type": "string"
+                        },
+                        "OnboardingPropertyGroupID": {
+                            "type": "integer"
+                        },
+                        "OnboardingPropertyGroupName": {
+                            "type": "string"
+                        },
+                        "OnboardingPropertyID": {
+                            "type": "integer"
+                        },
+                        "OnboardingPropertyName": {
+                            "type": "string"
+                        },
+                        "StoreID": {
+                            "type": "string"
+                        },
+                        "RequiredField": {
+                            "type": "boolean"
+                        },
+                        "Responsive": {
+                            "type": "string"
+                        },
+                        "ListGroupID": {
+                            "type": [
+                                "integer",
+                                "null"
+                            ]
+                        },
+                        "DefaultListDataID": {
+                            "type": "integer"
+                        },
+                        "TextMinimumSize": {
+                            "type": "integer"
+                        },
+                        "TextMaximumSize": {
+                            "type": "integer"
+                        },
+                        "TextDefaultValue": {
+                            "type": "string"
+                        },
+                        "IntegerMinimumValue": {
+                            "type": [
+                                "null"
+                            ]
+                        },
+                        "IntegerMaximumValue": {
+                            "type": [
+                                "null"
+                            ]
+                        },
+                        "IntegerDefaultValue": {
+                            "type": [
+                                "null"
+                            ]
+                        },
+                        "DecimalMinimumValue": {
+                            "type": [
+                                "null"
+                            ]
+                        },
+                        "DecimalMaximumValue": {
+                            "type": [
+                                "null"
+                            ]
+                        },
+                        "DecimalDigits": {
+                            "type": "integer"
+                        },
+                        "DecimalDefaultValue": {
+                            "type": [
+                                "null"
+                            ]
+                        },
+                        "DateMinimumValue": {
+                            "type": [
+                                "null"
+                            ]
+                        },
+                        "DateMaximumValue": {
+                            "type": [
+                                "null"
+                            ]
+                        },
+                        "IsRiskEnabled": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "ListExtract": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "ListGroupID": {
+                            "type": "integer"
+                        },
+                        "ListGroupName": {
+                            "type": "string"
+                        },
+                        "ListDataID": {
+                            "type": "integer"
+                        },
+                        "ListDataName": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "ProspectGroupExtract": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "BusinessUnitID": {
+                            "type": "integer"
+                        },
+                        "ClientProspectGroupID": {
+                            "type": "integer"
+                        },
+                        "Name": {
+                            "type": "string"
+                        },
+                        "Description": {
+                            "type": "string"
+                        },
+                        "IsNetworkSharing": {
+                            "type": "boolean"
+                        },
+                        "LeadProspectEmailId": {
+                            "type": "string"
+                        },
+                        "DateLastChanged": {
+                            "type": "string"
+                        },
+                        "LastChangedByUserID": {
+                            "type": "integer"
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "ProspectRelationshipExtract": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "ProspectRelationshipID": {
+                            "type": "integer"
+                        },
+                        "Name": {
+                            "type": "string"
+                        },
+                        "Description": {
+                            "type": "string"
+                        },
+                        "Value1Name": {
+                            "type": "string"
+                        },
+                        "Value2Name": {
+                            "type": "string"
+                        },
+                        "Value3Name": {
+                            "type": "string"
+                        },
+                        "Value4Name": {
+                            "type": "string"
+                        },
+                        "Value5Name": {
+                            "type": "string"
+                        },
+                        "Value6Name": {
+                            "type": "string"
+                        },
+                        "Value7Name": {
+                            "type": "string"
+                        },
+                        "Value1Decimals": {
+                            "type": "integer"
+                        },
+                        "Value2Decimals": {
+                            "type": "integer"
+                        },
+                        "Value3Decimals": {
+                            "type": "integer"
+                        },
+                        "Value4Decimals": {
+                            "type": "integer"
+                        },
+                        "Value5Decimals": {
+                            "type": "integer"
+                        },
+                        "Value6Decimals": {
+                            "type": "integer"
+                        },
+                        "Value7Decimals": {
+                            "type": "integer"
+                        },
+                        "Value1Enabled": {
+                            "type": "boolean"
+                        },
+                        "Value2Enabled": {
+                            "type": "boolean"
+                        },
+                        "Value3Enabled": {
+                            "type": "boolean"
+                        },
+                        "Value4Enabled": {
+                            "type": "boolean"
+                        },
+                        "Value5Enabled": {
+                            "type": "boolean"
+                        },
+                        "Value6Enabled": {
+                            "type": "boolean"
+                        },
+                        "Value7Enabled": {
+                            "type": "boolean"
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "MatchFlagCategoryExtract": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "MatchFlagCategoryID": {
+                            "type": "integer"
+                        },
+                        "Name": {
+                            "type": "string"
+                        },
+                        "Description": {
+                            "type": "string"
+                        },
+                        "RequireReason": {
+                            "type": "boolean"
+                        },
+                        "Grouping": {
+                            "type": "integer"
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "MatchDiscountCategoryExtract": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "MatchDiscountCategoryID": {
+                            "type": "integer"
+                        },
+                        "Name": {
+                            "type": "string"
+                        },
+                        "Description": {
+                            "type": "string"
+                        },
+                        "RequireReason": {
+                            "type": "boolean"
+                        },
+                        "Grouping": {
+                            "type": "integer"
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            }
+        },
+        "additionalProperties": false
+    }
+}

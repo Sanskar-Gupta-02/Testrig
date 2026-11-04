@@ -1,0 +1,18 @@
+{
+    "payload": {
+        "groupTypeId": "<CLM_GROUP_TYPE_ID>",
+        "name": "Test Group for Automation for API",
+        "description": "This is a test group created for API automation testing. Please do not delete or modify this group as it is used in multiple test cases.",
+        "primary": {
+            "entityId": "<CLM_PRIMARY_ENTITY_ID>",
+            "businessUnitId": "<CLM_BU_AUTOMATION_ID>",
+            "riskLayers": [
+                {
+                    "riskModelId": "<CLM_RISK_MODEL1_ID>",
+                    "weight": 80,
+                    "groupRiskLayerTypeId": "<CLM_GROUP_RISK_LAYER_TYPE_ID>"
+                }
+            ]
+        }
+    }
+}

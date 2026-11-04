@@ -1,0 +1,54 @@
+{
+    "payload": {
+        "fields": [
+            {
+                "value": "New Test API2",
+                "key": "entity.metadata.nickname"
+            },
+            {
+                "value": "test 1",
+                "key": "entity.metadata.description"
+            },
+            {
+                "value": false,
+                "key": "entity.entitymetadatacustom.booleandata"
+            },
+            {
+                "value": "2026-06-25",
+                "key": "entity.entitymetadatacustom.datedata"
+            },
+            {
+                "value": "20.00",
+                "key": "entity.entitymetadatacustom.decimaldata"
+            },
+            {
+                "value": "20",
+                "key": "entity.entitymetadatacustom.integerdata"
+            },
+            {
+                "value": "item1",
+                "key": "entity.entitymetadatacustom.listdata"
+            },
+            {
+                "value": "test",
+                "key": "entity.entitymetadatacustom.textdata"
+            },
+            {
+                "value": "test@gmail.com",
+                "key": "entity.entitymetadatacustom.emaildata"
+            },
+            {
+                "value": "A1B2C3.DEF45.ME.000",
+                "key": "entity.entitymetadatacustom.giindata"
+            },
+            {
+                "value": "23456",
+                "key": "entity.entitymetadatacustom.tindata"
+            },
+            {
+                "value": "2025-06-25",
+                "key": "entity.entitymetadatacustom.dateofbirthdata"
+            }
+        ]
+    }
+}

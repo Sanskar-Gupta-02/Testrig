@@ -1,0 +1,41 @@
+{
+    "schema": {
+        "minItems": 1,
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "MatchDiscountCategoryID": {
+                    "type": "number"
+                },
+                "Name": {
+                    "type": "string"
+                },
+                "Description": {
+                    "type": "string"
+                },
+                "RequireReason": {
+                    "type": "boolean"
+                },
+                "Grouping": {
+                    "type": "number"
+                },
+                "ScrapeType": {
+                    "type": "number"
+                },
+                "Scrape": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "MatchDiscountCategoryID",
+                "Name",
+                "Description",
+                "RequireReason",
+                "Grouping",
+                "ScrapeType",
+                "Scrape"
+            ]
+        }
+    }
+}

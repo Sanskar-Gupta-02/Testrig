@@ -1,0 +1,198 @@
+{
+    "payload": {},
+    "expectedData": {
+        "BusinessUnitID": 26,
+        "Reference": "9b568c4f-e00d-4ddc-b595-97cd50884c57",
+        "FileName": "ExportTemplate_10_04_2025 19_30_40.xlsx",
+        "RequestedOn": "10/04/2025 15:15:03",
+        "ClientProspectOnboardingBulkImport": [
+            {
+                "FileRow": 1,
+                "Status": 1,
+                "RawData": "Source<0>BulkImportMode<All>RawClientID<116>RawBusinessUnitID<26>RawClientProspectID<>RawClientOnboardingID<>RawProspectRef<APICheck16>RawClientEntityRef<>RawFirstName<>RawLastName<Omkar17>RawMiddleName<>RawEmail<krunallute@kyc360.com>RawMobilePhone<>RawOnboardingTypeID<451>RawProspectStatus<1>RawAllowManageProspect<>RawDateAdded<>RawHandledByUserGroupID<352>RawHandledByUserID<521>RawOnboardingStageID<1>RawRiskModelType<>R15<test>R16<12>R17<39626>R21<39883>R22<test2>R23<test3>R24<test4>R18<101>R19<39879>R20<>",
+                "Message": "INSERT/ClientProspectID : 606521 > ClientOnboardingID : 340111 Onboarding data submitted successfully.  [DynamicFormsIntegration Skipped Columns: Loan Amount-R20] [AutoProspect : Property Group : Personal Details, Prospect : test2 test3 test, ProspectID : 606505, AutoProspectStatus : NotCreatedMatchAlreadyExists]"
+            },
+            {
+                "FileRow": 2,
+                "Status": 1,
+                "RawData": "Source<0>BulkImportMode<All>RawClientID<116>RawBusinessUnitID<26>RawClientProspectID<>RawClientOnboardingID<>RawProspectRef<APICheck17>RawClientEntityRef<>RawFirstName<>RawLastName<Omkar18>RawMiddleName<>RawEmail<krunallute@kyc360.com>RawMobilePhone<>RawOnboardingTypeID<451>RawProspectStatus<1>RawAllowManageProspect<>RawDateAdded<>RawHandledByUserGroupID<352>RawHandledByUserID<521>RawOnboardingStageID<1>RawRiskModelType<>R15<test>R16<12>R17<39626>R21<39883>R22<test3>R23<test4>R24<test5>R18<101>R19<39880>R20<>",
+                "Message": "INSERT/ClientProspectID : 606522 > ClientOnboardingID : 340112 Onboarding data submitted successfully.  [DynamicFormsIntegration Skipped Columns: Loan Amount-R20] [AutoProspect : ]"
+            },
+            {
+                "FileRow": 3,
+                "Status": 1,
+                "RawData": "Source<0>BulkImportMode<All>RawClientID<116>RawBusinessUnitID<26>RawClientProspectID<>RawClientOnboardingID<>RawProspectRef<APICheck18>RawClientEntityRef<>RawFirstName<>RawLastName<Omkar19>RawMiddleName<>RawEmail<krunallute@kyc360.com>RawMobilePhone<>RawOnboardingTypeID<451>RawProspectStatus<1>RawAllowManageProspect<>RawDateAdded<>RawHandledByUserGroupID<352>RawHandledByUserID<521>RawOnboardingStageID<1>RawRiskModelType<>R15<test>R16<12>R17<39626>R21<39883>R22<test4>R23<test5>R24<test6>R18<101>R19<39881>R20<>",
+                "Message": "INSERT/ClientProspectID : 606523 > ClientOnboardingID : 340113 Onboarding data submitted successfully.  [DynamicFormsIntegration Skipped Columns: Loan Amount-R20] [AutoProspect : Property Group : Personal Details, Prospect : test4 test5 test, ProspectID : 606507, AutoProspectStatus : NotCreatedMatchAlreadyExists]"
+            },
+            {
+                "FileRow": 4,
+                "Status": 1,
+                "RawData": "Source<0>BulkImportMode<All>RawClientID<116>RawBusinessUnitID<26>RawClientProspectID<>RawClientOnboardingID<>RawProspectRef<APICheck19>RawClientEntityRef<>RawFirstName<>RawLastName<Omkar20>RawMiddleName<>RawEmail<krunallute@kyc360.com>RawMobilePhone<>RawOnboardingTypeID<451>RawProspectStatus<1>RawAllowManageProspect<>RawDateAdded<>RawHandledByUserGroupID<352>RawHandledByUserID<521>RawOnboardingStageID<1>RawRiskModelType<>R15<test>R16<12>R17<39626>R21<39883>R22<test5>R23<test6>R24<test7>R18<101>R19<39882>R20<>",
+                "Message": "INSERT/ClientProspectID : 606524 > ClientOnboardingID : 340114 Onboarding data submitted successfully.  [DynamicFormsIntegration Skipped Columns: Loan Amount-R20] [AutoProspect : ]"
+            },
+            {
+                "FileRow": 5,
+                "Status": 1,
+                "RawData": "Source<0>BulkImportMode<All>RawClientID<116>RawBusinessUnitID<26>RawClientProspectID<>RawClientOnboardingID<>RawProspectRef<APICheck20>RawClientEntityRef<>RawFirstName<>RawLastName<Omkar21>RawMiddleName<>RawEmail<krunallute@kyc360.com>RawMobilePhone<>RawOnboardingTypeID<451>RawProspectStatus<1>RawAllowManageProspect<>RawDateAdded<>RawHandledByUserGroupID<352>RawHandledByUserID<521>RawOnboardingStageID<1>RawRiskModelType<>R15<test>R16<12>R17<39626>R21<39883>R22<test6>R23<test7>R24<test8>R18<101>R19<39883>R20<>",
+                "Message": "INSERT/ClientProspectID : 606525 > ClientOnboardingID : 340115 Onboarding data submitted successfully.  [DynamicFormsIntegration Skipped Columns: Loan Amount-R20] [AutoProspect : ]"
+            }
+        ],
+        "ClientProspectRelationshipBulkImport": [],
+        "ClientProspectScreeningBulkImport": []
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "BusinessUnitID": {
+                "type": "integer"
+            },
+            "Reference": {
+                "type": "string"
+            },
+            "FileName": {
+                "type": "string"
+            },
+            "RequestedOn": {
+                "type": "string"
+            },
+            "ClientProspectOnboardingBulkImport": {
+                "type": "array",
+                "minItems": 1,
+                "items": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "FileRow": {
+                                "type": "integer"
+                            },
+                            "Status": {
+                                "type": "integer"
+                            },
+                            "RawData": {
+                                "type": "string"
+                            },
+                            "Message": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "FileRow",
+                            "Status",
+                            "RawData",
+                            "Message"
+                        ]
+                    },
+                    {
+                        "type": "object",
+                        "properties": {
+                            "FileRow": {
+                                "type": "integer"
+                            },
+                            "Status": {
+                                "type": "integer"
+                            },
+                            "RawData": {
+                                "type": "string"
+                            },
+                            "Message": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "FileRow",
+                            "Status",
+                            "RawData",
+                            "Message"
+                        ]
+                    },
+                    {
+                        "type": "object",
+                        "properties": {
+                            "FileRow": {
+                                "type": "integer"
+                            },
+                            "Status": {
+                                "type": "integer"
+                            },
+                            "RawData": {
+                                "type": "string"
+                            },
+                            "Message": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "FileRow",
+                            "Status",
+                            "RawData",
+                            "Message"
+                        ]
+                    },
+                    {
+                        "type": "object",
+                        "properties": {
+                            "FileRow": {
+                                "type": "integer"
+                            },
+                            "Status": {
+                                "type": "integer"
+                            },
+                            "RawData": {
+                                "type": "string"
+                            },
+                            "Message": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "FileRow",
+                            "Status",
+                            "RawData",
+                            "Message"
+                        ]
+                    },
+                    {
+                        "type": "object",
+                        "properties": {
+                            "FileRow": {
+                                "type": "integer"
+                            },
+                            "Status": {
+                                "type": "integer"
+                            },
+                            "RawData": {
+                                "type": "string"
+                            },
+                            "Message": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "FileRow",
+                            "Status",
+                            "RawData",
+                            "Message"
+                        ]
+                    }
+                ]
+            },
+            "ClientProspectRelationshipBulkImport": {
+                "type": "array",
+                "items": {}
+            },
+            "ClientProspectScreeningBulkImport": {
+                "type": "array",
+                "items": {}
+            }
+        },
+        "required": [
+            "BusinessUnitID",
+            "Reference",
+            "FileName",
+            "RequestedOn",
+            "ClientProspectOnboardingBulkImport",
+            "ClientProspectRelationshipBulkImport",
+            "ClientProspectScreeningBulkImport"
+        ]
+    }
+}

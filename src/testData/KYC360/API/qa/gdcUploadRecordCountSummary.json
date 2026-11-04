@@ -1,0 +1,91 @@
+{
+    "expectedData": [
+        {
+            "ClientID": 116,
+            "ClientName": "STGLOADTEST-NONPKYC - Automation-QA-RiskScreen",
+            "BusinessUnitID": 26,
+            "BusinessUnitName": "Bulk Upload ",
+            "DataUploadID": 32883,
+            "Reference": "696edb21-6364-48c2-a69f-9322b1204fad",
+            "FileName": "Test file JPM and GDC 3008Reg.csv",
+            "OnboardingTypeCountDetails": [
+                {
+                    "OnboardingTypeID": 709,
+                    "OnboardingTypeName": "Auto-GDC-Journey 3",
+                    "GDCJourneyType": "Journey_3",
+                    "RecordCount": 2
+                },
+                {
+                    "OnboardingTypeID": 710,
+                    "OnboardingTypeName": "Auto-GDC-Journey 2.3",
+                    "GDCJourneyType": "Journey_2.3",
+                    "RecordCount": 11
+                }
+            ]
+        }
+    ],
+    "schema": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+            "type": "object",
+            "required": [
+                "ClientID",
+                "ClientName",
+                "BusinessUnitID",
+                "BusinessUnitName",
+                "DataUploadID",
+                "Reference",
+                "FileName",
+                "OnboardingTypeCountDetails"
+            ],
+            "properties": {
+                "ClientID": {
+                    "type": "integer"
+                },
+                "ClientName": {
+                    "type": "string"
+                },
+                "BusinessUnitID": {
+                    "type": "integer"
+                },
+                "BusinessUnitName": {
+                    "type": "string"
+                },
+                "DataUploadID": {
+                    "type": "integer"
+                },
+                "Reference": {
+                    "type": "string",
+                    "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+                },
+                "FileName": {
+                    "type": "string"
+                },
+                "OnboardingTypeCountDetails": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": ["OnboardingTypeID", "OnboardingTypeName", "GDCJourneyType", "RecordCount"],
+                        "properties": {
+                            "OnboardingTypeID": {
+                                "type": "integer"
+                            },
+                            "OnboardingTypeName": {
+                                "type": "string"
+                            },
+                            "GDCJourneyType": {
+                                "type": "string"
+                            },
+                            "RecordCount": {
+                                "type": "integer"
+                            }
+                        },
+                        "additionalProperties": false
+                    }
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}

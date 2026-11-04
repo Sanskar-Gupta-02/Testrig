@@ -1,0 +1,51 @@
+{
+  "payload": {
+    "entries": [
+      {
+        "Value": "shantanuchikerur+stgloadtestrefit@kyc360.com",
+        "Type": "EmailAddress",
+        "Reason": "Complaint"
+      }
+    ]
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "entries": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "reason": {
+                "type": "string"
+              },
+              "comment": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "value",
+              "type",
+              "reason",
+              "comment"
+            ]
+          }
+        ]
+      }
+    },
+    "required": [
+      "entries"
+    ]
+  }
+}

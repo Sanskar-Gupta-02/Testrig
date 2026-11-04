@@ -1,0 +1,132 @@
+{
+    "payload": {
+        "Name": "Auto-Testing",
+        "Description": "testing",
+        "Value1Name": "10",
+        "Value2Name": "20",
+        "Value3Name": "30",
+        "Value4Name": "40",
+        "Value5Name": "50",
+        "Value6Name": "60",
+        "Value7Name": "70",
+        "Value1Decimals": "1",
+        "Value2Decimals": "2",
+        "Value3Decimals": "3",
+        "Value4Decimals": "4",
+        "Value5Decimals": "5",
+        "Value6Decimals": "6",
+        "Value7Decimals": "7",
+        "Value1Enabled": "true",
+        "Value2Enabled": "true",
+        "Value3Enabled": "true",
+        "Value4Enabled": "true",
+        "Value5Enabled": "true",
+        "Value6Enabled": "true",
+        "Value7Enabled": "true",
+        "ActionUserID": "521",
+        "ReturnFormat": "Json"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "ProspectRelationshipID": {
+                "type": "integer"
+            },
+            "Name": {
+                "type": "string"
+            },
+            "Description": {
+                "type": "string"
+            },
+            "Value1Name": {
+                "type": "string"
+            },
+            "Value2Name": {
+                "type": "string"
+            },
+            "Value3Name": {
+                "type": "string"
+            },
+            "Value4Name": {
+                "type": "string"
+            },
+            "Value5Name": {
+                "type": "string"
+            },
+            "Value6Name": {
+                "type": "string"
+            },
+            "Value7Name": {
+                "type": "string"
+            },
+            "Value1Decimals": {
+                "type": "integer"
+            },
+            "Value2Decimals": {
+                "type": "integer"
+            },
+            "Value3Decimals": {
+                "type": "integer"
+            },
+            "Value4Decimals": {
+                "type": "integer"
+            },
+            "Value5Decimals": {
+                "type": "integer"
+            },
+            "Value6Decimals": {
+                "type": "integer"
+            },
+            "Value7Decimals": {
+                "type": "integer"
+            },
+            "Value1Enabled": {
+                "type": "boolean"
+            },
+            "Value2Enabled": {
+                "type": "boolean"
+            },
+            "Value3Enabled": {
+                "type": "boolean"
+            },
+            "Value4Enabled": {
+                "type": "boolean"
+            },
+            "Value5Enabled": {
+                "type": "boolean"
+            },
+            "Value6Enabled": {
+                "type": "boolean"
+            },
+            "Value7Enabled": {
+                "type": "boolean"
+            }
+        },
+        "required": [
+            "ProspectRelationshipID",
+            "Name",
+            "Description",
+            "Value1Name",
+            "Value2Name",
+            "Value3Name",
+            "Value4Name",
+            "Value5Name",
+            "Value6Name",
+            "Value7Name",
+            "Value1Decimals",
+            "Value2Decimals",
+            "Value3Decimals",
+            "Value4Decimals",
+            "Value5Decimals",
+            "Value6Decimals",
+            "Value7Decimals",
+            "Value1Enabled",
+            "Value2Enabled",
+            "Value3Enabled",
+            "Value4Enabled",
+            "Value5Enabled",
+            "Value6Enabled",
+            "Value7Enabled"
+        ]
+    }
+}

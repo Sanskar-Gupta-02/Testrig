@@ -1,0 +1,41 @@
+{
+    "payload": {
+        "BusinessUnitID": "10",
+        "SayariEntityName": "SWIGGY SERVICES PTY LTD",
+        "SayariEntityUniqueReference": "b7TylwOWydiLZEgAFoXJtg",
+        "ActionUserID": "521",
+        "ReturnFormat": "Json",
+        "SayariEntityTypeID": "1"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "BusinessUnitID": {
+                "type": "integer"
+            },
+            "ClientProspectGroupID": {
+                "type": "integer"
+            },
+            "SayariEntityName": {
+                "type": "string"
+            },
+            "SayariEntityUniqueReference": {
+                "type": "string"
+            },
+            "SayariEntityTypeID": {
+                "type": "integer"
+            },
+            "SayariEntityID": {
+                "type": "integer"
+            }
+        },
+        "required": [
+            "BusinessUnitID",
+            "ClientProspectGroupID",
+            "SayariEntityName",
+            "SayariEntityUniqueReference",
+            "SayariEntityTypeID",
+            "SayariEntityID"
+        ]
+    }
+}

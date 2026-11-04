@@ -1,0 +1,31 @@
+{
+    "schema": {
+        "type": "array",
+        "minItems": 1,
+        "items": [
+            {
+                "type": "object",
+                "properties": {
+                    "RiskID": {
+                        "type": "integer"
+                    },
+                    "Name": {
+                        "type": "string"
+                    },
+                    "Description": {
+                        "type": "string"
+                    },
+                    "Priority": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "RiskID",
+                    "Name",
+                    "Description",
+                    "Priority"
+                ]
+            }
+        ]
+    }
+}

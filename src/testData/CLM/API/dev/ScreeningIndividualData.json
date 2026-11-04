@@ -1,0 +1,20 @@
+{
+  "expectedData": {
+    "status": 2,
+    "lastOnDemandScreenDate": "2026-10-13T07:57:20.8321897+00:00",
+    "screeningClientEntityId": 449454,
+    "screeningFirstname": "Automation Screening",
+    "screeningMiddlename": "",
+    "screeningLastName": "Automation Screening",
+    "screeningCriteriaId": 481,
+    "screeningCriteriaName": "APIAutomationScreeningCriteria",
+    "screeningGenderId": 9,
+    "screeningCountry1Id": 0,
+    "screeningCountry2Id": 0,
+    "screeningCountry3Id": 0,
+    "screeningRiskId": "#205 (tetst)",
+    "matchPotentialVolume": 0,
+    "matchDiscountedVolume": 0,
+    "matchFlaggedVolume": 0
+  }
+}

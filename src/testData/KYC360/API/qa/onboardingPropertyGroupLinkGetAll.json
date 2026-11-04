@@ -1,0 +1,64 @@
+{
+    "schema": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "OnboardingTypeID": {
+                    "type": "number"
+                },
+                "OnboardingPropertyGroupID": {
+                    "type": "number"
+                },
+                "PropertyGroupOrder": {
+                    "type": "number"
+                },
+                "Section": {
+                    "type": "number"
+                },
+                "Hidden": {
+                    "type": "boolean"
+                },
+                "BeforeAfterTnC": {
+                    "type": "boolean"
+                },
+                "ComplianceOnlyVisible": {
+                    "type": "boolean"
+                },
+                "Responsive": {
+                    "type": "number"
+                },
+                "OnboardingTypeName": {
+                    "type": "string"
+                },
+                "OnboardingTypeDescription": {
+                    "type": "string"
+                },
+                "OnboardingPropertyGroupName": {
+                    "type": "string"
+                },
+                "OnboardingPropertyGroupDescription": {
+                    "type": "string"
+                },
+                "OnboardingPropertyGroupNotes": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "OnboardingTypeID",
+                "OnboardingPropertyGroupID",
+                "PropertyGroupOrder",
+                "Section",
+                "Hidden",
+                "BeforeAfterTnC",
+                "ComplianceOnlyVisible",
+                "Responsive",
+                "OnboardingTypeName",
+                "OnboardingTypeDescription",
+                "OnboardingPropertyGroupName",
+                "OnboardingPropertyGroupDescription",
+                "OnboardingPropertyGroupNotes"
+            ]
+        }
+    }
+}

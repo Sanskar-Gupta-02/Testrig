@@ -1,0 +1,35 @@
+{
+    "schema": {
+        "type": "array",
+        "minItems": 1,
+        "items": [
+            {
+                "type": "object",
+                "properties": {
+                    "ConditionalPropertyId": {
+                        "type": "integer"
+                    },
+                    "ConditionalPropertyTargetValue": {
+                        "type": "integer"
+                    },
+                    "ConditionalRiskScoreUnderrideValue": {
+                        "type": "integer"
+                    },
+                    "Id": {
+                        "type": "integer"
+                    },
+                    "PropertyId": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "ConditionalPropertyId",
+                    "ConditionalPropertyTargetValue",
+                    "ConditionalRiskScoreUnderrideValue",
+                    "Id",
+                    "PropertyId"
+                ]
+            }
+        ]
+    }
+}

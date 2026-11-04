@@ -1,0 +1,42 @@
+{
+    "payload": {
+        "Name": "Country",
+        "Description": "Country",
+        "ScreeningID": "0",
+        "ListDisplayMode": "0",
+        "ActionUserID": "521",
+        "ReturnFormat": "Json",
+        "SortBy": "1"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "ListGroupID": {
+                "type": "integer"
+            },
+            "Name": {
+                "type": "string"
+            },
+            "Description": {
+                "type": "string"
+            },
+            "ScreeningID": {
+                "type": "integer"
+            },
+            "ListDisplayMode": {
+                "type": "integer"
+            },
+            "SortBy": {
+                "type": "integer"
+            }
+        },
+        "required": [
+            "ListGroupID",
+            "Name",
+            "Description",
+            "ScreeningID",
+            "ListDisplayMode",
+            "SortBy"
+        ]
+    }
+}

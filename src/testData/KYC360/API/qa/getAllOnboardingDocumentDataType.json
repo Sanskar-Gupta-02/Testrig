@@ -1,0 +1,93 @@
+{
+    "payload": [
+        {
+            "OnboardingTypeID": "695"
+        },
+        {
+            "OnboardingTypeID": "695"
+        }
+    ],
+    "schema": {
+        "type": "array",
+        "items": [
+            {
+                "type": "object",
+                "properties": {
+                    "OnboardingTypeID": {
+                        "type": "integer"
+                    },
+                    "OnboardingDataDocumentTypeID": {
+                        "type": "integer"
+                    },
+                    "Name": {
+                        "type": "string"
+                    },
+                    "Description": {
+                        "type": "string"
+                    },
+                    "Mandatory": {
+                        "type": "boolean"
+                    },
+                    "HiddenExternal": {
+                        "type": "boolean"
+                    },
+                    "Order": {
+                        "type": "integer"
+                    },
+                    "Notes": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "OnboardingTypeID",
+                    "OnboardingDataDocumentTypeID",
+                    "Name",
+                    "Description",
+                    "Mandatory",
+                    "HiddenExternal",
+                    "Order",
+                    "Notes"
+                ]
+            },
+            {
+                "type": "object",
+                "properties": {
+                    "OnboardingTypeID": {
+                        "type": "integer"
+                    },
+                    "OnboardingDataDocumentTypeID": {
+                        "type": "integer"
+                    },
+                    "Name": {
+                        "type": "string"
+                    },
+                    "Description": {
+                        "type": "string"
+                    },
+                    "Mandatory": {
+                        "type": "boolean"
+                    },
+                    "HiddenExternal": {
+                        "type": "boolean"
+                    },
+                    "Order": {
+                        "type": "integer"
+                    },
+                    "Notes": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "OnboardingTypeID",
+                    "OnboardingDataDocumentTypeID",
+                    "Name",
+                    "Description",
+                    "Mandatory",
+                    "HiddenExternal",
+                    "Order",
+                    "Notes"
+                ]
+            }
+        ]
+    }
+}

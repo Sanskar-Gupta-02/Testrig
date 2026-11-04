@@ -1,0 +1,63 @@
+{
+    "payload": {
+        "entityTypeId": "0197a5c2-438d-7763-97fe-d4bafcd3022d",
+        "fields": [
+            {
+                "value": "Entities BU Automation 3",
+                "key": "entity.metadata.nickname"
+            },
+            {
+                "value": "Entities BU description",
+                "key": "entity.metadata.description"
+            },
+            {
+                "value": true,
+                "key": "entity.entitymetadatacustom.booleandata"
+            },
+            {
+                "value": "2025-06-25",
+                "key": "entity.entitymetadatacustom.datedata"
+            },
+            {
+                "value": "20.00",
+                "key": "entity.entitymetadatacustom.decimaldata"
+            },
+            {
+                "value": "20",
+                "key": "entity.entitymetadatacustom.integerdata"
+            },
+            {
+                "value": "https://dev-clm.kyc360.com",
+                "key": "entity.entitymetadatacustom.linksdata"
+            },
+            {
+                "value": "item1",
+                "key": "entity.entitymetadatacustom.listdata"
+            },
+            {
+                "value": "test",
+                "key": "entity.entitymetadatacustom.stringdata"
+            },
+            {
+                "value": "test",
+                "key": "entity.entitymetadatacustom.textdata"
+            },
+            {
+                "value": "test@gmail.com",
+                "key": "entity.entitymetadatacustom.emaildata"
+            },
+            {
+                "value": "A1B2C3.DEF45.ME.000",
+                "key": "entity.entitymetadatacustom.giindata"
+            },
+            {
+                "value": "23456",
+                "key": "entity.entitymetadatacustom.tindata"
+            },
+            {
+                "value": "2025-06-25",
+                "key": "entity.entitymetadatacustom.dateofbirthdata"
+            }
+        ]
+    }
+}

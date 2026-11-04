@@ -1,0 +1,33 @@
+{
+    "payload": {
+        "BusinessUnitID": "10",
+        "ReturnFormat": "Json"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "BusinessUnitID": {
+                "type": "number"
+            },
+            "Name": {
+                "type": "string"
+            },
+            "Description": {
+                "type": "string"
+            },
+            "IsActive": {
+                "type": "boolean"
+            },
+            "EmailSettingId": {
+                "type": "number"
+            }
+        },
+        "required": [
+            "BusinessUnitID",
+            "Name",
+            "Description",
+            "IsActive",
+            "EmailSettingId"
+        ]
+    }
+}

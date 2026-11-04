@@ -1,0 +1,116 @@
+{
+  "payload": [
+    {
+      "InterfaceReference": "QA_IMPORT_001",
+      "LastName": "TEST",
+      "FirstName": "ENTITY",
+      "MiddleName": "",
+      "CriteriaID": 203,
+      "AVMCriteriaID": 0,
+      "GenderID": 9,
+      "Date": "",
+      "Country1ID": 0,
+      "Country2ID": 0,
+      "Country3ID": 0,
+      "RiskID": 144,
+      "StatusID": 1,
+      "CustomText1": "",
+      "CustomText2": "",
+      "BusinessUnitID": 10,
+      "ParentEntityInterfaceReference": "",
+      "ClientEntityIdItems": [
+        {
+          "IdType": 34,
+          "IdValue": "1234567"
+        }
+      ]
+    }
+  ],
+  "schema": {
+    "type": "object",
+    "properties": {
+      "ImportRejections": {
+        "type": "integer"
+      },
+      "ValidItemsActionRequired": {
+        "type": "integer"
+      },
+      "ValidItemsNoActionRequired": {
+        "type": "integer"
+      },
+      "Rejections": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "Allocations": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "ItemNumber": {
+              "type": "integer"
+            },
+            "InterfaceReference": {
+              "type": "string"
+            },
+            "ClientEntityID": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "ItemNumber",
+            "InterfaceReference",
+            "ClientEntityID"
+          ]
+        }
+      },
+      "ValidItemsActionRequiredList": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "FileRow": {
+              "type": "integer"
+            },
+            "ClientID": {
+              "type": "integer"
+            },
+            "InterfaceReference": {
+              "type": "string"
+            },
+            "HandledByUserGroupID": {
+              "type": "integer"
+            },
+            "HandledByUserID": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "FileRow",
+            "ClientID",
+            "InterfaceReference",
+            "HandledByUserGroupID",
+            "HandledByUserID"
+          ]
+        }
+      },
+      "ValidItemsNoActionRequiredList": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      }
+    },
+    "required": [
+      "ImportRejections",
+      "ValidItemsActionRequired",
+      "ValidItemsNoActionRequired",
+      "Rejections",
+      "Allocations",
+      "ValidItemsActionRequiredList",
+      "ValidItemsNoActionRequiredList"
+    ]
+  }
+}

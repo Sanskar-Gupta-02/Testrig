@@ -1,0 +1,64 @@
+{
+    "payload": {
+        "Name": "Auto - OB PG",
+        "Description": "Auto - OB PG Desc",
+        "PropertyGroupOrder": "1",
+        "Section": "1",
+        "Hidden": "false",
+        "Responsive": "1",
+        "ActionUserID": "521",
+        "ReturnFormat": "Json",
+        "Notes": "Auto test"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "OnboardingTypeID": {
+                "type": "integer"
+            },
+            "OnboardingPropertyGroupID": {
+                "type": "integer"
+            },
+            "Name": {
+                "type": "string"
+            },
+            "Description": {
+                "type": "string"
+            },
+            "Notes": {
+                "type": "string"
+            },
+            "PropertyGroupOrder": {
+                "type": "integer"
+            },
+            "Section": {
+                "type": "integer"
+            },
+            "BeforeAfterTnC": {
+                "type": "boolean"
+            },
+            "Hidden": {
+                "type": "boolean"
+            },
+            "ComplianceOnlyVisible": {
+                "type": "boolean"
+            },
+            "Responsive": {
+                "type": "integer"
+            }
+        },
+        "required": [
+            "OnboardingTypeID",
+            "OnboardingPropertyGroupID",
+            "Name",
+            "Description",
+            "Notes",
+            "PropertyGroupOrder",
+            "Section",
+            "BeforeAfterTnC",
+            "Hidden",
+            "ComplianceOnlyVisible",
+            "Responsive"
+        ]
+    }
+}

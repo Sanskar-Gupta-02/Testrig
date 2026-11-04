@@ -1,0 +1,57 @@
+{
+    "schema": {
+        "type": "object",
+        "properties": {
+            "reviewsStructured": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "reason": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "type": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "reason",
+                        "description",
+                        "type"
+                    ]
+                }
+            },
+            "totalCount": {
+                "type": "integer"
+            },
+            "page": {
+                "type": "integer"
+            },
+            "pageSize": {
+                "type": "integer"
+            },
+            "totalPages": {
+                "type": "integer"
+            }
+        },
+        "required": [
+            "reviewsStructured",
+            "totalCount",
+            "page",
+            "pageSize",
+            "totalPages"
+        ]
+    }
+}

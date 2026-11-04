@@ -1,0 +1,293 @@
+{
+    "payload": {
+        "OnboardingTypeDescription": "New Env testing",
+        "LowRiskIDPalProfileType": "632",
+        "StandardRiskIDPalProfileType": "632",
+        "HighRiskIDPalProfileType": "632",
+        "VeryHighRiskIDPalProfileType": "632",
+        "LowRiskOnboardingApprovalType": "0",
+        "StandardRiskOnboardingApprovalType": "0",
+        "HighRiskOnboardingApprovalType": "0",
+        "VeryHighRiskOnboardingApprovalType": "0",
+        "LowRiskCriteriaID": "184",
+        "StandardRiskCriteriaID": "184",
+        "HighRiskCriteriaID": "184",
+        "VeryHighRiskCriteriaID": "184",
+        "LowRiskClientEntityRiskID": "132",
+        "StandardRiskClientEntityRiskID": "132",
+        "HighRiskClientEntityRiskID": "132",
+        "VeryHighRiskClientEntityRiskID": "132",
+        "DataCollectionWelcomeMessage": "hello",
+        "DataCollectionLogo": "null",
+        "DataCollectionLogoMediaType": "null",
+        "RiskModelType": "0",
+        "LowWeightedRiskScoreUpperLimit": "25",
+        "StandardWeightedRiskScoreUpperLimit": "50",
+        "HighWeightedRiskScoreUpperLimit": "75",
+        "VeryHighWeightedRiskScoreUpperLimit": "100",
+        "TermsAndConditionsEnabled": "false",
+        "TermsAndConditionsMessage": "not enabled",
+        "ExcludeOnboardingStageDataCollection": "false",
+        "ExcludeOnboardingStageDataApproval": "false",
+        "ExcludeOnboardingStageIdentityVerification": "false",
+        "ExcludeOnboardingStageIdentityApproval": "false",
+        "ExcludeOnboardingStageScreening": "false",
+        "ExcludeOnboardingStageComplianceApproval": "false",
+        "NomineeDataCollectionType": "0",
+        "SnapshotType": "0",
+        "ReturnFormat": "Json",
+        "ClientBrandingID": "0",
+        "ActionUserID": "521",
+        "ConfirmationMessage": "true",
+        "VerificationMessage": "true"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "OnboardingTypeID": {
+                "type": "integer"
+            },
+            "OnboardingTypeName": {
+                "type": "string"
+            },
+            "OnboardingTypeDescription": {
+                "type": "string"
+            },
+            "LowRiskIDPalProfileType": {
+                "type": "integer"
+            },
+            "StandardRiskIDPalProfileType": {
+                "type": "integer"
+            },
+            "HighRiskIDPalProfileType": {
+                "type": "integer"
+            },
+            "VeryHighRiskIDPalProfileType": {
+                "type": "integer"
+            },
+            "LowRiskOnboardingApprovalType": {
+                "type": "integer"
+            },
+            "StandardRiskOnboardingApprovalType": {
+                "type": "integer"
+            },
+            "HighRiskOnboardingApprovalType": {
+                "type": "integer"
+            },
+            "VeryHighRiskOnboardingApprovalType": {
+                "type": "integer"
+            },
+            "ClientBrandingID": {
+                "type": "integer"
+            },
+            "LowRiskCriteriaID": {
+                "type": "integer"
+            },
+            "StandardRiskCriteriaID": {
+                "type": "integer"
+            },
+            "HighRiskCriteriaID": {
+                "type": "integer"
+            },
+            "VeryHighRiskCriteriaID": {
+                "type": "integer"
+            },
+            "LowRiskClientEntityRiskID": {
+                "type": "integer"
+            },
+            "StandardRiskClientEntityRiskID": {
+                "type": "integer"
+            },
+            "HighRiskClientEntityRiskID": {
+                "type": "integer"
+            },
+            "VeryHighRiskClientEntityRiskID": {
+                "type": "integer"
+            },
+            "ExcludeOnboardingStageDataCollection": {
+                "type": "boolean"
+            },
+            "ExcludeOnboardingStageDataApproval": {
+                "type": "boolean"
+            },
+            "ExcludeOnboardingStageIdentityVerification": {
+                "type": "boolean"
+            },
+            "ExcludeOnboardingStageIdentityApproval": {
+                "type": "boolean"
+            },
+            "ExcludeOnboardingStageScreening": {
+                "type": "boolean"
+            },
+            "ExcludeOnboardingStageComplianceApproval": {
+                "type": "boolean"
+            },
+            "NomineeDataCollectionType": {
+                "type": "integer"
+            },
+            "ExternalProspectAutosendEmailTemplateID": {
+                "type": "integer"
+            },
+            "ExternalProspectAutosendEmailMessage": {
+                "type": "null"
+            },
+            "EmailAlertDisabled": {
+                "type": "boolean"
+            },
+            "LeadProspectApprovalType": {
+                "type": "integer"
+            },
+            "KYBPersonProspectOnboardingTypeID": {
+                "type": "integer"
+            },
+            "KYBPersonProspectEmailTemplateID": {
+                "type": "integer"
+            },
+            "KYBPersonProspectEmailMessage": {
+                "type": "null"
+            },
+            "KYBCorporateProspectOnboardingTypeID": {
+                "type": "integer"
+            },
+            "KYBCorporateProspectEmailTemplateID": {
+                "type": "integer"
+            },
+            "KYBCorporateProspectEmailMessage": {
+                "type": "null"
+            },
+            "DataCollectionWelcomeMessage": {
+                "type": "string"
+            },
+            "TermsAndConditionsEnabled": {
+                "type": "boolean"
+            },
+            "TermsAndConditionsMessage": {
+                "type": "string"
+            },
+            "ConfirmationMessageEnabled": {
+                "type": "boolean"
+            },
+            "ConfirmationMessage": {
+                "type": "string"
+            },
+            "VerificationMessageEnabled": {
+                "type": "boolean"
+            },
+            "VerificationMessage": {
+                "type": "string"
+            },
+            "DataCollectionLogo": {
+                "type": "null"
+            },
+            "DataCollectionLogoThumbnail": {
+                "type": "null"
+            },
+            "DataCollectionLogoMediaType": {
+                "type": "string"
+            },
+            "RiskModelType": {
+                "type": "integer"
+            },
+            "SnapshotType": {
+                "type": "integer"
+            },
+            "LowWeightedRiskScoreUpperLimit": {
+                "type": "integer"
+            },
+            "StandardWeightedRiskScoreUpperLimit": {
+                "type": "integer"
+            },
+            "HighWeightedRiskScoreUpperLimit": {
+                "type": "integer"
+            },
+            "VeryHighWeightedRiskScoreUpperLimit": {
+                "type": "integer"
+            },
+            "LowRiskCriteriaName": {
+                "type": "string"
+            },
+            "StandardRiskCriteriaName": {
+                "type": "string"
+            },
+            "HighRiskCriteriaName": {
+                "type": "string"
+            },
+            "VeryHighRiskCriteriaName": {
+                "type": "string"
+            },
+            "EmailTemplateID": {
+                "type": "array",
+                "items": {}
+            },
+            "NomineeEmailTemplateID": {
+                "type": "array",
+                "items": {}
+            },
+            "AllowKYBLookup": {
+                "type": "boolean"
+            }
+        },
+        "required": [
+            "OnboardingTypeID",
+            "OnboardingTypeName",
+            "OnboardingTypeDescription",
+            "LowRiskIDPalProfileType",
+            "StandardRiskIDPalProfileType",
+            "HighRiskIDPalProfileType",
+            "VeryHighRiskIDPalProfileType",
+            "LowRiskOnboardingApprovalType",
+            "StandardRiskOnboardingApprovalType",
+            "HighRiskOnboardingApprovalType",
+            "VeryHighRiskOnboardingApprovalType",
+            "ClientBrandingID",
+            "LowRiskCriteriaID",
+            "StandardRiskCriteriaID",
+            "HighRiskCriteriaID",
+            "VeryHighRiskCriteriaID",
+            "LowRiskClientEntityRiskID",
+            "StandardRiskClientEntityRiskID",
+            "HighRiskClientEntityRiskID",
+            "VeryHighRiskClientEntityRiskID",
+            "ExcludeOnboardingStageDataCollection",
+            "ExcludeOnboardingStageDataApproval",
+            "ExcludeOnboardingStageIdentityVerification",
+            "ExcludeOnboardingStageIdentityApproval",
+            "ExcludeOnboardingStageScreening",
+            "ExcludeOnboardingStageComplianceApproval",
+            "NomineeDataCollectionType",
+            "ExternalProspectAutosendEmailTemplateID",
+            "ExternalProspectAutosendEmailMessage",
+            "EmailAlertDisabled",
+            "LeadProspectApprovalType",
+            "KYBPersonProspectOnboardingTypeID",
+            "KYBPersonProspectEmailTemplateID",
+            "KYBPersonProspectEmailMessage",
+            "KYBCorporateProspectOnboardingTypeID",
+            "KYBCorporateProspectEmailTemplateID",
+            "KYBCorporateProspectEmailMessage",
+            "DataCollectionWelcomeMessage",
+            "TermsAndConditionsEnabled",
+            "TermsAndConditionsMessage",
+            "ConfirmationMessageEnabled",
+            "ConfirmationMessage",
+            "VerificationMessageEnabled",
+            "VerificationMessage",
+            "DataCollectionLogo",
+            "DataCollectionLogoThumbnail",
+            "DataCollectionLogoMediaType",
+            "RiskModelType",
+            "SnapshotType",
+            "LowWeightedRiskScoreUpperLimit",
+            "StandardWeightedRiskScoreUpperLimit",
+            "HighWeightedRiskScoreUpperLimit",
+            "VeryHighWeightedRiskScoreUpperLimit",
+            "LowRiskCriteriaName",
+            "StandardRiskCriteriaName",
+            "HighRiskCriteriaName",
+            "VeryHighRiskCriteriaName",
+            "EmailTemplateID",
+            "NomineeEmailTemplateID",
+            "AllowKYBLookup"
+        ]
+    }
+}

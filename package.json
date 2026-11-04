@@ -1,0 +1,63 @@
+{
+    "name": "playwright_bdd_type",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "pretest": "ts-node src/Helper/reports/init.ts",
+        "preui:test": "ts-node src/Helper/reports/init.ts",
+        "preapi:test": "ts-node src/Helper/reports/init.ts",
+        "mail:cleanup": "ts-node src/Helper/utilities/cleanupAllMailboxes.ts",
+        "ui:test": "cucumber-js --config=cucumber.js",
+        "api:test": "cucumber-js --config=cucumber.js -p apiTest",
+        "ui:test:failed": "cucumber-js --config=cucumber.js -p rerun reports/rerun/@rerun.txt",
+        "api:test:failed": "cucumber-js --config=cucumber.js -p apiRerunTest reports/rerun/@rerun.txt",
+        "fetch-jira-ticket": "ts-node fetch-jira.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "description": "",
+    "devDependencies": {
+        "@cucumber/cucumber": "^11.3.0",
+        "@playwright/test": "^1.61.1",
+        "@types/axios": "^0.9.36",
+        "@types/deep-diff": "^1.0.5",
+        "@types/fs-extra": "^11.0.4",
+        "@types/lodash.isequal": "^4.5.8",
+        "@types/node": "^22.13.1",
+        "@types/sprintf-js": "^1.1.4",
+        "@typescript-eslint/eslint-plugin": "^8.24.0",
+        "ajv": "^8.18.0",
+        "cross-env": "^7.0.3",
+        "dotenv": "^16.4.7",
+        "eslint": "^8.57.1",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-playwright": "^2.2.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "exceljs": "^4.4.0",
+        "fs-extra": "^11.3.4",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.0.0",
+        "prettier": "^3.4.2",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.7.3"
+    },
+    "dependencies": {
+        "axios": "^1.20.0",
+        "deep-diff": "^1.0.2",
+        "form-data": "^4.0.6",
+        "jest-diff": "^29.7.0",
+        "lodash.isequal": "^4.5.0",
+        "node-fetch": "^2.7.0",
+        "sprintf-js": "^1.1.3",
+        "ts-luxon": "^5.0.6",
+        "winston": "^3.17.0"
+    },
+    "lint-staged": {
+        "*.{ts,tsx,js,jsx}": [
+            "eslint --fix",
+            "prettier --write"
+        ]
+    }
+}

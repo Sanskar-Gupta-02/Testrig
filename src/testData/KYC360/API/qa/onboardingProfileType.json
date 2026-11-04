@@ -1,0 +1,26 @@
+{
+    "payload": {
+        "OnboardingProfileTypeID": "577",
+        "ReturnFormat": "Json",
+        "ActionUserID":"521"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "OnboardingProfileTypeID": {
+                "type": "integer"
+            },
+            "OnboardingProfileTypeName": {
+                "type": "string"
+            },
+            "OnboardingProfileTypeDescription": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "OnboardingProfileTypeID",
+            "OnboardingProfileTypeName",
+            "OnboardingProfileTypeDescription"
+        ]
+    }
+}

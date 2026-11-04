@@ -1,0 +1,160 @@
+{
+    "schema": {
+        "type": "object",
+        "properties": {
+            "TotalRecords": {
+                "type": "integer"
+            },
+            "Data": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "BusinessUnitID": {
+                            "type": "integer"
+                        },
+                        "ClientProspectID": {
+                            "type": "integer"
+                        },
+                        "InterfaceReference": {
+                            "type": "string"
+                        },
+                        "LastName": {
+                            "type": "string"
+                        },
+                        "FirstName": {
+                            "type": "string"
+                        },
+                        "MiddleName": {
+                            "type": "string"
+                        },
+                        "Email": {
+                            "type": "string"
+                        },
+                        "MobilePhone": {
+                            "type": "string"
+                        },
+                        "OnboardingTypeID": {
+                            "type": "integer"
+                        },
+                        "ClientEntityID": {
+                            "type": "integer"
+                        },
+                        "ProspectStatus": {
+                            "type": "integer"
+                        },
+                        "AllowManageProspect": {
+                            "type": "boolean"
+                        },
+                        "OriginClientProspectID": {
+                            "type": "integer"
+                        },
+                        "AllowKYBLookup": {
+                            "type": "boolean"
+                        },
+                        "UseDefaultEmail": {
+                            "type": "boolean"
+                        },
+                        "DefaultEmailId": {
+                            "type": "string"
+                        },
+                        "Imported": {
+                            "type": "boolean"
+                        },
+                        "HandledByGroupID": {
+                            "type": "integer"
+                        },
+                        "HandledByUserID": {
+                            "type": "integer"
+                        },
+                        "ProspectAddedDate": {
+                            "type": "string"
+                        },
+                        "IsNetworkSharingConsentReceived": {
+                            "type": "boolean"
+                        },
+                        "Source": {
+                            "type": "integer"
+                        },
+                        "NetworkQueueId": {
+                            "type": "string"
+                        },
+                        "OnboardingTypeName": {
+                            "type": "string"
+                        },
+                        "HandledByUserGroupName": {
+                            "type": "string"
+                        },
+                        "HandledByUserName": {
+                            "type": "string"
+                        },
+                        "ClientEntityInterfaceReference": {
+                            "type": "string"
+                        },
+                        "ClientName": {
+                            "type": "string"
+                        },
+                        "HandledBySupervisorUserID": {
+                            "type": "integer"
+                        },
+                        "HandledBySupervisorUserName": {
+                            "type": "string"
+                        },
+                        "HandledByManagerUserID": {
+                            "type": "integer"
+                        },
+                        "HandledByManagerUserName": {
+                            "type": "string"
+                        },
+                        "HandledByDirectorUserID": {
+                            "type": "integer"
+                        },
+                        "HandledByDirectorUserName": {
+                            "type": "string"
+                        },
+                        "ProspectOnboardingTypeNames": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "BusinessUnitID",
+                        "ClientProspectID",
+                        "InterfaceReference",
+                        "LastName",
+                        "FirstName",
+                        "MiddleName",
+                        "Email",
+                        "MobilePhone",
+                        "OnboardingTypeID",
+                        "ClientEntityID",
+                        "ProspectStatus",
+                        "AllowManageProspect",
+                        "OriginClientProspectID",
+                        "AllowKYBLookup",
+                        "UseDefaultEmail",
+                        "DefaultEmailId",
+                        "Imported",
+                        "HandledByGroupID",
+                        "HandledByUserID",
+                        "ProspectAddedDate",
+                        "IsNetworkSharingConsentReceived",
+                        "Source",
+                        "NetworkQueueId",
+                        "OnboardingTypeName",
+                        "HandledByUserGroupName",
+                        "HandledByUserName",
+                        "ClientEntityInterfaceReference",
+                        "ClientName",
+                        "HandledBySupervisorUserID",
+                        "HandledBySupervisorUserName",
+                        "HandledByManagerUserID",
+                        "HandledByManagerUserName",
+                        "HandledByDirectorUserID",
+                        "HandledByDirectorUserName",
+                        "ProspectOnboardingTypeNames"
+                    ]
+                }
+            }
+        }
+    }
+}

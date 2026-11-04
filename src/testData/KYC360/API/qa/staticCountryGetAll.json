@@ -1,0 +1,36 @@
+{
+    "payload": {
+        "ReturnFormat": "Json"
+    },
+    "schema": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+            "type": "object",
+            "properties": {
+                "CountryID": {
+                    "type": "number"
+                },
+                "Name": {
+                    "type": "string"
+                },
+                "Code": {
+                    "type": "string"
+                },
+                "MappingReference": {
+                    "type": "string"
+                },
+                "Territory": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "CountryID",
+                "Name",
+                "Code",
+                "MappingReference",
+                "Territory"
+            ]
+        }
+    }
+}

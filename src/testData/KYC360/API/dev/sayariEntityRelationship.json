@@ -1,0 +1,123 @@
+{
+    "payload": {
+        "BusinessUnitID": "10",
+        "SayariEntityRelationshipTypeID": "10",
+        "Title": "Mr",
+        "FirstName": "",
+        "MiddleName": "",
+        "LastName": "SWIGGY SERVICES PTY LTD",
+        "Position": "QA",
+        "Address": "abv",
+        "IsFormer": "false",
+        "IsCorporate": "true",
+        "FirstObserved": "",
+        "LastObserved": "",
+        "ClientProspectID": "0",
+        "ClientOnboardingID": "0",
+        "ParentClientProspectID": "0",
+        "SayariEntityUniqueReference": "b7TylwOWydiLZEgAFoXJtg",
+        "Deleted": "false",
+        "ActionUserID": "521",
+        "ReturnFormat": "Json"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "BusinessUnitID": {
+                "type": "integer"
+            },
+            "ClientProspectGroupID": {
+                "type": "integer"
+            },
+            "SayariEntityID": {
+                "type": "integer"
+            },
+            "RelationshipID": {
+                "type": "integer"
+            },
+            "SayariEntityRelationshipTypeID": {
+                "type": "integer"
+            },
+            "SayariEntityRelationshipTypeName": {
+                "type": "string"
+            },
+            "SayariEntityRelationshipTypeReverseName": {
+                "type": "string"
+            },
+            "Title": {
+                "type": "string"
+            },
+            "FirstName": {
+                "type": "string"
+            },
+            "MiddleName": {
+                "type": "string"
+            },
+            "LastName": {
+                "type": "string"
+            },
+            "Position": {
+                "type": "string"
+            },
+            "Address": {
+                "type": "string"
+            },
+            "IsFormer": {
+                "type": "boolean"
+            },
+            "IsCorporate": {
+                "type": "boolean"
+            },
+            "FirstObserved": {
+                "type": "string"
+            },
+            "LastObserved": {
+                "type": "string"
+            },
+            "ClientProspectID": {
+                "type": "integer"
+            },
+            "ClientOnboardingID": {
+                "type": "integer"
+            },
+            "ParentClientProspectID": {
+                "type": "integer"
+            },
+            "SayariEntityUniqueReference": {
+                "type": "string"
+            },
+            "SayariRecordUniqueReferenceList": {
+                "type": "array",
+                "items": {}
+            },
+            "Deleted": {
+                "type": "boolean"
+            }
+        },
+        "required": [
+            "BusinessUnitID",
+            "ClientProspectGroupID",
+            "SayariEntityID",
+            "RelationshipID",
+            "SayariEntityRelationshipTypeID",
+            "SayariEntityRelationshipTypeName",
+            "SayariEntityRelationshipTypeReverseName",
+            "Title",
+            "FirstName",
+            "MiddleName",
+            "LastName",
+            "Position",
+            "Address",
+            "IsFormer",
+            "IsCorporate",
+            "FirstObserved",
+            "LastObserved",
+            "ClientProspectID",
+            "ClientOnboardingID",
+            "ParentClientProspectID",
+            "SayariEntityUniqueReference",
+            "SayariRecordUniqueReferenceList",
+            "Deleted"
+        ]
+    }
+}

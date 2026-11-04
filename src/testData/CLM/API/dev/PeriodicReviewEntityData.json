@@ -1,0 +1,110 @@
+{
+    "expectedData": {
+        "templates": [
+            {
+                "name": "API Automation - Do Not Touch",
+                "key": "apiautomationdonotto",
+                "description": "",
+                "recordState": 1,
+                "fields": [
+                    {
+                        "name": "boolean data",
+                        "description": "",
+                        "type": "Boolean",
+                        "key": "booleandata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    },
+                    {
+                        "name": "date data",
+                        "description": "",
+                        "type": "Date",
+                        "key": "datedata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    },
+                    {
+                        "name": "decimal data",
+                        "description": "",
+                        "type": "Decimal",
+                        "key": "decimaldata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    },
+                    {
+                        "name": "integer data",
+                        "description": "",
+                        "type": "Integer",
+                        "key": "integerdata",
+                        "recordState": 1,
+                        "isRequired": 1
+                    },
+                    {
+                        "name": "links data",
+                        "description": "",
+                        "type": "Links",
+                        "key": "linksdata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    },
+                    {
+                        "name": "list data",
+                        "description": "",
+                        "type": "List",
+                        "key": "listdata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    },
+                    {
+                        "name": "string data",
+                        "description": "",
+                        "type": "String",
+                        "key": "stringdata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    },
+                    {
+                        "name": "text data",
+                        "description": "",
+                        "type": "Text",
+                        "key": "textdata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    },
+                    {
+                        "name": "email data",
+                        "description": "",
+                        "type": "String",
+                        "key": "emaildata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    },
+                    {
+                        "name": "giin data",
+                        "description": "",
+                        "type": "String",
+                        "key": "giindata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    },
+                    {
+                        "name": "tin data",
+                        "description": "",
+                        "type": "String",
+                        "key": "tindata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    },
+                    {
+                        "name": "date of birth data",
+                        "description": "",
+                        "type": "Date",
+                        "key": "dateofbirthdata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    }
+                ]
+            }
+        ]
+    }
+}

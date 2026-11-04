@@ -1,0 +1,22 @@
+{
+    "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+            "id",
+            "apixKey",
+            "apixUrl"
+        ],
+        "properties": {
+            "id": {
+                "type": "string"
+            },
+            "apixKey": {
+                "type": "string"
+            },
+            "apixUrl": {
+                "type": "string"
+            }
+        }
+    }
+}

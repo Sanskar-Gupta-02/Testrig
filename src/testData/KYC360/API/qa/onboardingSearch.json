@@ -1,0 +1,388 @@
+{
+    "payload": [
+        {
+            "BusinessUnitID": "10",
+            "ClientProspectID": "",
+            "OnboardingStageID": "1",
+            "OnboardingStatus": "1",
+            "IncludeDocumentData": "True",
+            "ReturnEncodedValues": "True",
+            "ReturnFormat": "Json"
+        },
+        {
+            "BusinessUnitID": "10",
+            "ClientProspectID": "",
+            "OnboardingStageID": "1",
+            "OnboardingStatus": "1",
+            "IncludeDocumentData": "True",
+            "ReturnEncodedValues": "True",
+            "ReturnFormat": "Json"
+        }
+    ],
+    "schema": {
+        "type": "array",
+        "minItems": 1,
+        "items": [
+            {
+                "type": "object",
+                "properties": {
+                    "BusinessUnitID": {
+                        "type": "integer"
+                    },
+                    "ClientProspectID": {
+                        "type": "integer"
+                    },
+                    "ClientOnboardingID": {
+                        "type": "integer"
+                    },
+                    "EIDVUUIDReference": {
+                        "type": "string"
+                    },
+                    "EIDVUUIDSentDate": {
+                        "type": "null"
+                    },
+                    "Notes": {
+                        "type": "string"
+                    },
+                    "OnboardingStageID": {
+                        "type": "integer"
+                    },
+                    "OnboardingStatus": {
+                        "type": "integer"
+                    },
+                    "OnboardingStageName": {
+                        "type": "string"
+                    },
+                    "DateAdded": {
+                        "type": "string"
+                    },
+                    "AssessedRiskValue": {
+                        "type": "integer"
+                    },
+                    "WeightedRiskScore": {
+                        "type": "integer"
+                    },
+                    "WeightedRiskScoreBand": {
+                        "type": "string"
+                    },
+                    "RiskModelType": {
+                        "type": "integer"
+                    },
+                    "ClientProspectGroupID": {
+                        "type": "integer"
+                    },
+                    "IsImported": {
+                        "type": "boolean"
+                    },
+                    "WeightedRiskScoreOverridden": {
+                        "type": "boolean"
+                    },
+                    "OnboardingTypeID": {
+                        "type": "integer"
+                    },
+                    "OnboardingTypeName": {
+                        "type": "string"
+                    },
+                    "AllowKYBLookup": {
+                        "type": "boolean"
+                    },
+                    "ProspectFirstName": {
+                        "type": "string"
+                    },
+                    "ProspectMiddleName": {
+                        "type": "string"
+                    },
+                    "ProspectEmail": {
+                        "type": "string"
+                    },
+                    "ProspectLastName": {
+                        "type": "string"
+                    },
+                    "ProspectHandledByUserGroupID": {
+                        "type": "integer"
+                    },
+                    "ProspectHandledByUserID": {
+                        "type": "integer"
+                    },
+                    "ProspectHandledByUserGroupName": {
+                        "type": "string"
+                    },
+                    "ProspectHandledByUserName": {
+                        "type": "string"
+                    },
+                    "SnapshotType": {
+                        "type": "integer"
+                    },
+                    "DocumentData": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "DocumentDataEncoded": {
+                        "type": "string"
+                    },
+                    "DateLastChanged": {
+                        "type": "string"
+                    },
+                    "TriggerDateOperator": {
+                        "type": "integer"
+                    },
+                    "TriggerDateMagnitude": {
+                        "type": "integer"
+                    },
+                    "TriggerDateTimespan": {
+                        "type": "integer"
+                    },
+                    "TriggerActionID": {
+                        "type": "integer"
+                    },
+                    "TriggerOnboardingTypeID": {
+                        "type": "null"
+                    },
+                    "TriggerEmailTemplateID": {
+                        "type": "null"
+                    },
+                    "TriggerEmailRecipientTypeIDs": {
+                        "type": "string"
+                    },
+                    "TriggerCopyDCF": {
+                        "type": "boolean"
+                    },
+                    "LastChangedByUserID": {
+                        "type": "integer"
+                    },
+                    "ClientProspectGroupName": {
+                        "type": "string"
+                    },
+                    "Source": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "BusinessUnitID",
+                    "ClientProspectID",
+                    "ClientOnboardingID",
+                    "EIDVUUIDReference",
+                    "EIDVUUIDSentDate",
+                    "Notes",
+                    "OnboardingStageID",
+                    "OnboardingStatus",
+                    "OnboardingStageName",
+                    "DateAdded",
+                    "AssessedRiskValue",
+                    "WeightedRiskScore",
+                    "WeightedRiskScoreBand",
+                    "RiskModelType",
+                    "ClientProspectGroupID",
+                    "IsImported",
+                    "WeightedRiskScoreOverridden",
+                    "OnboardingTypeID",
+                    "OnboardingTypeName",
+                    "AllowKYBLookup",
+                    "ProspectFirstName",
+                    "ProspectMiddleName",
+                    "ProspectEmail",
+                    "ProspectLastName",
+                    "ProspectHandledByUserGroupID",
+                    "ProspectHandledByUserID",
+                    "ProspectHandledByUserGroupName",
+                    "ProspectHandledByUserName",
+                    "SnapshotType",
+                    "DocumentData",
+                    "DocumentDataEncoded",
+                    "DateLastChanged",
+                    "TriggerDateOperator",
+                    "TriggerDateMagnitude",
+                    "TriggerDateTimespan",
+                    "TriggerActionID",
+                    "TriggerOnboardingTypeID",
+                    "TriggerEmailTemplateID",
+                    "TriggerEmailRecipientTypeIDs",
+                    "TriggerCopyDCF",
+                    "LastChangedByUserID",
+                    "ClientProspectGroupName",
+                    "Source"
+                ]
+            },
+            {
+                "type": "object",
+                "properties": {
+                    "BusinessUnitID": {
+                        "type": "integer"
+                    },
+                    "ClientProspectID": {
+                        "type": "integer"
+                    },
+                    "ClientOnboardingID": {
+                        "type": "integer"
+                    },
+                    "EIDVUUIDReference": {
+                        "type": "string"
+                    },
+                    "EIDVUUIDSentDate": {
+                        "type": "null"
+                    },
+                    "Notes": {
+                        "type": "string"
+                    },
+                    "OnboardingStageID": {
+                        "type": "integer"
+                    },
+                    "OnboardingStatus": {
+                        "type": "integer"
+                    },
+                    "OnboardingStageName": {
+                        "type": "string"
+                    },
+                    "DateAdded": {
+                        "type": "string"
+                    },
+                    "AssessedRiskValue": {
+                        "type": "integer"
+                    },
+                    "WeightedRiskScore": {
+                        "type": "integer"
+                    },
+                    "WeightedRiskScoreBand": {
+                        "type": "string"
+                    },
+                    "RiskModelType": {
+                        "type": "integer"
+                    },
+                    "ClientProspectGroupID": {
+                        "type": "integer"
+                    },
+                    "IsImported": {
+                        "type": "boolean"
+                    },
+                    "WeightedRiskScoreOverridden": {
+                        "type": "boolean"
+                    },
+                    "OnboardingTypeID": {
+                        "type": "integer"
+                    },
+                    "OnboardingTypeName": {
+                        "type": "string"
+                    },
+                    "AllowKYBLookup": {
+                        "type": "boolean"
+                    },
+                    "ProspectFirstName": {
+                        "type": "string"
+                    },
+                    "ProspectMiddleName": {
+                        "type": "string"
+                    },
+                    "ProspectEmail": {
+                        "type": "string"
+                    },
+                    "ProspectLastName": {
+                        "type": "string"
+                    },
+                    "ProspectHandledByUserGroupID": {
+                        "type": "integer"
+                    },
+                    "ProspectHandledByUserID": {
+                        "type": "integer"
+                    },
+                    "ProspectHandledByUserGroupName": {
+                        "type": "string"
+                    },
+                    "ProspectHandledByUserName": {
+                        "type": "string"
+                    },
+                    "SnapshotType": {
+                        "type": "integer"
+                    },
+                    "DocumentData": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "DocumentDataEncoded": {
+                        "type": "string"
+                    },
+                    "DateLastChanged": {
+                        "type": "string"
+                    },
+                    "TriggerDateOperator": {
+                        "type": "integer"
+                    },
+                    "TriggerDateMagnitude": {
+                        "type": "integer"
+                    },
+                    "TriggerDateTimespan": {
+                        "type": "integer"
+                    },
+                    "TriggerActionID": {
+                        "type": "integer"
+                    },
+                    "TriggerOnboardingTypeID": {
+                        "type": "null"
+                    },
+                    "TriggerEmailTemplateID": {
+                        "type": "null"
+                    },
+                    "TriggerEmailRecipientTypeIDs": {
+                        "type": "string"
+                    },
+                    "TriggerCopyDCF": {
+                        "type": "boolean"
+                    },
+                    "LastChangedByUserID": {
+                        "type": "integer"
+                    },
+                    "ClientProspectGroupName": {
+                        "type": "string"
+                    },
+                    "Source": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "BusinessUnitID",
+                    "ClientProspectID",
+                    "ClientOnboardingID",
+                    "EIDVUUIDReference",
+                    "EIDVUUIDSentDate",
+                    "Notes",
+                    "OnboardingStageID",
+                    "OnboardingStatus",
+                    "OnboardingStageName",
+                    "DateAdded",
+                    "AssessedRiskValue",
+                    "WeightedRiskScore",
+                    "WeightedRiskScoreBand",
+                    "RiskModelType",
+                    "ClientProspectGroupID",
+                    "IsImported",
+                    "WeightedRiskScoreOverridden",
+                    "OnboardingTypeID",
+                    "OnboardingTypeName",
+                    "AllowKYBLookup",
+                    "ProspectFirstName",
+                    "ProspectMiddleName",
+                    "ProspectEmail",
+                    "ProspectLastName",
+                    "ProspectHandledByUserGroupID",
+                    "ProspectHandledByUserID",
+                    "ProspectHandledByUserGroupName",
+                    "ProspectHandledByUserName",
+                    "SnapshotType",
+                    "DocumentData",
+                    "DocumentDataEncoded",
+                    "DateLastChanged",
+                    "TriggerDateOperator",
+                    "TriggerDateMagnitude",
+                    "TriggerDateTimespan",
+                    "TriggerActionID",
+                    "TriggerOnboardingTypeID",
+                    "TriggerEmailTemplateID",
+                    "TriggerEmailRecipientTypeIDs",
+                    "TriggerCopyDCF",
+                    "LastChangedByUserID",
+                    "ClientProspectGroupName",
+                    "Source"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "payload": {
+        "emails": [
+            "abcvalid@kyc360.com"
+        ]
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "emails": {
+                "type": "array",
+                "items": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "address": {
+                                "type": "string"
+                            },
+                            "isValid": {
+                                "type": "boolean"
+                            }
+                        },
+                        "required": [
+                            "address",
+                            "isValid"
+                        ]
+                    }
+                ]
+            }
+        },
+        "required": [
+            "emails"
+        ]
+    }
+}

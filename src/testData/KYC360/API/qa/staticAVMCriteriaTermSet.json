@@ -1,0 +1,27 @@
+{
+    "payload": {
+        "TermsSetName": "Static AVM Criteria Term Set",
+        "Terms": "Fraud,Money Laundaring,Terror",
+        "ActionUserID": "521",
+        "ReturnFormat": "Json"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "TermsSetID": {
+                "type": "number"
+            },
+            "TermsSetName": {
+                "type": "string"
+            },
+            "Terms": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "TermsSetID",
+            "TermsSetName",
+            "Terms"
+        ]
+    }
+}

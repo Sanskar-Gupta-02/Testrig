@@ -1,0 +1,144 @@
+{
+    "payload": {
+        "OnboardingTypeID": "1761",
+        "PKYCName": "API (Onboarded Date)",
+        "PKYCDesc": "OnboardedDateCheck",
+        "TriggerTypeId": "4",
+        "TriggerValue": "0",
+        "TriggerOperator": "1",
+        "TriggerMagnitude": "2",
+        "TriggerTimespan": "1",
+        "TriggerActionID": "1",
+        "TriggerEmailRecipientIDs": "1,2,4",
+        "TriggerOnboardingTypeID": "1761",
+        "TriggerEmailTemplateId": "0",
+        "TriggerDateOperator": "1",
+        "TriggerDateMagnitude": "1",
+        "TriggerDateTimespan": "5",
+        "TriggerCopyDCF": "1",
+        "TriggerStatus": "1",
+        "ActionUserID": "521",
+        "ReturnFormat": "Json"
+    },
+    "schema": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "OnboardingTypeID": {
+                    "type": "integer"
+                },
+                "PKYCID": {
+                    "type": "integer"
+                },
+                "PKYCName": {
+                    "type": "string"
+                },
+                "PKYCDesc": {
+                    "type": "string"
+                },
+                "TriggerTypeId": {
+                    "type": "integer"
+                },
+                "TriggerTypeDesc": {
+                    "type": "string"
+                },
+                "TriggerDateOperator": {
+                    "type": "integer"
+                },
+                "TriggerDateOperatorDesc": {
+                    "type": "string"
+                },
+                "TriggerDateMagnitude": {
+                    "type": "integer"
+                },
+                "TriggerDateTimespan": {
+                    "type": "integer"
+                },
+                "TriggerDateTimespanDesc": {
+                    "type": "string"
+                },
+                "TriggerValue": {
+                    "type": "integer"
+                },
+                "TriggerValueDesc": {
+                    "type": "string"
+                },
+                "TriggerActionID": {
+                    "type": "integer"
+                },
+                "TriggerActionDesc": {
+                    "type": "string"
+                },
+                "TriggerOnboardingTypeID": {
+                    "type": "integer"
+                },
+                "TriggerOnboardingTypeDesc": {
+                    "type": "string"
+                },
+                "TriggerEmailTemplateID": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "TriggerEmailTemplateDesc": {
+                    "type": "string"
+                },
+                "TriggerEmailRecipientIDs": {
+                    "type": "string"
+                },
+                "TriggerEmailRecipientDesc": {
+                    "type": "string"
+                },
+                "TriggerCopyDCF": {
+                    "type": "integer"
+                },
+                "TriggerCopyDCFDesc": {
+                    "type": "string"
+                },
+                "TriggerStatus": {
+                    "type": "integer"
+                },
+                "TriggerStatusDesc": {
+                    "type": "string"
+                },
+                "DateLastChanged": {
+                    "type": "string"
+                },
+                "LastChangedByUserID": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "OnboardingTypeID",
+                "PKYCID",
+                "PKYCName",
+                "PKYCDesc",
+                "TriggerTypeId",
+                "TriggerTypeDesc",
+                "TriggerDateOperator",
+                "TriggerDateOperatorDesc",
+                "TriggerDateMagnitude",
+                "TriggerDateTimespan",
+                "TriggerDateTimespanDesc",
+                "TriggerValue",
+                "TriggerValueDesc",
+                "TriggerActionID",
+                "TriggerActionDesc",
+                "TriggerOnboardingTypeID",
+                "TriggerOnboardingTypeDesc",
+                "TriggerEmailTemplateID",
+                "TriggerEmailTemplateDesc",
+                "TriggerEmailRecipientIDs",
+                "TriggerEmailRecipientDesc",
+                "TriggerCopyDCF",
+                "TriggerCopyDCFDesc",
+                "TriggerStatus",
+                "TriggerStatusDesc",
+                "DateLastChanged",
+                "LastChangedByUserID"
+            ]
+        }
+    }
+}

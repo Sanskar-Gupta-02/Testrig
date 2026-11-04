@@ -1,0 +1,189 @@
+{
+    "payload": {
+        "BusinessUnitID": 10,
+        "ClientProspectID": 606526,
+        "ClientOnboardingID": 340116,
+        "ActionUserID": 521,
+        "ReturnFormat": "Json"
+    },
+    "expectedData": {
+        "Status": "MessageSent",
+        "Message": null,
+        "Submissions": [
+            {
+                "UUID": "1y2t9xl4",
+                "SubmissionID": 4474030,
+                "AddressVerificationResult": "Alert",
+                "IdDetectResult": "Pass",
+                "ProfileID": 173,
+                "SubmissionStatus": "ReceivedWithError",
+                "LanguageCode": "en",
+                "AccountID": "",
+                "Documents": [
+                    {
+                        "DocumentID": 8516104,
+                        "DocumentUniqueNumber": "",
+                        "IssueDate": null,
+                        "IssueType": "",
+                        "IssuerCode": "",
+                        "DocumentTypeIssueYear": "",
+                        "ExpirationDate": null,
+                        "Alerts": null,
+                        "DocumentType": "idcard-front-uncropped",
+                        "AuthenticationData": "Flag",
+                        "FacialMatch": "Alert",
+                        "FacialMatchScore": 17,
+                        "Status": "0",
+                        "Message": null
+                    },
+                    {
+                        "DocumentID": 8516105,
+                        "DocumentUniqueNumber": "",
+                        "IssueDate": null,
+                        "IssueType": "",
+                        "IssuerCode": "",
+                        "DocumentTypeIssueYear": "",
+                        "ExpirationDate": null,
+                        "Alerts": null,
+                        "DocumentType": "idcard-back-uncropped",
+                        "AuthenticationData": "NA",
+                        "FacialMatch": "NA",
+                        "FacialMatchScore": null,
+                        "Status": "0",
+                        "Message": null
+                    },
+                    {
+                        "DocumentID": 8516112,
+                        "DocumentUniqueNumber": "",
+                        "IssueDate": null,
+                        "IssueType": "",
+                        "IssuerCode": "",
+                        "DocumentTypeIssueYear": "",
+                        "ExpirationDate": null,
+                        "Alerts": null,
+                        "DocumentType": "selfie",
+                        "AuthenticationData": "NA",
+                        "FacialMatch": "NA",
+                        "FacialMatchScore": null,
+                        "Status": "0",
+                        "Message": null
+                    }
+                ],
+                "LivenessTestResult": "Pass"
+            }
+        ]
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "Status": {
+                "type": "string"
+            },
+            "Message": {},
+            "Submissions": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "UUID": {
+                            "type": "string"
+                        },
+                        "SubmissionID": {
+                            "type": "number"
+                        },
+                        "AddressVerificationResult": {
+                            "type": "string"
+                        },
+                        "IdDetectResult": {
+                            "type": "string"
+                        },
+                        "ProfileID": {
+                            "type": "number"
+                        },
+                        "SubmissionStatus": {
+                            "type": "string"
+                        },
+                        "LanguageCode": {
+                            "type": "string"
+                        },
+                        "AccountID": {
+                            "type": "string"
+                        },
+                        "Documents": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "DocumentID": {
+                                        "type": "number"
+                                    },
+                                    "DocumentUniqueNumber": {
+                                        "type": "string"
+                                    },
+                                    "IssueDate": {},
+                                    "IssueType": {
+                                        "type": "string"
+                                    },
+                                    "IssuerCode": {
+                                        "type": "string"
+                                    },
+                                    "DocumentTypeIssueYear": {
+                                        "type": "string"
+                                    },
+                                    "ExpirationDate": {},
+                                    "Alerts": {},
+                                    "DocumentType": {
+                                        "type": "string"
+                                    },
+                                    "AuthenticationData": {
+                                        "type": "string"
+                                    },
+                                    "FacialMatch": {
+                                        "type": "string"
+                                    },
+                                    "FacialMatchScore": {},
+                                    "Status": {
+                                        "type": "string"
+                                    },
+                                    "Message": {}
+                                },
+                                "required": [
+                                    "DocumentID",
+                                    "DocumentUniqueNumber",
+                                    "IssueDate",
+                                    "IssueType",
+                                    "IssuerCode",
+                                    "DocumentTypeIssueYear",
+                                    "ExpirationDate",
+                                    "Alerts",
+                                    "DocumentType",
+                                    "AuthenticationData",
+                                    "FacialMatch",
+                                    "FacialMatchScore",
+                                    "Status",
+                                    "Message"
+                                ]
+                            }
+                        },
+                        "LivenessTestResult": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "UUID",
+                        "SubmissionID",
+                        "AddressVerificationResult",
+                        "IdDetectResult",
+                        "ProfileID",
+                        "SubmissionStatus",
+                        "LanguageCode",
+                        "AccountID",
+                        "Documents",
+                        "LivenessTestResult"
+                    ]
+                }
+            }
+        },
+        "required": ["Status", "Message", "Submissions"]
+    }
+}

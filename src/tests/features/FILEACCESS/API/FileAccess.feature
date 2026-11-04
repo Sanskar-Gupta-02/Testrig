@@ -1,0 +1,14 @@
+@Regression @FileAccess
+Feature: File Access
+
+  Scenario: 001 User validates home page with the get action.
+    When user has a service named ""
+    And user sends a 'GET' request
+    Then response status should be 200
+    And response header should be 'content-type':'text/html;charset=utf-8'
+
+  Scenario: 002 User validates fetching a text file.
+    When user has a service named "robots933456.txt"
+    And user sends a 'GET' request
+    Then response status should be 204
+

@@ -1,0 +1,14 @@
+{
+    "payload": {
+        "businessUnitId": "<CLM_SCREENING_INDIVIDUAL_BU_ID>",
+        "workflow": {
+            "comment": "test"
+        },
+        "fields": [
+            {
+                "value": "Automation Screening",
+                "key": "bu.data.screeningapitemplate.screeningapi"
+            }
+        ]
+    }
+}

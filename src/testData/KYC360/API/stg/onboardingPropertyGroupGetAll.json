@@ -1,0 +1,59 @@
+{
+    "schema": {
+        "type": "array",
+        "minItems": 1,
+        "items": [
+            {
+                "type": "object",
+                "properties": {
+                    "OnboardingTypeID": {
+                        "type": "integer"
+                    },
+                    "OnboardingPropertyGroupID": {
+                        "type": "integer"
+                    },
+                    "Name": {
+                        "type": "string"
+                    },
+                    "Description": {
+                        "type": "string"
+                    },
+                    "Notes": {
+                        "type": "string"
+                    },
+                    "PropertyGroupOrder": {
+                        "type": "integer"
+                    },
+                    "Section": {
+                        "type": "integer"
+                    },
+                    "BeforeAfterTnC": {
+                        "type": "boolean"
+                    },
+                    "Hidden": {
+                        "type": "boolean"
+                    },
+                    "ComplianceOnlyVisible": {
+                        "type": "boolean"
+                    },
+                    "Responsive": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "OnboardingTypeID",
+                    "OnboardingPropertyGroupID",
+                    "Name",
+                    "Description",
+                    "Notes",
+                    "PropertyGroupOrder",
+                    "Section",
+                    "BeforeAfterTnC",
+                    "Hidden",
+                    "ComplianceOnlyVisible",
+                    "Responsive"
+                ]
+            }
+        ]
+    }
+}

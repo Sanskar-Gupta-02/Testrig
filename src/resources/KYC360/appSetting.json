@@ -1,0 +1,76 @@
+{
+    "Login": {
+        "UserName": "//input[@id='Email']",
+        "Password": "//input[@id='Password']",
+        "LoginButton": "//button[@type='submit']",
+        "pageTitle": "//h2"
+    },
+    "Home": {
+        "Title": "//p[@class='home-banner-title']"
+    },
+    "ManageProspect": {
+        "EndPoint": "https://stguat-batch.kyc360.com/prospect/search?__BusinessUnit=10",
+        "SearchName": "//*[@id='Name']",
+        "SearchOn": "//*[@id='SearchOn']",
+        "SearchProspects": "//button[contains(text(),'Search Prospects')]",
+        "EditProspect": "//table/tbody/tr[2]/td[2]/div/a",
+        "OnboardingType": "//span[text()='Onboarding Type:']//parent::div//following-sibling::div[1]//span",
+        "ProspectStatus": "//span[text()='Prospect Status:']//parent::div//following-sibling::div[1]//span",
+        "Email": "//span[text()='Email:']//parent::div//following-sibling::div[1]//span",
+        "HandlerUser": "//span[text()='Handler User:']//parent::div//following-sibling::div[1]//span",
+        "HandlerGroup": "//span[text()='Handler Group:']//parent::div//following-sibling::div[1]//span",
+        "SendLink": "//a[text()='Send'] | //a[text()='Resend'] ",
+        "DataCollectionLink": "//a[text()='Data Collection']",
+        "DataApprovalLink": "//a[text()='Data Approval']",
+        "DataCollectionRequests": "//h2[text()='Data Collection Requests']//following-sibling::table",
+        "GenerateDataCollectionLink": "//button[contains(text(),'Generate Data Collection Link')]",
+        "DataCollectionLinkPopup": "//*[@id='confirmDialog']/div/div",
+        "LogOutButton": "//a[contains(text(),'Logout')]",
+        "Cancel": "//button[contains(text(),'Copy')]//following-sibling::button[contains(text(),'Cancel')]",
+        "DataLink": "//*[@id='dataLink']",
+        "CreateOnboardingLink": "//a[contains(text(),'Create onboarding')]",
+        "CreateDataRequestLink": "//a[contains(text(),'Create data request')]"
+    },
+    "Onboarding": {
+        "CreateOnbarodingNotes": "//textarea[@id='Onboarding_Notes']",
+        "CreateOnboardingButton": "//button[normalize-space()='Create Onboarding']",
+        "pageTitle": "//h2",
+        "SendVerificationCodeforRiskScreenButton": "//button[contains(text(),'Send Verification Code')]",
+        "EnterRiskScreenButton": "//button[@type='submit']",
+        "VerificationCode": "//*[@id='Code']",
+        "ContinuetoDataCollectionLink": "//a[text()='Continue to Data Collection']",
+        "NameOfAccountCopy": "//input[@id='OnboardingDataPropertyGroupList_2__OnboardingDataStoreList_2__Store_Text']",
+        "WhichOfficeCopy": "//select[@id='OnboardingDataPropertyGroupList_2__OnboardingDataStoreList_3__Store_ListDataID']",
+        "RequiredServiceCopy": "//select[@id='OnboardingDataPropertyGroupList_2__OnboardingDataStoreList_4__Store_ListDataID']",
+        "CorporateTrustCopy": "//select[@id='OnboardingDataPropertyGroupList_2__OnboardingDataStoreList_7__Store_ListDataID']",
+        "NameOfAccount": "//input[@id='OnboardingDataPropertyGroupList_3__OnboardingDataStoreList_2__Store_Text']",
+        "WhichOffice": "//select[@id='OnboardingDataPropertyGroupList_3__OnboardingDataStoreList_3__Store_ListDataID']",
+        "RequiredService": "//select[@id='OnboardingDataPropertyGroupList_3__OnboardingDataStoreList_4__Store_ListDataID']",
+        "CorporateTrust": "//select[@id='OnboardingDataPropertyGroupList_3__OnboardingDataStoreList_7__Store_ListDataID']",
+        "SaveButton": "//button[@id='save']",
+        "SaveAndContinueButton": "//button[@id='saveandcontinue']",
+        "SubmitButton": "//button[@id='submit1']",
+        "SuccessMessage": "div.alert.alert-success.alert-dismissible",
+        "SaveOnBoardingDataButton": "(//button[contains(text(),'Save Onboarding Data')])[1]",
+        "textLastName": "//input[@id='OnboardingDataPropertyGroupList_0__OnboardingDataStoreList_0__Store_Text']",
+        "textEmail": "//input[@id='OnboardingDataPropertyGroupList_0__OnboardingDataStoreList_4__Store_Text']",
+        "DataCollectionSubmitButton": "(//button[contains(text(),'Submit')])[2]",
+        "ApproveOnboardingDataButton": "//button[normalize-space()='Approve Onboarding Data']",
+        "SubmitIdentityApprovalButton": "//button[normalize-space()='Submit For Identity Approval']",
+        "IdentityApprovalButton": "//button[normalize-space()='Approve Identity Verification']",
+        "ApprovalText": "//textarea[@id='ComplianceApprovalNotes']",
+        "SubmitOnboardingForApprovalButton": "(//button[@name='submit'])[2]",
+        "ApprovedLabel": "//li[@class='approved']",
+        "RevertToDataCollectionButton": "//button[@value='DataCollection']",
+        "GoBackLink": "(//a[contains(text(),'Go back')])[1]",
+        "DeleteOnBoardingLink": "(//a[contains(text(),'Delete')])[2]",
+        "OnboardingConfirmDeletionButton": "button[type='submit']"
+    },
+    "Component": {
+        "BannerSuccessMessage": "//*[contains(@class, 'alert-success')]"
+    },
+    "CreateDataRequest": {
+        "textCreateDataRequest": "//div[@class='Editor-editor']",
+        "CreateDataRequestButton": "//button[contains(text(),'Create Data Request')]"
+    }
+}

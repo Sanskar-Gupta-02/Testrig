@@ -1,0 +1,17 @@
+{
+    "payload": {
+        "Name": "Auto Risk Band",
+        "Order": 1,
+        "ReturnFormat": "Json"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "OnboardingTypeId": { "type": "integer" },
+            "Id": { "type": "integer" },
+            "Name": { "type": "string" },
+            "Order": { "type": "integer" }
+        },
+        "required": ["OnboardingTypeId", "Id", "Name", "Order"]
+    }
+}

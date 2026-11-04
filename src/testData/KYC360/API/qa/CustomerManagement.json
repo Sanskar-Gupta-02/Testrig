@@ -1,0 +1,177 @@
+{
+  "payload": {
+    "SourceBusinessUnitID": 11,
+    "ClientEntityID": 447845,
+    "DestinationBusinessUnitID": 10,
+    "ReassignmentUserGroupID": 330,
+    "ReturnFormat": "Json",
+    "ActionUserID": 524
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "ClientEntityID": {
+        "type": "integer"
+      },
+      "InterfaceReference": {
+        "type": "string"
+      },
+      "LastName": {
+        "type": "string"
+      },
+      "FirstName": {
+        "type": "string"
+      },
+      "MiddleName": {
+        "type": "string"
+      },
+      "CriteriaID": {
+        "type": "integer"
+      },
+      "CriteriaName": {
+        "type": "string"
+      },
+      "GenderID": {
+        "type": "integer"
+      },
+      "GenderName": {
+        "type": "string"
+      },
+      "Date": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "Country1ID": {
+        "type": "integer"
+      },
+      "Country1Name": {
+        "type": "string"
+      },
+      "Country2ID": {
+        "type": "integer"
+      },
+      "Country2Name": {
+        "type": "string"
+      },
+      "Country3ID": {
+        "type": "integer"
+      },
+      "Country3Name": {
+        "type": "string"
+      },
+      "StatusID": {
+        "type": "integer"
+      },
+      "StatusName": {
+        "type": "string"
+      },
+      "DateAdded": {
+        "type": "string"
+      },
+      "CustomText1": {
+        "type": "string"
+      },
+      "CustomText2": {
+        "type": "string"
+      },
+      "BusinessUnitID": {
+        "type": "integer"
+      },
+      "BusinessUnitName": {
+        "type": "string"
+      },
+      "HandledByUserGroupID": {
+        "type": "integer"
+      },
+      "HandledByUserGroupName": {
+        "type": "string"
+      },
+      "HandledByUserID": {
+        "type": "integer"
+      },
+      "HandledByUserName": {
+        "type": "string"
+      },
+      "RiskID": {
+        "type": "integer"
+      },
+      "RiskName": {
+        "type": "string"
+      },
+      "AdverseMediaFileCriteriaID": {
+        "type": "integer"
+      },
+      "AdverseMediaDateRangeID": {
+        "type": "integer"
+      },
+      "AdverseMediaCountryID": {
+        "type": "integer"
+      },
+      "AdditionalAndTerms": {
+        "type": "string"
+      },
+      "AdditionalOrTerms": {
+        "type": "string"
+      },
+      "ExcludeTerms": {
+        "type": "string"
+      },
+      "AdverseMediaDateLastScreened": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ClientEntityAliases": {
+        "type": "array",
+        "items": {}
+      },
+      "ClientEntityIds": {
+        "items": {},
+        "type": "array"
+      }
+    },
+    "required": [
+      "ClientEntityID",
+      "InterfaceReference",
+      "LastName",
+      "FirstName",
+      "MiddleName",
+      "CriteriaID",
+      "CriteriaName",
+      "GenderID",
+      "GenderName",
+      "Date",
+      "Country1ID",
+      "Country1Name",
+      "Country2ID",
+      "Country2Name",
+      "Country3ID",
+      "Country3Name",
+      "StatusID",
+      "StatusName",
+      "DateAdded",
+      "CustomText1",
+      "CustomText2",
+      "BusinessUnitID",
+      "BusinessUnitName",
+      "HandledByUserGroupID",
+      "HandledByUserGroupName",
+      "HandledByUserID",
+      "HandledByUserName",
+      "RiskID",
+      "RiskName",
+      "AdverseMediaFileCriteriaID",
+      "AdverseMediaDateRangeID",
+      "AdverseMediaCountryID",
+      "AdditionalAndTerms",
+      "AdditionalOrTerms",
+      "ExcludeTerms",
+      "AdverseMediaDateLastScreened",
+      "ClientEntityAliases",
+      "ClientEntityIds"
+    ]
+  }
+}

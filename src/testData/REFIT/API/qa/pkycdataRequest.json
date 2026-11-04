@@ -1,0 +1,63 @@
+{
+    "payload": {
+        "BusinessUnitID": "10",
+        "Message": "Automation DCF Message",
+        "ActionUserID": "522",
+        "ReturnFormat": "Json"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "BusinessUnitID": {
+                "type": "integer"
+            },
+            "ClientProspectID": {
+                "type": "integer"
+            },
+            "ClientOnboardingID": {
+                "type": "integer"
+            },
+            "DataRequestID": {
+                "type": "string"
+            },
+            "Message": {
+                "type": "string"
+            },
+            "DataRequestedOn": {
+                "type": "null"
+            },
+            "ExpiryDate": {
+                "type": "string"
+            },
+            "ProspectFirstName": {
+                "type": "string"
+            },
+            "ProspectMiddleName": {
+                "type": "string"
+            },
+            "ProspectLastName": {
+                "type": "string"
+            },
+            "ProspectEmail": {
+                "type": "string"
+            },
+            "EmailTemplateID": {
+                "type": "integer"
+            }
+        },
+        "required": [
+            "BusinessUnitID",
+            "ClientProspectID",
+            "ClientOnboardingID",
+            "DataRequestID",
+            "Message",
+            "DataRequestedOn",
+            "ExpiryDate",
+            "ProspectFirstName",
+            "ProspectMiddleName",
+            "ProspectLastName",
+            "ProspectEmail",
+            "EmailTemplateID"
+        ]
+    }
+}

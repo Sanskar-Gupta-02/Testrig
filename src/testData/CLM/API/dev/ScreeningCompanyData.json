@@ -1,0 +1,12 @@
+{
+    "expectedData": {
+        "screening": {
+            "screeningCriteriaId": 480,
+            "screeningCriteriaName": "Test_Criteria_Entity",
+            "screeningMode": 1,
+            "fields": {
+                "companyName": "bu.data.apiautomationscreening.apiautomationscreening"
+            }
+        }
+    }
+}

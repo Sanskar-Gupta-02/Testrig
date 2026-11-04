@@ -1,0 +1,78 @@
+{
+    "payload": {
+        "clientProspectGroupId": 1408,
+        "businessUnitId": 10,
+        "pageIndex": 1,
+        "pageSize": 20,
+        "ReturnFormat": "json",
+        "clientProspectId": 616062
+    },
+    "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+            "ClientProspectGroupId",
+            "Items",
+            "PageIndex",
+            "PageSize",
+            "TotalCount"
+        ],
+        "properties": {
+            "ClientProspectGroupId": {
+                "type": "integer"
+            },
+            "Items": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                        "AllowManageProspect",
+                        "ClientProspectId",
+                        "FirstName",
+                        "IsHiddenExternally",
+                        "IsIntermediary",
+                        "LastName",
+                        "MiddleName",
+                        "SettingId"
+                    ],
+                    "properties": {
+                        "AllowManageProspect": {
+                            "type": "boolean"
+                        },
+                        "ClientProspectId": {
+                            "type": "integer"
+                        },
+                        "FirstName": {
+                            "type": "string"
+                        },
+                        "IsHiddenExternally": {
+                            "type": "boolean"
+                        },
+                        "IsIntermediary": {
+                            "type": "boolean"
+                        },
+                        "LastName": {
+                            "type": "string"
+                        },
+                        "MiddleName": {
+                            "type": "string"
+                        },
+                        "SettingId": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            },
+            "PageIndex": {
+                "type": "integer"
+            },
+            "PageSize": {
+                "type": "integer"
+            },
+            "TotalCount": {
+                "type": "integer"
+            }
+        }
+    }
+}

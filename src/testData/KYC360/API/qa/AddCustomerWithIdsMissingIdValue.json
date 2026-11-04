@@ -1,0 +1,29 @@
+{
+  "payload": {
+    "BusinessUnitID": 10,
+    "InterfaceReference": "IMO_TEST_104",
+    "LastName": "TEST VESSEL",
+    "FirstName": "",
+    "MiddleName": "",
+    "CriteriaID": 203,
+    "GenderID": 9,
+    "Country1ID": 0,
+    "Country2ID": 0,
+    "Country3ID": 0,
+    "RiskID": 144,
+    "Status": 1,
+    "CustomText1": "",
+    "CustomText2": "",
+    "HandledByUserGroupID": 330,
+    "HandledByUserID": 524,
+    "ActionUserID": 524,
+    "Screen": false,
+    "ClientEntityIds": [
+      {
+        "IdType": 34
+      }
+    ],
+    "ClientEntityAliases": [],
+    "ReturnFormat": "Json"
+  }
+}

@@ -1,0 +1,34 @@
+{
+    "payload": {
+        "ConditionalPropertyTargetValue": 39879,
+        "ConditionalRiskScoreUnderrideValue": 0,
+        "ReturnFormat": "Json"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "ConditionalPropertyId": {
+                "type": "integer"
+            },
+            "ConditionalPropertyTargetValue": {
+                "type": "integer"
+            },
+            "ConditionalRiskScoreUnderrideValue": {
+                "type": "integer"
+            },
+            "Id": {
+                "type": "integer"
+            },
+            "PropertyId": {
+                "type": "integer"
+            }
+        },
+        "required": [
+            "ConditionalPropertyId",
+            "ConditionalPropertyTargetValue",
+            "ConditionalRiskScoreUnderrideValue",
+            "Id",
+            "PropertyId"
+        ]
+    }
+}

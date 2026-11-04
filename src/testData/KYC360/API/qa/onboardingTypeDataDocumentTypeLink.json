@@ -1,0 +1,55 @@
+{
+  "payload": {
+    "OnboardingTypeID": "695",
+    "ReturnFormat": "Json",
+    "ActionUserID":"512",
+    "DataDocumentTypeOrder":"0"
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "OnboardingTypeID": {
+        "type": "integer"
+      },
+      "OnboardingDataDocumentTypeID": {
+        "type": "integer"
+      },
+      "Mandatory": {
+        "type": "boolean"
+      },
+      "OnboardingTypeName": {
+        "type": "string"
+      },
+      "OnboardingTypeDescription": {
+        "type": "string"
+      },
+      "OnboardingDataDocumentTypeName": {
+        "type": "string"
+      },
+      "OnboardingDataDocumentTypeDescription": {
+        "type": "string"
+      },
+      "OnboardingDataDocumentTypeNotes": {
+        "type": "string"
+      },
+      "Hidden External": {
+        "type": "boolean"
+      },
+      "Order": {
+        "type": "integer"
+      }
+    },
+    "required": [
+      "OnboardingTypeID",
+      "OnboardingDataDocumentTypeID",
+      "Mandatory",
+      "OnboardingTypeName",
+      "OnboardingTypeDescription",
+      "OnboardingDataDocumentTypeName",
+      "OnboardingDataDocumentTypeDescription",
+      "OnboardingDataDocumentTypeNotes",
+      "Hidden External",
+      "Order"
+    ]
+  }
+}

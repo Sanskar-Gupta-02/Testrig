@@ -1,0 +1,192 @@
+{
+    "payload": {
+        "BusinessUnitID": 10,
+        "ClientProspectID": 606536,
+        "ClientOnboardingID": 340126,
+        "SubmissionID": 0,
+        "Phone": "1234567890",
+        "FirstName": "Idpal",
+        "LastName": "Submission",
+        "MaidenName": "Manual",
+        "Email": "testautomation+idpalmanualsubmission@kyc360.com",
+        "GenderID": 1,
+        "GenderName": "",
+        "DateOfBirth": "1997-05-21",
+        "CountryOfBirthID": "98",
+        "CountryOfBirth": "India",
+        "AddressLine1": "testrig1",
+        "AddressLine2": "testrig2",
+        "City": "Pune",
+        "County": "India",
+        "CountryID": "98",
+        "CountryName": "India",
+        "PostalCode": "411057",
+        "PassportExpiryDate": "2040-12-21",
+        "IDExpiryDate": "2040-12-12",
+        "OSType": "Windows",
+        "HardwareType": "Del",
+        "FreeMemory": "20gb",
+        "AvailableStorage": "50gb",
+        "ApprovalNotes": "Approved By Automation Team",
+        "SubmissionSource": 2,
+        "SubmissionStatus": 1,
+        "AddressVerificationResult": 1,
+        "IdDetectResult": 1,
+        "EVerificationDetails": "eVerification not done",
+        "EVerificationCustomField": "E-verification by Automation",
+        "ActionUserID": 521,
+        "LivenessTestResult": 1,
+        "ReturnFormat": "Json"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "BusinessUnitID": {
+                "type": "number"
+            },
+            "ClientProspectID": {
+                "type": "number"
+            },
+            "ClientOnboardingID": {
+                "type": "number"
+            },
+            "SubmissionID": {
+                "type": "number"
+            },
+            "Phone": {
+                "type": "string"
+            },
+            "FirstName": {
+                "type": "string"
+            },
+            "LastName": {
+                "type": "string"
+            },
+            "MaidenName": {
+                "type": "string"
+            },
+            "Email": {
+                "type": "string"
+            },
+            "GenderID": {
+                "type": "number"
+            },
+            "GenderName": {
+                "type": "string"
+            },
+            "DateOfBirth": {
+                "type": "string"
+            },
+            "CountryOfBirthID": {
+                "type": "number"
+            },
+            "CountryOfBirth": {
+                "type": "string"
+            },
+            "AddressLine1": {
+                "type": "string"
+            },
+            "AddressLine2": {
+                "type": "string"
+            },
+            "City": {
+                "type": "string"
+            },
+            "County": {
+                "type": "string"
+            },
+            "CountryID": {
+                "type": "number"
+            },
+            "CountryName": {
+                "type": "string"
+            },
+            "PostalCode": {
+                "type": "string"
+            },
+            "PassportExpiryDate": {
+                "type": "string"
+            },
+            "IDExpiryDate": {
+                "type": "string"
+            },
+            "OSType": {
+                "type": "string"
+            },
+            "HardwareType": {
+                "type": "string"
+            },
+            "FreeMemory": {
+                "type": "string"
+            },
+            "AvailableStorage": {
+                "type": "string"
+            },
+            "ApprovalNotes": {
+                "type": "string"
+            },
+            "SubmissionSource": {
+                "type": "number"
+            },
+            "SubmissionStatus": {
+                "type": "number"
+            },
+            "AddressVerificationResult": {
+                "type": "number"
+            },
+            "IdDetectResult": {
+                "type": "number"
+            },
+            "EVerificationDetails": {
+                "type": "string"
+            },
+            "EVerificationCustomField": {
+                "type": "string"
+            },
+            "LivenessTestResult": {
+                "type": "number"
+            },
+            "SubmissionDate": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "BusinessUnitID",
+            "ClientProspectID",
+            "ClientOnboardingID",
+            "SubmissionID",
+            "Phone",
+            "FirstName",
+            "LastName",
+            "MaidenName",
+            "Email",
+            "GenderID",
+            "GenderName",
+            "DateOfBirth",
+            "CountryOfBirthID",
+            "CountryOfBirth",
+            "AddressLine1",
+            "AddressLine2",
+            "City",
+            "County",
+            "CountryID",
+            "CountryName",
+            "PostalCode",
+            "PassportExpiryDate",
+            "IDExpiryDate",
+            "OSType",
+            "HardwareType",
+            "FreeMemory",
+            "AvailableStorage",
+            "ApprovalNotes",
+            "SubmissionSource",
+            "SubmissionStatus",
+            "AddressVerificationResult",
+            "IdDetectResult",
+            "EVerificationDetails",
+            "EVerificationCustomField",
+            "LivenessTestResult",
+            "SubmissionDate"
+        ]
+    }
+}

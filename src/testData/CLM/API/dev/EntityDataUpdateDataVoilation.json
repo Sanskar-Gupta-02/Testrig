@@ -1,0 +1,62 @@
+{
+    "payload": {
+        "fields": [
+            {
+                "value": "New Test API2",
+                "key": "entity.metadata.entityName"
+            },
+            {
+                "value": "END_CLIENT",
+                "key": "entity.metadata.entityRole"
+            },
+            {
+                "value": true,
+                "key": "entity.entitymetadatacustom.booleandata"
+            },
+            {
+                "value": "2025-06-25",
+                "key": "entity.entitymetadatacustom.datedata"
+            },
+            {
+                "value": "2000.00",
+                "key": "entity.entitymetadatacustom.decimaldata"
+            },
+            {
+                "value": "2000",
+                "key": "entity.entitymetadatacustom.integerdata"
+            },
+            {
+                "value": "https://google.com",
+                "key": "entity.entitymetadatacustom.linksdata"
+            },
+            {
+                "value": "iteam6",
+                "key": "entity.entitymetadatacustom.listdata"
+            },
+            {
+                "value": "test12",
+                "key": "entity.entitymetadatacustom.stringdata"
+            },
+            {
+                "value": "test  345",
+                "key": "entity.entitymetadatacustom.textdata"
+            },
+            {
+                "value": "test@",
+                "key": "entity.entitymetadatacustom.emaildata"
+            },
+            {
+                "value": "A1B2C3jdkashf3347$%$llkld",
+                "key": "entity.entitymetadatacustom.giindata"
+            },
+            {
+                "value": "2345789234878324687362874687327648936248934653246",
+                "key": "entity.entitymetadatacustom.tindata"
+            },
+            {
+                "value": "2025-06-25",
+                "key": "entity.entitymetadatacustom.dateofbirthdata"
+            }
+        ]
+    }
+}

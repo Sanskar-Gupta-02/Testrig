@@ -1,0 +1,73 @@
+{
+    "schema": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "string"
+            },
+            "period": {
+                "type": "object",
+                "properties": {
+                    "start": {
+                        "type": "string"
+                    },
+                    "end": {
+                        "type": ["string", "null"]
+                    }
+                },
+                "required": [
+                    "start",
+                    "end"
+                ]
+            },
+            "relationshipType": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "name"
+                ]
+            },
+            "sourceEntity": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "id",
+                    "name"
+                ]
+            },
+            "targetEntity": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "id",
+                    "name"
+                ]
+            }
+        },
+        "required": [
+            "id",
+            "period",
+            "relationshipType",
+            "sourceEntity",
+            "targetEntity"
+        ]
+    }
+}

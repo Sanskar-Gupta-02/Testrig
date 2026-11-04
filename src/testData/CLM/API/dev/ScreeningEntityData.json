@@ -1,0 +1,15 @@
+{
+    "payload": {
+        "entityTypeId": "<CLM_SCREENING_ENTITY_TYPE_ID>",
+        "fields": [
+            {
+                "value": "Screening Submit Automation",
+                "key": "entity.metadata.entityName"
+            },
+            {
+                "value": "END_CLIENT",
+                "key": "entity.metadata.entityRole"
+            }
+        ]
+    }
+}

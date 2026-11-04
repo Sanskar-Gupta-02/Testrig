@@ -1,0 +1,195 @@
+{
+    "payload": {
+        "BusinessUnitID": "10",
+        "ClientProspectID": "",
+        "ClientOnboardingID": "",
+        "OnboardingStageID": "",
+        "StageDate": "",
+        "STPNotes": "Auto-STP",
+        "HandlerNotes": "Auto-Handler",
+        "HandlerUserID": "521",
+        "HandlerAuthorisationStatus": "1",
+        "HandlerAuthorisationDate": "",
+        "Supervisor1UserID": "547",
+        "Supervisor1AuthorisationStatus": "1",
+        "Supervisor1AuthorisationDate": "",
+        "Supervisor1Notes": "Auto-Supervisor1",
+        "Supervisor2UserID": "547",
+        "Supervisor2AuthorisationStatus": "1",
+        "Supervisor2AuthorisationDate": "",
+        "Supervisor2Notes": "Auto-Supervisor2",
+        "Manager1UserID": "532",
+        "Manager1AuthorisationStatus": "0",
+        "Manager1AuthorisationDate": "",
+        "Manager1Notes": "Auto-Manager1",
+        "Manager2UserID": "532",
+        "Manager2AuthorisationStatus": "0",
+        "Manager2AuthorisationDate": "",
+        "Manager2Notes": "Auto-Manager2",
+        "DirectorUserID": "531",
+        "DirectorAuthorisationStatus": "0",
+        "DirectorAuthorisationDate": "",
+        "DirectorNotes": "Auto-Director",
+        "ActionUserID": "521",
+        "ReturnFormat": "Json"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "BusinessUnitID": {
+                "type": "integer"
+            },
+            "ClientProspectID": {
+                "type": "integer"
+            },
+            "ClientOnboardingID": {
+                "type": "integer"
+            },
+            "OnboardingStageID": {
+                "type": "integer"
+            },
+            "StageDate": {
+                "type": "string"
+            },
+            "STPNotes": {
+                "type": "string"
+            },
+            "STPAuthorisationDate": {
+                "type": "null"
+            },
+            "HandlerNotes": {
+                "type": "string"
+            },
+            "HandlerUserID": {
+                "type": "integer"
+            },
+            "HandlerAuthorisationStatus": {
+                "type": "integer"
+            },
+            "HandlerAuthorisationDate": {
+                "type": "string"
+            },
+            "Supervisor1UserID": {
+                "type": "integer"
+            },
+            "Supervisor1UserName": {
+                "type": "string"
+            },
+            "Supervisor1AuthorisationStatus": {
+                "type": "integer"
+            },
+            "Supervisor1AuthorisationDate": {
+                "type": "string"
+            },
+            "Supervisor1Notes": {
+                "type": "string"
+            },
+            "Supervisor2UserID": {
+                "type": "integer"
+            },
+            "Supervisor2UserName": {
+                "type": "string"
+            },
+            "Supervisor2AuthorisationStatus": {
+                "type": "integer"
+            },
+            "Supervisor2AuthorisationDate": {
+                "type": "string"
+            },
+            "Supervisor2Notes": {
+                "type": "string"
+            },
+            "Manager1UserID": {
+                "type": "integer"
+            },
+            "Manager1UserName": {
+                "type": "string"
+            },
+            "Manager1AuthorisationStatus": {
+                "type": "integer"
+            },
+            "Manager1AuthorisationDate": {
+                "type": "string"
+            },
+            "Manager1Notes": {
+                "type": "string"
+            },
+            "Manager2UserID": {
+                "type": "integer"
+            },
+            "Manager2UserName": {
+                "type": "string"
+            },
+            "Manager2AuthorisationStatus": {
+                "type": "integer"
+            },
+            "Manager2AuthorisationDate": {
+                "type": "string"
+            },
+            "Manager2Notes": {
+                "type": "string"
+            },
+            "DirectorUserID": {
+                "type": "integer"
+            },
+            "DirectorUserName": {
+                "type": "string"
+            },
+            "DirectorAuthorisationStatus": {
+                "type": "integer"
+            },
+            "DirectorAuthorisationDate": {
+                "type": "string"
+            },
+            "DirectorNotes": {
+                "type": "string"
+            },
+            "UniqueID": {
+                "type": "integer"
+            },
+            "HandlerUserName": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "BusinessUnitID",
+            "ClientProspectID",
+            "ClientOnboardingID",
+            "OnboardingStageID",
+            "StageDate",
+            "STPNotes",
+            "STPAuthorisationDate",
+            "HandlerNotes",
+            "HandlerUserID",
+            "HandlerAuthorisationStatus",
+            "HandlerAuthorisationDate",
+            "Supervisor1UserID",
+            "Supervisor1UserName",
+            "Supervisor1AuthorisationStatus",
+            "Supervisor1AuthorisationDate",
+            "Supervisor1Notes",
+            "Supervisor2UserID",
+            "Supervisor2UserName",
+            "Supervisor2AuthorisationStatus",
+            "Supervisor2AuthorisationDate",
+            "Supervisor2Notes",
+            "Manager1UserID",
+            "Manager1UserName",
+            "Manager1AuthorisationStatus",
+            "Manager1AuthorisationDate",
+            "Manager1Notes",
+            "Manager2UserID",
+            "Manager2UserName",
+            "Manager2AuthorisationStatus",
+            "Manager2AuthorisationDate",
+            "Manager2Notes",
+            "DirectorUserID",
+            "DirectorUserName",
+            "DirectorAuthorisationStatus",
+            "DirectorAuthorisationDate",
+            "DirectorNotes",
+            "UniqueID",
+            "HandlerUserName"
+        ]
+    }
+}

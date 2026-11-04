@@ -1,0 +1,34 @@
+{
+    "payload": {},
+    "schema": {
+        "minItems": 1,
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "MatchDiscountCategoryID": {
+                    "type": "number"
+                },
+                "Name": {
+                    "type": "string"
+                },
+                "Description": {
+                    "type": "string"
+                },
+                "RequireReason": {
+                    "type": "boolean"
+                },
+                "Grouping": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "MatchDiscountCategoryID",
+                "Name",
+                "Description",
+                "RequireReason",
+                "Grouping"
+            ]
+        }
+    }
+}

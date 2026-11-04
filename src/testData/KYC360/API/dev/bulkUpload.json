@@ -1,0 +1,58 @@
+{
+    "payload": {
+        "BusinessUnitID": "26",
+        "SearchTerm": "",
+        "SearchOn": "",
+        "Status": "0",
+        "ReturnFormat": "Json"
+    },
+    "schema": {
+        "type": "array",
+        "minItems": 1,
+        "items": [
+            {
+                "type": "object",
+                "properties": {
+                    "BusinessUnitID": {
+                        "type": "integer"
+                    },
+                    "Reference": {
+                        "type": "string"
+                    },
+                    "FileName": {
+                        "type": "string"
+                    },
+                    "RequestedOn": {
+                        "type": "string"
+                    },
+                    "Status": {
+                        "type": "integer"
+                    },
+                    "PendingRows": {
+                        "type": "integer"
+                    },
+                    "SuccessfulRows": {
+                        "type": "integer"
+                    },
+                    "FailedRows": {
+                        "type": "integer"
+                    },
+                    "Type": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "BusinessUnitID",
+                    "Reference",
+                    "FileName",
+                    "RequestedOn",
+                    "Status",
+                    "PendingRows",
+                    "SuccessfulRows",
+                    "FailedRows",
+                    "Type"
+                ]
+            }
+        ]
+    }
+}

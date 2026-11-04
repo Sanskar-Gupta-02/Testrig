@@ -1,0 +1,43 @@
+{
+    "payload": {
+        "entityTypeId": "<CLM_ENTITY_TYPE_ID>",
+        "fields": [
+            {
+                "value": "New Test API2",
+                "key": "entity.metadata.nickname"
+            },
+            {
+                "value": "test 1",
+                "key": "entity.metadata.description"
+            },
+            {
+                "value": true,
+                "key": "entity.entitymetadatacustom.booleandata"
+            },
+            {
+                "value": "20.00",
+                "key": "entity.entitymetadatacustom.decimaldata"
+            },
+            {
+                "value": "test",
+                "key": "entity.entitymetadatacustom.textdata"
+            },
+            {
+                "value": "test@gmail.com",
+                "key": "entity.entitymetadatacustom.emaildata"
+            },
+            {
+                "value": "A1B2C3.DEF45.ME.000",
+                "key": "entity.entitymetadatacustom.giindata"
+            },
+            {
+                "value": "23456",
+                "key": "entity.entitymetadatacustom.tindata"
+            },
+            {
+                "value": "2025-06-25",
+                "key": "entity.entitymetadatacustom.dateofbirthdata"
+            }
+        ]
+    }
+}

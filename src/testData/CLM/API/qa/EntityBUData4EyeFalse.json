@@ -1,0 +1,58 @@
+{
+    "payload": {
+        "skipFourEyes": false,
+        "workflow": {
+            "comment": "test"
+        },
+        "fields": [
+            {
+                "value": true,
+                "key": "bu.data.4eyeenable.booleandata"
+            },
+            {
+                "value": "2025-06-25",
+                "key": "bu.data.4eyeenable.datedata"
+            },
+            {
+                "value": "20.00",
+                "key": "bu.data.4eyeenable.decimaldata"
+            },
+            {
+                "value": "20",
+                "key": "bu.data.4eyeenable.integerdata"
+            },
+            {
+                "value": "https://dev-clm.kyc360.com",
+                "key": "bu.data.4eyeenable.linksdata"
+            },
+            {
+                "value": "item1",
+                "key": "bu.data.4eyeenable.listdata"
+            },
+            {
+                "value": "test",
+                "key": "bu.data.4eyeenable.stringdata"
+            },
+            {
+                "value": "test",
+                "key": "bu.data.4eyeenable.textdata"
+            },
+            {
+                "value": "test@gmail.com",
+                "key": "bu.data.4eyeenable.emaildata"
+            },
+            {
+                "value": "A1B2C3.DEF45.ME.000",
+                "key": "bu.data.4eyeenable.giindata"
+            },
+            {
+                "value": "23456",
+                "key": "bu.data.4eyeenable.tindata"
+            },
+            {
+                "value": "2025-06-25",
+                "key": "bu.data.4eyeenable.dateofbirthdata"
+            }
+        ]
+    }
+}

@@ -1,0 +1,50 @@
+{
+  "payload": {
+    "BusinessUnitID": 10,
+    "InterfaceReference": "IMO_TEST_105",
+    "LastName": "TEST VESSEL",
+    "FirstName": "",
+    "MiddleName": "",
+    "CriteriaID": 203,
+    "GenderID": 9,
+    "Country1ID": 0,
+    "Country2ID": 0,
+    "Country3ID": 0,
+    "RiskID": 144,
+    "Status": 1,
+    "CustomText1": "",
+    "CustomText2": "",
+    "HandledByUserGroupID": 330,
+    "HandledByUserID": 524,
+    "ActionUserID": 524,
+    "Screen": false,
+    "ClientEntityIds": [
+      {
+        "IdType": 34,
+        "IdValue": "9292204"
+      },
+      {
+        "IdType": 470,
+        "IdValue": "8405"
+      },
+      {
+        "IdType": 18,
+        "IdValue": "87052"
+      },
+      {
+        "IdType": 467,
+        "IdValue": "34453"
+      },
+      {
+        "IdType": 445,
+        "IdValue": "RUS2192"
+      },
+      {
+        "IdType": 4,
+        "IdValue": "461000219"
+      }
+    ],
+    "ClientEntityAliases": [],
+    "ReturnFormat": "Json"
+  }
+}

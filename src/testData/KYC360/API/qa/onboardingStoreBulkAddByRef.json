@@ -1,0 +1,156 @@
+{
+    "payload": {
+        "BusinessUnitID": "10",
+        "ClientProspectID": "",
+        "ClientOnboardingID": "",
+        "ActionUserID": "521",
+        "ReturnFormat": "Json",
+        "DataCollectionData": [
+            {
+                "PropertyMappingReferenceID": "R11",
+                "PropertyDataValue": "BulkAdded",
+                "ListPropertyDataValueType": "0"
+            },
+            {
+                "PropertyMappingReferenceID": "R12",
+                "PropertyDataValue": "19",
+                "ListPropertyDataValueType": "0"
+            },
+            {
+                "PropertyMappingReferenceID": "R13",
+                "PropertyDataValue": "2.1",
+                "ListPropertyDataValueType": "0"
+            },
+            {
+                "PropertyMappingReferenceID": "R14",
+                "PropertyDataValue": "",
+                "ListPropertyDataValueType": "0"
+            },
+            {
+                "PropertyMappingReferenceID": "R15",
+                "PropertyDataValue": "Not Sure",
+                "ListPropertyDataValueType": "2"
+            }
+        ]
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "BusinessUnitID": {
+                "type": "integer"
+            },
+            "ClientProspectID": {
+                "type": "integer"
+            },
+            "ClientOnboardingID": {
+                "type": "integer"
+            },
+            "DataCollectionData": {
+                "type": "array",
+                "items": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "Message": {
+                                "type": "null"
+                            },
+                            "PropertyMappingReferenceID": {
+                                "type": "string"
+                            },
+                            "Status": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "Message",
+                            "PropertyMappingReferenceID",
+                            "Status"
+                        ]
+                    },
+                    {
+                        "type": "object",
+                        "properties": {
+                            "Message": {
+                                "type": "null"
+                            },
+                            "PropertyMappingReferenceID": {
+                                "type": "string"
+                            },
+                            "Status": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "Message",
+                            "PropertyMappingReferenceID",
+                            "Status"
+                        ]
+                    },
+                    {
+                        "type": "object",
+                        "properties": {
+                            "Message": {
+                                "type": "null"
+                            },
+                            "PropertyMappingReferenceID": {
+                                "type": "string"
+                            },
+                            "Status": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "Message",
+                            "PropertyMappingReferenceID",
+                            "Status"
+                        ]
+                    },
+                    {
+                        "type": "object",
+                        "properties": {
+                            "Message": {
+                                "type": "null"
+                            },
+                            "PropertyMappingReferenceID": {
+                                "type": "string"
+                            },
+                            "Status": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "Message",
+                            "PropertyMappingReferenceID",
+                            "Status"
+                        ]
+                    },
+                    {
+                        "type": "object",
+                        "properties": {
+                            "Message": {
+                                "type": "null"
+                            },
+                            "PropertyMappingReferenceID": {
+                                "type": "string"
+                            },
+                            "Status": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "Message",
+                            "PropertyMappingReferenceID",
+                            "Status"
+                        ]
+                    }
+                ]
+            }
+        },
+        "required": [
+            "BusinessUnitID",
+            "ClientProspectID",
+            "ClientOnboardingID",
+            "DataCollectionData"
+        ]
+    }
+}

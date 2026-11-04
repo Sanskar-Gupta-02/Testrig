@@ -1,0 +1,64 @@
+{
+    "schema": {
+        "type": "object",
+        "properties": {
+            "entityTypes": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "recordState": {
+                            "type": "integer"
+                        },
+                        "businessUnits": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "description",
+                        "recordState"
+                    ]
+                }
+            },
+            "totalCount": {
+                "type": "integer"
+            },
+            "page": {
+                "type": "integer"
+            },
+            "pageSize": {
+                "type": "integer"
+            },
+            "totalPages": {
+                "type": "integer"
+            }
+        },
+        "required": [
+            "entityTypes",
+            "totalCount",
+            "page",
+            "pageSize",
+            "totalPages"
+        ]
+    }
+}

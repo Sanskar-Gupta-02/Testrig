@@ -1,0 +1,86 @@
+{
+    "payload": {
+        "IncludeHeaderImage": "true",
+        "IncludeFooterImage": "true",
+        "IncludeCSS": "true",
+        "IncludeEmailBody": "true",
+        "ReturnFormat": "Json"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "EmailTemplate ID": {
+                "type": "number"
+            },
+            "Name": {
+                "type": "string"
+            },
+            "EmailSubject": {
+                "type": "string"
+            },
+            "Description": {
+                "type": "string"
+            },
+            "Header Image": {
+                "type": "array",
+                "items": {
+                    "type": "number"
+                }
+            },
+            "Footer Image": {
+                "type": "array",
+                "items": {
+                    "type": "number"
+                }
+            },
+            "CSS": {
+                "type": "string"
+            },
+            "ButtonLabel": {
+                "type": "string"
+            },
+            "EmailBody": {
+                "type": "string"
+            },
+            "FooterBody": {
+                "type": "string"
+            },
+            "EmailTemplateStatus": {
+                "type": "number"
+            },
+            "EmailTemplateType": {
+                "type": "number"
+            },
+            "VerificationEmailTemplate ID": {
+                "type": "number"
+            },
+            "BusinessUnitID": {
+                "type": "number"
+            },
+            "BusinessUnitName": {
+                "type": "string"
+            },
+            "Client ID": {
+                "type": "number"
+            }
+        },
+        "required": [
+            "EmailTemplate ID",
+            "Name",
+            "EmailSubject",
+            "Description",
+            "Header Image",
+            "Footer Image",
+            "CSS",
+            "ButtonLabel",
+            "EmailBody",
+            "FooterBody",
+            "EmailTemplateStatus",
+            "EmailTemplateType",
+            "VerificationEmailTemplate ID",
+            "BusinessUnitID",
+            "BusinessUnitName",
+            "Client ID"
+        ]
+    }
+}

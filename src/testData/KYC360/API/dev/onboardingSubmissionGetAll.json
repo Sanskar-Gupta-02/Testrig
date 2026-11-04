@@ -1,0 +1,158 @@
+{
+    "schema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "title": "Generated schema for Root",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "BusinessUnitID": {
+              "type": "number"
+            },
+            "ClientProspectID": {
+              "type": "number"
+            },
+            "ClientOnboardingID": {
+              "type": "number"
+            },
+            "SubmissionID": {
+              "type": "number"
+            },
+            "Phone": {
+              "type": "string"
+            },
+            "FirstName": {
+              "type": "string"
+            },
+            "LastName": {
+              "type": "string"
+            },
+            "MaidenName": {
+              "type": "string"
+            },
+            "Email": {
+              "type": "string"
+            },
+            "GenderID": {
+              "type": "number"
+            },
+            "GenderName": {
+              "type": "string"
+            },
+            "DateOfBirth": {
+              "type": "string"
+            },
+            "CountryOfBirthID": {
+              "type": "number"
+            },
+            "CountryOfBirth": {
+              "type": "string"
+            },
+            "AddressLine1": {
+              "type": "string"
+            },
+            "AddressLine2": {
+              "type": "string"
+            },
+            "City": {
+              "type": "string"
+            },
+            "County": {
+              "type": "string"
+            },
+            "CountryID": {
+              "type": "number"
+            },
+            "CountryName": {
+              "type": "string"
+            },
+            "PostalCode": {
+              "type": "string"
+            },
+            "PassportExpiryDate": {
+              "type": "string"
+            },
+            "IDExpiryDate": {
+              "type": "string"
+            },
+            "OSType": {
+              "type": "string"
+            },
+            "HardwareType": {
+              "type": "string"
+            },
+            "FreeMemory": {
+              "type": "string"
+            },
+            "AvailableStorage": {
+              "type": "string"
+            },
+            "ApprovalNotes": {
+              "type": "string"
+            },
+            "SubmissionSource": {
+              "type": "number"
+            },
+            "SubmissionStatus": {
+              "type": "number"
+            },
+            "AddressVerificationResult": {
+              "type": "number"
+            },
+            "IdDetectResult": {
+              "type": "number"
+            },
+            "EVerificationDetails": {
+              "type": "string"
+            },
+            "EVerificationCustomField": {
+              "type": "string"
+            },
+            "LivenessTestResult": {
+              "type": "number"
+            },
+            "SubmissionDate": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "BusinessUnitID",
+            "ClientProspectID",
+            "ClientOnboardingID",
+            "SubmissionID",
+            "Phone",
+            "FirstName",
+            "LastName",
+            "MaidenName",
+            "Email",
+            "GenderID",
+            "GenderName",
+            "DateOfBirth",
+            "CountryOfBirthID",
+            "CountryOfBirth",
+            "AddressLine1",
+            "AddressLine2",
+            "City",
+            "County",
+            "CountryID",
+            "CountryName",
+            "PostalCode",
+            "PassportExpiryDate",
+            "IDExpiryDate",
+            "OSType",
+            "HardwareType",
+            "FreeMemory",
+            "AvailableStorage",
+            "ApprovalNotes",
+            "SubmissionSource",
+            "SubmissionStatus",
+            "AddressVerificationResult",
+            "IdDetectResult",
+            "EVerificationDetails",
+            "EVerificationCustomField",
+            "LivenessTestResult",
+            "SubmissionDate"
+          ]
+        }
+      }
+}

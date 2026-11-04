@@ -1,0 +1,160 @@
+{
+    "payload": {
+        "BusinessUnitID": "10",
+        "IncludeDetailInResult": "true",
+        "InterfaceReference": "PlaywrightAutomation123",
+        "FirstName": "API",
+        "LastName": "AddedProspect",
+        "MiddleName": "",
+        "Email": "krunallute@riskscreen.com",
+        "MobilePhone": "1234567890",
+        "OnboardingTypeID": "695",
+        "ProspectStatus": "1",
+        "AllowManageProspect": "true",
+        "AllowKYBLookup": "true",
+        "UseDefaultEmail": "true",
+        "DateAdded": "2023-05-22",
+        "HandledByUserGroupID": "325",
+        "HandledByUserID": "521",
+        "HandledBySupervisorUserID": "547",
+        "HandledByManagerUserID": "532",
+        "HandledByDirectorUserID": "531",
+        "ActionUserID": "521",
+        "ReturnFormat": "Json"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "BusinessUnitID": {
+                "type": "integer"
+            },
+            "ClientProspectID": {
+                "type": "integer"
+            },
+            "InterfaceReference": {
+                "type": "string"
+            },
+            "LastName": {
+                "type": "string"
+            },
+            "FirstName": {
+                "type": "string"
+            },
+            "MiddleName": {
+                "type": "string"
+            },
+            "Email": {
+                "type": "string"
+            },
+            "MobilePhone": {
+                "type": "string"
+            },
+            "OnboardingTypeID": {
+                "type": "integer"
+            },
+            "ClientEntityID": {
+                "type": "integer"
+            },
+            "ProspectStatus": {
+                "type": "integer"
+            },
+            "AllowManageProspect": {
+                "type": "boolean"
+            },
+            "OriginClientProspectID": {
+                "type": "integer"
+            },
+            "AllowKYBLookup": {
+                "type": "boolean"
+            },
+            "UseDefaultEmail": {
+                "type": "boolean"
+            },
+            "DefaultEmailId": {
+                "type": "string"
+            },
+            "Imported": {
+                "type": "boolean"
+            },
+            "HandledByGroupID": {
+                "type": "integer"
+            },
+            "HandledByUserID": {
+                "type": "integer"
+            },
+            "ProspectAddedDate": {
+                "type": "string"
+            },
+            "OnboardingTypeName": {
+                "type": "string"
+            },
+            "HandledByUserGroupName": {
+                "type": "string"
+            },
+            "HandledByUserName": {
+                "type": "string"
+            },
+            "ClientEntityInterfaceReference": {
+                "type": "string"
+            },
+            "ClientName": {
+                "type": "string"
+            },
+            "HandledBySupervisorUserID": {
+                "type": "integer"
+            },
+            "HandledBySupervisorUserName": {
+                "type": "string"
+            },
+            "HandledByManagerUserID": {
+                "type": "integer"
+            },
+            "HandledByManagerUserName": {
+                "type": "string"
+            },
+            "HandledByDirectorUserID": {
+                "type": "integer"
+            },
+            "HandledByDirectorUserName": {
+                "type": "string"
+            },
+            "ProspectOnboardingTypeNames": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "BusinessUnitID",
+            "ClientProspectID",
+            "InterfaceReference",
+            "LastName",
+            "FirstName",
+            "MiddleName",
+            "Email",
+            "MobilePhone",
+            "OnboardingTypeID",
+            "ClientEntityID",
+            "ProspectStatus",
+            "AllowManageProspect",
+            "OriginClientProspectID",
+            "AllowKYBLookup",
+            "UseDefaultEmail",
+            "DefaultEmailId",
+            "Imported",
+            "HandledByGroupID",
+            "HandledByUserID",
+            "ProspectAddedDate",
+            "OnboardingTypeName",
+            "HandledByUserGroupName",
+            "HandledByUserName",
+            "ClientEntityInterfaceReference",
+            "ClientName",
+            "HandledBySupervisorUserID",
+            "HandledBySupervisorUserName",
+            "HandledByManagerUserID",
+            "HandledByManagerUserName",
+            "HandledByDirectorUserID",
+            "HandledByDirectorUserName",
+            "ProspectOnboardingTypeNames"
+        ]
+    }
+}

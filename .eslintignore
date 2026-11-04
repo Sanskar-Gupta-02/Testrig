@@ -1,0 +1,23 @@
+// .eslintignore
+
+# Playwright Specific
+node_modules/
+test-results/
+playwright-report
+summary.json
+report_merge.js
+addExtraTagToHtml.js
+
+# IDE - VSCode
+.vscode/*
+
+# System Files
+.DS_Store
+Thumbs.db
+{"mode":"full","isActive":false}
+
+# Docs files
+*_spec3.json
+
+#
+json-typings.d.rs

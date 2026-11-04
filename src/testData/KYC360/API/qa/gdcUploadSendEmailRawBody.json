@@ -1,0 +1,14 @@
+{
+    "payload": {
+        "OnboardingTypeDetailList": [
+            {
+                "OnboardingTypeID": 709,
+                "EmailTemplateID": 81
+            },
+            {
+                "OnboardingTypeID": 710,
+                "EmailTemplateID": 81
+            }
+        ]
+    }
+}

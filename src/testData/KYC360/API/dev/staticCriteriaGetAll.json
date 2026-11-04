@@ -1,0 +1,200 @@
+{
+    "payload": {
+        "Name": "New Environment Testing",
+        "Description": "Static Criteria Testing",
+        "LastNameBias": 0.75,
+        "FirstNameBias": 0.0,
+        "MiddleNameBias": 0.0,
+        "EntityTypeID": 1,
+        "EntityTypeName": "Person",
+        "ReverseSearch": true,
+        "UnconstrainedSearch": true,
+        "IsPEP": false,
+        "IsRCA": false,
+        "IsWBL": true,
+        "IsSAN": false,
+        "IsAVM": true,
+        "IsOTH": false,
+        "IsUNK": true,
+        "BumpDateExactMatch": 20,
+        "BumpDateMonthYearMatch": 30,
+        "BumpDateYearMatch": 20,
+        "BumpDateMonthMatch": 20,
+        "BumpCountryMatch": 20,
+        "IncludeEmptyMiddleNames": true,
+        "ExcludeDatesExceptExactMatch": true,
+        "ExcludeMatchesOutsideYearRange": 10,
+        "ExcludeMatchesCountryNoMatch": true,
+        "ExcludeCountryNoMatchIncludePEP": true,
+        "ExcludeCountryNoMatchIncludeSAN": true,
+        "ExcludeCountryNoMatchIncludeWBL": false,
+        "ActionUserID": 521,
+        "ReturnFormat": "Json"
+    },
+    "schema": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "CriteriaID": {
+                    "type": "number"
+                },
+                "Name": {
+                    "type": "string"
+                },
+                "Description": {
+                    "type": "string"
+                },
+                "LastNameBias": {
+                    "type": "number"
+                },
+                "FirstNameBias": {
+                    "type": "number"
+                },
+                "MiddleNameBias": {
+                    "type": "number"
+                },
+                "EntityTypeID": {
+                    "type": "number"
+                },
+                "EntityTypeName": {
+                    "type": "string"
+                },
+                "ReverseSearch": {
+                    "type": "boolean"
+                },
+                "Constrained": {
+                    "type": "boolean"
+                },
+                "IsPEP": {
+                    "type": "boolean"
+                },
+                "IsRCA": {
+                    "type": "boolean"
+                },
+                "IsWBL": {
+                    "type": "boolean"
+                },
+                "IsSAN": {
+                    "type": "boolean"
+                },
+                "IsAVM": {
+                    "type": "boolean"
+                },
+                "IsOTH": {
+                    "type": "boolean"
+                },
+                "IsUNK": {
+                    "type": "boolean"
+                },
+                "BumpDateExactMatch": {
+                    "type": "number"
+                },
+                "BumpDateMonthYearMatch": {
+                    "type": "number"
+                },
+                "BumpDateYearMatch": {
+                    "type": "number"
+                },
+                "BumpDateMonthMatch": {
+                    "type": "number"
+                },
+                "BumpCountryMatch": {
+                    "type": "number"
+                },
+                "IncludeEmptyMiddleNames": {
+                    "type": "boolean"
+                },
+                "ExcludeDatesExceptExactMatch": {
+                    "type": "boolean"
+                },
+                "ExcludeMatchesOutsideYearRange": {
+                    "type": "number"
+                },
+                "ExcludeMatchesCountryNoMatch": {
+                    "type": "boolean"
+                },
+                "ExcludeCountryNoMatchIncludePEP": {
+                    "type": "boolean"
+                },
+                "ExcludeCountryNoMatchIncludeSAN": {
+                    "type": "boolean"
+                },
+                "ExcludeCountryNoMatchIncludeWBL": {
+                    "type": "boolean"
+                },
+                "ScreeningListId": {
+                    "type": "number"
+                },
+                "ScreeningListName": {
+                    "type": "string"
+                },
+                "SingleNameScreening": {
+                    "type": "boolean"
+                },
+                "SingleNameContainmentBias": {
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "CriteriaNotifyEmail": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "FlagType": {
+                                "type": "number"
+                            },
+                            "FlagKey": {
+                                "type": "number"
+                            },
+                            "FlagValue": {
+                                "type": "boolean"
+                            }
+                        },
+                        "required": [
+                            "FlagType",
+                            "FlagKey",
+                            "FlagValue"
+                        ]
+                    }
+                }
+            },
+            "required": [
+                "CriteriaID",
+                "Name",
+                "Description",
+                "LastNameBias",
+                "FirstNameBias",
+                "MiddleNameBias",
+                "EntityTypeID",
+                "EntityTypeName",
+                "ReverseSearch",
+                "Constrained",
+                "IsPEP",
+                "IsRCA",
+                "IsWBL",
+                "IsSAN",
+                "IsAVM",
+                "IsOTH",
+                "IsUNK",
+                "BumpDateExactMatch",
+                "BumpDateMonthYearMatch",
+                "BumpDateYearMatch",
+                "BumpDateMonthMatch",
+                "BumpCountryMatch",
+                "IncludeEmptyMiddleNames",
+                "ExcludeDatesExceptExactMatch",
+                "ExcludeMatchesOutsideYearRange",
+                "ExcludeMatchesCountryNoMatch",
+                "ExcludeCountryNoMatchIncludePEP",
+                "ExcludeCountryNoMatchIncludeSAN",
+                "ExcludeCountryNoMatchIncludeWBL",
+                "ScreeningListId",
+                "ScreeningListName",
+                "SingleNameScreening"
+            ]
+        }
+    }
+}

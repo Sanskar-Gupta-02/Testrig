@@ -1,0 +1,24 @@
+{
+  "payload": [
+    {
+      "InterfaceReference": "QA_IMPORT_001",
+      "LastName": "TEST",
+      "FirstName": "ENTITY",
+      "MiddleName": "",
+      "CriteriaID": 203,
+      "AVMCriteriaID": 0,
+      "GenderID": 9,
+      "Date": "",
+      "Country1ID": 0,
+      "Country2ID": 0,
+      "Country3ID": 0,
+      "RiskID": 144,
+      "StatusID": 1,
+      "CustomText1": "",
+      "CustomText2": "",
+      "BusinessUnitID": 10,
+      "ParentEntityInterfaceReference": "",
+      "ClientEntityIdItems": []
+    }
+  ]
+}

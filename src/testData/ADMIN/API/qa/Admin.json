@@ -1,0 +1,28 @@
+{
+    "payload": {
+        "logTitle": "string",
+        "log": "string",
+        "tags": [
+            {
+                "category": "string",
+                "tag": "string"
+            }
+        ]
+    },
+    "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+            "id",
+            "email"
+        ],
+        "properties": {
+            "id": {
+                "type": "string"
+            },
+            "email": {
+                "type": "string"
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "schema": {
+        "type": "object",
+        "properties": {
+            "riskOutcomes": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "entityId": {
+                            "type": "string"
+                        },
+                        "entityTypeId": {
+                            "type": "string"
+                        },
+                        "businessUnitId": {
+                            "type": "string"
+                        },
+                        "riskModelId": {
+                            "type": "string"
+                        },
+                        "riskModelName": {
+                            "type": "string"
+                        },
+                        "score": {
+                            "type": "object",
+                            "properties": {
+                                "calculatedRiskValue": {
+                                    "type": "number"
+                                },
+                                "maxRiskValue": {
+                                    "type": "number"
+                                },
+                                "normalisedRiskLevelScore": {
+                                    "type": "number"
+                                },
+                                "riskLevel": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "calculatedRiskValue",
+                                "maxRiskValue",
+                                "normalisedRiskLevelScore",
+                                "riskLevel"
+                            ]
+                        },
+                        "period": {
+                            "type": "object",
+                            "properties": {
+                                "start": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "start"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "entityId",
+                        "entityTypeId",
+                        "businessUnitId",
+                        "riskModelId",
+                        "riskModelName",
+                        "score",
+                        "period"
+                    ]
+                }
+            }
+        },
+        "required": [
+            "riskOutcomes"
+        ]
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "typeRoots": ["./node_modules/@types", "src/Helper/types/"],
+        "types": ["node"],
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true
+    }
+}

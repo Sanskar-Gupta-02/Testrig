@@ -1,0 +1,109 @@
+{
+    "schema": {
+        "minItems": 1,
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "ProspectRelationshipID": {
+                    "type": "number"
+                },
+                "Name": {
+                    "type": "string"
+                },
+                "Description": {
+                    "type": "string"
+                },
+                "Value1Name": {
+                    "type": "string"
+                },
+                "Value2Name": {
+                    "type": "string"
+                },
+                "Value3Name": {
+                    "type": "string"
+                },
+                "Value4Name": {
+                    "type": "string"
+                },
+                "Value5Name": {
+                    "type": "string"
+                },
+                "Value6Name": {
+                    "type": "string"
+                },
+                "Value7Name": {
+                    "type": "string"
+                },
+                "Value1Decimals": {
+                    "type": "number"
+                },
+                "Value2Decimals": {
+                    "type": "number"
+                },
+                "Value3Decimals": {
+                    "type": "number"
+                },
+                "Value4Decimals": {
+                    "type": "number"
+                },
+                "Value5Decimals": {
+                    "type": "number"
+                },
+                "Value6Decimals": {
+                    "type": "number"
+                },
+                "Value7Decimals": {
+                    "type": "number"
+                },
+                "Value1Enabled": {
+                    "type": "boolean"
+                },
+                "Value2Enabled": {
+                    "type": "boolean"
+                },
+                "Value3Enabled": {
+                    "type": "boolean"
+                },
+                "Value4Enabled": {
+                    "type": "boolean"
+                },
+                "Value5Enabled": {
+                    "type": "boolean"
+                },
+                "Value6Enabled": {
+                    "type": "boolean"
+                },
+                "Value7Enabled": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "ProspectRelationshipID",
+                "Name",
+                "Description",
+                "Value1Name",
+                "Value2Name",
+                "Value3Name",
+                "Value4Name",
+                "Value5Name",
+                "Value6Name",
+                "Value7Name",
+                "Value1Decimals",
+                "Value2Decimals",
+                "Value3Decimals",
+                "Value4Decimals",
+                "Value5Decimals",
+                "Value6Decimals",
+                "Value7Decimals",
+                "Value1Enabled",
+                "Value2Enabled",
+                "Value3Enabled",
+                "Value4Enabled",
+                "Value5Enabled",
+                "Value6Enabled",
+                "Value7Enabled"
+            ]
+        }
+    }
+}

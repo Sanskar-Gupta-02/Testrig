@@ -1,0 +1,460 @@
+{
+  "schema": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "boolean"
+      },
+      "errors": {
+        "type": "null"
+      },
+      "providerName": {
+        "type": "string"
+      },
+      "providerReference": {
+        "type": "null"
+      },
+      "matching": {
+        "type": "object",
+        "properties": {
+          "matched": {
+            "type": "string"
+          },
+          "numberOfMatches": {
+            "type": "integer"
+          },
+          "bestMatchId": {
+            "type": "string"
+          },
+          "bestMatchLegalStatus": {
+            "type": "string"
+          },
+          "matchDetails": {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "matchType": {
+                    "type": "string"
+                  },
+                  "sourceCode": {
+                    "type": "string"
+                  },
+                  "sourceIdentifier": {
+                    "type": "string"
+                  },
+                  "score": {
+                    "type": "integer"
+                  },
+                  "tradingName": {
+                    "type": "null"
+                  },
+                  "tradingAddress1": {
+                    "type": "null"
+                  },
+                  "tradingAddress2": {
+                    "type": "null"
+                  },
+                  "tradingAddress3": {
+                    "type": "null"
+                  },
+                  "tradingAddress4": {
+                    "type": "null"
+                  },
+                  "tradingPostcode": {
+                    "type": "null"
+                  },
+                  "industrySector": {
+                    "type": "null"
+                  },
+                  "incorporationDate": {
+                    "type": "null"
+                  },
+                  "legalRegisteredNumber": {
+                    "type": "null"
+                  }
+                },
+                "required": [
+                  "matchType",
+                  "sourceCode",
+                  "sourceIdentifier",
+                  "score",
+                  "tradingName",
+                  "tradingAddress1",
+                  "tradingAddress2",
+                  "tradingAddress3",
+                  "tradingAddress4",
+                  "tradingPostcode",
+                  "industrySector",
+                  "incorporationDate",
+                  "legalRegisteredNumber"
+                ]
+              }
+            ]
+          }
+        },
+        "required": [
+          "matched",
+          "numberOfMatches",
+          "bestMatchId",
+          "bestMatchLegalStatus",
+          "matchDetails"
+        ]
+      },
+      "companyInformation": {
+        "type": "null"
+      },
+      "keyParties": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "shareholderType": {
+                "type": "integer"
+              },
+              "legalName": {
+                "type": "null"
+              },
+              "title": {
+                "type": "string"
+              },
+              "forename": {
+                "type": "string"
+              },
+              "middleName": {
+                "type": "string"
+              },
+              "surname": {
+                "type": "string"
+              },
+              "nationality": {
+                "type": "string"
+              },
+              "dateOfBirth": {
+                "type": "null"
+              },
+              "partialDateOfBirth": {
+                "type": "string"
+              },
+              "occupation": {
+                "type": "null"
+              },
+              "addressLine1": {
+                "type": "string"
+              },
+              "addressLine2": {
+                "type": "string"
+              },
+              "addressLine3": {
+                "type": "string"
+              },
+              "addressLine4": {
+                "type": "null"
+              },
+              "addressLine5": {
+                "type": "null"
+              },
+              "town": {
+                "type": "string"
+              },
+              "county": {
+                "type": "null"
+              },
+              "postcode": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string"
+              },
+              "countryOfResidence": {
+                "type": "string"
+              },
+              "countryIsoCode": {
+                "type": "string"
+              },
+              "countryOfResidenceIsoCode": {
+                "type": "string"
+              },
+              "uboShareholderId": {
+                "type": "null"
+              },
+              "uboPercentOfValue": {
+                "type": "null"
+              },
+              "uboPercentOfVotes": {
+                "type": "null"
+              },
+              "uboCompanyNumber": {
+                "type": "null"
+              },
+              "foreignAddressIndicator": {
+                "type": "null"
+              },
+              "legalStatusOfShareholder": {
+                "type": "null"
+              },
+              "jointPercentOfValue": {
+                "type": "null"
+              },
+              "jointPercentOfVotes": {
+                "type": "null"
+              },
+              "jointShareholderFlag": {
+                "type": "null"
+              },
+              "pscId": {
+                "type": "string"
+              },
+              "pscOwnership": {
+                "type": "string"
+              },
+              "pscVoting": {
+                "type": "string"
+              },
+              "pscNatureOfControl": {
+                "type": "string"
+              },
+              "directorUrn": {
+                "type": "string"
+              },
+              "directorAppointmentDate": {
+                "type": "string"
+              },
+              "directorOccupation": {
+                "type": "string"
+              },
+              "totalDirectorships": {
+                "type": "string"
+              },
+              "directorshipsCrns": {
+                "type": "string"
+              },
+              "directorshipLength": {
+                "type": "integer"
+              },
+              "directorForeignAddressFlag": {
+                "type": "string"
+              },
+              "directorConvictions": {
+                "type": "integer"
+              },
+              "role": {
+                "type": "integer"
+              },
+              "providedRole": {
+                "type": "null"
+              },
+              "position": {
+                "type": "null"
+              },
+              "isCorporate": {
+                "type": "null"
+              },
+              "startDate": {
+                "type": "null"
+              },
+              "endDate": {
+                "type": "null"
+              },
+              "status": {
+                "type": "null"
+              },
+              "uboFlag": {
+                "type": "null"
+              },
+              "pscFlag": {
+                "type": "string"
+              },
+              "directorFlag": {
+                "type": "string"
+              },
+              "lexisNexisSummary": {
+                "type": "null"
+              },
+              "crosscore": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "shareholderType",
+              "legalName",
+              "title",
+              "forename",
+              "middleName",
+              "surname",
+              "nationality",
+              "dateOfBirth",
+              "partialDateOfBirth",
+              "occupation",
+              "addressLine1",
+              "addressLine2",
+              "addressLine3",
+              "addressLine4",
+              "addressLine5",
+              "town",
+              "county",
+              "postcode",
+              "country",
+              "countryOfResidence",
+              "countryIsoCode",
+              "countryOfResidenceIsoCode",
+              "uboShareholderId",
+              "uboPercentOfValue",
+              "uboPercentOfVotes",
+              "uboCompanyNumber",
+              "foreignAddressIndicator",
+              "legalStatusOfShareholder",
+              "jointPercentOfValue",
+              "jointPercentOfVotes",
+              "jointShareholderFlag",
+              "pscId",
+              "pscOwnership",
+              "pscVoting",
+              "pscNatureOfControl",
+              "directorUrn",
+              "directorAppointmentDate",
+              "directorOccupation",
+              "totalDirectorships",
+              "directorshipsCrns",
+              "directorshipLength",
+              "directorForeignAddressFlag",
+              "directorConvictions",
+              "role",
+              "providedRole",
+              "position",
+              "isCorporate",
+              "startDate",
+              "endDate",
+              "status",
+              "uboFlag",
+              "pscFlag",
+              "directorFlag",
+              "lexisNexisSummary",
+              "crosscore"
+            ]
+          }
+        ]
+      },
+      "screeningResults": {
+        "type": "null"
+      },
+      "rawResponse": {
+        "type": "null"
+      },
+      "creditConsumptionFailed": {
+        "type": "boolean"
+      },
+      "creditError": {
+        "type": "null"
+      }
+    },
+    "required": [
+      "success",
+      "errors",
+      "providerName",
+      "providerReference",
+      "matching",
+      "companyInformation",
+      "keyParties",
+      "screeningResults",
+      "rawResponse",
+      "creditConsumptionFailed",
+      "creditError"
+    ]
+  },
+  "expectedData": {
+    "success": true,
+    "errors": null,
+    "providerName": "Experian",
+    "providerReference": null,
+    "matching": {
+      "matched": "yes",
+      "numberOfMatches": 1,
+      "bestMatchId": "12536912",
+      "bestMatchLegalStatus": "L",
+      "matchDetails": [
+        {
+          "matchType": "Full Match Dead",
+          "sourceCode": "104",
+          "sourceIdentifier": "12536912",
+          "score": 100,
+          "tradingName": null,
+          "tradingAddress1": null,
+          "tradingAddress2": null,
+          "tradingAddress3": null,
+          "tradingAddress4": null,
+          "tradingPostcode": null,
+          "industrySector": null,
+          "incorporationDate": null,
+          "legalRegisteredNumber": null
+        }
+      ]
+    },
+    "companyInformation": null,
+    "keyParties": [
+      {
+        "shareholderType": 1,
+        "legalName": null,
+        "title": "MRS",
+        "forename": "CLAIRE",
+        "middleName": "LOUISE",
+        "surname": "HEMMINGS",
+        "nationality": "BRITISH",
+        "dateOfBirth": null,
+        "partialDateOfBirth": "197508",
+        "occupation": null,
+        "addressLine1": "UNIT H2",
+        "addressLine2": "MAYLES LANE",
+        "addressLine3": "KNOWLE",
+        "addressLine4": null,
+        "addressLine5": null,
+        "town": "FAREHAM",
+        "county": null,
+        "postcode": "PO17 5DY",
+        "country": "ENGLAND",
+        "countryOfResidence": "ENGLAND",
+        "countryIsoCode": "GBR",
+        "countryOfResidenceIsoCode": "GBR",
+        "uboShareholderId": null,
+        "uboPercentOfValue": null,
+        "uboPercentOfVotes": null,
+        "uboCompanyNumber": null,
+        "foreignAddressIndicator": null,
+        "legalStatusOfShareholder": null,
+        "jointPercentOfValue": null,
+        "jointPercentOfVotes": null,
+        "jointShareholderFlag": null,
+        "pscId": "1",
+        "pscOwnership": "100",
+        "pscVoting": "100",
+        "pscNatureOfControl": "3,12,19",
+        "directorUrn": "D14999810",
+        "directorAppointmentDate": "20200327",
+        "directorOccupation": "DIRECTOR",
+        "totalDirectorships": "9",
+        "directorshipsCrns": "09115578, 14789252, 12752909, 12536912, 11992432, 12752344, 13397315, 11992439, 06934893",
+        "directorshipLength": 73,
+        "directorForeignAddressFlag": "NOT FOREIGN",
+        "directorConvictions": 0,
+        "role": 0,
+        "providedRole": null,
+        "position": null,
+        "isCorporate": null,
+        "startDate": null,
+        "endDate": null,
+        "status": null,
+        "uboFlag": null,
+        "pscFlag": "Y",
+        "directorFlag": "Y",
+        "lexisNexisSummary": null,
+        "crosscore": null
+      }
+    ],
+    "screeningResults": null,
+    "rawResponse": null,
+    "creditConsumptionFailed": false,
+    "creditError": null
+  }
+}

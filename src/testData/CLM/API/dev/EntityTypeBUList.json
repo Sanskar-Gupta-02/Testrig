@@ -1,0 +1,18 @@
+{
+    "expectedData": {
+        "businessUnits": [
+            {
+                "id": "<CLM_BU_4EYE_ID>"
+            },
+            {
+                "id": "<CLM_BU_AUTOMATION2_ID>"
+            },
+            {
+                "id": "<CLM_BU_AUTOMATION_ID>"
+            },
+            {
+                "id": "00000000-0000-0000-0000-000000000001"
+            }
+        ]
+    }
+}

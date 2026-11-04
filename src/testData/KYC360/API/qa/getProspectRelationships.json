@@ -1,0 +1,359 @@
+{
+    "payload": {},
+    "schema": {
+        "type": "array",
+        "minItems": 1,
+        "items": [
+            {
+                "type": "object",
+                "properties": {
+                    "ClientProspectGroupID": {
+                        "type": "integer"
+                    },
+                    "ClientProspectID": {
+                        "type": "integer"
+                    },
+                    "ProspectRelationshipID": {
+                        "type": "integer"
+                    },
+                    "ProspectRelationshipName": {
+                        "type": "string"
+                    },
+                    "ParentClientProspectID": {
+                        "type": "integer"
+                    },
+                    "ParentUniqueID": {
+                        "type": "integer"
+                    },
+                    "OriginClientProspectID": {
+                        "type": "integer"
+                    },
+                    "UniqueID": {
+                        "type": "integer"
+                    },
+                    "UBOOwnershipPercentage": {
+                        "type": "integer"
+                    },
+                    "DirectOwnershipPercentage": {
+                        "type": "integer"
+                    },
+                    "Value1": {
+                        "type": "number"
+                    },
+                    "Value2": {
+                        "type": "number"
+                    },
+                    "Value3": {
+                        "type": "number"
+                    },
+                    "Value4": {
+                        "type": "number"
+                    },
+                    "Value5": {
+                        "type": "number"
+                    },
+                    "Value6": {
+                        "type": "number"
+                    },
+                    "Value7": {
+                        "type": "number"
+                    },
+                    "Value1Name": {
+                        "type": "string"
+                    },
+                    "Value2Name": {
+                        "type": "string"
+                    },
+                    "Value3Name": {
+                        "type": "string"
+                    },
+                    "Value4Name": {
+                        "type": "string"
+                    },
+                    "Value5Name": {
+                        "type": "string"
+                    },
+                    "Value6Name": {
+                        "type": "string"
+                    },
+                    "Value7Name": {
+                        "type": "string"
+                    },
+                    "Value1Formatted": {
+                        "type": "string"
+                    },
+                    "Value2Formatted": {
+                        "type": "string"
+                    },
+                    "Value3Formatted": {
+                        "type": "string"
+                    },
+                    "Value4Formatted": {
+                        "type": "string"
+                    },
+                    "Value5Formatted": {
+                        "type": "string"
+                    },
+                    "Value6Formatted": {
+                        "type": "string"
+                    },
+                    "Value7Formatted": {
+                        "type": "string"
+                    },
+                    "Value1Enabled": {
+                        "type": "boolean"
+                    },
+                    "Value2Enabled": {
+                        "type": "boolean"
+                    },
+                    "Value3Enabled": {
+                        "type": "boolean"
+                    },
+                    "Value4Enabled": {
+                        "type": "boolean"
+                    },
+                    "Value5Enabled": {
+                        "type": "boolean"
+                    },
+                    "Value6Enabled": {
+                        "type": "boolean"
+                    },
+                    "Value7Enabled": {
+                        "type": "boolean"
+                    },
+                    "ClientID": {
+                        "type": "integer"
+                    },
+                    "ClientName": {
+                        "type": "string"
+                    },
+                    "BusinessUnitID": {
+                        "type": "integer"
+                    },
+                    "BusinessUnitName": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "ClientProspectGroupID",
+                    "ClientProspectID",
+                    "ProspectRelationshipID",
+                    "ProspectRelationshipName",
+                    "ParentClientProspectID",
+                    "ParentUniqueID",
+                    "OriginClientProspectID",
+                    "UniqueID",
+                    "UBOOwnershipPercentage",
+                    "DirectOwnershipPercentage",
+                    "Value1",
+                    "Value2",
+                    "Value3",
+                    "Value4",
+                    "Value5",
+                    "Value6",
+                    "Value7",
+                    "Value1Name",
+                    "Value2Name",
+                    "Value3Name",
+                    "Value4Name",
+                    "Value5Name",
+                    "Value6Name",
+                    "Value7Name",
+                    "Value1Formatted",
+                    "Value2Formatted",
+                    "Value3Formatted",
+                    "Value4Formatted",
+                    "Value5Formatted",
+                    "Value6Formatted",
+                    "Value7Formatted",
+                    "Value1Enabled",
+                    "Value2Enabled",
+                    "Value3Enabled",
+                    "Value4Enabled",
+                    "Value5Enabled",
+                    "Value6Enabled",
+                    "Value7Enabled",
+                    "ClientID",
+                    "ClientName",
+                    "BusinessUnitID",
+                    "BusinessUnitName"
+                ]
+            },
+            {
+                "type": "object",
+                "properties": {
+                    "ClientProspectGroupID": {
+                        "type": "integer"
+                    },
+                    "ClientProspectID": {
+                        "type": "integer"
+                    },
+                    "ProspectRelationshipID": {
+                        "type": "integer"
+                    },
+                    "ProspectRelationshipName": {
+                        "type": "string"
+                    },
+                    "ParentClientProspectID": {
+                        "type": "integer"
+                    },
+                    "ParentUniqueID": {
+                        "type": "integer"
+                    },
+                    "OriginClientProspectID": {
+                        "type": "integer"
+                    },
+                    "UniqueID": {
+                        "type": "integer"
+                    },
+                    "UBOOwnershipPercentage": {
+                        "type": "integer"
+                    },
+                    "DirectOwnershipPercentage": {
+                        "type": "integer"
+                    },
+                    "Value1": {
+                        "type": "number"
+                    },
+                    "Value2": {
+                        "type": "number"
+                    },
+                    "Value3": {
+                        "type": "number"
+                    },
+                    "Value4": {
+                        "type": "number"
+                    },
+                    "Value5": {
+                        "type": "number"
+                    },
+                    "Value6": {
+                        "type": "number"
+                    },
+                    "Value7": {
+                        "type": "number"
+                    },
+                    "Value1Name": {
+                        "type": "string"
+                    },
+                    "Value2Name": {
+                        "type": "string"
+                    },
+                    "Value3Name": {
+                        "type": "string"
+                    },
+                    "Value4Name": {
+                        "type": "string"
+                    },
+                    "Value5Name": {
+                        "type": "string"
+                    },
+                    "Value6Name": {
+                        "type": "string"
+                    },
+                    "Value7Name": {
+                        "type": "string"
+                    },
+                    "Value1Formatted": {
+                        "type": "string"
+                    },
+                    "Value2Formatted": {
+                        "type": "string"
+                    },
+                    "Value3Formatted": {
+                        "type": "string"
+                    },
+                    "Value4Formatted": {
+                        "type": "string"
+                    },
+                    "Value5Formatted": {
+                        "type": "string"
+                    },
+                    "Value6Formatted": {
+                        "type": "string"
+                    },
+                    "Value7Formatted": {
+                        "type": "string"
+                    },
+                    "Value1Enabled": {
+                        "type": "boolean"
+                    },
+                    "Value2Enabled": {
+                        "type": "boolean"
+                    },
+                    "Value3Enabled": {
+                        "type": "boolean"
+                    },
+                    "Value4Enabled": {
+                        "type": "boolean"
+                    },
+                    "Value5Enabled": {
+                        "type": "boolean"
+                    },
+                    "Value6Enabled": {
+                        "type": "boolean"
+                    },
+                    "Value7Enabled": {
+                        "type": "boolean"
+                    },
+                    "ClientID": {
+                        "type": "integer"
+                    },
+                    "ClientName": {
+                        "type": "string"
+                    },
+                    "BusinessUnitID": {
+                        "type": "integer"
+                    },
+                    "BusinessUnitName": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "ClientProspectGroupID",
+                    "ClientProspectID",
+                    "ProspectRelationshipID",
+                    "ProspectRelationshipName",
+                    "ParentClientProspectID",
+                    "ParentUniqueID",
+                    "OriginClientProspectID",
+                    "UniqueID",
+                    "UBOOwnershipPercentage",
+                    "DirectOwnershipPercentage",
+                    "Value1",
+                    "Value2",
+                    "Value3",
+                    "Value4",
+                    "Value5",
+                    "Value6",
+                    "Value7",
+                    "Value1Name",
+                    "Value2Name",
+                    "Value3Name",
+                    "Value4Name",
+                    "Value5Name",
+                    "Value6Name",
+                    "Value7Name",
+                    "Value1Formatted",
+                    "Value2Formatted",
+                    "Value3Formatted",
+                    "Value4Formatted",
+                    "Value5Formatted",
+                    "Value6Formatted",
+                    "Value7Formatted",
+                    "Value1Enabled",
+                    "Value2Enabled",
+                    "Value3Enabled",
+                    "Value4Enabled",
+                    "Value5Enabled",
+                    "Value6Enabled",
+                    "Value7Enabled",
+                    "ClientID",
+                    "ClientName",
+                    "BusinessUnitID",
+                    "BusinessUnitName"
+                ]
+            }
+        ]
+    }
+}

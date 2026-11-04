@@ -1,0 +1,17 @@
+{
+    "payload": {
+        "BusinessUnitID": "10",
+        "ActionUserID": "521",
+        "SendEmailLinkTo": "krunallute@riskscreen.com",
+        "ReturnFormat": "Json"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "DataRequestLink": {
+                "type": "string"
+            }
+        },
+        "required": ["DataRequestLink"]
+    }
+}

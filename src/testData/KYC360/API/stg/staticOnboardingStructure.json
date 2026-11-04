@@ -1,0 +1,246 @@
+{
+  "payload": {
+    "Hidden": "false",
+    "Responsive": "0",
+    "RequiredField": "true",
+    "RiskDefaultValue": "",
+    "WeightedRiskDefaultValue": "",
+    "RiskWeightPercent": "1",
+    "RiskFactorOverride": "false",
+    "RiskFactorOverrideValue": "1",
+    "ListFilterOption": "0",
+    "ScreeningID": "0",
+    "DecimalDigits": "2",
+    "EnabledForRisk": "false",
+    "KYBPropertyTypeID": "0",
+    "DecimalSymbol": "1",
+    "ActionUserID": "521",
+    "ReturnFormat": "Json",
+    "ColumnSpan": "1",
+    "RowSpan": "1",
+    "OnboardingPropertyNotes": "auto test",
+    "TextMinimumSize": "1",
+    "TextMaximumSize": "100",
+    "TextDefaultValue": "",
+    "OnboardingTypeIDs": "465,457"
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "OnboardingTypeID": {
+        "type": "integer"
+      },
+      "OnboardingPropertyGroupID": {
+        "type": "integer"
+      },
+      "OnboardingPropertyID": {
+        "type": "integer"
+      },
+      "OnboardingTypeName": {
+        "type": "string"
+      },
+      "OnboardingTypeDescription": {
+        "type": "string"
+      },
+      "OnboardingPropertyGroupName": {
+        "type": "string"
+      },
+      "OnboardingPropertyGroupDescription": {
+        "type": "string"
+      },
+      "OnboardingPropertyGroupNotes": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "OnboardingPropertyName": {
+        "type": "string"
+      },
+      "OnboardingPropertyDescription": {
+        "type": "string"
+      },
+      "OnboardingPropertyNotes": {
+        "type": "string"
+      },
+      "PropertyOrder": {
+        "type": "integer"
+      },
+      "RequiredField": {
+        "type": "boolean"
+      },
+      "StoreID": {
+        "type": "integer"
+      },
+      "ScreeningID": {
+        "type": "integer"
+      },
+      "DefaultListDataID": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "TextDefaultValue": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "IntegerDefaultValue": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "DecimalDefaultValue": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "RiskDefaultValue": {
+        "type": "null"
+      },
+      "WeightedRiskDefaultValue": {
+        "type": "null"
+      },
+      "RiskWeightPercent": {
+        "type": "integer"
+      },
+      "RiskFactorOverride": {
+        "type": "boolean"
+      },
+      "RiskFactorOverrideValue": {
+        "type": "integer"
+      },
+      "ListFilterOption": {
+        "type": "integer"
+      },
+      "ListGroupID": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "ListGroupName": {
+        "type": "string"
+      },
+      "TextMinimumSize": {
+        "type": "integer"
+      },
+      "TextMaximumSize": {
+        "type": "integer"
+      },
+      "IntegerMinimumValue": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "IntegerMaximumValue": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "DecimalMinimumValue": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "DecimalMaximumValue": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "DecimalDigits": {
+        "type": "integer"
+      },
+      "DecimalSymbol": {
+        "type": "string"
+      },
+      "DateMinimumValue": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "DateMaximumValue": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "EnabledForRisk": {
+        "type": "boolean"
+      },
+      "KYBPropertyTypeID": {
+        "type": "integer"
+      },
+      "Hidden": {
+        "type": "boolean"
+      },
+      "ColumnSpan": {
+        "type": "integer"
+      },
+      "Responsive": {
+        "type": "integer"
+      },
+      "RowSpan": {
+        "type": "integer"
+      },
+      "ReferenceID": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "OnboardingTypeID",
+      "OnboardingPropertyGroupID",
+      "OnboardingPropertyID",
+      "OnboardingTypeName",
+      "OnboardingTypeDescription",
+      "OnboardingPropertyGroupName",
+      "OnboardingPropertyGroupDescription",
+      "OnboardingPropertyGroupNotes",
+      "OnboardingPropertyName",
+      "OnboardingPropertyDescription",
+      "OnboardingPropertyNotes",
+      "PropertyOrder",
+      "RequiredField",
+      "StoreID",
+      "ScreeningID",
+      "DefaultListDataID",
+      "TextDefaultValue",
+      "IntegerDefaultValue",
+      "DecimalDefaultValue",
+      "RiskDefaultValue",
+      "WeightedRiskDefaultValue",
+      "RiskWeightPercent",
+      "RiskFactorOverride",
+      "RiskFactorOverrideValue",
+      "ListFilterOption",
+      "ListGroupID",
+      "ListGroupName",
+      "TextMinimumSize",
+      "TextMaximumSize",
+      "IntegerMinimumValue",
+      "IntegerMaximumValue",
+      "DecimalMinimumValue",
+      "DecimalMaximumValue",
+      "DecimalDigits",
+      "DecimalSymbol",
+      "DateMinimumValue",
+      "DateMaximumValue",
+      "EnabledForRisk",
+      "KYBPropertyTypeID",
+      "Hidden",
+      "ColumnSpan",
+      "Responsive",
+      "RowSpan",
+      "ReferenceID"
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ClientEntityID": {
+          "type": "integer"
+        },
+        "ClientEntityInterfaceReference": {
+          "type": "string"
+        },
+        "ClientEntityLastName": {
+          "type": "string"
+        },
+        "ClientEntityFirstName": {
+          "type": "string"
+        },
+        "ClientEntityMiddleName": {
+          "type": "string"
+        },
+        "LinkUniqueKey": {
+          "type": "string"
+        },
+        "Link": {
+          "type": "string"
+        },
+        "DisplayLink": {
+          "type": "string"
+        },
+        "GeneratedDate": {
+          "type": "string"
+        },
+        "Snippet": {
+          "type": "string"
+        },
+        "SearchEngineType": {
+          "type": "integer"
+        },
+        "MatchedDate": {
+          "type": "string"
+        },
+        "ActionDays": {
+          "type": "integer"
+        },
+        "Reason": {
+          "type": "string"
+        },
+        "MatchDiscountCategoryID": {
+          "type": "integer"
+        },
+        "MatchDiscountCategoryName": {
+          "type": "string"
+        },
+        "MatchDiscountCategoryScrape": {
+          "type": "boolean"
+        },
+        "WebContent": {
+          "type": "array",
+          "items": {}
+        },
+        "ValidToDate": {
+          "type": "string"
+        },
+        "HandledByUserGroupID": {
+          "type": "integer"
+        },
+        "HandledByUserGroupName": {
+          "type": "string"
+        },
+        "HandledByUserID": {
+          "type": "integer"
+        },
+        "HandledByUserName": {
+          "type": "string"
+        },
+        "ToBeScraped": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "ClientEntityID",
+        "ClientEntityInterfaceReference",
+        "ClientEntityLastName",
+        "ClientEntityFirstName",
+        "ClientEntityMiddleName",
+        "LinkUniqueKey",
+        "Link",
+        "DisplayLink",
+        "GeneratedDate",
+        "Snippet",
+        "SearchEngineType",
+        "MatchedDate",
+        "ActionDays",
+        "Reason",
+        "MatchDiscountCategoryID",
+        "MatchDiscountCategoryName",
+        "MatchDiscountCategoryScrape",
+        "WebContent",
+        "ValidToDate",
+        "HandledByUserGroupID",
+        "HandledByUserGroupName",
+        "HandledByUserID",
+        "HandledByUserName",
+        "ToBeScraped"
+      ]
+    }
+  }
+}

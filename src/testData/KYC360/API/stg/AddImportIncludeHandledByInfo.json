@@ -1,0 +1,24 @@
+{
+    "payload": [
+        {
+            "InterfaceReference": "APIImportIncludeHandledByInfo",
+            "LastName": "Akshay",
+            "FirstName": "Kumar",
+            "MiddleName": "Hari",
+            "CriteriaID": 253,
+            "AVMCriteriaID": 0,
+            "GenderID": 1,
+            "Date": "1952-10-07 00:00:00",
+            "Country1ID": 0,
+            "Country2ID": 0,
+            "Country3ID": 0,
+            "RiskID": 134,
+            "StatusID": 1,
+            "CustomText1": "",
+            "CustomText2": "",
+            "HandledByUserGroupID": 325,
+            "HandledByUserID": 521,
+            "BusinessUnitID": "10"
+        }
+    ]
+}

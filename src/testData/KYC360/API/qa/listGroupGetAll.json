@@ -1,0 +1,39 @@
+{
+    "schema": {
+        "type": "array",
+        "minItems": 1,
+        "items": [
+            {
+                "type": "object",
+                "properties": {
+                    "ListGroupID": {
+                        "type": "integer"
+                    },
+                    "Name": {
+                        "type": "string"
+                    },
+                    "Description": {
+                        "type": "string"
+                    },
+                    "ScreeningID": {
+                        "type": "integer"
+                    },
+                    "ListDisplayMode": {
+                        "type": "integer"
+                    },
+                    "SortBy": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "ListGroupID",
+                    "Name",
+                    "Description",
+                    "ScreeningID",
+                    "ListDisplayMode",
+                    "SortBy"
+                ]
+            }
+        ]
+    }
+}

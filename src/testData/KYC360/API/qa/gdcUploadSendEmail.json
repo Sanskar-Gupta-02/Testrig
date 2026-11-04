@@ -1,0 +1,36 @@
+{
+    "payload": {
+        "BusinessUnitID": 26,
+        "Reference": "696edb21-6364-48c2-a69f-9322b1204fad",
+        "ActionUserID": 521,
+        "ReturnFormat": "Json"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "Reference": {
+                "type": "string"
+            },
+            "FileName": {
+                "type": "string"
+            },
+            "FileRows": {
+                "type": "integer"
+            },
+            "Errors": {
+                "type": "array",
+                "items": {}
+            },
+            "LoadingStatus": {
+                "type": "integer"
+            }
+        },
+        "required": [
+            "Reference",
+            "FileName",
+            "FileRows",
+            "Errors",
+            "LoadingStatus"
+        ]
+    }
+}

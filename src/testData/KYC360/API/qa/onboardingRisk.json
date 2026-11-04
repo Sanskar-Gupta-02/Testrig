@@ -1,0 +1,32 @@
+{
+    "payload": {
+        "Name": "NEW RISK",
+        "Description": "RISK DESC",
+        "Priority": "1",
+        "ActionUserID": "521",
+        "ReturnFormat": "Json"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "RiskID": {
+                "type": "integer"
+            },
+            "Name": {
+                "type": "string"
+            },
+            "Description": {
+                "type": "string"
+            },
+            "Priority": {
+                "type": "integer"
+            }
+        },
+        "required": [
+            "RiskID",
+            "Name",
+            "Description",
+            "Priority"
+        ]
+    }
+}

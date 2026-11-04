@@ -1,0 +1,25 @@
+{
+    "schema": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+            "type": "object",
+            "properties": {
+                "OnboardingProfileTypeID": {
+                    "type": "integer"
+                },
+                "OnboardingProfileTypeName": {
+                    "type": "string"
+                },
+                "OnboardingProfileTypeDescription": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "OnboardingProfileTypeID",
+                "OnboardingProfileTypeName",
+                "OnboardingProfileTypeDescription"
+            ]
+        }
+    }
+}

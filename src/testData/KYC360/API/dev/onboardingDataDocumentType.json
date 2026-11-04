@@ -1,0 +1,52 @@
+{
+    "payload":
+    {
+        "OnboardingTypeID":"695",
+        "Name": "Driving License",
+        "Description":"Playwright Automation",
+        "Mandatory":"True",
+        "Notes":"Hello",
+        "ActionUserID":"521",
+        "ReturnFormat":"Json"
+    },
+    "schema":
+    {
+        "type": "object",
+        "properties": 
+        {
+          "OnboardingTypeID": 
+          {
+            "type": "integer"
+          },
+          "OnboardingDataDocumentTypeID": 
+          {
+            "type": "integer"
+          },
+          "Name": 
+          {
+            "type": "string"
+          },
+          "Description": 
+          {
+            "type": "string"
+          },
+          "Mandatory": 
+          {
+            "type": "boolean"
+          },
+          "HiddenExternal": 
+          {
+            "type": "boolean"
+          }
+        },
+        "required": 
+        [
+          "OnboardingTypeID",
+          "OnboardingDataDocumentTypeID",
+          "Name",
+          "Description",
+          "Mandatory",
+          "HiddenExternal"
+        ]
+    }
+}

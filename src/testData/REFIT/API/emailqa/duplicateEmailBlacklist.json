@@ -1,0 +1,51 @@
+{
+    "payload": {
+        "entries": [
+            {
+                "Value": "duplicateopen@abc.com",
+                "Type": "EmailAddress",
+                "Reason": "Complaint"
+            }
+        ]
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "title": {
+                "type": "string"
+            },
+            "status": {
+                "type": "integer"
+            },
+            "instance": {
+                "type": "string"
+            },
+            "errors": {
+                "type": "object",
+                "properties": {
+                    "open@ab1c.com": {
+                        "type": "array",
+                        "items": [
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "open@ab1c.com"
+                ]
+            },
+            "traceId": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "title",
+            "status",
+            "instance",
+            "errors",
+            "traceId"
+        ]
+    }
+}

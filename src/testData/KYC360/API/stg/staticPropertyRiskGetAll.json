@@ -1,0 +1,80 @@
+{
+    "schema": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "OnboardingTypeID": {
+                    "type": "number"
+                },
+                "OnboardingPropertyGroupID": {
+                    "type": "number"
+                },
+                "OnboardingPropertyID": {
+                    "type": "number"
+                },
+                "UniqueID": {
+                    "type": "number"
+                },
+                "ListDataID": {
+                    "type": "number"
+                },
+                "IntegerStart": {
+                    "type": "number"
+                },
+                "IntegerEnd": {
+                    "type": "number"
+                },
+                "DecimalStart": {
+                    "type": "number"
+                },
+                "DecimalEnd": {
+                    "type": "number"
+                },
+                "DateOperator": {
+                    "type": "number"
+                },
+                "DateMagnitude": {
+                    "type": "number"
+                },
+                "DateTimespan": {
+                    "type": "number"
+                },
+                "DateMode": {
+                    "type": "number"
+                },
+                "DateSpecificdate": {},
+                "RiskRuleDate": {},
+                "RiskMarker": {
+                    "type": "number"
+                },
+                "WeightedRiskScore": {
+                    "type": "number"
+                },
+                "RiskFactorOverride": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "OnboardingTypeID",
+                "OnboardingPropertyGroupID",
+                "OnboardingPropertyID",
+                "UniqueID",
+                "ListDataID",
+                "IntegerStart",
+                "IntegerEnd",
+                "DecimalStart",
+                "DecimalEnd",
+                "DateOperator",
+                "DateMagnitude",
+                "DateTimespan",
+                "DateMode",
+                "DateSpecificdate",
+                "RiskRuleDate",
+                "RiskMarker",
+                "WeightedRiskScore",
+                "RiskFactorOverride"
+            ]
+        }
+    }
+}

@@ -1,0 +1,1202 @@
+{
+    "expectedData": {
+        "Success": true,
+        "Message": null,
+        "Profiles": [
+            {
+                "ProfileID": 577,
+                "ProfileName": "KYC360 eIDV",
+                "CustomerAppPreferences": [
+                    {
+                        "Title": "Number of required ID documents",
+                        "FieldType": "DropDown",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Maximum Additional Documents (post submission)",
+                        "FieldType": "DropDown",
+                        "Value": "3"
+                    },
+                    {
+                        "Title": "Maximum number of liveness test retakes allowed for the user",
+                        "FieldType": "DropDown",
+                        "Value": "2"
+                    },
+                    {
+                        "Title": "Maximum number of pages per Additional Document",
+                        "FieldType": "DropDown",
+                        "Value": "5"
+                    },
+                    {
+                        "Title": "Liveness test",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Consent for use of Liveness data",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Video capture for passport",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "One page passport capture",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Enable Address Database Checking",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "NFC",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Enable DOB Mismatch Check",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "On",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "On",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Exclude Proof of Address and Additional Documents",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Personal Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Address Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Contact Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Show Personal Info",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Show Address Info",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Show Contact Info",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    }
+                ],
+                "CustomerProofOfAddressDocuments": [
+                    {
+                        "ID": 9446,
+                        "Title": "Proof of Address",
+                        "Description": "Change Address",
+                        "Required": false
+                    }
+                ]
+            },
+            {
+                "ProfileID": 616,
+                "ProfileName": "SF Demo",
+                "CustomerAppPreferences": [
+                    {
+                        "Title": "Number of required ID documents",
+                        "FieldType": "DropDown",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Maximum Additional Documents (post submission)",
+                        "FieldType": "DropDown",
+                        "Value": "5"
+                    },
+                    {
+                        "Title": "Maximum number of liveness test retakes allowed for the user",
+                        "FieldType": "DropDown",
+                        "Value": "3"
+                    },
+                    {
+                        "Title": "Maximum number of pages per Additional Document",
+                        "FieldType": "DropDown",
+                        "Value": "15"
+                    },
+                    {
+                        "Title": "Liveness test",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Consent for use of Liveness data",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Video capture for passport",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "One page passport capture",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Enable Address Database Checking",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "NFC",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Enable DOB Mismatch Check",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "On",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "On",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Exclude Proof of Address and Additional Documents",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Personal Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Address Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Contact Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Show Personal Info",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Show Address Info",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Show Contact Info",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    }
+                ],
+                "CustomerProofOfAddressDocuments": [
+                    {
+                        "ID": 1760,
+                        "Title": "Proof of Address",
+                        "Description": "Bank, Utility or Gov letter",
+                        "Required": true
+                    }
+                ]
+            },
+            {
+                "ProfileID": 632,
+                "ProfileName": "STP",
+                "CustomerAppPreferences": [
+                    {
+                        "Title": "Number of required ID documents",
+                        "FieldType": "DropDown",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Maximum Additional Documents (post submission)",
+                        "FieldType": "DropDown",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Maximum number of liveness test retakes allowed for the user",
+                        "FieldType": "DropDown",
+                        "Value": "2"
+                    },
+                    {
+                        "Title": "Maximum number of pages per Additional Document",
+                        "FieldType": "DropDown",
+                        "Value": "5"
+                    },
+                    {
+                        "Title": "Liveness test",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Consent for use of Liveness data",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Video capture for passport",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "One page passport capture",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Enable Address Database Checking",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "NFC",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Enable DOB Mismatch Check",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "On",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "On",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Exclude Proof of Address and Additional Documents",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Personal Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Address Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Contact Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Show Personal Info",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Show Address Info",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Show Contact Info",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    }
+                ],
+                "CustomerProofOfAddressDocuments": []
+            },
+            {
+                "ProfileID": 941,
+                "ProfileName": "1xID+Live",
+                "CustomerAppPreferences": [
+                    {
+                        "Title": "Number of required ID documents",
+                        "FieldType": "DropDown",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Maximum Additional Documents (post submission)",
+                        "FieldType": "DropDown",
+                        "Value": "3"
+                    },
+                    {
+                        "Title": "Maximum number of liveness test retakes allowed for the user",
+                        "FieldType": "DropDown",
+                        "Value": "2"
+                    },
+                    {
+                        "Title": "Maximum number of pages per Additional Document",
+                        "FieldType": "DropDown",
+                        "Value": "5"
+                    },
+                    {
+                        "Title": "Liveness test",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Consent for use of Liveness data",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Video capture for passport",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "One page passport capture",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Enable Address Database Checking",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "NFC",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Enable DOB Mismatch Check",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "On",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "On",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Exclude Proof of Address and Additional Documents",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Personal Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "False"
+                    },
+                    {
+                        "Title": "Address Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "False"
+                    },
+                    {
+                        "Title": "Contact Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Show Personal Info",
+                        "FieldType": "Boolean",
+                        "Value": "True"
+                    },
+                    {
+                        "Title": "Show Address Info",
+                        "FieldType": "Boolean",
+                        "Value": "True"
+                    },
+                    {
+                        "Title": "Show Contact Info",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    }
+                ],
+                "CustomerProofOfAddressDocuments": []
+            },
+            {
+                "ProfileID": 942,
+                "ProfileName": "1xID+Live+UB",
+                "CustomerAppPreferences": [
+                    {
+                        "Title": "Number of required ID documents",
+                        "FieldType": "DropDown",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Maximum Additional Documents (post submission)",
+                        "FieldType": "DropDown",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Maximum number of liveness test retakes allowed for the user",
+                        "FieldType": "DropDown",
+                        "Value": "2"
+                    },
+                    {
+                        "Title": "Maximum number of pages per Additional Document",
+                        "FieldType": "DropDown",
+                        "Value": "5"
+                    },
+                    {
+                        "Title": "Liveness test",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Consent for use of Liveness data",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Video capture for passport",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "One page passport capture",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Enable Address Database Checking",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "NFC",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Enable DOB Mismatch Check",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "On",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "On",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Exclude Proof of Address and Additional Documents",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Personal Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "False"
+                    },
+                    {
+                        "Title": "Address Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "False"
+                    },
+                    {
+                        "Title": "Contact Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Show Personal Info",
+                        "FieldType": "Boolean",
+                        "Value": "True"
+                    },
+                    {
+                        "Title": "Show Address Info",
+                        "FieldType": "Boolean",
+                        "Value": "True"
+                    },
+                    {
+                        "Title": "Show Contact Info",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    }
+                ],
+                "CustomerProofOfAddressDocuments": [
+                    {
+                        "ID": 2837,
+                        "Title": "Utility Bill",
+                        "Description": "Utility Bill",
+                        "Required": true
+                    }
+                ]
+            },
+            {
+                "ProfileID": 943,
+                "ProfileName": "2xID+Live+UB",
+                "CustomerAppPreferences": [
+                    {
+                        "Title": "Number of required ID documents",
+                        "FieldType": "DropDown",
+                        "Value": "2"
+                    },
+                    {
+                        "Title": "Maximum Additional Documents (post submission)",
+                        "FieldType": "DropDown",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Maximum number of liveness test retakes allowed for the user",
+                        "FieldType": "DropDown",
+                        "Value": "2"
+                    },
+                    {
+                        "Title": "Maximum number of pages per Additional Document",
+                        "FieldType": "DropDown",
+                        "Value": "5"
+                    },
+                    {
+                        "Title": "Liveness test",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Consent for use of Liveness data",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Video capture for passport",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "One page passport capture",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Enable Address Database Checking",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "NFC",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Enable DOB Mismatch Check",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "On",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "On",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Exclude Proof of Address and Additional Documents",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Personal Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Address Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Contact Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Show Personal Info",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Show Address Info",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Show Contact Info",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    }
+                ],
+                "CustomerProofOfAddressDocuments": [
+                    {
+                        "ID": 2839,
+                        "Title": "Utility Bill",
+                        "Description": "Utility Bill",
+                        "Required": true
+                    }
+                ]
+            },
+            {
+                "ProfileID": 944,
+                "ProfileName": "2xID+Live+UB+BS",
+                "CustomerAppPreferences": [
+                    {
+                        "Title": "Number of required ID documents",
+                        "FieldType": "DropDown",
+                        "Value": "2"
+                    },
+                    {
+                        "Title": "Maximum Additional Documents (post submission)",
+                        "FieldType": "DropDown",
+                        "Value": "4"
+                    },
+                    {
+                        "Title": "Maximum number of liveness test retakes allowed for the user",
+                        "FieldType": "DropDown",
+                        "Value": "2"
+                    },
+                    {
+                        "Title": "Maximum number of pages per Additional Document",
+                        "FieldType": "DropDown",
+                        "Value": "5"
+                    },
+                    {
+                        "Title": "Liveness test",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Consent for use of Liveness data",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Video capture for passport",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "One page passport capture",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Enable Address Database Checking",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "NFC",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Enable DOB Mismatch Check",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "On",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "On",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Exclude Proof of Address and Additional Documents",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Personal Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "False"
+                    },
+                    {
+                        "Title": "Address Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "False"
+                    },
+                    {
+                        "Title": "Contact Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Show Personal Info",
+                        "FieldType": "Boolean",
+                        "Value": "True"
+                    },
+                    {
+                        "Title": "Show Address Info",
+                        "FieldType": "Boolean",
+                        "Value": "True"
+                    },
+                    {
+                        "Title": "Show Contact Info",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    }
+                ],
+                "CustomerProofOfAddressDocuments": [
+                    {
+                        "ID": 2841,
+                        "Title": "Utility Bill",
+                        "Description": "Utility Bill",
+                        "Required": true
+                    }
+                ]
+            },
+            {
+                "ProfileID": 1086,
+                "ProfileName": "Address Check + 1ID",
+                "CustomerAppPreferences": [
+                    {
+                        "Title": "Number of required ID documents",
+                        "FieldType": "DropDown",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Maximum Additional Documents (post submission)",
+                        "FieldType": "DropDown",
+                        "Value": "3"
+                    },
+                    {
+                        "Title": "Maximum number of liveness test retakes allowed for the user",
+                        "FieldType": "DropDown",
+                        "Value": "2"
+                    },
+                    {
+                        "Title": "Maximum number of pages per Additional Document",
+                        "FieldType": "DropDown",
+                        "Value": "5"
+                    },
+                    {
+                        "Title": "Liveness test",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Consent for use of Liveness data",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Video capture for passport",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "One page passport capture",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Enable Address Database Checking",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "NFC",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Enable DOB Mismatch Check",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "On",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "On",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Exclude Proof of Address and Additional Documents",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Personal Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "False"
+                    },
+                    {
+                        "Title": "Address Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "False"
+                    },
+                    {
+                        "Title": "Contact Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Show Personal Info",
+                        "FieldType": "Boolean",
+                        "Value": "True"
+                    },
+                    {
+                        "Title": "Show Address Info",
+                        "FieldType": "Boolean",
+                        "Value": "True"
+                    },
+                    {
+                        "Title": "Show Contact Info",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    }
+                ],
+                "CustomerProofOfAddressDocuments": []
+            },
+            {
+                "ProfileID": 1171,
+                "ProfileName": "Test",
+                "CustomerAppPreferences": [
+                    {
+                        "Title": "Number of required ID documents",
+                        "FieldType": "DropDown",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Maximum Additional Documents (post submission)",
+                        "FieldType": "DropDown",
+                        "Value": "3"
+                    },
+                    {
+                        "Title": "Maximum number of liveness test retakes allowed for the user",
+                        "FieldType": "DropDown",
+                        "Value": "2"
+                    },
+                    {
+                        "Title": "Maximum number of pages per Additional Document",
+                        "FieldType": "DropDown",
+                        "Value": "5"
+                    },
+                    {
+                        "Title": "Liveness test",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Consent for use of Liveness data",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Video capture for passport",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "One page passport capture",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Enable Address Database Checking",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "NFC",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Enable DOB Mismatch Check",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "On",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "On",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Exclude Proof of Address and Additional Documents",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Personal Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "False"
+                    },
+                    {
+                        "Title": "Address Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "False"
+                    },
+                    {
+                        "Title": "Contact Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Show Personal Info",
+                        "FieldType": "Boolean",
+                        "Value": "True"
+                    },
+                    {
+                        "Title": "Show Address Info",
+                        "FieldType": "Boolean",
+                        "Value": "True"
+                    },
+                    {
+                        "Title": "Show Contact Info",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    }
+                ],
+                "CustomerProofOfAddressDocuments": [
+                    {
+                        "ID": 34401,
+                        "Title": "Proof of address",
+                        "Description": "",
+                        "Required": false
+                    }
+                ]
+            },
+            {
+                "ProfileID": 1440,
+                "ProfileName": "TEST_IDPAL",
+                "CustomerAppPreferences": [
+                    {
+                        "Title": "Number of required ID documents",
+                        "FieldType": "DropDown",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Maximum Additional Documents (post submission)",
+                        "FieldType": "DropDown",
+                        "Value": "5"
+                    },
+                    {
+                        "Title": "Maximum number of liveness test retakes allowed for the user",
+                        "FieldType": "DropDown",
+                        "Value": "2"
+                    },
+                    {
+                        "Title": "Maximum number of pages per Additional Document",
+                        "FieldType": "DropDown",
+                        "Value": "10"
+                    },
+                    {
+                        "Title": "Liveness test",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Consent for use of Liveness data",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Video capture for passport",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "One page passport capture",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Enable Address Database Checking",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "NFC",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Enable DOB Mismatch Check",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "On",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "On",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Exclude Proof of Address and Additional Documents",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Personal Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Address Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Contact Information Optional",
+                        "FieldType": "Boolean",
+                        "Value": "0"
+                    },
+                    {
+                        "Title": "Show Personal Info",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Show Address Info",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    },
+                    {
+                        "Title": "Show Contact Info",
+                        "FieldType": "Boolean",
+                        "Value": "1"
+                    }
+                ],
+                "CustomerProofOfAddressDocuments": []
+            }
+        ]
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "Success": {
+                "type": "boolean"
+            },
+            "Message": {},
+            "Profiles": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "ProfileID": {
+                            "type": "number"
+                        },
+                        "ProfileName": {
+                            "type": "string"
+                        },
+                        "CustomerAppPreferences": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "Title": {
+                                        "type": "string"
+                                    },
+                                    "FieldType": {
+                                        "type": "string"
+                                    },
+                                    "Value": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "Title",
+                                    "FieldType",
+                                    "Value"
+                                ]
+                            }
+                        },
+                        "CustomerProofOfAddressDocuments": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "ID": {
+                                        "type": "number"
+                                    },
+                                    "Title": {
+                                        "type": "string"
+                                    },
+                                    "Description": {
+                                        "type": "string"
+                                    },
+                                    "Required": {
+                                        "type": "boolean"
+                                    }
+                                },
+                                "required": [
+                                    "ID",
+                                    "Title",
+                                    "Description",
+                                    "Required"
+                                ]
+                            }
+                        }
+                    },
+                    "required": [
+                        "ProfileID",
+                        "ProfileName",
+                        "CustomerAppPreferences",
+                        "CustomerProofOfAddressDocuments"
+                    ]
+                }
+            }
+        },
+        "required": [
+            "Success",
+            "Message",
+            "Profiles"
+        ]
+    }
+}

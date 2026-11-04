@@ -1,0 +1,182 @@
+{
+  "payload": {
+    "BusinessUnitID": 10,
+    "InterfaceReference": "APIADDCUSTOMER",
+    "LastName": "Kumar",
+    "FirstName": "Akshay",
+    "MiddleName": "Hari",
+    "CriteriaID": 253,
+    "GenderID": 1,
+    "RiskID": 134,
+    "Status": 0,
+    "HandledByUserGroupID": 325,
+    "HandledByUserID": 521,
+    "Screen": false,
+    "AdverseMediaFileCriteriaID": 1080,
+    "AdverseMediaCountryID": 0,
+    "ActionUserID": 521,
+    "ReturnFormat": "Json",
+    "CustomText1": "",
+    "CustomText2": "",
+    "Country1ID": 0,
+    "Country2ID": 0,
+    "Country3ID": 0
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "ClientEntity": {
+        "type": "object",
+        "properties": {
+          "ClientEntityID": {
+            "type": "number"
+          },
+          "InterfaceReference": {
+            "type": "string"
+          },
+          "LastName": {
+            "type": "string"
+          },
+          "FirstName": {
+            "type": "string"
+          },
+          "MiddleName": {
+            "type": "string"
+          },
+          "CriteriaID": {
+            "type": "number"
+          },
+          "CriteriaName": {
+            "type": "string"
+          },
+          "GenderID": {
+            "type": "number"
+          },
+          "GenderName": {
+            "type": "string"
+          },
+          "Date": {},
+          "Country1ID": {
+            "type": "number"
+          },
+          "Country1Name": {
+            "type": "string"
+          },
+          "Country2ID": {
+            "type": "number"
+          },
+          "Country2Name": {
+            "type": "string"
+          },
+          "Country3ID": {
+            "type": "number"
+          },
+          "Country3Name": {
+            "type": "string"
+          },
+          "StatusID": {
+            "type": "number"
+          },
+          "StatusName": {
+            "type": "string"
+          },
+          "DateAdded": {
+            "type": "string"
+          },
+          "CustomText1": {
+            "type": "string"
+          },
+          "CustomText2": {
+            "type": "string"
+          },
+          "BusinessUnitID": {
+            "type": "number"
+          },
+          "BusinessUnitName": {
+            "type": "string"
+          },
+          "HandledByUserGroupID": {
+            "type": "number"
+          },
+          "HandledByUserGroupName": {
+            "type": "string"
+          },
+          "HandledByUserID": {
+            "type": "number"
+          },
+          "HandledByUserName": {
+            "type": "string"
+          },
+          "RiskID": {
+            "type": "number"
+          },
+          "RiskName": {
+            "type": "string"
+          },
+          "AdverseMediaFileCriteriaID": {
+            "type": "number"
+          },
+          "AdverseMediaDateRangeID": {
+            "type": "number"
+          },
+          "AdverseMediaCountryID": {
+            "type": "number"
+          },
+          "AdditionalAndTerms": {
+            "type": "string"
+          },
+          "AdditionalOrTerms": {
+            "type": "string"
+          },
+          "ExcludeTerms": {
+            "type": "string"
+          },
+          "AdverseMediaDateLastScreened": {}
+        },
+        "required": [
+          "ClientEntityID",
+          "InterfaceReference",
+          "LastName",
+          "FirstName",
+          "MiddleName",
+          "CriteriaID",
+          "CriteriaName",
+          "GenderID",
+          "GenderName",
+          "Date",
+          "Country1ID",
+          "Country1Name",
+          "Country2ID",
+          "Country2Name",
+          "Country3ID",
+          "Country3Name",
+          "StatusID",
+          "StatusName",
+          "DateAdded",
+          "CustomText1",
+          "CustomText2",
+          "BusinessUnitID",
+          "BusinessUnitName",
+          "HandledByUserGroupID",
+          "HandledByUserGroupName",
+          "HandledByUserID",
+          "HandledByUserName",
+          "RiskID",
+          "RiskName",
+          "AdverseMediaFileCriteriaID",
+          "AdverseMediaDateRangeID",
+          "AdverseMediaCountryID",
+          "AdditionalAndTerms",
+          "AdditionalOrTerms",
+          "ExcludeTerms",
+          "AdverseMediaDateLastScreened"
+        ]
+      },
+      "ClientMatchPotentials": {}
+    },
+    "required": [
+      "ClientEntity",
+      "ClientMatchPotentials"
+    ]
+  }
+}

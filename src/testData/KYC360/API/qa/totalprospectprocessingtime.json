@@ -1,0 +1,125 @@
+{
+  "payload": {
+    "BusinessUnitID": 10,
+    "OnboardingTypeID": 457,
+    "ClientProspectGroupID": 0,
+    "HandledByUserGroupID": 325,
+    "HandledByUserID": 521,
+    "IsTestSystem": true,
+    "FromDate": "2024-12-16",
+    "ToDate": "2024-12-16",
+    "ReturnFormat": "Json",
+    "CurrentPage": 1,
+    "PageSize": 10
+  },
+  "expectedData": {
+    "ReportDataSources": [
+      {
+        "Name": "ReportDataSet1",
+        "Value": "[{\"ClientID\":116,\"BusinessUnitID\":10,\"ClientName\":\"STGLOADTEST-NONPKYC - Automation-QA-RiskScreen\",\"BusinessUnitName\":\"Default\",\"ClientProspectID\":584900,\"ClientProspectName\":\"Summary Onboarding\",\"ProspectReference\":\"OnboardingSummaryRef\",\"ProspectGroupIds\":\"\",\"ProspectGroupName\":\"\",\"ClientOnboardingTypeID\":\"457\",\"ClientOnboardingTypeName\":\"Automation(DoNotTouch)\",\"ClientOnboardingID\":318204,\"ClientOnboardingStageStatusName\":\"Onboarded\",\"ClientOnboardingIDPalUUID\":\"xk4mvl3t\",\"HandledByUserGroupName\":\"Handler Group\",\"HandledByUserName\":\"Automation User\",\"ClientProspectAddedDate\":\"16/12/2024\",\"ClientOnboardingAddedDate\":\"16/12/2024\",\"ClientOnboardingURL\":\"https://qa-batch.kyc360.com/onboarding/edit/318204?prospectid=584900&__BusinessUnit=10\",\"DCFOpenedDate\":\"16/12/2024 10:10\",\"ClientOnboardingDataRequestedOnDate\":\"16/12/2024 10:09\",\"ClientOnboardingDataSubmittedOnDate\":\"16/12/2024 10:10\",\"ClientOnboardingIDPalSentOnDate\":\"16/12/2024 10:18\",\"ClientOnboardingOnboardedRejectedOnDate\":\"16/12/2024 10:25\",\"DataRequestID\":\"99aab57f-3505-40fa-9fa1-1eb67a34ebaf\",\"TotalTimeSpent\":\"0d 0h 18m \",\"TimeSpentInDCFSent\":\"0d 0h 1m \",\"TimeSpentInDCFOpened\":\"0d 0h 0m \",\"TotalTimeSpentInDataCollection\":\"0d 0h 2m \",\"TotalTimeSpentInDataApproval\":\"0d 0h 0m \",\"TotalTimeSpentInIdVerification\":\"0d 0h 14m \",\"TotalTimeSpentInIdApproval\":\"0d 0h 1m \",\"TotalTimeSpentInScreening\":\"0d 0h 0m \",\"TotalTimeSpentInComplianceApproval\":\"0d 0h 0m \"}]"
+      }
+    ],
+    "ParameterList": null,
+    "SubreportDataSources": [
+      {
+        "key": "OnboardingProcessingTime_SR0-ClientID-116-BusinessUnitID-10-ClientProspectID-584900-ClientOnboardingID-318204-DataRequestID-99aab57f-3505-40fa-9fa1-1eb67a34ebaf",
+        "value": [
+          {
+            "Name": "ReportDataSetProspectReminders",
+            "Value": "[]"
+          }
+        ]
+      },
+      {
+        "key": "OnboardingProcessingTime_SR2-ClientID-116-BusinessUnitID-10-ClientOnboardingTypeID-457-ClientProspectID-584900-ClientOnboardingID-318204",
+        "value": [
+          {
+            "Name": "ReportDataSetOnboardingStagesTimeStamps",
+            "Value": "[{\"ClientId\":116,\"BusinessUnitId\":10,\"OnboardingTypeId\":457,\"ProspectId\":584900,\"OnboardingId\":318204,\"DataCollectionOn\":\"16/12/2024 10:08\",\"TimeSpentInDataCollection\":\"0d 0h 2m \",\"DataApprovalOn\":\"16/12/2024 10:10\",\"TimeSpentInDataApproval\":\"0d 0h 0m \",\"IdentityVerificationOn\":\"16/12/2024 10:10\",\"TimeSpentInIdentityVerification\":\"0d 0h 14m \",\"IdentityApprovalOn\":\"16/12/2024 10:24\",\"TimeSpentInIdentityApproval\":\"0d 0h 1m \",\"ScreeningOn\":\"16/12/2024 10:25\",\"TimeSpentInScreening\":\"0d 0h 0m \",\"ComplianceApprovalOn\":\"16/12/2024 10:25\",\"TimeSpentInComplianceApproval\":\"0d 0h 0m \",\"RowNumber\":1}]"
+          }
+        ]
+      },
+      {
+        "key": "OnboardingProcessingTimeHandlerInfo_SR-ClientID-116-BusinessUnitID-10-ClientOnboardingTypeID-457-ClientProspectID-584900-ClientOnboardingID-318204-RowNumber-1",
+        "value": [
+          {
+            "Name": "ReportDataSetHandlerInfo",
+            "Value": "[{\"DataCollectionHandlerInfo\":\"Handler Group\",\"DataApprovalHandlerInfo\":\"Handler Group\",\"IdVerificationHandlerInfo\":\"Handler Group\",\"IdApprovalHandlerInfo\":\"Handler Group\",\"ScreeningHandlerInfo\":\"Handler Group\",\"ComplianceApprovalHandlerInfo\":\"Handler Group\"},{\"DataCollectionHandlerInfo\":\"Automation User~(Handler)\",\"DataApprovalHandlerInfo\":\"Automation User~(Handler)\",\"IdVerificationHandlerInfo\":\"Automation User~(Handler)\",\"IdApprovalHandlerInfo\":\"Automation User~(Handler)\",\"ScreeningHandlerInfo\":\"Automation User~(Handler)\",\"ComplianceApprovalHandlerInfo\":\"Automation User~(Handler)~0d 0h 0m\"}]"
+          }
+        ]
+      }
+    ],
+    "MainReportDataRowCount": 1,
+    "ReportLanguage": "en-GB"
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "ReportDataSources": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Name": {
+              "type": "string"
+            },
+            "Value": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "Name",
+            "Value"
+          ]
+        }
+      },
+      "ParameterList": {},
+      "SubreportDataSources": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "key": {
+              "type": "string"
+            },
+            "value": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Name": {
+                    "type": "string"
+                  },
+                  "Value": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "Name",
+                  "Value"
+                ]
+              }
+            }
+          },
+          "required": [
+            "key",
+            "value"
+          ]
+        }
+      },
+      "MainReportDataRowCount": {
+        "type": "number"
+      },
+      "ReportLanguage": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "ReportDataSources",
+      "ParameterList",
+      "SubreportDataSources",
+      "MainReportDataRowCount",
+      "ReportLanguage"
+    ]
+  }
+}

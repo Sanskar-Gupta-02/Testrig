@@ -1,0 +1,50 @@
+{
+    "payload": {
+        "BusinessUnitID": "10",
+        "SayariEntityAttributeTypeID": "10",
+        "Name": "Auto-Address",
+        "ActionUserID": "521",
+        "ReturnFormat": "Json",
+        "Value": "88 WIGRAM ST, Sydney, AU, 2150",
+        "Type": "Address"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "BusinessUnitID": {
+                "type": "integer"
+            },
+            "ClientProspectGroupID": {
+                "type": "integer"
+            },
+            "SayariEntityID": {
+                "type": "integer"
+            },
+            "AttributeID": {
+                "type": "integer"
+            },
+            "SayariEntityAttributeTypeID": {
+                "type": "integer"
+            },
+            "Name": {
+                "type": "string"
+            },
+            "Value": {
+                "type": "string"
+            },
+            "Type": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "BusinessUnitID",
+            "ClientProspectGroupID",
+            "SayariEntityID",
+            "AttributeID",
+            "SayariEntityAttributeTypeID",
+            "Name",
+            "Value",
+            "Type"
+        ]
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "expectedData": {
+        "id": "<EntityID>",
+        "entityName": "Entities BU Automation 1",
+        "entityType": {
+            "name": "API Test Automaion - Do Not Touch"
+        },
+        "fields": [
+            {
+                "type": "String",
+                "key": "entity.metadata.entityName",
+                "value": "Entities BU Automation 1"
+            },
+            {
+                "type": "List",
+                "key": "entity.metadata.entityRole",
+                "value": "End Client"
+            },
+            {
+                "type": "String",
+                "key": "entity.metadata.clientInternalEntityId",
+                "value": null
+            },
+            {
+                "type": "Boolean",
+                "key": "entity.entitymetadatacustom.booleandata",
+                "value": true
+            },
+            {
+                "type": "Date",
+                "key": "entity.entitymetadatacustom.datedata",
+                "value": "07/09/2026"
+            },
+            {
+                "type": "Decimal",
+                "key": "entity.entitymetadatacustom.decimaldata",
+                "value": 20
+            },
+            {
+                "type": "Integer",
+                "key": "entity.entitymetadatacustom.integerdata",
+                "value": 20
+            },
+            {
+                "type": "Links",
+                "key": "entity.entitymetadatacustom.linksdata",
+                "values": [
+                    "https://www.kyc360.com/"
+                ]
+            },
+            {
+                "type": "List",
+                "key": "entity.entitymetadatacustom.listdata",
+                "value": "item1"
+            },
+            {
+                "type": "String",
+                "key": "entity.entitymetadatacustom.stringdata",
+                "value": "test"
+            },
+            {
+                "type": "Text",
+                "key": "entity.entitymetadatacustom.textdata",
+                "value": "Test123"
+            },
+            {
+                "type": "String",
+                "key": "entity.entitymetadatacustom.emaildata",
+                "value": "test@gmail.com"
+            },
+            {
+                "type": "String",
+                "key": "entity.entitymetadatacustom.giindata",
+                "value": "A1B2C3.DEF45.ME.000"
+            },
+            {
+                "type": "String",
+                "key": "entity.entitymetadatacustom.tindata",
+                "value": "23456"
+            },
+            {
+                "type": "Date",
+                "key": "entity.entitymetadatacustom.dateofbirthdata",
+                "value": "06/25/2025"
+            }
+        ]
+    }
+}

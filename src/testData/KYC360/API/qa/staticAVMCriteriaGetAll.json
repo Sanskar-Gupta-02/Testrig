@@ -1,0 +1,74 @@
+{
+    "schema": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "CriteriaID": {
+                    "type": "number"
+                },
+                "Name": {
+                    "type": "string"
+                },
+                "Description": {
+                    "type": "string"
+                },
+                "TermGroupID": {
+                    "type": "number"
+                },
+                "TermGroupName": {
+                    "type": "string"
+                },
+                "SearchEngineGroupID": {
+                    "type": "number"
+                },
+                "SearchEngineGroupName": {
+                    "type": "string"
+                },
+                "SearchEngineOptions": {},
+                "DateRangeID": {
+                    "type": "number"
+                },
+                "DateRangeName": {
+                    "type": "string"
+                },
+                "CountryID": {
+                    "type": "number"
+                },
+                "CountryName": {
+                    "type": "string"
+                },
+                "FrequencyInDays": {
+                    "type": "number"
+                },
+                "SearchTermOption": {
+                    "type": "number"
+                },
+                "SafeSearch": {
+                    "type": "boolean"
+                },
+                "SearchTermProximity": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "CriteriaID",
+                "Name",
+                "Description",
+                "TermGroupID",
+                "TermGroupName",
+                "SearchEngineGroupID",
+                "SearchEngineGroupName",
+                "SearchEngineOptions",
+                "DateRangeID",
+                "DateRangeName",
+                "CountryID",
+                "CountryName",
+                "FrequencyInDays",
+                "SearchTermOption",
+                "SafeSearch",
+                "SearchTermProximity"
+            ]
+        }
+    }
+}

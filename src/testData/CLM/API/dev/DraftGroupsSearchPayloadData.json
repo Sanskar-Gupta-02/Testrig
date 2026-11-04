@@ -1,0 +1,46 @@
+{
+    "payload": {
+        "validSearch": {
+            "page": 1,
+            "name": "Automation for API",
+            "businessUnitId": "<CLM_BU_AUTOMATION_ID>",
+            "groupTypeId": "<CLM_GROUP_TYPE_ID>"
+        },
+        "invalidGroupTypeId": {
+            "page": 1,
+            "name": "Automation for API",
+            "businessUnitId": "<CLM_BU_AUTOMATION_ID>",
+            "groupTypeId": "019c932e-f3-72a1-b24b-757db91da7be"
+        },
+        "pageZero": {
+            "page": 0,
+            "name": "Automation for API",
+            "businessUnitId": "<CLM_BU_AUTOMATION_ID>",
+            "groupTypeId": "<CLM_GROUP_TYPE_ID>"
+        },
+        "nameNotFound": {
+            "page": 1,
+            "name": "DraftGroupNameThatDoesNotExist",
+            "businessUnitId": "<CLM_BU_AUTOMATION_ID>",
+            "groupTypeId": "<CLM_GROUP_TYPE_ID>"
+        },
+        "withoutBusinessUnitId": {
+            "page": 1,
+            "name": "Automation for API",
+            "groupTypeId": "<CLM_GROUP_TYPE_ID>"
+        },
+        "pageBeyondResults": {
+            "page": 101,
+            "name": "Automation for API",
+            "businessUnitId": "<CLM_BU_AUTOMATION_ID>",
+            "groupTypeId": "<CLM_GROUP_TYPE_ID>"
+        },
+        "emptyPayload": {},
+        "pageOverflow": {
+            "page": 2147483647,
+            "name": "Automation for API",
+            "businessUnitId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "groupTypeId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+        }
+    }
+}

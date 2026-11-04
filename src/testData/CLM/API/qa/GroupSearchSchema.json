@@ -1,0 +1,52 @@
+{
+    "schema": {
+        "type": "object",
+        "properties": {
+            "hasMoreResults": {
+                "type": "boolean"
+            },
+            "results": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "businessUnitId": {
+                            "type": "string"
+                        },
+                        "groupType": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "id"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "description",
+                        "businessUnitId",
+                        "groupType"
+                    ]
+                }
+            }
+        },
+        "required": [
+            "hasMoreResults",
+            "results"
+        ]
+    }
+}

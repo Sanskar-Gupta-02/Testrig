@@ -1,0 +1,24 @@
+{
+    "expectedData": {
+        "riskModels": [
+            {
+                "id": "<CLM_RISK_MODEL3_ID>",
+                "name": "API Automation RT Single Highest Value Risk",
+                "recordState": "Active",
+                "description": "API Automation RT Single Highest Value Risk Do Not touch"
+            },
+            {
+                "id": "<CLM_RISK_MODEL2_ID>",
+                "name": "API Automation RT Total Risk",
+                "recordState": "Active",
+                "description": "API Automation RT Total Risk Do Not Touch"
+            },
+            {
+                "id": "<CLM_RISK_MODEL1_ID>",
+                "name": "API Automation RT Weighted Risk",
+                "recordState": "Active",
+                "description": "API Automation RT Weighted Risk - Do Not Touch"
+            }
+        ]
+    }
+}

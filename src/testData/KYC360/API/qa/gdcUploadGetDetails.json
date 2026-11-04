@@ -1,0 +1,496 @@
+{
+    "expectedData": [
+        {
+            "ClientID": 116,
+            "ClientName": "STGLOADTEST-NONPKYC - Automation-QA-RiskScreen",
+            "BusinessUnitID": 26,
+            "BusinessUnitName": "Bulk Upload ",
+            "Reference": "696edb21-6364-48c2-a69f-9322b1204fad",
+            "ClientGDCDataImportDetailItem": [
+                {
+                    "Status": "1",
+                    "Message": "INSERT/ClientProspectID : 608297 > ClientOnboardingID : 342759 Onboarding data submitted successfully.  [DynamicFormsIntegration Skipped Columns: ] [AutoProspect : ]",
+                    "recordID": "AutomationGDC1",
+                    "completename": "",
+                    "firstName": "Mark",
+                    "lastName": "Lennon",
+                    "lastNameMaternal": "",
+                    "dob": "07/02/1991",
+                    "houseNumber": "",
+                    "houseNumberAddition": "",
+                    "street": "",
+                    "addressLine1": "29b Oakroyd Avenue",
+                    "city": "Potters Bar",
+                    "province": "Hertfordshire",
+                    "postalCode": "EN6 2EL",
+                    "countryCode": "GB",
+                    "nationalID": "",
+                    "phoneNumber": "",
+                    "Email Address": "testautomations+mark@riskscreen.com",
+                    "Handled by User Group ID": 325,
+                    "Handled by User ID": 521,
+                    "Internal Participant ID": "",
+                    "GS Customer ID": "1",
+                    "Business Unit": 26
+                },
+                {
+                    "Status": "1",
+                    "Message": "INSERT/ClientProspectID : 608298 > ClientOnboardingID : 342760 Onboarding data submitted successfully.  [DynamicFormsIntegration Skipped Columns: ] [AutoProspect : ]",
+                    "recordID": "AutomationGDC2",
+                    "completename": "",
+                    "firstName": "Rob",
+                    "lastName": "Ballantine",
+                    "lastNameMaternal": "",
+                    "dob": "11/30/1993",
+                    "houseNumber": "",
+                    "houseNumberAddition": "",
+                    "street": "",
+                    "addressLine1": "151 Bonchurch Road",
+                    "city": "London",
+                    "province": "",
+                    "postalCode": "W10 5NN",
+                    "countryCode": "GB",
+                    "nationalID": "",
+                    "phoneNumber": "",
+                    "Email Address": "testautomations+rob@riskscreen.com",
+                    "Handled by User Group ID": 325,
+                    "Handled by User ID": 521,
+                    "Internal Participant ID": "",
+                    "GS Customer ID": "1",
+                    "Business Unit": 26
+                },
+                {
+                    "Status": "1",
+                    "Message": "INSERT/ClientProspectID : 608299 > ClientOnboardingID : 342761 Onboarding data submitted successfully.  [DynamicFormsIntegration Skipped Columns: ] [AutoProspect : ]",
+                    "recordID": "AutomationGDC3",
+                    "completename": "",
+                    "firstName": "Andrew",
+                    "lastName": "King",
+                    "lastNameMaternal": "",
+                    "dob": "06/16/1972",
+                    "houseNumber": "",
+                    "houseNumberAddition": "",
+                    "street": "",
+                    "addressLine1": "34 Greenloons Drive",
+                    "city": "Liverpool",
+                    "province": "Merseyside",
+                    "postalCode": "L37 2LY",
+                    "countryCode": "GB",
+                    "nationalID": "",
+                    "phoneNumber": "",
+                    "Email Address": "testautomations+andrew@riskscreen.com",
+                    "Handled by User Group ID": 325,
+                    "Handled by User ID": 521,
+                    "Internal Participant ID": "",
+                    "GS Customer ID": "1",
+                    "Business Unit": 26
+                },
+                {
+                    "Status": "1",
+                    "Message": "INSERT/ClientProspectID : 608300 > ClientOnboardingID : 342762 Onboarding data submitted successfully.  [DynamicFormsIntegration Skipped Columns: ] [AutoProspect : ]",
+                    "recordID": "AutomationGDC4",
+                    "completename": "",
+                    "firstName": "Joseph",
+                    "lastName": "Scott",
+                    "lastNameMaternal": "",
+                    "dob": "09/26/1992",
+                    "houseNumber": "",
+                    "houseNumberAddition": "",
+                    "street": "",
+                    "addressLine1": "5 Roedean Close",
+                    "city": "Liverpool",
+                    "province": "Merseyside",
+                    "postalCode": "L31 0AS",
+                    "countryCode": "GB",
+                    "nationalID": "",
+                    "phoneNumber": "",
+                    "Email Address": "testautomations+joseph@riskscreen.com",
+                    "Handled by User Group ID": 325,
+                    "Handled by User ID": 521,
+                    "Internal Participant ID": "",
+                    "GS Customer ID": "1",
+                    "Business Unit": 26
+                },
+                {
+                    "Status": "1",
+                    "Message": "INSERT/ClientProspectID : 608301 > ClientOnboardingID : 342763 Onboarding data submitted successfully.  [DynamicFormsIntegration Skipped Columns: ] [AutoProspect : ]",
+                    "recordID": "AutomationGDC5",
+                    "completename": "",
+                    "firstName": "Margaret",
+                    "lastName": "Begley",
+                    "lastNameMaternal": "",
+                    "dob": "01/18/1944",
+                    "houseNumber": "",
+                    "houseNumberAddition": "",
+                    "street": "",
+                    "addressLine1": "9 MacMillan Drive",
+                    "city": "Eastbourne",
+                    "province": "East Sussex",
+                    "postalCode": "BN21 1SU",
+                    "countryCode": "GB",
+                    "nationalID": "",
+                    "phoneNumber": "",
+                    "Email Address": "testautomations+margerette@riskscreen.com",
+                    "Handled by User Group ID": 325,
+                    "Handled by User ID": 521,
+                    "Internal Participant ID": "",
+                    "GS Customer ID": "1",
+                    "Business Unit": 26
+                },
+                {
+                    "Status": "1",
+                    "Message": "INSERT/ClientProspectID : 608302 > ClientOnboardingID : 342764 Onboarding data submitted successfully.  [DynamicFormsIntegration Skipped Columns: ] [AutoProspect : ]",
+                    "recordID": "AutomationGDC6",
+                    "completename": "",
+                    "firstName": "Mark",
+                    "lastName": "Lennon",
+                    "lastNameMaternal": "",
+                    "dob": "07/02/1991",
+                    "houseNumber": "",
+                    "houseNumberAddition": "",
+                    "street": "",
+                    "addressLine1": "29b Oakroyd Avenue",
+                    "city": "Potters Bar",
+                    "province": "Hertfordshire",
+                    "postalCode": "EN6 2EL",
+                    "countryCode": "GB",
+                    "nationalID": "",
+                    "phoneNumber": "",
+                    "Email Address": "testautomations+mark@riskscreen.com",
+                    "Handled by User Group ID": 325,
+                    "Handled by User ID": 521,
+                    "Internal Participant ID": "",
+                    "GS Customer ID": "1",
+                    "Business Unit": 26
+                },
+                {
+                    "Status": "1",
+                    "Message": "INSERT/ClientProspectID : 608303 > ClientOnboardingID : 342765 Onboarding data submitted successfully.  [DynamicFormsIntegration Skipped Columns: ] [AutoProspect : ]",
+                    "recordID": "AutomationGDC7",
+                    "completename": "",
+                    "firstName": "Jaimee",
+                    "lastName": "Lincoln",
+                    "lastNameMaternal": "",
+                    "dob": "07/29/2006",
+                    "houseNumber": "",
+                    "houseNumberAddition": "",
+                    "street": "",
+                    "addressLine1": "82, Seletar Aerospace Avenue",
+                    "city": "Central",
+                    "province": "",
+                    "postalCode": "797403",
+                    "countryCode": "SG",
+                    "nationalID": "",
+                    "phoneNumber": "",
+                    "Email Address": "testautomations+jamie@riskscreen.com",
+                    "Handled by User Group ID": 325,
+                    "Handled by User ID": 521,
+                    "Internal Participant ID": "",
+                    "GS Customer ID": "1",
+                    "Business Unit": 26
+                },
+                {
+                    "Status": "1",
+                    "Message": "INSERT/ClientProspectID : 608304 > ClientOnboardingID : 342766 Onboarding data submitted successfully.  [DynamicFormsIntegration Skipped Columns: ] [AutoProspect : ]",
+                    "recordID": "AutomationGDC8",
+                    "completename": "",
+                    "firstName": "Patrick",
+                    "lastName": "Begley",
+                    "lastNameMaternal": "",
+                    "dob": "04/20/1945",
+                    "houseNumber": "",
+                    "houseNumberAddition": "",
+                    "street": "",
+                    "addressLine1": "15 MacMillan Drive",
+                    "city": "Eastbourne",
+                    "province": "East Sussex",
+                    "postalCode": "BN21 1SU",
+                    "countryCode": "GB",
+                    "nationalID": "",
+                    "phoneNumber": "",
+                    "Email Address": "testautomations+patrick@riskscreen.com",
+                    "Handled by User Group ID": 325,
+                    "Handled by User ID": 521,
+                    "Internal Participant ID": "",
+                    "GS Customer ID": "1",
+                    "Business Unit": 26
+                },
+                {
+                    "Status": "1",
+                    "Message": "INSERT/ClientProspectID : 608305 > ClientOnboardingID : 342767 Onboarding data submitted successfully.  [DynamicFormsIntegration Skipped Columns: ] [AutoProspect : ]",
+                    "recordID": "AutomationGDC9",
+                    "completename": "",
+                    "firstName": "Micael",
+                    "lastName": "Lennon",
+                    "lastNameMaternal": "",
+                    "dob": "07/28/1964",
+                    "houseNumber": "",
+                    "houseNumberAddition": "",
+                    "street": "",
+                    "addressLine1": "20 Neville Close",
+                    "city": "Potters Bar",
+                    "province": "Hertfordshire",
+                    "postalCode": "EN62AG",
+                    "countryCode": "GB",
+                    "nationalID": "",
+                    "phoneNumber": "",
+                    "Email Address": "testautomations+micael@riskscreen.com",
+                    "Handled by User Group ID": 325,
+                    "Handled by User ID": 521,
+                    "Internal Participant ID": "",
+                    "GS Customer ID": "1",
+                    "Business Unit": 26
+                },
+                {
+                    "Status": "1",
+                    "Message": "INSERT/ClientProspectID : 608306 > ClientOnboardingID : 342768 Onboarding data submitted successfully.  [DynamicFormsIntegration Skipped Columns: ] [AutoProspect : ]",
+                    "recordID": "AutomationGDC10",
+                    "completename": "",
+                    "firstName": "Eliot",
+                    "lastName": "Lincoln",
+                    "lastNameMaternal": "",
+                    "dob": "12/13/1973",
+                    "houseNumber": "",
+                    "houseNumberAddition": "",
+                    "street": "",
+                    "addressLine1": "1349 Norine Ford*",
+                    "city": "",
+                    "province": "Homyel Region, Rechytsa District",
+                    "postalCode": "",
+                    "countryCode": "BY",
+                    "nationalID": "",
+                    "phoneNumber": "",
+                    "Email Address": "testautomations+eliot@riskscreen.com",
+                    "Handled by User Group ID": 325,
+                    "Handled by User ID": 521,
+                    "Internal Participant ID": "",
+                    "GS Customer ID": "1",
+                    "Business Unit": 26
+                },
+                {
+                    "Status": "1",
+                    "Message": "INSERT/ClientProspectID : 608307 > ClientOnboardingID : 342769 Onboarding data submitted successfully.  [DynamicFormsIntegration Skipped Columns: ] [AutoProspect : ]",
+                    "recordID": "AutomationGDC11",
+                    "completename": "",
+                    "firstName": "Heather",
+                    "lastName": "Lincoln",
+                    "lastNameMaternal": "",
+                    "dob": "09/26/1992",
+                    "houseNumber": "",
+                    "houseNumberAddition": "",
+                    "street": "",
+                    "addressLine1": "",
+                    "city": "",
+                    "province": "",
+                    "postalCode": "",
+                    "countryCode": "GB",
+                    "nationalID": "",
+                    "phoneNumber": "",
+                    "Email Address": "testautomations+heather@riskscreen.com",
+                    "Handled by User Group ID": 325,
+                    "Handled by User ID": 521,
+                    "Internal Participant ID": "",
+                    "GS Customer ID": "1",
+                    "Business Unit": 26
+                },
+                {
+                    "Status": "1",
+                    "Message": "INSERT/ClientProspectID : 608308 > ClientOnboardingID : 342770 Onboarding data submitted successfully.  [DynamicFormsIntegration Skipped Columns: ] [AutoProspect : ]",
+                    "recordID": "AutomationGDC12",
+                    "completename": "",
+                    "firstName": "الأسد",
+                    "lastName": "أسماء",
+                    "lastNameMaternal": "",
+                    "dob": "12/12/1980",
+                    "houseNumber": "",
+                    "houseNumberAddition": "",
+                    "street": "",
+                    "addressLine1": "1 Cedar Way",
+                    "city": "Preston",
+                    "province": "Lancashire",
+                    "postalCode": "PR1 0PE",
+                    "countryCode": "CN",
+                    "nationalID": "",
+                    "phoneNumber": "",
+                    "Email Address": "testautomations+mark@riskscreen.com",
+                    "Handled by User Group ID": 325,
+                    "Handled by User ID": 521,
+                    "Internal Participant ID": "",
+                    "GS Customer ID": "1",
+                    "Business Unit": 26
+                },
+                {
+                    "Status": "1",
+                    "Message": "INSERT/ClientProspectID : 608309 > ClientOnboardingID : 342771 Onboarding data submitted successfully.  [DynamicFormsIntegration Skipped Columns: ] [AutoProspect : ]",
+                    "recordID": "AutomationGDC13",
+                    "completename": "",
+                    "firstName": "Ben",
+                    "lastName": "Bradley",
+                    "lastNameMaternal": "",
+                    "dob": "06/27/2007",
+                    "houseNumber": "",
+                    "houseNumberAddition": "",
+                    "street": "",
+                    "addressLine1": "123 Gate View",
+                    "city": "Town",
+                    "province": "County",
+                    "postalCode": "Postcode",
+                    "countryCode": "CN",
+                    "nationalID": "",
+                    "phoneNumber": "",
+                    "Email Address": "testautomations+ben@riskscreen.com",
+                    "Handled by User Group ID": 325,
+                    "Handled by User ID": 521,
+                    "Internal Participant ID": "",
+                    "GS Customer ID": "1",
+                    "Business Unit": 26
+                }
+            ]
+        }
+    ],
+    "schema": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+            "type": "object",
+            "required": [
+                "ClientID",
+                "ClientName",
+                "BusinessUnitID",
+                "BusinessUnitName",
+                "Reference",
+                "ClientGDCDataImportDetailItem"
+            ],
+            "properties": {
+                "ClientID": {
+                    "type": "integer"
+                },
+                "ClientName": {
+                    "type": "string"
+                },
+                "BusinessUnitID": {
+                    "type": "integer"
+                },
+                "BusinessUnitName": {
+                    "type": "string"
+                },
+                "Reference": {
+                    "type": "string",
+                    "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+                },
+                "ClientGDCDataImportDetailItem": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "Status",
+                            "Message",
+                            "recordID",
+                            "completename",
+                            "firstName",
+                            "lastName",
+                            "lastNameMaternal",
+                            "dob",
+                            "houseNumber",
+                            "houseNumberAddition",
+                            "street",
+                            "addressLine1",
+                            "city",
+                            "province",
+                            "postalCode",
+                            "countryCode",
+                            "nationalID",
+                            "phoneNumber",
+                            "Email Address",
+                            "Handled by User Group ID",
+                            "Handled by User ID",
+                            "Internal Participant ID",
+                            "GS Customer ID",
+                            "Business Unit"
+                        ],
+                        "properties": {
+                            "Status": {
+                                "type": "string"
+                            },
+                            "Message": {
+                                "type": "string"
+                            },
+                            "recordID": {
+                                "type": "string"
+                            },
+                            "completename": {
+                                "type": "string"
+                            },
+                            "firstName": {
+                                "type": "string"
+                            },
+                            "lastName": {
+                                "type": "string"
+                            },
+                            "lastNameMaternal": {
+                                "type": "string"
+                            },
+                            "dob": {
+                                "type": "string",
+                                "pattern": "^(0[1-9]|1[0-2])\\/(0[1-9]|[12][0-9]|3[01])\\/[0-9]{4}$"
+                            },
+                            "houseNumber": {
+                                "type": "string"
+                            },
+                            "houseNumberAddition": {
+                                "type": "string"
+                            },
+                            "street": {
+                                "type": "string"
+                            },
+                            "addressLine1": {
+                                "type": "string"
+                            },
+                            "city": {
+                                "type": "string"
+                            },
+                            "province": {
+                                "type": "string"
+                            },
+                            "postalCode": {
+                                "type": "string"
+                            },
+                            "countryCode": {
+                                "type": "string",
+                                "minLength": 2,
+                                "maxLength": 2
+                            },
+                            "nationalID": {
+                                "type": "string"
+                            },
+                            "phoneNumber": {
+                                "type": "string"
+                            },
+                            "Email Address": {
+                                "type": "string",
+                                "pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$"
+                            },
+                            "Handled by User Group ID": {
+                                "type": "integer"
+                            },
+                            "Handled by User ID": {
+                                "type": "integer"
+                            },
+                            "Internal Participant ID": {
+                                "type": "string"
+                            },
+                            "GS Customer ID": {
+                                "type": "string"
+                            },
+                            "Business Unit": {
+                                "type": "integer"
+                            }
+                        },
+                        "additionalProperties": false
+                    }
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}

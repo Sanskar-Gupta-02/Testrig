@@ -1,0 +1,18 @@
+{
+    "schema": {
+        "type": "array",
+        "minItems": 2,
+        "items": [
+            {
+                "type": "object",
+                "properties": {
+                    "OnboardingTypeId": { "type": "integer" },
+                    "Id": { "type": "integer" },
+                    "Name": { "type": "string" },
+                    "Order": { "type": "integer" }
+                },
+                "required": ["OnboardingTypeId", "Id", "Name", "Order"]
+            }
+        ]
+    }
+}

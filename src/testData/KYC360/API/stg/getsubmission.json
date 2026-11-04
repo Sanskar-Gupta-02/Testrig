@@ -1,0 +1,255 @@
+{
+    "expectedData": {
+        "UUID": "1y2t9xl4",
+        "SubmissionID": 4474030,
+        "AddressVerificationResult": "Alert",
+        "IdDetectResult": "Pass",
+        "ProfileID": 173,
+        "SubmissionStatus": "ReceivedWithError",
+        "LanguageCode": "en",
+        "AccountID": "",
+        "Documents": [
+            {
+                "DocumentID": 8516104,
+                "DocumentUniqueNumber": "MH12 20210009077",
+                "IssueDate": null,
+                "IssueType": "Maharashtra State Motor Driving Licence",
+                "IssuerCode": "IND",
+                "DocumentTypeIssueYear": "1",
+                "ExpirationDate": null,
+                "Alerts": [
+                    "The document has expired",
+                    "The document type could not be determined",
+                    "A visible pattern was not found",
+                    "The expiration date is not valid"
+                ],
+                "DocumentType": "idcard-front-uncropped",
+                "AuthenticationData": "NA",
+                "FacialMatch": "NA",
+                "FacialMatchScore": null,
+                "Status": "0",
+                "Message": null
+            }
+        ],
+        "LivenessTestResult": "Pass",
+        "Message": null,
+        "FirstName": "Prospect",
+        "LastName": "APIIDPal",
+        "MaidenName": "",
+        "Email": "testautomations+APIIDPal@riskscreen.com",
+        "Phone": "",
+        "Gender": "Male",
+        "DateOfBirth": "1999-05-09 00:00:00",
+        "CountryOfBirth": "",
+        "Address1": "KHOKLAJ DEVI CHOUK",
+        "Address2": "LONI KALBHORHAVELLPUNE.MH",
+        "City": "Pune",
+        "County": "",
+        "CountryName": "India",
+        "PostalCode": "411028",
+        "AppID": 0,
+        "PassportExpires": null,
+        "IdCardExpires": null,
+        "OSType": "17.3.1",
+        "HardwareType": "iPhone14,7",
+        "FreeMemory": "58 MB",
+        "AvailableStorage": "526.3 MB",
+        "EVerificationDetails": "Information:\r\nNo match was returned from the database checks.\r\n\r\nManual Review: A manual review of the customer address is advised.",
+        "EVerificationCustomField": "PAN Number: BHYCL9967R"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "UUID": {
+                "type": "string"
+            },
+            "SubmissionID": {
+                "type": "number"
+            },
+            "AddressVerificationResult": {
+                "type": "string"
+            },
+            "IdDetectResult": {
+                "type": "string"
+            },
+            "ProfileID": {
+                "type": "number"
+            },
+            "SubmissionStatus": {
+                "type": "string"
+            },
+            "LanguageCode": {
+                "type": "string"
+            },
+            "AccountID": {
+                "type": "string"
+            },
+            "Documents": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "DocumentID": {
+                            "type": "number"
+                        },
+                        "DocumentUniqueNumber": {
+                            "type": "string"
+                        },
+                        "IssueDate": {},
+                        "IssueType": {
+                            "type": "string"
+                        },
+                        "IssuerCode": {
+                            "type": "string"
+                        },
+                        "DocumentTypeIssueYear": {
+                            "type": "string"
+                        },
+                        "ExpirationDate": {},
+                        "Alerts": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "DocumentType": {
+                            "type": "string"
+                        },
+                        "AuthenticationData": {
+                            "type": "string"
+                        },
+                        "FacialMatch": {
+                            "type": "string"
+                        },
+                        "FacialMatchScore": {},
+                        "Status": {
+                            "type": "string"
+                        },
+                        "Message": {}
+                    },
+                    "required": [
+                        "DocumentID",
+                        "DocumentUniqueNumber",
+                        "IssueDate",
+                        "IssueType",
+                        "IssuerCode",
+                        "DocumentTypeIssueYear",
+                        "ExpirationDate",
+                        "Alerts",
+                        "DocumentType",
+                        "AuthenticationData",
+                        "FacialMatch",
+                        "FacialMatchScore",
+                        "Status",
+                        "Message"
+                    ]
+                }
+            },
+            "LivenessTestResult": {
+                "type": "string"
+            },
+            "Message": {},
+            "FirstName": {
+                "type": "string"
+            },
+            "LastName": {
+                "type": "string"
+            },
+            "MaidenName": {
+                "type": "string"
+            },
+            "Email": {
+                "type": "string"
+            },
+            "Phone": {
+                "type": "string"
+            },
+            "Gender": {
+                "type": "string"
+            },
+            "DateOfBirth": {
+                "type": "string"
+            },
+            "CountryOfBirth": {
+                "type": "string"
+            },
+            "Address1": {
+                "type": "string"
+            },
+            "Address2": {
+                "type": "string"
+            },
+            "City": {
+                "type": "string"
+            },
+            "County": {
+                "type": "string"
+            },
+            "CountryName": {
+                "type": "string"
+            },
+            "PostalCode": {
+                "type": "string"
+            },
+            "AppID": {
+                "type": "number"
+            },
+            "PassportExpires": {},
+            "IdCardExpires": {},
+            "OSType": {
+                "type": "string"
+            },
+            "HardwareType": {
+                "type": "string"
+            },
+            "FreeMemory": {
+                "type": "string"
+            },
+            "AvailableStorage": {
+                "type": "string"
+            },
+            "EVerificationDetails": {
+                "type": "string"
+            },
+            "EVerificationCustomField": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "UUID",
+            "SubmissionID",
+            "AddressVerificationResult",
+            "IdDetectResult",
+            "ProfileID",
+            "SubmissionStatus",
+            "LanguageCode",
+            "AccountID",
+            "Documents",
+            "LivenessTestResult",
+            "Message",
+            "FirstName",
+            "LastName",
+            "MaidenName",
+            "Email",
+            "Phone",
+            "Gender",
+            "DateOfBirth",
+            "CountryOfBirth",
+            "Address1",
+            "Address2",
+            "City",
+            "County",
+            "CountryName",
+            "PostalCode",
+            "AppID",
+            "PassportExpires",
+            "IdCardExpires",
+            "OSType",
+            "HardwareType",
+            "FreeMemory",
+            "AvailableStorage",
+            "EVerificationDetails",
+            "EVerificationCustomField"
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+# Enforce LF line endings for all text files
+* text=auto eol=lf
+
+# Specific settings (optional, depending on your stack)
+
+# JavaScript / TypeScript
+*.js     text eol=lf
+*.jsx    text eol=lf
+*.ts     text eol=lf
+*.tsx    text eol=lf
+
+# JSON / config files
+*.json   text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+
+# Markdown and documentation
+*.md     text eol=lf
+*.txt    text eol=lf
+
+# HTML / CSS
+*.html   text eol=lf
+*.css    text eol=lf
+*.scss   text eol=lf
+
+# Shell scripts
+*.sh     text eol=lf
+
+# Ignore binaries (don't modify line endings)
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.pdf    binary

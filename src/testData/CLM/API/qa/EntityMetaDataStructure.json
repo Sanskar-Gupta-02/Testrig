@@ -1,0 +1,135 @@
+{
+    "expectedData": {
+        "templates": [
+            {
+                "name": "Entity Shared Inbuilt",
+                "key": "metadata",
+                "description": "Default entity shared fields.",
+                "recordState": 1,
+                "fields": [
+                    {
+                        "name": "Nickname",
+                        "description": "Default entity shared field.",
+                        "type": "String",
+                        "key": "nickname",
+                        "recordState": 1
+                    },
+                    {
+                        "name": "Description",
+                        "description": "Default entity shared field.",
+                        "type": "String",
+                        "key": "description",
+                        "recordState": 1
+                    }
+                ]
+            },
+            {
+                "name": "Entity Metadata Custom",
+                "key": "entitymetadatacustom",
+                "description": "Entity Metadata Custom",
+                "recordState": 1,
+                "fields": [
+                    {
+                        "name": "boolean data",
+                        "description": "boolean data",
+                        "type": "Boolean",
+                        "key": "booleandata",
+                        "recordState": 1
+                    },
+                    {
+                        "name": "date data",
+                        "description": "date data",
+                        "type": "Date",
+                        "key": "datedata",
+                        "recordState": 1
+                    },
+                    {
+                        "name": "decimal data",
+                        "description": "decimal data",
+                        "type": "Decimal",
+                        "key": "decimaldata",
+                        "recordState": 1
+                    },
+                    {
+                        "name": "integer data",
+                        "description": "integer data",
+                        "type": "Integer",
+                        "key": "integerdata",
+                        "recordState": 1
+                    },
+                    {
+                        "name": "links data",
+                        "description": "links data",
+                        "type": "Links",
+                        "key": "linksdata",
+                        "recordState": 1
+                    },
+                    {
+                        "name": "list data",
+                        "description": "list data",
+                        "type": "List",
+                        "key": "listdata",
+                        "recordState": 1
+                    },
+                    {
+                        "name": "string data",
+                        "description": "string data",
+                        "type": "String",
+                        "key": "stringdata",
+                        "recordState": 1
+                    },
+                    {
+                        "name": "text data",
+                        "description": "text data",
+                        "type": "Text",
+                        "key": "textdata",
+                        "recordState": 1
+                    },
+                    {
+                        "name": "email data",
+                        "description": "email data",
+                        "type": "String",
+                        "key": "emaildata",
+                        "recordState": 1
+                    },
+                    {
+                        "name": "giin data",
+                        "description": "giin data",
+                        "type": "String",
+                        "key": "giindata",
+                        "recordState": 1
+                    },
+                    {
+                        "name": "tin data",
+                        "description": "tin data",
+                        "type": "String",
+                        "key": "tindata",
+                        "recordState": 1
+                    },
+                    {
+                        "name": "date of birth data",
+                        "description": "date of birth data",
+                        "type": "Date",
+                        "key": "dateofbirthdata",
+                        "recordState": 1
+                    }
+                ]
+            },
+            {
+                "name": "archived",
+                "key": "archived",
+                "description": "archived",
+                "recordState": 2,
+                "fields": [
+                    {
+                        "name": "number",
+                        "description": "number",
+                        "type": "Integer",
+                        "key": "number",
+                        "recordState": 2
+                    }
+                ]
+            }
+        ]
+    }
+}

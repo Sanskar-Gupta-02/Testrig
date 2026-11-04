@@ -1,0 +1,315 @@
+{
+  "payload": {
+    "OnboardingTypeID": "695",
+    "ReturnFormat": "Json",
+    "OnboardingStageID": "1"
+  },
+  "expectedData": {
+    "OnboardingTypeID": 695,
+    "OnboardingStageID": 1,
+    "Name": "Data Collection",
+    "Description": "Data Collection",
+    "Active": true,
+    "AutoApproveLowRisk": false,
+    "AutoApproveStandardRisk": false,
+    "AutoApproveHighRisk": false,
+    "AutoApproveFaceMatch": 0,
+    "AutoApproveDataAuth": 0,
+    "AutoApproveAddrVerfResult": 0,
+    "AutoApproveLivenessTest": 0,
+    "AutoApproveDOB": 2,
+    "AutoApproveNameMatch": 0,
+    "SendIDPalLinkOnOnboardingDataSubmission": false,
+    "NomineeDataCollectionType": 0,
+    "AutoApproveIdDetectResult": 0,
+    "IDPalLinkSentConfirmationMessage": "Thank you for your submission to STGUAT-DEMO1.\r\n\r\nYou will shortly receive an email inviting you to complete our electronic identification process using a simple mobile app.\r\n\r\nThis is provided for STGUAT-DEMO1 by a company called ID-Pal, which will be the sender of the email.\r\n\r\nWhen you receive the email, {b}please open it on your mobile device{/b}. It will invite you to click on a link to download the mobile app and complete the identification process.",
+    "ExternalProspectAutosendEmailTemplateID": 0,
+    "ExternalProspectAutosendEmailMessage": "",
+    "IDPalEmailSubject": "",
+    "IDPalEmailBody": "",
+    "EmailAlertDisabled": true,
+    "EmailAlertToAllHandlers": 0,
+    "EmailAlertToAllSupervisors": 0,
+    "EmailAlertToAllManagers": 0,
+    "EmailAlertToAllDirectors": 0,
+    "LeadProspectApprovalType": 0,
+    "KYBPersonProspectOnboardingTypeID": 0,
+    "KYBPersonProspectEmailTemplateID": 0,
+    "KYBPersonProspectEmailMessage": "",
+    "KYBCorporateProspectOnboardingTypeID": 0,
+    "KYBCorporateProspectEmailTemplateID": 0,
+    "KYBCorporateProspectEmailMessage": "",
+    "KYBProspectHandledByUserGroupID": 0,
+    "KYBProspectHandledByUserID": 0,
+    "KYBProspectAction": 0,
+    "KYBEmailAlertDisabled": false,
+    "SendApprovalEmailToProspect": 0,
+    "ProspectApprovalEmailTemplateID": 0,
+    "ProspectApprovalEmailTemplateMessage": "",
+    "SendRejectionEmailToProspect": 0,
+    "ProspectRejectionEmailTemplateID": 0,
+    "ProspectRejectionEmailTemplateMessage": "",
+    "UseEIDVEmailTemplate": false,
+    "EIDVEmailTemplateId": 0,
+    "EIDVEmailMessage": "",
+    "IsNetworkSharing": false,
+  "PreScreeningScreeningCriteriaId": 0,
+  "PreScreeningAVMCriteriaId": 0,
+  "PreScreeningAVMCountryId": 0,
+  "PreScreeningAVMDateRangeId": 0,
+  "OrderNumber": 0,
+  "PreScreeningRiskID": 0,
+    "StageAlertLink": [
+      {
+        "AlertTypeId": 0,
+        "AlertTypeName": 0,
+        "EmailAlertToAllDirectors": 0,
+        "EmailAlertToAllHandlers": 0,
+        "EmailAlertToAllManagers": 0,
+        "EmailAlertToAllSupervisors": 0,
+        "OnboardingStageID": 1,
+        "OnboardingTypeID": 695
+      }
+    ]
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "OnboardingTypeID": {
+        "type": "integer"
+      },
+      "OnboardingStageID": {
+        "type": "integer"
+      },
+      "Name": {
+        "type": "string"
+      },
+      "Description": {
+        "type": "string"
+      },
+      "Active": {
+        "type": "boolean"
+      },
+      "AutoApproveLowRisk": {
+        "type": "boolean"
+      },
+      "AutoApproveStandardRisk": {
+        "type": "boolean"
+      },
+      "AutoApproveHighRisk": {
+        "type": "boolean"
+      },
+      "AutoApproveFaceMatch": {
+        "type": "integer"
+      },
+      "AutoApproveDataAuth": {
+        "type": "integer"
+      },
+      "AutoApproveAddrVerfResult": {
+        "type": "integer"
+      },
+      "AutoApproveLivenessTest": {
+        "type": "integer"
+      },
+      "AutoApproveDOB": {
+        "type": "integer"
+      },
+      "AutoApproveNameMatch": {
+        "type": "integer"
+      },
+      "SendIDPalLinkOnOnboardingDataSubmission": {
+        "type": "boolean"
+      },
+      "NomineeDataCollectionType": {
+        "type": "integer"
+      },
+      "AutoApproveIdDetectResult": {
+        "type": "integer"
+      },
+      "IDPalLinkSentConfirmationMessage": {
+        "type": "string"
+      },
+      "ExternalProspectAutosendEmailTemplateID": {
+        "type": "integer"
+      },
+      "ExternalProspectAutosendEmailMessage": {
+        "type": "string"
+      },
+      "IDPalEmailSubject": {
+        "type": "string"
+      },
+      "IDPalEmailBody": {
+        "type": "string"
+      },
+      "EmailAlertDisabled": {
+        "type": "boolean"
+      },
+      "EmailAlertToAllHandlers": {
+        "type": "integer"
+      },
+      "EmailAlertToAllSupervisors": {
+        "type": "integer"
+      },
+      "EmailAlertToAllManagers": {
+        "type": "integer"
+      },
+      "EmailAlertToAllDirectors": {
+        "type": "integer"
+      },
+      "LeadProspectApprovalType": {
+        "type": "integer"
+      },
+      "KYBPersonProspectOnboardingTypeID": {
+        "type": "integer"
+      },
+      "KYBPersonProspectEmailTemplateID": {
+        "type": "integer"
+      },
+      "KYBPersonProspectEmailMessage": {
+        "type": "string"
+      },
+      "KYBCorporateProspectOnboardingTypeID": {
+        "type": "integer"
+      },
+      "KYBCorporateProspectEmailTemplateID": {
+        "type": "integer"
+      },
+      "KYBCorporateProspectEmailMessage": {
+        "type": "string"
+      },
+      "KYBProspectHandledByUserGroupID": {
+        "type": "integer"
+      },
+      "KYBProspectHandledByUserID": {
+        "type": "integer"
+      },
+      "KYBProspectAction": {
+        "type": "integer"
+      },
+      "KYBEmailAlertDisabled": {
+        "type": "boolean"
+      },
+      "SendApprovalEmailToProspect": {
+        "type": "integer"
+      },
+      "ProspectApprovalEmailTemplateID": {
+        "type": "integer"
+      },
+      "ProspectApprovalEmailTemplateMessage": {
+        "type": "string"
+      },
+      "SendRejectionEmailToProspect": {
+        "type": "integer"
+      },
+      "ProspectRejectionEmailTemplateID": {
+        "type": "integer"
+      },
+      "ProspectRejectionEmailTemplateMessage": {
+        "type": "string"
+      },
+      "UseEIDVEmailTemplate": {
+        "type": "boolean"
+      },
+      "EIDVEmailTemplateId": {
+        "type": "integer"
+      },
+      "EIDVEmailMessage": {
+        "type": "string"
+      },
+      "StageAlertLink": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "AlertTypeId": {
+                "type": "integer"
+              },
+              "AlertTypeName": {
+                "type": "integer"
+              },
+              "EmailAlertToAllDirectors": {
+                "type": "integer"
+              },
+              "EmailAlertToAllHandlers": {
+                "type": "integer"
+              },
+              "EmailAlertToAllManagers": {
+                "type": "integer"
+              },
+              "EmailAlertToAllSupervisors": {
+                "type": "integer"
+              },
+              "OnboardingStageID": {
+                "type": "integer"
+              },
+              "OnboardingTypeID": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "AlertTypeId",
+              "AlertTypeName",
+              "EmailAlertToAllDirectors",
+              "EmailAlertToAllHandlers",
+              "EmailAlertToAllManagers",
+              "EmailAlertToAllSupervisors",
+              "OnboardingStageID",
+              "OnboardingTypeID"
+            ]
+          }
+        ]
+      }
+    },
+    "required": [
+      "OnboardingTypeID",
+      "OnboardingStageID",
+      "Name",
+      "Description",
+      "Active",
+      "AutoApproveLowRisk",
+      "AutoApproveStandardRisk",
+      "AutoApproveHighRisk",
+      "AutoApproveFaceMatch",
+      "AutoApproveDataAuth",
+      "AutoApproveAddrVerfResult",
+      "AutoApproveLivenessTest",
+      "AutoApproveDOB",
+      "AutoApproveNameMatch",
+      "SendIDPalLinkOnOnboardingDataSubmission",
+      "NomineeDataCollectionType",
+      "AutoApproveIdDetectResult",
+      "IDPalLinkSentConfirmationMessage",
+      "ExternalProspectAutosendEmailTemplateID",
+      "ExternalProspectAutosendEmailMessage",
+      "IDPalEmailSubject",
+      "IDPalEmailBody",
+      "EmailAlertDisabled",
+      "EmailAlertToAllHandlers",
+      "EmailAlertToAllSupervisors",
+      "EmailAlertToAllManagers",
+      "EmailAlertToAllDirectors",
+      "LeadProspectApprovalType",
+      "KYBPersonProspectOnboardingTypeID",
+      "KYBPersonProspectEmailTemplateID",
+      "KYBPersonProspectEmailMessage",
+      "KYBCorporateProspectOnboardingTypeID",
+      "KYBCorporateProspectEmailTemplateID",
+      "KYBCorporateProspectEmailMessage",
+      "KYBProspectHandledByUserGroupID",
+      "KYBProspectHandledByUserID",
+      "KYBProspectAction",
+      "KYBEmailAlertDisabled",
+      "SendApprovalEmailToProspect",
+      "ProspectApprovalEmailTemplateID",
+      "ProspectApprovalEmailTemplateMessage",
+      "SendRejectionEmailToProspect",
+      "ProspectRejectionEmailTemplateID",
+      "ProspectRejectionEmailTemplateMessage",
+      "UseEIDVEmailTemplate",
+      "EIDVEmailTemplateId",
+      "EIDVEmailMessage",
+      "StageAlertLink"
+    ]
+  }
+}

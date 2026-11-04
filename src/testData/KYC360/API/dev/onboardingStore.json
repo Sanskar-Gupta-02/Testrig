@@ -1,0 +1,121 @@
+{
+    "payload": {
+        "BusinessUnitID": "10",
+        "OnboardingPropertyGroupID": "59257",
+        "Text": "",
+        "Integer": "",
+        "Decimal": "",
+        "Date": "",
+        "ListGroupID": "",
+        "ListDataID": "",
+        "ActionUserID": "521",
+        "ReturnFormat": "Json",
+        "IsImported": "0"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "BusinessUnitID": {
+                "type": "integer"
+            },
+            "ClientProspectID": {
+                "type": "integer"
+            },
+            "ClientOnboardingID": {
+                "type": "integer"
+            },
+            "OnboardingPropertyGroupID": {
+                "type": "integer"
+            },
+            "OnboardingPropertyGroupName": {
+                "type": "string"
+            },
+            "OnboardingPropertyReferenceID": {
+                "type": "string"
+            },
+            "OnBoardingPropertyDataType": {
+                "type": "string",
+                "enum": [
+                    "TEXT",
+                    "INTEGER",
+                    "DECIMAL",
+                    "DATE",
+                    "LIST"
+                ]
+            },
+            "OnBoardingPropertyDataValue": {
+                "type": "string"
+            },
+            "OnboardingPropertyID": {
+                "type": "integer"
+            },
+            "OnboardingPropertyName": {
+                "type": "string"
+            },
+            "StoreID": {
+                "type": "integer"
+            },
+            "Integer": {
+                "type": [
+                    "integer",
+                    "null"
+                ]
+            },
+            "Decimal": {
+                "type": [
+                    "number",
+                    "null"
+                ]
+            },
+            "Text": {
+                "type": "string"
+            },
+            "Date": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "ListGroupID": {
+                "type": "integer"
+            },
+            "ListGroupName": {
+                "type": "string"
+            },
+            "ListDataID": {
+                "type": [
+                    "integer",
+                    "null"
+                ]
+            },
+            "ListDataName": {
+                "type": "string"
+            },
+            "IsImported": {
+                "type": "boolean"
+            },
+            "DateLastChanged": {
+                "type": "string"
+            },
+            "LastChangedByUserID": {
+                "type": "integer"
+            }
+        },
+        "required": [
+            "BusinessUnitID",
+            "ClientProspectID",
+            "ClientOnboardingID",
+            "OnboardingPropertyGroupID",
+            "OnboardingPropertyGroupName",
+            "OnboardingPropertyReferenceID",
+            "OnBoardingPropertyDataType",
+            "OnBoardingPropertyDataValue",
+            "OnboardingPropertyID",
+            "OnboardingPropertyName",
+            "StoreID",
+            "IsImported",
+            "DateLastChanged",
+            "LastChangedByUserID"
+        ]
+    }
+}

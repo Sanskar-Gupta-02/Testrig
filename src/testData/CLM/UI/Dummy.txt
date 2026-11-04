@@ -1,0 +1,61 @@
+public static async fileUpload(fileName: string, elementName: string, pageName: string, world: CustomWorld) {
+    const page = pageFixture.page;
+    await page.evaluate(() => {
+        window.onbeforeunload = null;
+    });
+
+    const filePath = `${process.cwd()}/src/testData/${process.env.npm_config_PROJECT}/${process.env.npm_config_TEST}/${fileName}`;
+    pageFixture.logger.info(`Uploading '${fileName}'`);
+
+    const element = await this.getElementLocator(elementName, pageName);
+
+    if (process.env.npm_config_PROJECT === "REFIT") {
+        world.dialogMessage = null;
+        let alertOccurred = false;
+
+        // Setup single dialog handler
+        const dialogHandler = async (dialog: Dialog) => {
+            alertOccurred = true;
+            world.dialog = dialog;
+            world.dialogMessage = dialog.message();
+            pageFixture.logger.info(`Alert: "${world.dialogMessage}"`);
+            await dialog.accept().catch(e => pageFixture.logger.warn(`Dialog already handled: ${e.message}`));
+        };
+        try {
+            page.on("dialog", dialogHandler);
+
+            const [fileChooser] = await Promise.all([
+                page.waitForEvent("filechooser", { timeout: 5000 }),
+                element.click(),
+            ]);
+
+            await fileChooser.setFiles(filePath, { timeout: 60000 });
+
+            // Small delay to ensure dialog handler had chance to execute
+            await page.waitForTimeout(500);
+
+            if (alertOccurred) {
+                pageFixture.logger.info("File upload interrupted by alert");
+                return;
+            }
+            pageFixture.logger.info(`'${fileName}' uploaded successfully`);
+        } catch (error) {
+            if (alertOccurred) {
+                pageFixture.logger.info("File upload interrupted by alert");
+                return;
+            }
+            throw new Error(`File upload failed: ${error instanceof Error ? error.message : String(error)}`);
+        } finally {
+            page.off("dialog", dialogHandler);
+            pageFixture.logger.info(`Dialog handler cleaned up`);
+        }
+    } else {
+        // Simple file upload for non-REFIT projects
+        try {
+            await element.setInputFiles(filePath);
+            pageFixture.logger.info(`'${fileName}' uploaded successfully (simple input upload)`);
+        } catch (error) {
+            throw new Error(`File upload failed: ${error instanceof Error ? error.message : String(error)}`);
+        }
+    }
+}

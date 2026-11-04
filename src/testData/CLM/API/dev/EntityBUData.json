@@ -1,0 +1,60 @@
+{
+    "payload": {
+        "businessUnitId": "<CLM_BU_AUTOMATION_ID>",
+        "workflow": {
+            "comment": "test"
+        },
+        "fields": [
+            {
+                "value": true,
+                "key": "bu.data.automationbustructur.booleandata"
+            },
+            {
+                "value": "2026-07-09",
+                "key": "bu.data.automationbustructur.datedata"
+            },
+            {
+                "value": "20.00",
+                "key": "bu.data.automationbustructur.decimaldata"
+            },
+            {
+                "value": "20",
+                "key": "bu.data.automationbustructur.integerdata"
+            },
+            {
+                "value": [
+                    "https://www.kyc360.com/"
+                ],
+                "key": "bu.data.automationbustructur.linksdata"
+            },
+            {
+                "value": "item1",
+                "key": "bu.data.automationbustructur.listdata"
+            },
+            {
+                "value": "test",
+                "key": "bu.data.automationbustructur.stringdata"
+            },
+            {
+                "value": "Test123",
+                "key": "bu.data.automationbustructur.textdata"
+            },
+            {
+                "value": "test@gmail.com",
+                "key": "bu.data.automationbustructur.emaildata"
+            },
+            {
+                "value": "A1B2C3.DEF45.ME.000",
+                "key": "bu.data.automationbustructur.giindata"
+            },
+            {
+                "value": "23456",
+                "key": "bu.data.automationbustructur.tindata"
+            },
+            {
+                "value": "2025-06-25",
+                "key": "bu.data.automationbustructur.dateofbirthdata"
+            }
+        ]
+    }
+}

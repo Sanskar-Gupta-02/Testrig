@@ -1,0 +1,47 @@
+{
+    "payload": {
+        "clientProspectId": 616062,
+        "clientProspectGroupId": 1408,
+        "businessUnitId": 10
+    },
+    "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "CanSubmit": {
+                "type": "boolean"
+            },
+            "IsIntermediary": {
+                "type": "boolean"
+            },
+            "PendingProspects": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "ClientProspectId": {
+                            "type": "integer"
+                        },
+                        "FirstName": {
+                            "type": "string"
+                        },
+                        "LastName": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "ClientProspectId",
+                        "FirstName",
+                        "LastName"
+                    ]
+                }
+            }
+        },
+        "required": [
+            "CanSubmit",
+            "IsIntermediary",
+            "PendingProspects"
+        ]
+    }
+}

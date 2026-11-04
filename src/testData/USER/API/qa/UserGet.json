@@ -1,0 +1,41 @@
+{
+    "schema": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "userId": {
+                    "type": "string"
+                },
+                "firstName": {
+                    "type": "string"
+                },
+                "lastName": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "created": {
+                    "type": "string"
+                },
+                "membershipStatus": {
+                    "type": "integer"
+                },
+                "profileStatus": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "userId",
+                "firstName",
+                "lastName",
+                "email",
+                "created",
+                "membershipStatus",
+                "profileStatus"
+            ]
+        }
+    }
+}

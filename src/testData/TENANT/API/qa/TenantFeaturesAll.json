@@ -1,0 +1,33 @@
+{
+    "schema": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "enabled": {
+                    "type": "boolean"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "key": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "enabled",
+                "title",
+                "description",
+                "key",
+                "status"
+            ]
+        }
+    }
+}

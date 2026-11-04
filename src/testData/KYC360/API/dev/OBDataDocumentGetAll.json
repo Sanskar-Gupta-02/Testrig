@@ -1,0 +1,69 @@
+{
+    "schema": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "BusinessUnitID": {
+                    "type": "number"
+                },
+                "ClientProspectID": {
+                    "type": "number"
+                },
+                "ClientOnboardingID": {
+                    "type": "number"
+                },
+                "DataDocumentID": {
+                    "type": "number"
+                },
+                "OnboardingDataDocumentTypeID": {
+                    "type": "number"
+                },
+                "OnboardingDataDocumentTypeName": {
+                    "type": "string"
+                },
+                "DocumentData": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    }
+                },
+                "DocumentThumbnailData": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    }
+                },
+                "MediaType": {
+                    "type": "string"
+                },
+                "DocumentDataEncoded": {
+                    "type": "string"
+                },
+                "DocumentThumbnailDataEncoded": {
+                    "type": "string"
+                },
+                "Notes": {
+                    "type": "string"
+                },
+                "DocumentName": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "BusinessUnitID",
+                "ClientProspectID",
+                "ClientOnboardingID",
+                "DataDocumentID",
+                "OnboardingDataDocumentTypeID",
+                "OnboardingDataDocumentTypeName",
+                "DocumentData",
+                "DocumentThumbnailData",
+                "MediaType",
+                "DocumentDataEncoded",
+                "DocumentThumbnailDataEncoded",
+                "DocumentName"
+            ]
+        }
+    }
+}

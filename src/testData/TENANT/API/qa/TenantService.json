@@ -1,0 +1,30 @@
+{
+    "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "balance": {
+                "type": "integer"
+            },
+            "timestamp": {
+                "type": "string"
+            },
+            "tenantId": {
+                "type": "string"
+            },
+            "serviceId": {
+                "type": "string"
+            },
+            "type": {
+                "type": "integer"
+            }
+        },
+        "required": [
+            "balance",
+            "timestamp",
+            "tenantId",
+            "serviceId",
+            "type"
+        ]
+    }
+}

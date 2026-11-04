@@ -1,0 +1,59 @@
+{
+    "schema": {
+        "title": "Tenant Response Schema",
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "string"
+            },
+            "clientId": {
+                "type": "integer"
+            },
+            "databaseServer": {
+                "type": "string"
+            },
+            "name": {
+                "type": "string"
+            },
+            "isDemoTenant": {
+                "type": "boolean"
+            },
+            "isDemoTenantActive": {
+                "type": "boolean"
+            },
+            "clmProduct": {
+                "type": "object",
+                "properties": {
+                    "isValid": {
+                        "type": "boolean"
+                    },
+                    "screeningSettings": {
+                        "type": [
+                            "object",
+                            "null"
+                        ]
+                    },
+                    "key": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "isValid",
+                    "screeningSettings",
+                    "key"
+                ],
+                "additionalProperties": false
+            }
+        },
+        "required": [
+            "id",
+            "clientId",
+            "databaseServer",
+            "name",
+            "isDemoTenant",
+            "isDemoTenantActive",
+            "clmProduct"
+        ],
+        "additionalProperties": false
+    }
+}

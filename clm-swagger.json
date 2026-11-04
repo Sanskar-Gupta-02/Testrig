@@ -1,0 +1,708 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "KYC360.Platform.Clm.Api",
+        "version": "1.0"
+    },
+    "paths": {
+        "/clm/businessunits": {
+            "get": {
+                "tags": ["BusinessUnits"],
+                "parameters": [
+                    {
+                        "name": "Page",
+                        "in": "query",
+                        "schema": {
+                            "maximum": 2147483647,
+                            "minimum": 1,
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "PageSize",
+                        "in": "query",
+                        "schema": {
+                            "maximum": 100,
+                            "minimum": 1,
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/clm/businessunits/{businessUnitId}": {
+            "get": {
+                "tags": ["BusinessUnits"],
+                "parameters": [
+                    {
+                        "name": "businessUnitId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/clm/entities/{entityId}": {
+            "get": {
+                "tags": ["Entities"],
+                "parameters": [
+                    {
+                        "name": "entityId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "put": {
+                "tags": ["Entities"],
+                "parameters": [
+                    {
+                        "name": "entityId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/EntityPutRequest"
+                            }
+                        },
+                        "text/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/EntityPutRequest"
+                            }
+                        },
+                        "application/*+json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/EntityPutRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/clm/entities": {
+            "post": {
+                "tags": ["Entities"],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/EntityPostRequest"
+                            }
+                        },
+                        "text/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/EntityPostRequest"
+                            }
+                        },
+                        "application/*+json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/EntityPostRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/clm/entities/{entityId}/businessunits/{businessUnitId}": {
+            "get": {
+                "tags": ["EntitiesBusinessUnits"],
+                "parameters": [
+                    {
+                        "name": "entityId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "businessUnitId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "post": {
+                "tags": ["EntitiesBusinessUnits"],
+                "parameters": [
+                    {
+                        "name": "entityId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "businessUnitId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/EntityBusinessUnitPostRequest"
+                            }
+                        },
+                        "text/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/EntityBusinessUnitPostRequest"
+                            }
+                        },
+                        "application/*+json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/EntityBusinessUnitPostRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            },
+            "put": {
+                "tags": ["EntitiesBusinessUnits"],
+                "parameters": [
+                    {
+                        "name": "entityId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "businessUnitId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/EntityBusinessUnitPutRequest"
+                            }
+                        },
+                        "text/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/EntityBusinessUnitPutRequest"
+                            }
+                        },
+                        "application/*+json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/EntityBusinessUnitPutRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/clm/entities/{entityId}/businessunits/{businessUnitId}/risk": {
+            "get": {
+                "tags": ["EntitiesBusinessUnitsRisk"],
+                "parameters": [
+                    {
+                        "name": "entityId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "businessUnitId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "date",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "format": "date-time"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/clm/entities/{entityId}/businessunits/{businessUnitId}/risk/{modelId}": {
+            "get": {
+                "tags": ["EntitiesBusinessUnitsRisk"],
+                "parameters": [
+                    {
+                        "name": "entityId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "businessUnitId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "modelId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "date",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "format": "date-time"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/clm/entitytypes": {
+            "get": {
+                "tags": ["EntityTypes"],
+                "parameters": [
+                    {
+                        "name": "Page",
+                        "in": "query",
+                        "schema": {
+                            "maximum": 2147483647,
+                            "minimum": 1,
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "PageSize",
+                        "in": "query",
+                        "schema": {
+                            "maximum": 100,
+                            "minimum": 1,
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/clm/entitytypes/{entityTypeId}": {
+            "get": {
+                "tags": ["EntityTypes"],
+                "parameters": [
+                    {
+                        "name": "entityTypeId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/clm/entitytypes/{entityTypeId}/metadata": {
+            "get": {
+                "tags": ["EntityTypes"],
+                "parameters": [
+                    {
+                        "name": "entityTypeId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/clm/entitytypes/{entityTypeId}/businessunits/{businessUnitId}/datastructure": {
+            "get": {
+                "tags": ["EntityTypes"],
+                "parameters": [
+                    {
+                        "name": "entityTypeId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "businessUnitId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/clm/relationshiptypes": {
+            "get": {
+                "tags": ["RelationshipTypes"],
+                "parameters": [
+                    {
+                        "name": "Page",
+                        "in": "query",
+                        "schema": {
+                            "maximum": 2147483647,
+                            "minimum": 1,
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "PageSize",
+                        "in": "query",
+                        "schema": {
+                            "maximum": 100,
+                            "minimum": 1,
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/clm/relationshiptypes/{relationshipId}": {
+            "get": {
+                "tags": ["RelationshipTypes"],
+                "parameters": [
+                    {
+                        "name": "relationshipId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/clm/relationshiptypes/{relationshipId}/datastructure": {
+            "get": {
+                "tags": ["RelationshipTypes"],
+                "parameters": [
+                    {
+                        "name": "relationshipId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/clm/riskmodels": {
+            "get": {
+                "tags": ["RiskModels"],
+                "parameters": [
+                    {
+                        "name": "Page",
+                        "in": "query",
+                        "schema": {
+                            "maximum": 2147483647,
+                            "minimum": 1,
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "PageSize",
+                        "in": "query",
+                        "schema": {
+                            "maximum": 100,
+                            "minimum": 1,
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/clm/riskmodels/{riskModelId}": {
+            "get": {
+                "tags": ["RiskModels"],
+                "parameters": [
+                    {
+                        "name": "riskModelId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "DataFieldRequest": {
+                "required": ["key"],
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "minLength": 1,
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "values": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "nullable": true
+                    }
+                },
+                "additionalProperties": false
+            },
+            "DataWorkflow": {
+                "required": ["comment"],
+                "type": "object",
+                "properties": {
+                    "comment": {
+                        "maxLength": 500,
+                        "minLength": 1,
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false
+            },
+            "EntityBusinessUnitPostRequest": {
+                "required": ["skipFourEyes", "workflow"],
+                "type": "object",
+                "properties": {
+                    "skipFourEyes": {
+                        "type": "boolean"
+                    },
+                    "workflow": {
+                        "$ref": "#/components/schemas/DataWorkflow"
+                    },
+                    "fields": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/DataFieldRequest"
+                        },
+                        "nullable": true
+                    }
+                },
+                "additionalProperties": false
+            },
+            "EntityBusinessUnitPutRequest": {
+                "required": ["skipFourEyes"],
+                "type": "object",
+                "properties": {
+                    "skipFourEyes": {
+                        "type": "boolean"
+                    },
+                    "fields": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/DataFieldRequest"
+                        },
+                        "nullable": true
+                    }
+                },
+                "additionalProperties": false
+            },
+            "EntityPostRequest": {
+                "required": ["entityTypeId"],
+                "type": "object",
+                "properties": {
+                    "entityTypeId": {
+                        "type": "string",
+                        "format": "uuid"
+                    },
+                    "fields": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/DataFieldRequest"
+                        },
+                        "nullable": true
+                    }
+                },
+                "additionalProperties": false
+            },
+            "EntityPutRequest": {
+                "type": "object",
+                "properties": {
+                    "fields": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/DataFieldRequest"
+                        },
+                        "nullable": true
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "securitySchemes": {
+            "Authorization": {
+                "type": "apiKey",
+                "name": "Authorization",
+                "in": "header"
+            }
+        }
+    },
+    "security": [
+        {
+            "Authorization": []
+        }
+    ]
+}

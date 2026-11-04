@@ -1,0 +1,58 @@
+{
+    "payload": {
+        "businessUnitId": "<CLM_BU_AUTOMATION_ID>",
+        "workflow": {
+            "comment": "test"
+        },
+        "fields": [
+            {
+                "value": true,
+                "key": "bu.data.automationbustructur.booleandata"
+            },
+            {
+                "value": "2025-06-25",
+                "key": "bu.data.automationbustructur.datedata"
+            },
+            {
+                "value": "2000.00",
+                "key": "bu.data.automationbustructur.decimaldata"
+            },
+            {
+                "value": "2000",
+                "key": "bu.data.automationbustructur.integerdata"
+            },
+            {
+                "value": "https://google.com",
+                "key": "bu.data.automationbustructur.linksdata"
+            },
+            {
+                "value": "iteam6",
+                "key": "bu.data.automationbustructur.listdata"
+            },
+            {
+                "value": "test12",
+                "key": "bu.data.automationbustructur.stringdata"
+            },
+            {
+                "value": "test  345",
+                "key": "bu.data.automationbustructur.textdata"
+            },
+            {
+                "value": "test@",
+                "key": "bu.data.automationbustructur.emaildata"
+            },
+            {
+                "value": "A1B2C3jdkashf3347$%$llkld",
+                "key": "bu.data.automationbustructur.giindata"
+            },
+            {
+                "value": "2345789234878324687362874687327648936248934653246",
+                "key": "bu.data.automationbustructur.tindata"
+            },
+            {
+                "value": "2025-06-25",
+                "key": "bu.data.automationbustructur.dateofbirthdata"
+            }
+        ]
+    }
+}

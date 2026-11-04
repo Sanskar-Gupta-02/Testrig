@@ -1,0 +1,65 @@
+{
+    "payload": {
+        "BusinessUnitID": "10",
+        "Name": "Company Record from Australia ASIC Company Dataset",
+        "SayariRecordUniqueReference": "d487bf88d1cca767534a0c9022ae606f/637619571/1735603200000",
+        "ActionUserID": "521",
+        "ReturnFormat": "Json",
+        "Url": "https://data.gov.au/data/dataset/asic-companies",
+        "PublicationDate": "2024-12-31",
+        "AcquisitionDate": "2024-12-31",
+        "SayariSourceTypeID": "1",
+        "RelationshipID": "0"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "BusinessUnitID": {
+                "type": "integer"
+            },
+            "ClientProspectGroupID": {
+                "type": "integer"
+            },
+            "SayariEntityID": {
+                "type": "integer"
+            },
+            "RelationshipID": {
+                "type": "integer"
+            },
+            "SourceID": {
+                "type": "integer"
+            },
+            "Name": {
+                "type": "string"
+            },
+            "SayariRecordUniqueReference": {
+                "type": "string"
+            },
+            "Url": {
+                "type": "string"
+            },
+            "AcquisitionDate": {
+                "type": "string"
+            },
+            "PublicationDate": {
+                "type": "string"
+            },
+            "SayariSourceTypeID": {
+                "type": "integer"
+            }
+        },
+        "required": [
+            "BusinessUnitID",
+            "ClientProspectGroupID",
+            "SayariEntityID",
+            "RelationshipID",
+            "SourceID",
+            "Name",
+            "SayariRecordUniqueReference",
+            "Url",
+            "AcquisitionDate",
+            "PublicationDate",
+            "SayariSourceTypeID"
+        ]
+    }
+}

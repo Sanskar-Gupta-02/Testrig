@@ -1,0 +1,197 @@
+{
+    "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "BusinessUnitID": {
+                "type": "integer"
+            },
+            "ClientProspectID": {
+                "type": "integer"
+            },
+            "ClientOnboardingID": {
+                "type": "integer"
+            },
+            "OnboardingStage": {
+                "type": "integer"
+            },
+            "OnboardingStageName": {
+                "type": "string"
+            },
+            "OnboardingStatus": {
+                "type": "integer"
+            },
+            "OnboardingStatusName": {
+                "type": "string"
+            },
+            "Prospect": {
+                "type": "object",
+                "additionalProperties": true
+            },
+            "ProspectGroupList": {
+                "type": "array",
+                "items": {}
+            },
+            "Onboarding": {
+                "type": "object",
+                "additionalProperties": true
+            },
+            "OnboardingDataRequestList": {
+                "type": "array",
+                "items": {}
+            },
+            "DataCollection": {
+                "type": "object",
+                "properties": {
+                    "OnboardingDataPropertyGroupList": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "OnboardingDataPropertyGroup": {
+                                    "type": "object",
+                                    "additionalProperties": true
+                                },
+                                "OnboardingDataStoreList": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "Structure": {
+                                                "type": "object",
+                                                "additionalProperties": true
+                                            },
+                                            "Store": {
+                                                "type": "object",
+                                                "additionalProperties": true
+                                            },
+                                            "DataIncomplete": {
+                                                "type": "boolean"
+                                            },
+                                            "DataInvalid": {
+                                                "type": "boolean"
+                                            },
+                                            "Value": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "required": [
+                                            "Structure",
+                                            "Store"
+                                        ]
+                                    }
+                                }
+                            },
+                            "required": [
+                                "OnboardingDataPropertyGroup",
+                                "OnboardingDataStoreList"
+                            ]
+                        }
+                    },
+                    "OnboardingDataDocumentViewList": {
+                        "type": "array",
+                        "items": {}
+                    }
+                },
+                "required": [
+                    "OnboardingDataPropertyGroupList",
+                    "OnboardingDataDocumentViewList"
+                ]
+            },
+            "DataApproval": {
+                "type": "object",
+                "additionalProperties": true
+            },
+            "IdentityVerification": {
+                "type": "object",
+                "properties": {
+                    "OnboardingIDPalSubmissionList": {
+                        "type": [
+                            "array",
+                            "null"
+                        ]
+                    },
+                    "OnboardingManualSubmissionList": {
+                        "type": "array",
+                        "items": {}
+                    }
+                },
+                "required": [
+                    "OnboardingIDPalSubmissionList",
+                    "OnboardingManualSubmissionList"
+                ]
+            },
+            "IdentityApproval": {
+                "type": "object",
+                "additionalProperties": true
+            },
+            "Screening": {
+                "type": "object",
+                "properties": {
+                    "ProspectEntity": {
+                        "type": "object",
+                        "additionalProperties": true
+                    },
+                    "AllPotentialsActioned": {
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "ProspectEntity",
+                    "AllPotentialsActioned"
+                ]
+            },
+            "ComplianceApproval": {
+                "type": "object",
+                "properties": {
+                    "ApprovalsList": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "additionalProperties": true
+                        }
+                    }
+                },
+                "required": [
+                    "ApprovalsList"
+                ]
+            },
+            "OnboardingRiskScoreAmendmentsList": {
+                "type": "array",
+                "items": {}
+            },
+            "Onboarded": {
+                "type": "boolean"
+            },
+            "Rejected": {
+                "type": "boolean"
+            },
+            "OnboardingComplete": {
+                "type": "boolean"
+            }
+        },
+        "required": [
+            "BusinessUnitID",
+            "ClientProspectID",
+            "ClientOnboardingID",
+            "OnboardingStage",
+            "OnboardingStageName",
+            "OnboardingStatus",
+            "OnboardingStatusName",
+            "Prospect",
+            "ProspectGroupList",
+            "Onboarding",
+            "OnboardingDataRequestList",
+            "DataCollection",
+            "DataApproval",
+            "IdentityVerification",
+            "IdentityApproval",
+            "Screening",
+            "ComplianceApproval",
+            "OnboardingRiskScoreAmendmentsList",
+            "Onboarded",
+            "Rejected",
+            "OnboardingComplete"
+        ]
+    }
+}

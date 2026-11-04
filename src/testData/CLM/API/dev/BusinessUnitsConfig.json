@@ -1,0 +1,53 @@
+{
+    "schema": {
+        "type": "object",
+        "properties": {
+            "businessUnits": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "recordState": {
+                            "type": "integer"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "description",
+                        "recordState"
+                    ]
+                }
+            },
+            "totalCount": {
+                "type": "integer"
+            },
+            "page": {
+                "type": "integer"
+            },
+            "pageSize": {
+                "type": "integer"
+            },
+            "totalPages": {
+                "type": "integer"
+            }
+        },
+        "required": [
+            "businessUnits",
+            "totalCount",
+            "page",
+            "pageSize",
+            "totalPages"
+        ]
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "schema": {
+        "type": "object",
+        "properties": {
+            "templates": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "key": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "recordState": {
+                            "type": "integer"
+                        },
+                        "fields": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "description": {
+                                        "type": "string"
+                                    },
+                                    "type": {
+                                        "type": "string"
+                                    },
+                                    "key": {
+                                        "type": "string"
+                                    },
+                                    "recordState": {
+                                        "type": "integer"
+                                    },
+                                    "isRequired": {
+                                        "type": "integer"
+                                    }
+                                },
+                                "required": [
+                                    "name",
+                                    "type",
+                                    "key",
+                                    "recordState",
+                                    "isRequired"
+                                ]
+                            }
+                        }
+                    },
+                    "required": [
+                        "name",
+                        "key",
+                        "recordState",
+                        "fields"
+                    ]
+                }
+            }
+        },
+        "required": [
+            "templates"
+        ]
+    }
+}

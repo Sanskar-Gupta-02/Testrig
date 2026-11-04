@@ -1,0 +1,74 @@
+{
+    "expectedData": {
+        "id": "<EntityID>",
+        "nickname": "Entities BU Automation 1",
+        "description": "Entities BU description",
+        "entityType": {
+            "name": "API Test Automaion - Do Not Touch"
+        },
+        "businessUnit": {
+            "id": "<CLM_BU_AUTOMATION_ID>",
+            "name": "Automation Do Not Touch"
+        },
+        "workflow": {
+            "state": "Draft"
+        },
+        "fields": [
+            {
+                "type": "Boolean",
+                "key": "bu.data.automationbustructur.booleandata",
+                "value": false
+            },
+            {
+                "type": "Date",
+                "key": "bu.data.automationbustructur.datedata",
+                "value": "07/09/2026"
+            },
+            {
+                "type": "Decimal",
+                "key": "bu.data.automationbustructur.decimaldata",
+                "value": 20
+            },
+            {
+                "type": "Integer",
+                "key": "bu.data.automationbustructur.integerdata",
+                "value": 20
+            },
+            {
+                "type": "Links",
+                "key": "bu.data.automationbustructur.linksdata",
+                "values": []
+            },
+            {
+                "type": "List",
+                "key": "bu.data.automationbustructur.listdata",
+                "value": "item1"
+            },
+            {
+                "type": "Text",
+                "key": "bu.data.automationbustructur.textdata",
+                "value": "test"
+            },
+            {
+                "type": "String",
+                "key": "bu.data.automationbustructur.emaildata",
+                "value": "test@gmail.com"
+            },
+            {
+                "type": "String",
+                "key": "bu.data.automationbustructur.giindata",
+                "value": "A1B2C3.DEF45.ME.000"
+            },
+            {
+                "type": "String",
+                "key": "bu.data.automationbustructur.tindata",
+                "value": "23456"
+            },
+            {
+                "type": "Date",
+                "key": "bu.data.automationbustructur.dateofbirthdata",
+                "value": "06/25/2025"
+            }
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "payload": {
+        "ReturnFormat": "Json"
+    },
+    "schema": {
+        "minItems": 1,
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "SearchEngineID": {
+                    "type": "number"
+                },
+                "SearchEngine": {
+                    "type": "number"
+                },
+                "Name": {
+                    "type": "string"
+                },
+                "Description": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "SearchEngineID",
+                "SearchEngine",
+                "Name",
+                "Description"
+            ]
+        }
+    }
+}

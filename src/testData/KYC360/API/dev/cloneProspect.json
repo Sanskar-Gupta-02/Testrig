@@ -1,0 +1,88 @@
+{
+    "payload": {
+        "ClientProspectId": "613730",
+        "ClonedProspectId": "",
+        "Email": "CloneProspect-API@example.com",
+        "CloneProspect": true,
+        "OnboardingId": 0,
+        "OnboardingTypeId": 695,
+        "ActionUserId": 521,
+        "BusinessUnitId": 10,
+        "ReturnFormat": "json",
+        "FirstName": "",
+        "MiddleName": "",
+        "ProspectRelationshipId": 0,
+        "ParentUniqueId": 0
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "BusinessUnitId": {
+                "type": "integer"
+            },
+            "ClientProspectId": {
+                "type": "integer"
+            },
+            "CloneProspect": {
+                "type": "boolean"
+            },
+            "ClonedOnboardingId": {
+                "type": "integer"
+            },
+            "ClonedProspectId": {
+                "type": "integer"
+            },
+            "Email": {
+                "type": "string"
+            },
+            "FirstName": {
+                "type": "string"
+            },
+            "InterfaceReference": {
+                "type": "string"
+            },
+            "LastName": {
+                "type": "string"
+            },
+            "MiddleName": {
+                "type": "string"
+            },
+            "OnboardingId": {
+                "type": "integer"
+            },
+            "OnboardingTypeId": {
+                "type": "integer"
+            },
+            "ParentClientProspectId": {
+                "type": "integer"
+            },
+            "ParentUniqueId": {
+                "type": "integer"
+            },
+            "ProspectRelationshipId": {
+                "type": "integer"
+            },
+            "UniqueId": {
+                "type": "integer"
+            }
+        },
+        "required": [
+            "BusinessUnitId",
+            "ClientProspectId",
+            "CloneProspect",
+            "ClonedOnboardingId",
+            "ClonedProspectId",
+            "Email",
+            "FirstName",
+            "InterfaceReference",
+            "LastName",
+            "MiddleName",
+            "OnboardingId",
+            "OnboardingTypeId",
+            "ParentClientProspectId",
+            "ParentUniqueId",
+            "ProspectRelationshipId",
+            "UniqueId"
+        ]
+    }
+}

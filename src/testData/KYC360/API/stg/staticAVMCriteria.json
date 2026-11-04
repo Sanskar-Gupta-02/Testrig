@@ -1,0 +1,112 @@
+{
+    "payload": {
+        "Description": "AVM Criteria Desc",
+        "DateRangeID": "0",
+        "CountryID": "0",
+        "FrequencyInDays": "1",
+        "SearchTermOption": "1",
+        "SafeSearch": "false",
+        "ActionUserID": "521",
+        "ReturnFormat": "Json",
+        "SearchTermProximity": "0",
+        "SearchEngineOptions[0].SearchType": "Google",
+        "SearchEngineOptions[0].IsSelected": "true",
+        "SearchEngineOptions[0].PageSize": "5",
+        "SearchEngineOptions[1].SearchType": "BingWeb",
+        "SearchEngineOptions[1].IsSelected": "true",
+        "SearchEngineOptions[1].PageSize": "5",
+        "SearchEngineOptions[2].SearchType": "BingNews",
+        "SearchEngineOptions[2].IsSelected": "true",
+        "SearchEngineOptions[2].PageSize": "5"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "CriteriaID": {
+                "type": "number"
+            },
+            "Name": {
+                "type": "string"
+            },
+            "Description": {
+                "type": "string"
+            },
+            "TermGroupID": {
+                "type": "number"
+            },
+            "TermGroupName": {
+                "type": "string"
+            },
+            "SearchEngineGroupID": {
+                "type": "number"
+            },
+            "SearchEngineGroupName": {
+                "type": "string"
+            },
+            "SearchEngineOptions": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "IsSelected": {
+                            "type": "boolean"
+                        },
+                        "PageSize": {
+                            "type": "number"
+                        },
+                        "SearchType": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "IsSelected",
+                        "PageSize",
+                        "SearchType"
+                    ]
+                }
+            },
+            "DateRangeID": {
+                "type": "number"
+            },
+            "DateRangeName": {
+                "type": "string"
+            },
+            "CountryID": {
+                "type": "number"
+            },
+            "CountryName": {
+                "type": "string"
+            },
+            "FrequencyInDays": {
+                "type": "number"
+            },
+            "SearchTermOption": {
+                "type": "number"
+            },
+            "SafeSearch": {
+                "type": "boolean"
+            },
+            "SearchTermProximity": {
+                "type": "number"
+            }
+        },
+        "required": [
+            "CriteriaID",
+            "Name",
+            "Description",
+            "TermGroupID",
+            "TermGroupName",
+            "SearchEngineGroupID",
+            "SearchEngineGroupName",
+            "SearchEngineOptions",
+            "DateRangeID",
+            "DateRangeName",
+            "CountryID",
+            "CountryName",
+            "FrequencyInDays",
+            "SearchTermOption",
+            "SafeSearch",
+            "SearchTermProximity"
+        ]
+    }
+}

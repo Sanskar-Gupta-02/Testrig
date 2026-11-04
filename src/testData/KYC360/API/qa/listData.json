@@ -1,0 +1,41 @@
+{
+  "payload": {
+    "Name": "Auto listdata",
+    "Reference": "Auto",
+    "ScreeningDataID": "0",
+    "ActionUserID": "521",
+    "ReturnFormat": "Json",
+    "SortOrder": "1"
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "ListGroupID": {
+        "type": "integer"
+      },
+      "ListDataID": {
+        "type": "integer"
+      },
+      "Name": {
+        "type": "string"
+      },
+      "Reference": {
+        "type": "string"
+      },
+      "ScreeningDataID": {
+        "type": "integer"
+      },
+      "SortOrder": {
+        "type": "integer"
+      }
+    },
+    "required": [
+      "ListGroupID",
+      "ListDataID",
+      "Name",
+      "Reference",
+      "ScreeningDataID",
+      "SortOrder"
+    ]
+  }
+}

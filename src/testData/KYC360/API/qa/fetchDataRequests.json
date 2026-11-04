@@ -1,0 +1,154 @@
+{
+    "payload": [
+         {
+            "BusinessUnitID": "10",
+            "Message": "Updated Message",
+            "EmailTemplateID": "79"
+        },
+        {
+            "BusinessUnitID": "10",
+            "Message": "Automation DCF Message",
+            "EmailTemplateID": "79"
+        }
+       
+    ],
+    "schema": {
+        "items": [
+            {
+                "properties": {
+                    "BusinessUnitID": {
+                        "type": "integer"
+                    },
+                    "ClientOnboardingID": {
+                        "type": "integer"
+                    },
+                    "ClientProspectID": {
+                        "type": "integer"
+                    },
+                    "DataRequestedOn": {
+                        "type": ["string", "null"]
+                    },
+                    "DataRequestID": {
+                        "type": "string"
+                    },
+                    "DataRequestOpenedDate": {
+                        "type": "null"
+                    },
+                    "DataRequestStatus": {
+                        "type": "integer"
+                    },
+                    "DataRequestSubmittedDate": {
+                        "type": "null"
+                    },
+                    "EmailTemplateID": {
+                        "type": "integer"
+                    },
+                    "ExpiryDate": {
+                        "type": "string"
+                    },
+                    "Message": {
+                        "type": "string"
+                    },
+                    "ProspectEmail": {
+                        "type": "string"
+                    },
+                    "ProspectFirstName": {
+                        "type": "string"
+                    },
+                    "ProspectLastName": {
+                        "type": "string"
+                    },
+                    "ProspectMiddleName": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "BusinessUnitID",
+                    "ClientProspectID",
+                    "ClientOnboardingID",
+                    "DataRequestID",
+                    "Message",
+                    "DataRequestedOn",
+                    "DataRequestOpenedDate",
+                    "DataRequestSubmittedDate",
+                    "DataRequestStatus",
+                    "ExpiryDate",
+                    "ProspectFirstName",
+                    "ProspectMiddleName",
+                    "ProspectLastName",
+                    "ProspectEmail",
+                    "EmailTemplateID"
+                ],
+                "type": "object"
+            },
+            {
+                "properties": {
+                    "BusinessUnitID": {
+                        "type": "integer"
+                    },
+                    "ClientOnboardingID": {
+                        "type": "integer"
+                    },
+                    "ClientProspectID": {
+                        "type": "integer"
+                    },
+                    "DataRequestedOn": {
+                        "type": ["string", "null"]
+                    },
+                    "DataRequestID": {
+                        "type": "string"
+                    },
+                    "DataRequestOpenedDate": {
+                        "type": "null"
+                    },
+                    "DataRequestStatus": {
+                        "type": "integer"
+                    },
+                    "DataRequestSubmittedDate": {
+                        "type": "null"
+                    },
+                    "EmailTemplateID": {
+                        "type": "integer"
+                    },
+                    "ExpiryDate": {
+                        "type": "string"
+                    },
+                    "Message": {
+                        "type": "string"
+                    },
+                    "ProspectEmail": {
+                        "type": "string"
+                    },
+                    "ProspectFirstName": {
+                        "type": "string"
+                    },
+                    "ProspectLastName": {
+                        "type": "string"
+                    },
+                    "ProspectMiddleName": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "BusinessUnitID",
+                    "ClientProspectID",
+                    "ClientOnboardingID",
+                    "DataRequestID",
+                    "Message",
+                    "DataRequestedOn",
+                    "DataRequestOpenedDate",
+                    "DataRequestSubmittedDate",
+                    "DataRequestStatus",
+                    "ExpiryDate",
+                    "ProspectFirstName",
+                    "ProspectMiddleName",
+                    "ProspectLastName",
+                    "ProspectEmail",
+                    "EmailTemplateID"
+                ],
+                "type": "object"
+            }
+        ],
+        "type": "array"
+    }
+}

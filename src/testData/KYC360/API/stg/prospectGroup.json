@@ -1,0 +1,42 @@
+{
+    "payload": {
+        "BusinessUnitID": "10",
+        "Name": "PlaywrightProspectGroup",
+        "Description": "Playwright Description",
+        "ActionUserID": "521",
+        "ReturnFormat": "Json",
+        "SearchString": "PlaywrightProspectGroup",
+        "SearchOn": "0",
+        "SearchType": "0",
+        "UserId": "521",
+        "CurrentPage": "1",
+        "PageSize": "100"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "BusinessUnitID": {
+                "type": "integer"
+            },
+            "ClientProspectGroupID": {
+                "type": "integer"
+            },
+            "Name": {
+                "type": "string"
+            },
+            "Description": {
+                "type": "string"
+            },
+            "LeadProspectEmailId": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "BusinessUnitID",
+            "ClientProspectGroupID",
+            "Name",
+            "Description",
+            "LeadProspectEmailId"
+        ]
+    }
+}

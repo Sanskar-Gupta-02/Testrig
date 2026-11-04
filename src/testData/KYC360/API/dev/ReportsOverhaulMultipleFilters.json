@@ -1,0 +1,304 @@
+{
+  "payload": {
+    "PageIndex": "1",
+    "PageSize": "10",
+    "UserId": "528",
+    "SortColumn": "Id",
+    "SortDirection": "DESC",
+    "Filters": "GeneratedDate:MjAyNS8wMi8yMSAwMDowMDowMA==&Filters=FirstNameJCBias:MC44MTk0NDQ="
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "Items": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "AliasCountry1Id": {
+              "type": "null"
+            },
+            "AliasCountry2Id": {
+              "type": "null"
+            },
+            "AliasCountry3Id": {
+              "type": "null"
+            },
+            "AliasCriteriaId": {
+              "type": "null"
+            },
+            "AliasCustomText1": {
+              "type": "null"
+            },
+            "AliasCustomText2": {
+              "type": "null"
+            },
+            "AliasDateAdded": {
+              "type": "null"
+            },
+            "AliasDateLastChanged": {
+              "type": "null"
+            },
+            "AliasDateOfBirthOrIncorporation": {
+              "type": "null"
+            },
+            "AliasEntityId": {
+              "type": "integer"
+            },
+            "AliasEntitySHA": {
+              "type": "null"
+            },
+            "AliasFirstName": {
+              "type": "null"
+            },
+            "AliasGenderId": {
+              "type": "null"
+            },
+            "AliasInterfaceReference": {
+              "type": "null"
+            },
+            "AliasLastName": {
+              "type": "null"
+            },
+            "AliasMiddleName": {
+              "type": "null"
+            },
+            "AliasParentClientEntityId": {
+              "type": "null"
+            },
+            "AliasStatus": {
+              "type": "string"
+            },
+            "AliasUserLastChanged": {
+              "type": "null"
+            },
+            "AverageJCBias": {
+              "type": "number"
+            },
+            "BusinessUnitId": {
+              "type": "integer"
+            },
+            "BusinessUnitName": {
+              "type": "string"
+            },
+            "ClientEntityID": {
+              "type": "integer"
+            },
+            "ClientFirstName": {
+              "type": "string"
+            },
+            "ClientId": {
+              "type": "integer"
+            },
+            "ClientInterfaceReference": {
+              "type": "string"
+            },
+            "ClientLastName": {
+              "type": "string"
+            },
+            "ClientMiddleName": {
+              "type": "string"
+            },
+            "ClientName": {
+              "type": "string"
+            },
+            "CustomText1": {
+              "type": "string"
+            },
+            "CustomText2": {
+              "type": "string"
+            },
+            "DateLastChanged": {
+              "type": "string"
+            },
+            "EntityFirstName": {
+              "type": "string"
+            },
+            "EntityFullName": {
+              "type": "string"
+            },
+            "EntityId": {
+              "type": "integer"
+            },
+            "EntityLastName": {
+              "type": "string"
+            },
+            "EntityMiddleName": {
+              "type": "string"
+            },
+            "FileCriteriaID": {
+              "type": "integer"
+            },
+            "FileCriteriaName": {
+              "type": "string"
+            },
+            "FirstNameJCBias": {
+              "type": "number"
+            },
+            "GeneratedDate": {
+              "type": "string"
+            },
+            "HandledByUserGroupID": {
+              "type": "integer"
+            },
+            "HandledByUserGroupName": {
+              "type": "string"
+            },
+            "HandledByUserID": {
+              "type": "integer"
+            },
+            "HandledByUserName": {
+              "type": "string"
+            },
+            "IsAVM": {
+              "type": "string"
+            },
+            "IsAlias": {
+              "type": "string"
+            },
+            "IsCountryMatch": {
+              "type": "string"
+            },
+            "IsDateMatch": {
+              "type": "string"
+            },
+            "IsOTH": {
+              "type": "string"
+            },
+            "IsPEP": {
+              "type": "string"
+            },
+            "IsRCA": {
+              "type": "string"
+            },
+            "IsSAN": {
+              "type": "string"
+            },
+            "IsUNK": {
+              "type": "string"
+            },
+            "IsWBL": {
+              "type": "string"
+            },
+            "LCBU": {
+              "type": "integer"
+            },
+            "LastNameJCBias": {
+              "type": "number"
+            },
+            "MatchType": {
+              "type": "string"
+            },
+            "MetaBump": {
+              "type": "integer"
+            },
+            "MiddleNameJCBias": {
+              "type": "number"
+            },
+            "Note": {
+              "type": "string"
+            },
+            "Priority": {
+              "type": "integer"
+            },
+            "Status": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "AliasCountry1Id",
+            "AliasCountry2Id",
+            "AliasCountry3Id",
+            "AliasCriteriaId",
+            "AliasCustomText1",
+            "AliasCustomText2",
+            "AliasDateAdded",
+            "AliasDateLastChanged",
+            "AliasDateOfBirthOrIncorporation",
+            "AliasEntityId",
+            "AliasEntitySHA",
+            "AliasFirstName",
+            "AliasGenderId",
+            "AliasInterfaceReference",
+            "AliasLastName",
+            "AliasMiddleName",
+            "AliasParentClientEntityId",
+            "AliasStatus",
+            "AliasUserLastChanged",
+            "AverageJCBias",
+            "BusinessUnitId",
+            "BusinessUnitName",
+            "ClientEntityID",
+            "ClientFirstName",
+            "ClientId",
+            "ClientInterfaceReference",
+            "ClientLastName",
+            "ClientMiddleName",
+            "ClientName",
+            "CustomText1",
+            "CustomText2",
+            "DateLastChanged",
+            "EntityFirstName",
+            "EntityFullName",
+            "EntityId",
+            "EntityLastName",
+            "EntityMiddleName",
+            "FileCriteriaID",
+            "FileCriteriaName",
+            "FirstNameJCBias",
+            "GeneratedDate",
+            "HandledByUserGroupID",
+            "HandledByUserGroupName",
+            "HandledByUserID",
+            "HandledByUserName",
+            "IsAVM",
+            "IsAlias",
+            "IsCountryMatch",
+            "IsDateMatch",
+            "IsOTH",
+            "IsPEP",
+            "IsRCA",
+            "IsSAN",
+            "IsUNK",
+            "IsWBL",
+            "LCBU",
+            "LastNameJCBias",
+            "MatchType",
+            "MetaBump",
+            "MiddleNameJCBias",
+            "Note",
+            "Priority",
+            "Status"
+          ]
+        }
+      },
+      "Keyword": {
+        "type": "string"
+      },
+      "PageIndex": {
+        "type": "integer"
+      },
+      "PageSize": {
+        "type": "integer"
+      },
+      "SortColumn": {
+        "type": "string"
+      },
+      "SortDirection": {
+        "type": "string"
+      },
+      "TotalCount": {
+        "type": "integer"
+      }
+    },
+    "required": [
+      "Items",
+      "Keyword",
+      "PageIndex",
+      "PageSize",
+      "SortColumn",
+      "SortDirection",
+      "TotalCount"
+    ]
+  }
+}

@@ -1,0 +1,791 @@
+{
+  "expectedData": [
+    {
+      "OnboardingTypeID": 550,
+      "OnboardingStageID": 1,
+      "OnboardingTypeName": "Automation1EmailTemplate",
+      "OnboardingTypeDescription": "Automation1EmailTemplate",
+      "OnboardingStageName": "Data Collection",
+      "OnboardingStageDescription": "Data Collection",
+      "Active": true,
+      "AutoApproveLowRisk": false,
+      "AutoApproveMediumRisk": false,
+      "AutoApproveHighRisk": false,
+      "AutoApproveLivenessTest": 0,
+      "AutoApproveNameMatch": 0,
+      "AutoApproveFaceMatch": 0,
+      "AutoApproveDOB": 0,
+      "AutoApproveDataAuth": 0,
+      "AutoApproveAddrVerfResult": 0,
+      "SendIDPalLinkOnOnboardingDataSubmission": false,
+      "AutoApproveIdDetectResult": 0,
+      "NomineeDataCollectionType": 0,
+      "IDPalLinkSentConfirmationMessage": "Thank you for your submission to STGUAT-CLIENT-1008.\r\n\r\nYou will shortly receive an email inviting you to complete our electronic identification process using a simple mobile app.\r\n\r\nThis is provided for STGUAT-CLIENT-1008 by a company called ID-Pal, which will be the sender of the email.\r\n\r\nWhen you receive the email, {b}please open it on your mobile device{/b}. It will invite you to click on a link to download the mobile app and complete the identification process.",
+      "ExternalProspectAutosendEmailTemplateID": 0,
+      "ExternalProspectAutosendEmailMessage": "",
+      "IDPalEmailSubject": "",
+      "IDPalEmailBody": "",
+      "EmailAlertDisabled": true,
+      "EmailAlertToAllHandlers": 0,
+      "EmailAlertToAllSupervisors": 0,
+      "EmailAlertToAllManagers": 0,
+      "EmailAlertToAllDirectors": 0,
+      "LeadProspectApprovalType": 0,
+      "KYBPersonProspectOnboardingTypeID": 0,
+      "KYBPersonProspectEmailTemplateID": 0,
+      "KYBPersonProspectEmailMessage": "",
+      "KYBCorporateProspectOnboardingTypeID": 0,
+      "KYBCorporateProspectEmailTemplateID": 0,
+      "KYBCorporateProspectEmailMessage": "",
+      "KYBProspectHandledByUserGroupID": 0,
+      "KYBProspectHandledByUserID": 0,
+      "KYBProspectAction": 0,
+      "KYBEmailAlertDisabled": false,
+      "SendApprovalEmailToProspect": 0,
+      "ProspectApprovalEmailTemplateID": 0,
+      "ProspectApprovalEmailTemplateMessage": "",
+      "SendRejectionEmailToProspect": 0,
+      "ProspectRejectionEmailTemplateID": 0,
+      "ProspectRejectionEmailTemplateMessage": "",
+      "UseEIDVEmailTemplate": false,
+      "EIDVEmailTemplateId": 0,
+      "EIDVEmailMessage": "",
+      "IsNetworkSharing": false,
+      "PreScreeningScreeningCriteriaId": 0,
+      "PreScreeningAVMCriteriaId": 0,
+      "PreScreeningRiskID": 0,
+      "OrderNumber": 0,
+      "PreScreeningAVMCountryId": 0,
+      "PreScreeningAVMDateRangeId": 0,
+      "StageAlertLink": [
+        {
+          "AlertTypeId": 0,
+          "AlertTypeName": 0,
+          "EmailAlertToAllDirectors": 0,
+          "EmailAlertToAllHandlers": 0,
+          "EmailAlertToAllManagers": 0,
+          "EmailAlertToAllSupervisors": 0,
+          "OnboardingStageID": 1,
+          "OnboardingTypeID": 550
+        }
+      ]
+    },
+    {
+      "OnboardingTypeID": 550,
+      "OnboardingStageID": 2,
+      "OnboardingTypeName": "Automation1EmailTemplate",
+      "OnboardingTypeDescription": "Automation1EmailTemplate",
+      "OnboardingStageName": "Data Approval",
+      "OnboardingStageDescription": "Data Approval",
+      "Active": true,
+      "AutoApproveLowRisk": false,
+      "AutoApproveMediumRisk": false,
+      "AutoApproveHighRisk": false,
+      "AutoApproveLivenessTest": 0,
+      "AutoApproveNameMatch": 0,
+      "AutoApproveFaceMatch": 0,
+      "AutoApproveDOB": 0,
+      "AutoApproveDataAuth": 0,
+      "AutoApproveAddrVerfResult": 0,
+      "SendIDPalLinkOnOnboardingDataSubmission": false,
+      "AutoApproveIdDetectResult": 0,
+      "NomineeDataCollectionType": 0,
+      "IDPalLinkSentConfirmationMessage": "",
+      "ExternalProspectAutosendEmailTemplateID": 0,
+      "ExternalProspectAutosendEmailMessage": "",
+      "IDPalEmailSubject": "",
+      "IDPalEmailBody": "",
+      "EmailAlertDisabled": true,
+      "EmailAlertToAllHandlers": 0,
+      "EmailAlertToAllSupervisors": 0,
+      "EmailAlertToAllManagers": 0,
+      "EmailAlertToAllDirectors": 0,
+      "LeadProspectApprovalType": 0,
+      "KYBPersonProspectOnboardingTypeID": 0,
+      "KYBPersonProspectEmailTemplateID": 0,
+      "KYBPersonProspectEmailMessage": "",
+      "KYBCorporateProspectOnboardingTypeID": 0,
+      "KYBCorporateProspectEmailTemplateID": 0,
+      "KYBCorporateProspectEmailMessage": "",
+      "KYBProspectHandledByUserGroupID": 0,
+      "KYBProspectHandledByUserID": 0,
+      "KYBProspectAction": 0,
+      "KYBEmailAlertDisabled": false,
+      "SendApprovalEmailToProspect": 0,
+      "ProspectApprovalEmailTemplateID": 0,
+      "ProspectApprovalEmailTemplateMessage": "",
+      "SendRejectionEmailToProspect": 0,
+      "ProspectRejectionEmailTemplateID": 0,
+      "ProspectRejectionEmailTemplateMessage": "",
+      "UseEIDVEmailTemplate": false,
+      "EIDVEmailTemplateId": 0,
+      "EIDVEmailMessage": "",
+      "IsNetworkSharing": false,
+      "PreScreeningScreeningCriteriaId": 0,
+      "PreScreeningAVMCriteriaId": 0,
+      "PreScreeningRiskID": 0,
+      "OrderNumber": 0,
+      "PreScreeningAVMCountryId": 0,
+      "PreScreeningAVMDateRangeId": 0,
+      "StageAlertLink": [
+        {
+          "AlertTypeId": 0,
+          "AlertTypeName": 0,
+          "EmailAlertToAllDirectors": 0,
+          "EmailAlertToAllHandlers": 0,
+          "EmailAlertToAllManagers": 0,
+          "EmailAlertToAllSupervisors": 0,
+          "OnboardingStageID": 2,
+          "OnboardingTypeID": 550
+        }
+      ]
+    },
+    {
+      "OnboardingTypeID": 550,
+      "OnboardingStageID": 3,
+      "OnboardingTypeName": "Automation1EmailTemplate",
+      "OnboardingTypeDescription": "Automation1EmailTemplate",
+      "OnboardingStageName": "Identity Verification",
+      "OnboardingStageDescription": "Identity Verification",
+      "Active": true,
+      "AutoApproveLowRisk": false,
+      "AutoApproveMediumRisk": false,
+      "AutoApproveHighRisk": false,
+      "AutoApproveLivenessTest": 0,
+      "AutoApproveNameMatch": 0,
+      "AutoApproveFaceMatch": 0,
+      "AutoApproveDOB": 0,
+      "AutoApproveDataAuth": 0,
+      "AutoApproveAddrVerfResult": 0,
+      "SendIDPalLinkOnOnboardingDataSubmission": false,
+      "AutoApproveIdDetectResult": 0,
+      "NomineeDataCollectionType": 0,
+      "IDPalLinkSentConfirmationMessage": "",
+      "ExternalProspectAutosendEmailTemplateID": 0,
+      "ExternalProspectAutosendEmailMessage": "",
+      "IDPalEmailSubject": "STGUAT-CLIENT-1008 - ID-Pal app installation instructions",
+      "IDPalEmailBody": "Hello {prospectfullname},\r\n\r\nPlease follow these instructions to complete your electronic identification process:\r\n\r\n{b}Please open this email on your mobile device{/b} and click the link below to download the ID-Pal mobile app and complete the identification process:\r\n{applink}\r\n\r\nThanks,\r\n\r\nSTGUAT-CLIENT-1008",
+      "EmailAlertDisabled": true,
+      "EmailAlertToAllHandlers": 0,
+      "EmailAlertToAllSupervisors": 0,
+      "EmailAlertToAllManagers": 0,
+      "EmailAlertToAllDirectors": 0,
+      "LeadProspectApprovalType": 0,
+      "KYBPersonProspectOnboardingTypeID": 0,
+      "KYBPersonProspectEmailTemplateID": 0,
+      "KYBPersonProspectEmailMessage": "",
+      "KYBCorporateProspectOnboardingTypeID": 0,
+      "KYBCorporateProspectEmailTemplateID": 0,
+      "KYBCorporateProspectEmailMessage": "",
+      "KYBProspectHandledByUserGroupID": 0,
+      "KYBProspectHandledByUserID": 0,
+      "KYBProspectAction": 0,
+      "KYBEmailAlertDisabled": false,
+      "SendApprovalEmailToProspect": 0,
+      "ProspectApprovalEmailTemplateID": 0,
+      "ProspectApprovalEmailTemplateMessage": "",
+      "SendRejectionEmailToProspect": 0,
+      "ProspectRejectionEmailTemplateID": 0,
+      "ProspectRejectionEmailTemplateMessage": "",
+      "UseEIDVEmailTemplate": false,
+      "EIDVEmailTemplateId": 0,
+      "EIDVEmailMessage": "",
+      "IsNetworkSharing": false,
+      "PreScreeningScreeningCriteriaId": 0,
+      "PreScreeningAVMCriteriaId": 0,
+      "PreScreeningRiskID": 0,
+      "OrderNumber": 0,
+      "PreScreeningAVMCountryId": 0,
+      "PreScreeningAVMDateRangeId": 0,
+      "StageAlertLink": [
+        {
+          "AlertTypeId": 0,
+          "AlertTypeName": 0,
+          "EmailAlertToAllDirectors": 0,
+          "EmailAlertToAllHandlers": 0,
+          "EmailAlertToAllManagers": 0,
+          "EmailAlertToAllSupervisors": 0,
+          "OnboardingStageID": 3,
+          "OnboardingTypeID": 550
+        }
+      ]
+    },
+    {
+      "OnboardingTypeID": 550,
+      "OnboardingStageID": 4,
+      "OnboardingTypeName": "Automation1EmailTemplate",
+      "OnboardingTypeDescription": "Automation1EmailTemplate",
+      "OnboardingStageName": "Identity Approval",
+      "OnboardingStageDescription": "Identity Approval",
+      "Active": true,
+      "AutoApproveLowRisk": false,
+      "AutoApproveMediumRisk": false,
+      "AutoApproveHighRisk": false,
+      "AutoApproveLivenessTest": 0,
+      "AutoApproveNameMatch": 0,
+      "AutoApproveFaceMatch": 0,
+      "AutoApproveDOB": 0,
+      "AutoApproveDataAuth": 0,
+      "AutoApproveAddrVerfResult": 0,
+      "SendIDPalLinkOnOnboardingDataSubmission": false,
+      "AutoApproveIdDetectResult": 0,
+      "NomineeDataCollectionType": 0,
+      "IDPalLinkSentConfirmationMessage": "",
+      "ExternalProspectAutosendEmailTemplateID": 0,
+      "ExternalProspectAutosendEmailMessage": "",
+      "IDPalEmailSubject": "",
+      "IDPalEmailBody": "",
+      "EmailAlertDisabled": true,
+      "EmailAlertToAllHandlers": 0,
+      "EmailAlertToAllSupervisors": 0,
+      "EmailAlertToAllManagers": 0,
+      "EmailAlertToAllDirectors": 0,
+      "LeadProspectApprovalType": 0,
+      "KYBPersonProspectOnboardingTypeID": 0,
+      "KYBPersonProspectEmailTemplateID": 0,
+      "KYBPersonProspectEmailMessage": "",
+      "KYBCorporateProspectOnboardingTypeID": 0,
+      "KYBCorporateProspectEmailTemplateID": 0,
+      "KYBCorporateProspectEmailMessage": "",
+      "KYBProspectHandledByUserGroupID": 0,
+      "KYBProspectHandledByUserID": 0,
+      "KYBProspectAction": 0,
+      "KYBEmailAlertDisabled": false,
+      "SendApprovalEmailToProspect": 0,
+      "ProspectApprovalEmailTemplateID": 0,
+      "ProspectApprovalEmailTemplateMessage": "",
+      "SendRejectionEmailToProspect": 0,
+      "ProspectRejectionEmailTemplateID": 0,
+      "ProspectRejectionEmailTemplateMessage": "",
+      "UseEIDVEmailTemplate": false,
+      "EIDVEmailTemplateId": 0,
+      "EIDVEmailMessage": "",
+      "IsNetworkSharing": false,
+      "PreScreeningScreeningCriteriaId": 0,
+      "PreScreeningAVMCriteriaId": 0,
+      "PreScreeningRiskID": 0,
+      "OrderNumber": 0,
+      "PreScreeningAVMCountryId": 0,
+      "PreScreeningAVMDateRangeId": 0,
+      "StageAlertLink": [
+        {
+          "AlertTypeId": 0,
+          "AlertTypeName": 0,
+          "EmailAlertToAllDirectors": 0,
+          "EmailAlertToAllHandlers": 0,
+          "EmailAlertToAllManagers": 0,
+          "EmailAlertToAllSupervisors": 0,
+          "OnboardingStageID": 4,
+          "OnboardingTypeID": 550
+        }
+      ]
+    },
+    {
+      "OnboardingTypeID": 550,
+      "OnboardingStageID": 5,
+      "OnboardingTypeName": "Automation1EmailTemplate",
+      "OnboardingTypeDescription": "Automation1EmailTemplate",
+      "OnboardingStageName": "Screening",
+      "OnboardingStageDescription": "Screening",
+      "Active": true,
+      "AutoApproveLowRisk": false,
+      "AutoApproveMediumRisk": false,
+      "AutoApproveHighRisk": false,
+      "AutoApproveLivenessTest": 0,
+      "AutoApproveNameMatch": 0,
+      "AutoApproveFaceMatch": 0,
+      "AutoApproveDOB": 0,
+      "AutoApproveDataAuth": 0,
+      "AutoApproveAddrVerfResult": 0,
+      "SendIDPalLinkOnOnboardingDataSubmission": false,
+      "AutoApproveIdDetectResult": 0,
+      "NomineeDataCollectionType": 0,
+      "IDPalLinkSentConfirmationMessage": "",
+      "ExternalProspectAutosendEmailTemplateID": 0,
+      "ExternalProspectAutosendEmailMessage": "",
+      "IDPalEmailSubject": "",
+      "IDPalEmailBody": "",
+      "EmailAlertDisabled": true,
+      "EmailAlertToAllHandlers": 0,
+      "EmailAlertToAllSupervisors": 0,
+      "EmailAlertToAllManagers": 0,
+      "EmailAlertToAllDirectors": 0,
+      "LeadProspectApprovalType": 0,
+      "KYBPersonProspectOnboardingTypeID": 0,
+      "KYBPersonProspectEmailTemplateID": 0,
+      "KYBPersonProspectEmailMessage": "",
+      "KYBCorporateProspectOnboardingTypeID": 0,
+      "KYBCorporateProspectEmailTemplateID": 0,
+      "KYBCorporateProspectEmailMessage": "",
+      "KYBProspectHandledByUserGroupID": 0,
+      "KYBProspectHandledByUserID": 0,
+      "KYBProspectAction": 0,
+      "KYBEmailAlertDisabled": false,
+      "SendApprovalEmailToProspect": 0,
+      "ProspectApprovalEmailTemplateID": 0,
+      "ProspectApprovalEmailTemplateMessage": "",
+      "SendRejectionEmailToProspect": 0,
+      "ProspectRejectionEmailTemplateID": 0,
+      "ProspectRejectionEmailTemplateMessage": "",
+      "UseEIDVEmailTemplate": false,
+      "EIDVEmailTemplateId": 0,
+      "EIDVEmailMessage": "",
+      "IsNetworkSharing": false,
+      "PreScreeningScreeningCriteriaId": 0,
+      "PreScreeningAVMCriteriaId": 0,
+      "PreScreeningRiskID": 0,
+      "OrderNumber": 0,
+      "PreScreeningAVMCountryId": 0,
+      "PreScreeningAVMDateRangeId": 0,
+      "StageAlertLink": [
+        {
+          "AlertTypeId": 0,
+          "AlertTypeName": 0,
+          "EmailAlertToAllDirectors": 0,
+          "EmailAlertToAllHandlers": 0,
+          "EmailAlertToAllManagers": 0,
+          "EmailAlertToAllSupervisors": 0,
+          "OnboardingStageID": 5,
+          "OnboardingTypeID": 550
+        }
+      ]
+    },
+    {
+      "OnboardingTypeID": 550,
+      "OnboardingStageID": 6,
+      "OnboardingTypeName": "Automation1EmailTemplate",
+      "OnboardingTypeDescription": "Automation1EmailTemplate",
+      "OnboardingStageName": "Compliance Approval",
+      "OnboardingStageDescription": "Compliance Approval",
+      "Active": true,
+      "AutoApproveLowRisk": false,
+      "AutoApproveMediumRisk": false,
+      "AutoApproveHighRisk": false,
+      "AutoApproveLivenessTest": 0,
+      "AutoApproveNameMatch": 0,
+      "AutoApproveFaceMatch": 0,
+      "AutoApproveDOB": 0,
+      "AutoApproveDataAuth": 0,
+      "AutoApproveAddrVerfResult": 0,
+      "SendIDPalLinkOnOnboardingDataSubmission": false,
+      "AutoApproveIdDetectResult": 0,
+      "NomineeDataCollectionType": 0,
+      "IDPalLinkSentConfirmationMessage": "",
+      "ExternalProspectAutosendEmailTemplateID": 0,
+      "ExternalProspectAutosendEmailMessage": "",
+      "IDPalEmailSubject": "",
+      "IDPalEmailBody": "",
+      "EmailAlertDisabled": true,
+      "EmailAlertToAllHandlers": 0,
+      "EmailAlertToAllSupervisors": 0,
+      "EmailAlertToAllManagers": 0,
+      "EmailAlertToAllDirectors": 0,
+      "LeadProspectApprovalType": 0,
+      "KYBPersonProspectOnboardingTypeID": 0,
+      "KYBPersonProspectEmailTemplateID": 0,
+      "KYBPersonProspectEmailMessage": "",
+      "KYBCorporateProspectOnboardingTypeID": 0,
+      "KYBCorporateProspectEmailTemplateID": 0,
+      "KYBCorporateProspectEmailMessage": "",
+      "KYBProspectHandledByUserGroupID": 0,
+      "KYBProspectHandledByUserID": 0,
+      "KYBProspectAction": 0,
+      "KYBEmailAlertDisabled": false,
+      "SendApprovalEmailToProspect": 0,
+      "ProspectApprovalEmailTemplateID": 0,
+      "ProspectApprovalEmailTemplateMessage": "",
+      "SendRejectionEmailToProspect": 0,
+      "ProspectRejectionEmailTemplateID": 0,
+      "ProspectRejectionEmailTemplateMessage": "",
+      "UseEIDVEmailTemplate": false,
+      "EIDVEmailTemplateId": 0,
+      "EIDVEmailMessage": "",
+      "IsNetworkSharing": false,
+      "PreScreeningScreeningCriteriaId": 0,
+      "PreScreeningAVMCriteriaId": 0,
+      "PreScreeningRiskID": 0,
+      "OrderNumber": 0,
+      "PreScreeningAVMCountryId": 0,
+      "PreScreeningAVMDateRangeId": 0,
+      "StageAlertLink": [
+        {
+          "AlertTypeId": 1,
+          "AlertTypeName": 0,
+          "EmailAlertToAllDirectors": 0,
+          "EmailAlertToAllHandlers": 0,
+          "EmailAlertToAllManagers": 0,
+          "EmailAlertToAllSupervisors": 0,
+          "OnboardingStageID": 6,
+          "OnboardingTypeID": 550
+        },
+        {
+          "AlertTypeId": 2,
+          "AlertTypeName": 0,
+          "EmailAlertToAllDirectors": 0,
+          "EmailAlertToAllHandlers": 0,
+          "EmailAlertToAllManagers": 0,
+          "EmailAlertToAllSupervisors": 0,
+          "OnboardingStageID": 6,
+          "OnboardingTypeID": 550
+        },
+        {
+          "AlertTypeId": 3,
+          "AlertTypeName": 0,
+          "EmailAlertToAllDirectors": 0,
+          "EmailAlertToAllHandlers": 0,
+          "EmailAlertToAllManagers": 0,
+          "EmailAlertToAllSupervisors": 0,
+          "OnboardingStageID": 6,
+          "OnboardingTypeID": 550
+        }
+      ]
+    },
+    {
+      "OnboardingTypeID": 550,
+      "OnboardingStageID": 7,
+      "OnboardingTypeName": "Automation1EmailTemplate",
+      "OnboardingTypeDescription": "Automation1EmailTemplate",
+      "OnboardingStageName": "Pre Screening",
+      "OnboardingStageDescription": "Pre Screening",
+      "Active": false,
+      "AutoApproveLowRisk": false,
+      "AutoApproveMediumRisk": false,
+      "AutoApproveHighRisk": false,
+      "AutoApproveLivenessTest": 0,
+      "AutoApproveNameMatch": 0,
+      "AutoApproveFaceMatch": 0,
+      "AutoApproveDOB": 0,
+      "AutoApproveDataAuth": 0,
+      "AutoApproveAddrVerfResult": 0,
+      "SendIDPalLinkOnOnboardingDataSubmission": false,
+      "AutoApproveIdDetectResult": 0,
+      "NomineeDataCollectionType": 0,
+      "IDPalLinkSentConfirmationMessage": "",
+      "ExternalProspectAutosendEmailTemplateID": 0,
+      "ExternalProspectAutosendEmailMessage": "",
+      "IDPalEmailSubject": "",
+      "IDPalEmailBody": "",
+      "EmailAlertDisabled": false,
+      "EmailAlertToAllHandlers": 0,
+      "EmailAlertToAllSupervisors": 0,
+      "EmailAlertToAllManagers": 0,
+      "EmailAlertToAllDirectors": 0,
+      "LeadProspectApprovalType": 0,
+      "KYBPersonProspectOnboardingTypeID": 0,
+      "KYBPersonProspectEmailTemplateID": 0,
+      "KYBPersonProspectEmailMessage": "",
+      "KYBCorporateProspectOnboardingTypeID": 0,
+      "KYBCorporateProspectEmailTemplateID": 0,
+      "KYBCorporateProspectEmailMessage": "",
+      "KYBProspectHandledByUserGroupID": 0,
+      "KYBProspectHandledByUserID": 0,
+      "KYBProspectAction": 0,
+      "KYBEmailAlertDisabled": false,
+      "SendApprovalEmailToProspect": 0,
+      "ProspectApprovalEmailTemplateID": 0,
+      "ProspectApprovalEmailTemplateMessage": "",
+      "SendRejectionEmailToProspect": 0,
+      "ProspectRejectionEmailTemplateID": 0,
+      "ProspectRejectionEmailTemplateMessage": "",
+      "UseEIDVEmailTemplate": false,
+      "EIDVEmailTemplateId": 0,
+      "EIDVEmailMessage": "",
+      "IsNetworkSharing": false,
+      "PreScreeningScreeningCriteriaId": 0,
+      "PreScreeningAVMCriteriaId": 0,
+      "PreScreeningRiskID": 0,
+      "OrderNumber": 0,
+      "PreScreeningAVMCountryId": 0,
+      "PreScreeningAVMDateRangeId": 0,
+      "StageAlertLink": [
+        {
+          "AlertTypeId": 0,
+          "AlertTypeName": 0,
+          "EmailAlertToAllDirectors": 0,
+          "EmailAlertToAllHandlers": 0,
+          "EmailAlertToAllManagers": 0,
+          "EmailAlertToAllSupervisors": 0,
+          "OnboardingStageID": 7,
+          "OnboardingTypeID": 550
+        }
+      ]
+    }
+  ],
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "OnboardingTypeID": {
+          "type": "number"
+        },
+        "OnboardingStageID": {
+          "type": "number"
+        },
+        "OnboardingTypeName": {
+          "type": "string"
+        },
+        "OnboardingTypeDescription": {
+          "type": "string"
+        },
+        "OnboardingStageName": {
+          "type": "string"
+        },
+        "OnboardingStageDescription": {
+          "type": "string"
+        },
+        "Active": {
+          "type": "boolean"
+        },
+        "AutoApproveLowRisk": {
+          "type": "boolean"
+        },
+        "AutoApproveMediumRisk": {
+          "type": "boolean"
+        },
+        "AutoApproveHighRisk": {
+          "type": "boolean"
+        },
+        "AutoApproveLivenessTest": {
+          "type": "number"
+        },
+        "AutoApproveNameMatch": {
+          "type": "number"
+        },
+        "AutoApproveFaceMatch": {
+          "type": "number"
+        },
+        "AutoApproveDOB": {
+          "type": "number"
+        },
+        "AutoApproveDataAuth": {
+          "type": "number"
+        },
+        "AutoApproveAddrVerfResult": {
+          "type": "number"
+        },
+        "SendIDPalLinkOnOnboardingDataSubmission": {
+          "type": "boolean"
+        },
+        "AutoApproveIdDetectResult": {
+          "type": "number"
+        },
+        "NomineeDataCollectionType": {
+          "type": "number"
+        },
+        "IDPalLinkSentConfirmationMessage": {
+          "type": "string"
+        },
+        "ExternalProspectAutosendEmailTemplateID": {
+          "type": "number"
+        },
+        "ExternalProspectAutosendEmailMessage": {
+          "type": "string"
+        },
+        "IDPalEmailSubject": {
+          "type": "string"
+        },
+        "IDPalEmailBody": {
+          "type": "string"
+        },
+        "EmailAlertDisabled": {
+          "type": "boolean"
+        },
+        "EmailAlertToAllHandlers": {
+          "type": "number"
+        },
+        "EmailAlertToAllSupervisors": {
+          "type": "number"
+        },
+        "EmailAlertToAllManagers": {
+          "type": "number"
+        },
+        "EmailAlertToAllDirectors": {
+          "type": "number"
+        },
+        "LeadProspectApprovalType": {
+          "type": "number"
+        },
+        "KYBPersonProspectOnboardingTypeID": {
+          "type": "number"
+        },
+        "KYBPersonProspectEmailTemplateID": {
+          "type": "number"
+        },
+        "KYBPersonProspectEmailMessage": {
+          "type": "string"
+        },
+        "KYBCorporateProspectOnboardingTypeID": {
+          "type": "number"
+        },
+        "KYBCorporateProspectEmailTemplateID": {
+          "type": "number"
+        },
+        "KYBCorporateProspectEmailMessage": {
+          "type": "string"
+        },
+        "KYBProspectHandledByUserGroupID": {
+          "type": "number"
+        },
+        "KYBProspectHandledByUserID": {
+          "type": "number"
+        },
+        "KYBProspectAction": {
+          "type": "number"
+        },
+        "KYBEmailAlertDisabled": {
+          "type": "boolean"
+        },
+        "SendApprovalEmailToProspect": {
+          "type": "number"
+        },
+        "ProspectApprovalEmailTemplateID": {
+          "type": "number"
+        },
+        "ProspectApprovalEmailTemplateMessage": {
+          "type": "string"
+        },
+        "SendRejectionEmailToProspect": {
+          "type": "number"
+        },
+        "ProspectRejectionEmailTemplateID": {
+          "type": "number"
+        },
+        "ProspectRejectionEmailTemplateMessage": {
+          "type": "string"
+        },
+        "UseEIDVEmailTemplate": {
+          "type": "boolean"
+        },
+        "EIDVEmailTemplateId": {
+          "type": "number"
+        },
+        "EIDVEmailMessage": {
+          "type": "string"
+        },
+        "IsNetworkSharing": {
+          "type": "boolean"
+        },
+        "PreScreeningScreeningCriteriaId": {
+          "type": "number"
+        },
+        "PreScreeningAVMCriteriaId": {
+          "type": "number"
+        },
+        "PreScreeningRiskID": {
+          "type": "number"
+        },
+        "OrderNumber": {
+          "type": "number"
+        },
+        "PreScreeningAVMCountryId": {
+          "type": "number"
+        },
+        "PreScreeningAVMDateRangeId": {
+          "type": "number"
+        },
+        "StageAlertLink": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "AlertTypeId": {
+                "type": "number"
+              },
+              "AlertTypeName": {
+                "type": "number"
+              },
+              "EmailAlertToAllDirectors": {
+                "type": "number"
+              },
+              "EmailAlertToAllHandlers": {
+                "type": "number"
+              },
+              "EmailAlertToAllManagers": {
+                "type": "number"
+              },
+              "EmailAlertToAllSupervisors": {
+                "type": "number"
+              },
+              "OnboardingStageID": {
+                "type": "number"
+              },
+              "OnboardingTypeID": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "AlertTypeId",
+              "AlertTypeName",
+              "EmailAlertToAllDirectors",
+              "EmailAlertToAllHandlers",
+              "EmailAlertToAllManagers",
+              "EmailAlertToAllSupervisors",
+              "OnboardingStageID",
+              "OnboardingTypeID"
+            ]
+          }
+        }
+      },
+      "required": [
+        "OnboardingTypeID",
+        "OnboardingStageID",
+        "OnboardingTypeName",
+        "OnboardingTypeDescription",
+        "OnboardingStageName",
+        "OnboardingStageDescription",
+        "Active",
+        "AutoApproveLowRisk",
+        "AutoApproveMediumRisk",
+        "AutoApproveHighRisk",
+        "AutoApproveLivenessTest",
+        "AutoApproveNameMatch",
+        "AutoApproveFaceMatch",
+        "AutoApproveDOB",
+        "AutoApproveDataAuth",
+        "AutoApproveAddrVerfResult",
+        "SendIDPalLinkOnOnboardingDataSubmission",
+        "AutoApproveIdDetectResult",
+        "NomineeDataCollectionType",
+        "IDPalLinkSentConfirmationMessage",
+        "ExternalProspectAutosendEmailTemplateID",
+        "ExternalProspectAutosendEmailMessage",
+        "IDPalEmailSubject",
+        "IDPalEmailBody",
+        "EmailAlertDisabled",
+        "EmailAlertToAllHandlers",
+        "EmailAlertToAllSupervisors",
+        "EmailAlertToAllManagers",
+        "EmailAlertToAllDirectors",
+        "LeadProspectApprovalType",
+        "KYBPersonProspectOnboardingTypeID",
+        "KYBPersonProspectEmailTemplateID",
+        "KYBPersonProspectEmailMessage",
+        "KYBCorporateProspectOnboardingTypeID",
+        "KYBCorporateProspectEmailTemplateID",
+        "KYBCorporateProspectEmailMessage",
+        "KYBProspectHandledByUserGroupID",
+        "KYBProspectHandledByUserID",
+        "KYBProspectAction",
+        "KYBEmailAlertDisabled",
+        "SendApprovalEmailToProspect",
+        "ProspectApprovalEmailTemplateID",
+        "ProspectApprovalEmailTemplateMessage",
+        "SendRejectionEmailToProspect",
+        "ProspectRejectionEmailTemplateID",
+        "ProspectRejectionEmailTemplateMessage",
+        "UseEIDVEmailTemplate",
+        "EIDVEmailTemplateId",
+        "EIDVEmailMessage",
+        "IsNetworkSharing",
+        "PreScreeningScreeningCriteriaId",
+        "PreScreeningAVMCriteriaId",
+        "PreScreeningRiskID",
+        "OrderNumber",
+        "PreScreeningAVMCountryId",
+        "PreScreeningAVMDateRangeId",
+        "StageAlertLink"
+      ]
+    }
+  }
+}

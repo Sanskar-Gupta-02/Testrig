@@ -1,0 +1,142 @@
+{
+    "expectedData": {
+        "templates": [
+            {
+                "name": "Entity Shared Inbuilt",
+                "key": "metadata",
+                "description": "Default entity shared fields.",
+                "recordState": 1,
+                "fields": [
+                    {
+                        "name": "Entity Name",
+                        "description": "The official name of the entity. This may be the legal name of an organisation or the full name of an individual.",
+                        "type": "String",
+                        "key": "entityName",
+                        "recordState": 1,
+                        "isRequired": 1
+                    },
+                    {
+                        "name": "Entity Role",
+                        "description": "Defines how the entity is used or classified within the tenant's configuration.",
+                        "type": "List",
+                        "key": "entityRole",
+                        "recordState": 1,
+                        "isRequired": 1
+                    },
+                    {
+                        "name": "Client Internal Entity ID",
+                        "description": "The client's internal reference identifier for the entity",
+                        "type": "String",
+                        "key": "clientInternalEntityId",
+                        "recordState": 1,
+                        "isRequired": 2
+                    }
+                ]
+            },
+            {
+                "name": "Entity Metadata Custom",
+                "key": "entitymetadatacustom",
+                "description": "",
+                "recordState": 1,
+                "fields": [
+                    {
+                        "name": "boolean data",
+                        "description": "",
+                        "type": "Boolean",
+                        "key": "booleandata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    },
+                    {
+                        "name": "date data",
+                        "description": "",
+                        "type": "Date",
+                        "key": "datedata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    },
+                    {
+                        "name": "decimal data",
+                        "description": "",
+                        "type": "Decimal",
+                        "key": "decimaldata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    },
+                    {
+                        "name": "integer data",
+                        "description": "",
+                        "type": "Integer",
+                        "key": "integerdata",
+                        "recordState": 1,
+                        "isRequired": 1
+                    },
+                    {
+                        "name": "links data",
+                        "description": "",
+                        "type": "Links",
+                        "key": "linksdata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    },
+                    {
+                        "name": "list data",
+                        "description": "",
+                        "type": "List",
+                        "key": "listdata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    },
+                    {
+                        "name": "string data",
+                        "description": "",
+                        "type": "String",
+                        "key": "stringdata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    },
+                    {
+                        "name": "text data",
+                        "description": "",
+                        "type": "Text",
+                        "key": "textdata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    },
+                    {
+                        "name": "email data",
+                        "description": "",
+                        "type": "String",
+                        "key": "emaildata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    },
+                    {
+                        "name": "giin data",
+                        "description": "",
+                        "type": "String",
+                        "key": "giindata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    },
+                    {
+                        "name": "tin data",
+                        "description": "",
+                        "type": "String",
+                        "key": "tindata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    },
+                    {
+                        "name": "date of birth data",
+                        "description": "",
+                        "type": "Date",
+                        "key": "dateofbirthdata",
+                        "recordState": 1,
+                        "isRequired": 2
+                    }
+                ]
+            }
+        ]
+    }
+}

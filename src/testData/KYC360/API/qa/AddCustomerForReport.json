@@ -1,0 +1,347 @@
+{
+  "payload": {
+    "BusinessUnitID": 11,
+    "InterfaceReference": "APIHBADDCUSTOMER",
+    "LastName": "Kumar",
+    "FirstName": "Akshay",
+    "MiddleName": "Hari",
+    "CriteriaID": 253,
+    "GenderID": 1,
+    "RiskID": 134,
+    "Status": 1,
+    "HandledByUserGroupID": 325,
+    "HandledByUserID": 521,
+    "Screen": true,
+    "AdverseMediaFileCriteriaID": 1080,
+    "AdverseMediaCountryID": 0,
+    "ActionUserID": 521,
+    "ReturnFormat": "Json",
+    "CustomText1": "",
+    "CustomText2": "",
+    "Country1ID": 0,
+    "Country2ID": 0,
+    "Country3ID": 0
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "ClientEntity": {
+        "type": "object",
+        "properties": {
+          "ClientEntityID": {
+            "type": "number"
+          },
+          "InterfaceReference": {
+            "type": "string"
+          },
+          "LastName": {
+            "type": "string"
+          },
+          "FirstName": {
+            "type": "string"
+          },
+          "MiddleName": {
+            "type": "string"
+          },
+          "CriteriaID": {
+            "type": "number"
+          },
+          "CriteriaName": {
+            "type": "string"
+          },
+          "GenderID": {
+            "type": "number"
+          },
+          "GenderName": {
+            "type": "string"
+          },
+          "Date": {},
+          "Country1ID": {
+            "type": "number"
+          },
+          "Country1Name": {
+            "type": "string"
+          },
+          "Country2ID": {
+            "type": "number"
+          },
+          "Country2Name": {
+            "type": "string"
+          },
+          "Country3ID": {
+            "type": "number"
+          },
+          "Country3Name": {
+            "type": "string"
+          },
+          "StatusID": {
+            "type": "number"
+          },
+          "StatusName": {
+            "type": "string"
+          },
+          "DateAdded": {
+            "type": "string"
+          },
+          "CustomText1": {
+            "type": "string"
+          },
+          "CustomText2": {
+            "type": "string"
+          },
+          "BusinessUnitID": {
+            "type": "number"
+          },
+          "BusinessUnitName": {
+            "type": "string"
+          },
+          "HandledByUserGroupID": {
+            "type": "number"
+          },
+          "HandledByUserGroupName": {
+            "type": "string"
+          },
+          "HandledByUserID": {
+            "type": "number"
+          },
+          "HandledByUserName": {
+            "type": "string"
+          },
+          "RiskID": {
+            "type": "number"
+          },
+          "RiskName": {
+            "type": "string"
+          },
+          "AdverseMediaFileCriteriaID": {
+            "type": "number"
+          },
+          "AdverseMediaDateRangeID": {
+            "type": "number"
+          },
+          "AdverseMediaCountryID": {
+            "type": "number"
+          },
+          "AdditionalAndTerms": {
+            "type": "string"
+          },
+          "AdditionalOrTerms": {
+            "type": "string"
+          },
+          "ExcludeTerms": {
+            "type": "string"
+          },
+          "AdverseMediaDateLastScreened": {}
+        },
+        "required": [
+          "ClientEntityID",
+          "InterfaceReference",
+          "LastName",
+          "FirstName",
+          "MiddleName",
+          "CriteriaID",
+          "CriteriaName",
+          "GenderID",
+          "GenderName",
+          "Date",
+          "Country1ID",
+          "Country1Name",
+          "Country2ID",
+          "Country2Name",
+          "Country3ID",
+          "Country3Name",
+          "StatusID",
+          "StatusName",
+          "DateAdded",
+          "CustomText1",
+          "CustomText2",
+          "BusinessUnitID",
+          "BusinessUnitName",
+          "HandledByUserGroupID",
+          "HandledByUserGroupName",
+          "HandledByUserID",
+          "HandledByUserName",
+          "RiskID",
+          "RiskName",
+          "AdverseMediaFileCriteriaID",
+          "AdverseMediaDateRangeID",
+          "AdverseMediaCountryID",
+          "AdditionalAndTerms",
+          "AdditionalOrTerms",
+          "ExcludeTerms",
+          "AdverseMediaDateLastScreened"
+        ]
+      },
+      "ClientMatchPotentials": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "ClientEntityID": {
+              "type": "number"
+            },
+            "ClientEntityInterfaceReference": {
+              "type": "string"
+            },
+            "ClientEntityLastName": {
+              "type": "string"
+            },
+            "ClientEntityFirstName": {
+              "type": "string"
+            },
+            "ClientEntityMiddleName": {
+              "type": "string"
+            },
+            "EntityID": {
+              "type": "number"
+            },
+            "EntityFullName": {
+              "type": "string"
+            },
+            "EntityLastName": {
+              "type": "string"
+            },
+            "EntityLastNameJCBias": {
+              "type": "number"
+            },
+            "EntityFirstName": {
+              "type": "string"
+            },
+            "EntityFirstNameJCBias": {
+              "type": "number"
+            },
+            "EntityMiddleName": {
+              "type": "string"
+            },
+            "EntityMiddleNameJCBias": {
+              "type": "number"
+            },
+            "GeneratedDate": {
+              "type": "string"
+            },
+            "AverageJCBias": {
+              "type": "number"
+            },
+            "IsPEP": {
+              "type": "boolean"
+            },
+            "IsRCA": {
+              "type": "boolean"
+            },
+            "IsWBL": {
+              "type": "boolean"
+            },
+            "IsSAN": {
+              "type": "boolean"
+            },
+            "IsAVM": {
+              "type": "boolean"
+            },
+            "IsOTH": {
+              "type": "boolean"
+            },
+            "IsUNK": {
+              "type": "boolean"
+            },
+            "IsDateMatch": {
+              "type": "boolean"
+            },
+            "IsCountryMatch": {
+              "type": "boolean"
+            },
+            "CriteriaID": {
+              "type": "number"
+            },
+            "DataSourceProvider": {
+              "type": "number"
+            },
+            "CriteriaName": {
+              "type": "string"
+            },
+            "Note": {
+              "type": "string"
+            },
+            "Status": {
+              "type": "number"
+            },
+            "Priority": {
+              "type": "number"
+            },
+            "MetaBump": {
+              "type": "number"
+            },
+            "HandledByUserGroupID": {
+              "type": "number"
+            },
+            "HandledByUserGroupName": {
+              "type": "string"
+            },
+            "HandledByUserID": {
+              "type": "number"
+            },
+            "HandledByUserName": {
+              "type": "string"
+            },
+            "DateOfBirthOrDateOfRegistration": {
+              "type": "string"
+            },
+            "PotentialCountry": {
+              "type": "string"
+            },
+            "DateMeta": {
+              "type": "string"
+            },
+            "CountryMeta": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "ClientEntityID",
+            "ClientEntityInterfaceReference",
+            "ClientEntityLastName",
+            "ClientEntityFirstName",
+            "ClientEntityMiddleName",
+            "EntityID",
+            "EntityFullName",
+            "EntityLastName",
+            "EntityLastNameJCBias",
+            "EntityFirstName",
+            "EntityFirstNameJCBias",
+            "EntityMiddleName",
+            "EntityMiddleNameJCBias",
+            "GeneratedDate",
+            "AverageJCBias",
+            "IsPEP",
+            "IsRCA",
+            "IsWBL",
+            "IsSAN",
+            "IsAVM",
+            "IsOTH",
+            "IsUNK",
+            "IsDateMatch",
+            "IsCountryMatch",
+            "CriteriaID",
+            "DataSourceProvider",
+            "CriteriaName",
+            "Note",
+            "Status",
+            "Priority",
+            "MetaBump",
+            "HandledByUserGroupID",
+            "HandledByUserGroupName",
+            "HandledByUserID",
+            "HandledByUserName",
+            "DateOfBirthOrDateOfRegistration",
+            "PotentialCountry",
+            "DateMeta",
+            "CountryMeta"
+          ]
+        }
+      }
+    },
+    "required": [
+      "ClientEntity",
+      "ClientMatchPotentials"
+    ]
+  }
+}

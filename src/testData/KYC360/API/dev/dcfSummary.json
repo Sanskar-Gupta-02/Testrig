@@ -1,0 +1,58 @@
+{
+  "payload": {
+    "BusinessUnitID": 10,
+    "FromDate": "2024-12-16",
+    "ToDate": "2024-12-16",
+    "ReturnFormat": "Json"
+  },
+  "expectedData": {
+    "ReportDataSources": [
+      {
+        "Name": "ReportDataSet1",
+        "Value": "[{\"ClientID\":116,\"ClientName\":\"STGLOADTEST-NONPKYC - Automation\",\"BusinessUnitID\":10,\"BusinessUnitName\":\"Default\",\"ProspectsDCFSentCount\":1,\"OnBoardingsDCFSentCount\":1,\"TotalNoOfDCFSent\":1,\"DCFLinkOpenedCount\":0,\"DCFLinkSubmittedCount\":1,\"DCFLinkUnopenedCount\":0}]"
+      }
+    ],
+    "ParameterList": null,
+    "SubreportDataSources": null,
+    "MainReportDataRowCount": 0,
+    "ReportLanguage": "en-GB"
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "ReportDataSources": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Name": {
+              "type": "string"
+            },
+            "Value": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "Name",
+            "Value"
+          ]
+        }
+      },
+      "ParameterList": {},
+      "SubreportDataSources": {},
+      "MainReportDataRowCount": {
+        "type": "number"
+      },
+      "ReportLanguage": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "ReportDataSources",
+      "ParameterList",
+      "SubreportDataSources",
+      "MainReportDataRowCount",
+      "ReportLanguage"
+    ]
+  }
+}
