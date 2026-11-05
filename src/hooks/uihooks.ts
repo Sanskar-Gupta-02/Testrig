@@ -14,7 +14,7 @@ import { APICommon } from "../Helper/utilities/api.utils";
 import { EmailService } from "../Helper/utilities/emailService";
 import { getEmailService } from "../Helper/utilities/emailServiceFactory";
 import { ZephyrUtility } from "../Helper/utilities/zephyrUtility";
-import { startScenarioContext } from "./scenarioContext";
+import { getScenarioContext, startScenarioContext } from "./scenarioContext";
 
 export let emailService: EmailService;
 
@@ -162,7 +162,7 @@ After(async function ({ pickle, result }) {
             }
         }
     } finally {
-        apiRequest = apiFixture.request;
+        apiRequest = getScenarioContext().api.request;
         try {
             await pageFixture.page?.close();
         } finally {

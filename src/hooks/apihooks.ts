@@ -6,7 +6,7 @@ import { createLogger } from "winston";
 import { options } from "../Helper/utilities/logger";
 import { APICommon } from "../Helper/utilities/api.utils";
 import { FrameworkConstant } from "../env/frameworkConstant";
-import { startScenarioContext } from "./scenarioContext";
+import { getScenarioContext, startScenarioContext } from "./scenarioContext";
 
 setDefaultTimeout(1000 * FrameworkConstant.FrameWorkMaxTime());
 BeforeAll(function () {
@@ -30,7 +30,7 @@ After(async function () {
     try {
         APICommon.clearStoreData();
     } finally {
-        const apiRequest = apiFixture.request;
+        const apiRequest = getScenarioContext().api.request;
         if (apiRequest) {
             await apiRequest.dispose();
         }
