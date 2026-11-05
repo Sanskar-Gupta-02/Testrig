@@ -7,19 +7,16 @@ module.exports = {
         tags: process.env.npm_config_TAGS || "",
         formatOptions: {
             snippetInterface: "async-await",
+            resultsDir: "reports/allure-results",
         },
-        paths: [
-            `src/tests/features/${PROJECT}/${TEST}`,
-        ],
+        paths: [`src/tests/features/${PROJECT}/${TEST}`],
         publishQuiet: true,
         dryRun: false,
-        require: [
-            `src/tests/steps/**/*.ts`,
-            `src/hooks/${TEST_LOWER}hooks.ts`,
-        ],
+        require: [`src/tests/steps/**/*.ts`, `src/hooks/${TEST_LOWER}hooks.ts`],
         requireModule: ["ts-node/register"],
         format: [
-            "progress-bar",
+            "progress",
+            "allure-cucumberjs/reporter",
             `html:reports/cucumber-report.html`,
             `json:reports/cucumber-report.json`,
             `rerun:reports/rerun/@rerun.txt`,
@@ -28,16 +25,15 @@ module.exports = {
     rerun: {
         formatOptions: {
             snippetInterface: "async-await",
+            resultsDir: "reports/allure-results",
         },
         publishQuiet: true,
         dryRun: false,
-        require: [
-            `src/tests/steps/**/*.ts`,
-            `src/hooks/${TEST_LOWER}hooks.ts`,
-        ],
+        require: [`src/tests/steps/**/*.ts`, `src/hooks/${TEST_LOWER}hooks.ts`],
         requireModule: ["ts-node/register"],
         format: [
-            "progress-bar",
+            "progress",
+            "allure-cucumberjs/reporter",
             `html:reports/cucumber-report.html`,
             `json:reports/cucumber-report.json`,
             `rerun:reports/rerun/@rerun.txt`,
@@ -47,19 +43,16 @@ module.exports = {
         tags: process.env.npm_config_TAGS || "",
         formatOptions: {
             snippetInterface: "async-await",
+            resultsDir: "reports/allure-results",
         },
-        paths: [
-            `src/tests/features/${PROJECT}/${TEST}`,
-        ],
+        paths: [`src/tests/features/${PROJECT}/${TEST}`],
         publishQuiet: true,
         dryRun: false,
-        require: [
-            `src/tests/steps/**/*.ts`,
-            `src/hooks/${TEST_LOWER}hooks.ts`,
-        ],
+        require: [`src/tests/steps/**/*.ts`, `src/hooks/${TEST_LOWER}hooks.ts`],
         requireModule: ["ts-node/register"],
         format: [
-            "progress-bar",
+            "progress",
+            "allure-cucumberjs/reporter",
             `html:reports/cucumber-report.html`,
             `json:reports/cucumber-report.json`,
             `rerun:reports/rerun/@rerun.txt`,
@@ -68,16 +61,15 @@ module.exports = {
     apiRerunTest: {
         formatOptions: {
             snippetInterface: "async-await",
+            resultsDir: "reports/allure-results",
         },
         publishQuiet: true,
         dryRun: false,
-        require: [
-            `src/tests/steps/**/*.ts`,
-            `src/hooks/${TEST_LOWER}hooks.ts`,
-        ],
+        require: [`src/tests/steps/**/*.ts`, `src/hooks/${TEST_LOWER}hooks.ts`],
         requireModule: ["ts-node/register"],
         format: [
-            "progress-bar",
+            "progress",
+            "allure-cucumberjs/reporter",
             `html:reports/cucumber-report.html`,
             `json:reports/cucumber-report.json`,
             `rerun:reports/rerun/@rerun.txt`,

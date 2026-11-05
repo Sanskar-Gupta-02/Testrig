@@ -6,6 +6,7 @@ import { createLogger } from "winston";
 import { options } from "../Helper/utilities/logger";
 import { APICommon } from "../Helper/utilities/api.utils";
 import { FrameworkConstant } from "../env/frameworkConstant";
+import { startScenarioContext } from "./scenarioContext";
 
 setDefaultTimeout(1000 * FrameworkConstant.FrameWorkMaxTime());
 BeforeAll(function () {
@@ -13,6 +14,7 @@ BeforeAll(function () {
 });
 
 Before(async function ({ pickle }) {
+    startScenarioContext();
     const requests: APIRequestContext = await request.newContext({
         baseURL: process.env.APIBASEURL,
         ignoreHTTPSErrors: true,
@@ -24,6 +26,13 @@ Before(async function ({ pickle }) {
     apiFixture.logger = createLogger(options(pickle.name + pickle.id));
 });
 
-After(function () {
-    APICommon.clearStoreData();
+After(async function () {
+    try {
+        APICommon.clearStoreData();
+    } finally {
+        const apiRequest = apiFixture.request;
+        if (apiRequest) {
+            await apiRequest.dispose();
+        }
+    }
 });
