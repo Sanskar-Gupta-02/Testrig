@@ -4,7 +4,7 @@ Feature: Add Prospect Automation
   Background:
     Given user login into 'REFIT' application with 'HandlerUserName' user
 
-  @AddProspect1
+  @AddProspect1 @Smoke
   Scenario: 001 External DCF should show/hide 'Manage Prospect' section according to the 'Allow Manage Prospect' value #ENG-T30
     When user creates Prospect:
       | field              | value                                      | text     |
