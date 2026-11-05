@@ -1,0 +1,773 @@
+name: KYC360 Suite
+
+permissions:
+    contents: read
+
+on:
+    workflow_dispatch:
+        inputs:
+            project:
+                description: "Select the project"
+                required: true
+                default: "KYC360"
+                type: choice
+                options: [KYC360, REFIT, CLM, TENANT, ADMIN, COMMUNICATIONS, FILEIO, FILEACCESS, USER, KYBEXPERIAN]
+            environment:
+                description: "Select the environment"
+                required: true
+                type: choice
+                options: [stg, qa, dev, emailqa]
+            test:
+                description: "Select the test type"
+                required: true
+                type: choice
+                options: [api, ui]
+            run_mode:
+                description: "Run one tag, or run Smoke followed by full Regression"
+                required: true
+                type: choice
+                default: single_tag
+                options: [single_tag, smoke_then_regression]
+            specflow_tag:
+                description: "Tag to run in single-tag mode"
+                required: true
+                default: "@Regression"
+                type: string
+
+    # schedule:
+    #     - cron: "*/30 * * * *" 
+
+jobs:
+    # --- STEP 1: DYNAMIC MATRIX GENERATOR ---
+    setup:
+        runs-on: [self-hosted, Windows, X64]
+        outputs:
+            matrix_config: ${{ steps.set-matrix.outputs.matrix_config }}
+        steps:
+            - id: set-matrix
+              shell: powershell
+              run: |
+                  $event = "${{ github.event_name }}"
+                  $schedule = "${{ github.event.schedule }}"
+                  $configs = @()
+
+                  if ($event -eq "schedule") {
+                      if ($schedule -eq "*/30 * * * *") {
+                          $configs += @{ project="CLM"; test_type="ui"; env="dev"; tag="@Test" }
+                          $configs += @{ project="CLM"; test_type="api"; env="dev"; tag="@Test" }
+                          $configs += @{ project="TENANT"; test_type="api"; env="dev"; tag="@Tenant" }
+                          $configs += @{ project="ADMIN"; test_type="api"; env="dev"; tag="@Admin" }
+                          $configs += @{ project="COMMUNICATIONS"; test_type="api"; env="dev"; tag="@Communications" }
+                          $configs += @{ project="FILEIO"; test_type="api"; env="dev"; tag="@FileIO" }
+                          $configs += @{ project="FILEACCESS"; test_type="api"; env="dev"; tag="@FileAccess" }
+                          $configs += @{ project="USER"; test_type="api"; env="dev"; tag="@User" }
+                      } else {
+                          $configs += @{ project="KYC360"; test_type="api"; env="dev"; tag="@Test" }
+                      }
+                  } else {
+                      $runMode = "${{ inputs.run_mode }}"
+                      if ($runMode -eq "smoke_then_regression" -and
+                          ("${{ inputs.project }}" -ne "REFIT" -or "${{ inputs.test }}" -ne "ui")) {
+                          throw "Smoke-then-regression is currently configured for REFIT UI only."
+                      }
+                      $configs += @{ 
+                          project = "${{ inputs.project }}"; 
+                          test_type = "${{ inputs.test }}"; 
+                          env = "${{ inputs.environment }}"; 
+                          tag = "${{ inputs.specflow_tag }}";
+                          run_mode = $runMode
+                      }
+                  }
+
+                  foreach ($config in $configs) {
+                      if (-not $config.ContainsKey("run_mode")) {
+                          $config.run_mode = "single_tag"
+                      }
+                  }
+
+                  $json = @{ include = $configs } | ConvertTo-Json -Compress -Depth 5
+                  Add-Content -Path $env:GITHUB_OUTPUT -Value "matrix_config=$json"
+
+    # --- STEP 2: DYNAMIC BUILD ---
+    build:
+        needs: setup
+        runs-on: [self-hosted, Windows, X64]
+        strategy:
+            fail-fast: false
+            matrix: ${{ fromJson(needs.setup.outputs.matrix_config) }}
+
+        environment: ${{ matrix.project }}.${{ matrix.env }}
+        name: ${{ matrix.project }} | ${{ matrix.test_type }} | ${{ matrix.env }}
+
+        defaults:
+            run:
+                working-directory: ./TestSuit
+
+        env:
+            PROJECT: ${{ matrix.project }}
+            TEST_TYPE: ${{ matrix.test_type }}
+            ENV: ${{ matrix.env }}
+            SPEC_FLOW_TAG: ${{ matrix.tag }}
+            PROJECT_PATH: ${{ github.workspace }}/kyc360-platform-automation
+            JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}
+            JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
+            JIRA_DOMAIN: ${{ secrets.JIRA_DOMAIN }}
+            ZEPHYR_PROJECT_KEY: ${{ secrets.ZEPHYR_PROJECT_KEY }}
+            ZEPHYR_BASE_URL: ${{ secrets.ZEPHYR_BASE_URL }}
+            ZEPHYR_AUTH_TOKEN: ${{ secrets.ZEPHYR_AUTH_TOKEN }}
+            ZEPHYR_SCALE_API_RUN_MODE: ${{ secrets.ZEPHYR_SCALE_API_RUN_MODE }}
+            AUTHTENANTID: ${{ secrets.AUTHTENANTID }}
+            GRAPHBASEURL: ${{ secrets.GRAPHBASEURL }}
+            GRAPHAPIBASEURL: ${{ secrets.GRAPHAPIBASEURL }}
+            AUTHCLIENTID: ${{ secrets.AUTHCLIENTID }}
+            AUTHCLIENTSECRET: ${{ secrets.AUTHCLIENTSECRET }}
+            AUTHSCOPE: ${{ secrets.AUTHSCOPE }}
+            AUTHUSERNAME: ${{ secrets.AUTHUSERNAME }}
+            AUTHPASSWORD: ${{ secrets.AUTHPASSWORD }}
+            AUTHGRANTTYPE: ${{ secrets.AUTHGRANTTYPE }}
+            MAILPITAPIBASEURL: ${{ secrets.MAILPITAPIBASEURL }}
+            ALIAS_APIKEY: ${{ secrets.ALIAS_APIKEY }}
+            EMAILSERVICE: ${{ vars.EMAILSERVICE }}
+            HandlerUserNamePassword: ${{ secrets.HandlerUserNamePassword }}
+            HandlerUserName: ${{ secrets.HandlerUserName }}
+            BROWSER: ${{ vars.BROWSER }}
+            BASEURL: ${{ vars.BASEURL }}
+            BEARER_TOKEN2: ${{ secrets.BEARER_TOKEN2 }}
+            INVALID_APIKEY: ${{ secrets.INVALID_APIKEY }}
+            APIKEY: ${{ secrets.APIKEY }}
+            APIBASEURL: ${{ vars.APIBASEURL }}
+            tenantId: ${{ secrets.tenantId }}
+            invalidTenantId: ${{ secrets.invalidTenantId }}
+            AdminUserName: ${{ secrets.AdminUserName }}
+            AdminUserNamePassword: ${{ secrets.AdminUserNamePassword }}
+            BEARER_TOKEN1: ${{ secrets.BEARER_TOKEN1 }}
+            INVALID_BEARER_TOKEN: ${{ secrets.INVALID_BEARER_TOKEN }}
+            BUSINESSUNIT: ${{ secrets.BUSINESSUNIT }}
+            ClientID: ${{ secrets.ClientID }}
+            UserID: ${{ secrets.UserID }}
+            APIKEY_FOR_REFIT_ENABLED_CLIENT: ${{ secrets.APIKEY_FOR_REFIT_ENABLED_CLIENT }}
+            TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
+            XAPIKEY: ${{ secrets.XAPIKEY }}
+            INVALID_XAPIKEY: ${{ secrets.INVALID_XAPIKEY }}
+            UserForApproval: ${{ secrets.UserForApproval }}
+            UserForApprovalPassword: ${{ secrets.UserForApprovalPassword }}
+            UserWithoutPermission: ${{ secrets.UserWithoutPermission }}
+            UserWithoutPermissionPassword: ${{ secrets.UserWithoutPermissionPassword }}
+            SecondUserWithoutPermission: ${{ secrets.SecondUserWithoutPermission }}
+            SecondUserWithoutPermissionPassword: ${{ secrets.SecondUserWithoutPermissionPassword }}
+            UserForEveryoneSystemGroups: ${{ secrets.UserForEveryoneSystemGroups }}
+            UserForEveryoneSystemGroupsPassword: ${{ secrets.UserForEveryoneSystemGroupsPassword }}
+            UserWithSpecificPermission: ${{ secrets.UserWithSpecificPermission }}
+            UserWithSpecificPermissionPassword: ${{ secrets.UserWithSpecificPermissionPassword }}
+            TabularizationFlag: ${{ vars.TabularizationFlag }}
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 22.17.1
+
+            - name: Install dependencies
+              id: install-dependencies
+              run: |
+                  npm ci -d
+                  npx playwright install --with-deps
+
+            - name: Pre Tests
+              run: npm run pretest
+
+            - name: Use HTTPS for REFIT QA Mailpit
+              if: ${{ env.EMAILSERVICE == 'mailpit' && matrix.project == 'REFIT' && matrix.env == 'qa' }}
+              shell: powershell
+              run: |
+                  $ErrorActionPreference = "Stop"
+                  $mailpit = $null
+                  if (-not [uri]::TryCreate($env:MAILPITAPIBASEURL, [UriKind]::Absolute, [ref]$mailpit) -or
+                      $mailpit.Scheme -notin @("http", "https")) {
+                      throw "MAILPITAPIBASEURL must be an absolute HTTP or HTTPS URL."
+                  }
+                  if ($mailpit.Scheme -eq "http" -and $mailpit.Port -eq 80) {
+                      $endpoint = [UriBuilder]::new($mailpit)
+                      $endpoint.Scheme = "https"
+                      $endpoint.Port = 443
+                      Add-Content -Path $env:GITHUB_ENV -Value "MAILPITAPIBASEURL=$($endpoint.Uri.AbsoluteUri)" -Encoding UTF8
+                      Write-Host "Switched REFIT QA Mailpit from HTTP/80 to HTTPS/443 to match local configuration."
+                  }
+
+            - name: Mail cleanup
+              run: npm run mail:cleanup
+
+            - name: Run Smoke suite
+              if: ${{ matrix.run_mode == 'smoke_then_regression' }}
+              run: >
+                  npm run ${{ matrix.test_type }}:test
+                  --TAGS=@Smoke
+                  --PROJECT=${{ matrix.project }}
+                  --TEST=${{ matrix.test_type }}
+                  --ENV=${{ matrix.env }}
+
+            - name: Preserve Smoke execution report
+              if: ${{ always() && matrix.run_mode == 'smoke_then_regression' }}
+              shell: powershell
+              run: |
+                  $ErrorActionPreference = "Stop"
+                  $reportDirectory = "reports/smoke"
+                  $htmlReport = "reports/cucumber-report.html"
+                  $jsonReport = "reports/cucumber-report.json"
+
+                  if (-not (Test-Path $htmlReport) -or -not (Test-Path $jsonReport)) {
+                      throw "Smoke execution did not produce both Cucumber reports."
+                  }
+
+                  New-Item -ItemType Directory -Force -Path $reportDirectory | Out-Null
+                  Copy-Item -Path $htmlReport, $jsonReport -Destination $reportDirectory -Force
+
+                  $report = Get-Content -Raw -Path $jsonReport | ConvertFrom-Json
+                  $total = $passed = $failed = 0
+                  foreach ($feature in $report) {
+                      foreach ($scenario in $feature.elements | Where-Object { $_.type -ne "background" }) {
+                          $total++
+                          $statuses = @($scenario.steps | ForEach-Object { $_.result.status })
+                          if ($statuses -contains "failed") {
+                              $failed++
+                          }
+                          elseif ($statuses.Count -gt 0 -and @($statuses | Where-Object { $_ -ne "passed" }).Count -eq 0) {
+                              $passed++
+                          }
+                      }
+                  }
+
+                  if ($total -eq 0) {
+                      throw "Smoke tag @Smoke matched no scenarios; refusing to run the full Regression suite."
+                  }
+
+                  @{
+                      total = $total
+                      passed = $passed
+                      failed = $failed
+                  } | ConvertTo-Json -Compress | Set-Content -Path (Join-Path $reportDirectory "summary.json")
+                  Write-Host "Preserved Smoke report for $total scenario(s): $reportDirectory"
+
+            - name: Prepare Regression report paths
+              if: ${{ matrix.run_mode == 'smoke_then_regression' }}
+              shell: powershell
+              run: |
+                  Remove-Item -Path "reports/cucumber-report.html", "reports/cucumber-report.json" -Force -ErrorAction SilentlyContinue
+
+            - name: Run full Regression suite
+              id: regression
+              if: ${{ matrix.run_mode == 'smoke_then_regression' }}
+              run: >
+                  npm run ${{ matrix.test_type }}:test
+                  --ignore-scripts
+                  --TAGS=@Regression
+                  --PROJECT=${{ matrix.project }}
+                  --TEST=${{ matrix.test_type }}
+                  --ENV=${{ matrix.env }}
+
+            - name: Run selected tag
+              if: ${{ matrix.run_mode != 'smoke_then_regression' }}
+              run: >
+                  npm run ${{ matrix.test_type }}:test
+                  --TAGS=${{ matrix.tag }}
+                  --PROJECT=${{ matrix.project }}
+                  --TEST=${{ matrix.test_type }}
+                  --ENV=${{ matrix.env }}
+
+            - name: Generate Allure report
+              if: ${{ always() && steps.install-dependencies.outcome == 'success' }}
+              shell: powershell
+              run: |
+                $ErrorActionPreference = "Stop"
+                $allureResults = "reports/allure-results"
+                if ((Test-Path $allureResults) -and (Get-ChildItem -Path $allureResults -File | Select-Object -First 1)) {
+                  npm run allure:generate
+                } else {
+                  Write-Warning "No Allure results were generated; skipping HTML report generation."
+                }
+
+            - name: Extract Test Results
+              if: always()
+              shell: powershell
+              run: |
+                $jsonPath = "${{ github.workspace }}/TestSuit/reports/cucumber-report.json"
+                if ("${{ matrix.run_mode }}" -eq "smoke_then_regression" -and
+                    ("${{ steps.regression.outcome }}" -eq "skipped" -or -not (Test-Path $jsonPath))) {
+                    $jsonPath = "${{ github.workspace }}/TestSuit/reports/smoke/cucumber-report.json"
+                }
+                $total = $passed = $failed = 0
+
+                if (-not (Test-Path $jsonPath)) {
+                    throw "Cucumber JSON report was not created: $jsonPath"
+                }
+
+                $jsonContent = Get-Content -Raw -Path $jsonPath | ConvertFrom-Json
+                if (-not $jsonContent) {
+                    throw "Cucumber JSON report is empty: $jsonPath"
+                }
+
+                foreach ($feature in $jsonContent) {
+                    foreach ($scenario in $feature.elements | Where-Object { $_.type -ne "background" }) {
+                        $total++
+                        $statuses = @($scenario.steps | ForEach-Object { $_.result.status })
+
+                        if ($statuses -contains "failed") {
+                            $failed++
+                        }
+                        elseif ($statuses.Count -gt 0 -and @($statuses | Where-Object { $_ -ne "passed" }).Count -eq 0) {
+                            $passed++
+                        }
+                    }
+                }
+
+                Add-Content $env:GITHUB_ENV "TOTAL_TESTS=$total"
+                Add-Content $env:GITHUB_ENV "PASSED_TESTS=$passed"
+                Add-Content $env:GITHUB_ENV "FAILED_TESTS=$failed"
+
+            - name: Prepare Reports for GitHub Pages
+              if: always()
+              shell: powershell
+              run: |
+                $ErrorActionPreference = "Stop"
+                $reportKey = "${{ matrix.project }}-${{ matrix.test_type }}-${{ matrix.env }}"
+                $siteDirectory = "reports/site/$reportKey"
+                $isSmokeRegression = "${{ matrix.run_mode }}" -eq "smoke_then_regression"
+                $regressionOutcome = "${{ steps.regression.outcome }}"
+                $latestHtmlReport = "reports/cucumber-report.html"
+                $latestJsonReport = "reports/cucumber-report.json"
+
+                if ($isSmokeRegression -and
+                    ($regressionOutcome -eq "skipped" -or -not (Test-Path $latestHtmlReport))) {
+                  $latestHtmlReport = "reports/smoke/cucumber-report.html"
+                  $latestJsonReport = "reports/smoke/cucumber-report.json"
+                }
+                if (-not (Test-Path $latestHtmlReport) -or -not (Test-Path $latestJsonReport)) {
+                  throw "Cucumber HTML and JSON reports were not generated."
+                }
+
+                New-Item -ItemType Directory -Force -Path $siteDirectory | Out-Null
+                if (Test-Path "reports/allure-report/index.html") {
+                  New-Item -ItemType Directory -Force -Path "$siteDirectory/allure" | Out-Null
+                  Copy-Item -Path "reports/allure-report/*" -Destination "$siteDirectory/allure" -Recurse -Force
+                }
+                Copy-Item -Path $latestHtmlReport, $latestJsonReport -Destination $siteDirectory -Force
+
+                if ($isSmokeRegression) {
+                  $smokeDirectory = Join-Path $siteDirectory "smoke"
+                  $regressionDirectory = Join-Path $siteDirectory "regression"
+                  if (-not (Test-Path "reports/smoke/cucumber-report.html") -or
+                      -not (Test-Path "reports/smoke/cucumber-report.json")) {
+                    throw "Smoke Cucumber report was not preserved."
+                  }
+                  New-Item -ItemType Directory -Force -Path $smokeDirectory, $regressionDirectory | Out-Null
+                  Copy-Item -Path "reports/smoke/cucumber-report.html", "reports/smoke/cucumber-report.json", "reports/smoke/summary.json" -Destination $smokeDirectory -Force
+                  if ($regressionOutcome -ne "skipped" -and
+                      (Test-Path "reports/cucumber-report.html") -and
+                      (Test-Path "reports/cucumber-report.json")) {
+                    Copy-Item -Path "reports/cucumber-report.html", "reports/cucumber-report.json" -Destination $regressionDirectory -Force
+                  }
+                }
+
+                @{
+                  total = [int]$env:TOTAL_TESTS
+                  passed = [int]$env:PASSED_TESTS
+                  failed = [int]$env:FAILED_TESTS
+                } | ConvertTo-Json -Compress | Set-Content -Path "$siteDirectory/summary.json"
+                if ($isSmokeRegression -and $regressionOutcome -ne "skipped" -and
+                    (Test-Path (Join-Path $siteDirectory "regression"))) {
+                  Copy-Item -Path "$siteDirectory/summary.json" -Destination (Join-Path $siteDirectory "regression/summary.json") -Force
+                }
+
+            - name: Upload Cucumber Report
+              id: upload-cucumber-report
+              if: ${{ always() && hashFiles('TestSuit/reports/cucumber-report.html', 'TestSuit/reports/cucumber-report.json') != '' }}
+              uses: actions/upload-artifact@v4
+              with:
+                name: cucumber-report-${{ matrix.project }}-${{ matrix.test_type }}-${{ matrix.env }}
+                path: |
+                  TestSuit/reports/cucumber-report.html
+                  TestSuit/reports/cucumber-report.json
+                if-no-files-found: error
+                retention-days: 30
+
+            - name: Upload Smoke Cucumber Report
+              if: ${{ always() && matrix.run_mode == 'smoke_then_regression' && hashFiles('TestSuit/reports/smoke/cucumber-report.html', 'TestSuit/reports/smoke/cucumber-report.json') != '' }}
+              uses: actions/upload-artifact@v4
+              with:
+                name: smoke-cucumber-report-${{ matrix.project }}-${{ matrix.test_type }}-${{ matrix.env }}
+                path: |
+                  TestSuit/reports/smoke/cucumber-report.html
+                  TestSuit/reports/smoke/cucumber-report.json
+                  TestSuit/reports/smoke/summary.json
+                if-no-files-found: error
+                retention-days: 30
+
+            - name: Upload Regression Cucumber Report
+              if: ${{ always() && matrix.run_mode == 'smoke_then_regression' && hashFiles('TestSuit/reports/regression/cucumber-report.html', 'TestSuit/reports/regression/cucumber-report.json') != '' }}
+              uses: actions/upload-artifact@v4
+              with:
+                name: regression-cucumber-report-${{ matrix.project }}-${{ matrix.test_type }}-${{ matrix.env }}
+                path: |
+                  TestSuit/reports/regression/cucumber-report.html
+                  TestSuit/reports/regression/cucumber-report.json
+                  TestSuit/reports/regression/summary.json
+                if-no-files-found: error
+                retention-days: 30
+
+            - name: Upload Reports for GitHub Pages
+              if: always()
+              uses: actions/upload-artifact@v4
+              with:
+                name: test-reports-${{ matrix.project }}-${{ matrix.test_type }}-${{ matrix.env }}
+                path: TestSuit/reports/site/${{ matrix.project }}-${{ matrix.test_type }}-${{ matrix.env }}
+                if-no-files-found: error
+                retention-days: 1
+
+            - name: Upload Allure Report
+              id: upload-allure-report
+              if: ${{ always() && hashFiles('TestSuit/reports/allure-report/index.html') != '' }}
+              uses: actions/upload-artifact@v4
+              with:
+                name: allure-report-${{ matrix.project }}-${{ matrix.test_type }}-${{ matrix.env }}
+                path: TestSuit/reports/allure-report
+                if-no-files-found: error
+                retention-days: 30
+
+    deploy:
+        needs: [setup, build]
+        if: ${{ always() && needs.setup.result == 'success' && needs.build.result != 'cancelled' }}
+        runs-on: [self-hosted, Windows, X64]
+        permissions:
+            contents: read
+            pages: write
+            id-token: write
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+        outputs:
+            page_url: ${{ steps.deployment.outputs.page_url }}
+        steps:
+            - name: Configure GitHub Pages
+              uses: actions/configure-pages@v5
+
+            - name: Clear report staging directory
+              shell: powershell
+              run: |
+                $ErrorActionPreference = "Stop"
+                if (Test-Path "site") {
+                  Remove-Item -Path "site" -Recurse -Force
+                }
+
+            - name: Download test reports
+              uses: actions/download-artifact@v4
+              with:
+                pattern: test-reports-*
+                path: site
+                merge-multiple: false
+
+            - name: Create GitHub Pages report index
+              shell: powershell
+              run: |
+                $ErrorActionPreference = "Stop"
+                $sitePath = (Resolve-Path "site").Path
+                $reportDirectories = @(Get-ChildItem -Path $sitePath -Directory)
+                if ($reportDirectories.Count -eq 0) {
+                  throw "No report directories were downloaded for GitHub Pages."
+                }
+
+                $links = foreach ($directory in $reportDirectories) {
+                  $reportLinks = @()
+                  if (Test-Path (Join-Path $directory.FullName "allure/index.html")) {
+                    $reportLinks += "<a href='./$($directory.Name)/allure/'>Allure</a>"
+                  }
+                  $hasSmokeReport = Test-Path (Join-Path $directory.FullName "smoke/cucumber-report.html")
+                  $hasRegressionReport = Test-Path (Join-Path $directory.FullName "regression/cucumber-report.html")
+                  if ($hasSmokeReport) {
+                    $reportLinks += "<a href='./$($directory.Name)/smoke/cucumber-report.html'>Smoke Cucumber</a>"
+                  }
+                  if ($hasRegressionReport) {
+                    $reportLinks += "<a href='./$($directory.Name)/regression/cucumber-report.html'>Regression Cucumber</a>"
+                  }
+                  $hasDefaultReport = Test-Path (Join-Path $directory.FullName "cucumber-report.html")
+                  if (-not $hasSmokeReport -and -not $hasRegressionReport -and $hasDefaultReport) {
+                    $reportLinks += "<a href='./$($directory.Name)/cucumber-report.html'>Cucumber</a>"
+                  }
+                  if (-not $hasSmokeReport -and -not $hasRegressionReport -and -not $hasDefaultReport) {
+                    throw "Cucumber report is missing from $($directory.Name)."
+                  }
+
+                  "<li>$($directory.Name): $($reportLinks -join ' | ')</li>"
+                }
+
+                $html = @"
+                <!doctype html>
+                <html lang="en">
+                <head><meta charset="utf-8"><title>KYC360 Test Reports</title></head>
+                <body><h1>KYC360 Test Reports</h1><ul>
+                $($links -join "`n")
+                </ul></body>
+                </html>
+                "@
+                Set-Content -Path (Join-Path $sitePath "index.html") -Value $html -Encoding UTF8
+
+            - name: Upload GitHub Pages artifact
+              shell: powershell
+              run: |
+                $ErrorActionPreference = "Stop"
+                $sitePath = (Resolve-Path "site").Path
+                $artifactPath = Join-Path $env:RUNNER_TEMP "artifact.tar"
+
+                & tar -cf $artifactPath -C $sitePath .
+                if ($LASTEXITCODE -ne 0) {
+                  throw "Failed to package GitHub Pages site (tar exit code $LASTEXITCODE)."
+                }
+                if (-not (Test-Path $artifactPath)) {
+                  throw "GitHub Pages archive was not created: $artifactPath"
+                }
+
+            - name: Upload GitHub Pages artifact
+              uses: actions/upload-artifact@v4
+              with:
+                name: github-pages
+                path: ${{ runner.temp }}/artifact.tar
+                retention-days: 1
+                if-no-files-found: error
+
+            - name: Deploy GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v4
+
+    notify:
+        needs: [setup, build, deploy]
+        if: ${{ always() && needs.setup.result == 'success' && needs.build.result != 'cancelled' }}
+        runs-on: [self-hosted, Windows, X64]
+        strategy:
+            fail-fast: false
+            matrix: ${{ fromJson(needs.setup.outputs.matrix_config) }}
+        environment: ${{ matrix.project }}.${{ matrix.env }}
+        steps:
+            - name: Clear previous report summary
+              shell: powershell
+              run: |
+                $ErrorActionPreference = "Stop"
+                if (Test-Path "reports/summary.json") {
+                  Remove-Item -Path "reports/summary.json" -Force
+                }
+
+            - name: Download test report summary
+              uses: actions/download-artifact@v4
+              continue-on-error: true
+              with:
+                name: test-reports-${{ matrix.project }}-${{ matrix.test_type }}-${{ matrix.env }}
+                path: reports
+
+            - name: Send Report to Microsoft Teams
+              if: always()
+              shell: pwsh
+              env:
+                TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
+                PROJECT: ${{ matrix.project }}
+                TEST_TYPE: ${{ matrix.test_type }}
+                ENVIRONMENT: ${{ matrix.env }}
+                RUN_MODE: ${{ matrix.run_mode }}
+                PAGES_BASE_URL: ${{ needs.deploy.outputs.page_url }}
+                RUN_REPORTS_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts
+                RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+                GITHUB_RUN_NUMBER: ${{ github.run_number }}
+
+              run: |
+                if ([string]::IsNullOrWhiteSpace($env:TEAMS_WEBHOOK_URL)) {
+                  throw "TEAMS_WEBHOOK_URL is empty. Configure it as a repository, organization, or selected environment secret."
+                }
+                $webhookUri = $null
+                if (-not [uri]::TryCreate($env:TEAMS_WEBHOOK_URL, [UriKind]::Absolute, [ref]$webhookUri) -or
+                    $webhookUri.Scheme -ne "https") {
+                  throw "TEAMS_WEBHOOK_URL must be an absolute HTTPS URL."
+                }
+                if ($webhookUri.Host -ieq "webhook.office.com" -or
+                    $webhookUri.Host.EndsWith(".webhook.office.com", [StringComparison]::OrdinalIgnoreCase)) {
+                  throw "TEAMS_WEBHOOK_URL points to a retired Office 365 Connector endpoint. Update the secret with the current webhook URL from the saved Teams Workflow details page."
+                }
+                Write-Host "Teams webhook host: $($webhookUri.Host)"
+                Write-Host "Run-specific report artifacts: $($env:RUN_REPORTS_URL)"
+
+                $summaryPath = "reports/summary.json"
+                $hasSummary = Test-Path $summaryPath
+                if ($hasSummary) {
+                  $summary = Get-Content -Raw -Path $summaryPath | ConvertFrom-Json
+                  $env:TOTAL_TESTS = $summary.total
+                  $env:PASSED_TESTS = $summary.passed
+                  $env:FAILED_TESTS = $summary.failed
+                } else {
+                  Write-Warning "Test summary was unavailable; sending Teams notification with the workflow artifact link."
+                  $env:TOTAL_TESTS = "N/A"
+                  $env:PASSED_TESTS = "N/A"
+                  $env:FAILED_TESTS = "N/A"
+                }
+
+                $reportActions = @()
+                $reportActions += @{
+                  type = "Action.OpenUrl"
+                  title = "Navigate to the run's page"
+                  url = $env:RUN_URL
+                }
+                $smokeSummaryPath = "reports/smoke/summary.json"
+                $smokeSummaryText = "N/A"
+                if ($env:RUN_MODE -eq "smoke_then_regression" -and (Test-Path $smokeSummaryPath)) {
+                  $smokeSummary = Get-Content -Raw -Path $smokeSummaryPath | ConvertFrom-Json
+                  $env:SMOKE_TOTAL = $smokeSummary.total
+                  $env:SMOKE_PASSED = $smokeSummary.passed
+                  $env:SMOKE_FAILED = $smokeSummary.failed
+                  $smokeSummaryText = "$($env:SMOKE_PASSED)/$($env:SMOKE_TOTAL) passed; $($env:SMOKE_FAILED) failed"
+                }
+                if ($env:PAGES_BASE_URL) {
+                  $pagesBaseUrl = $env:PAGES_BASE_URL.TrimEnd("/") + "/"
+                  $reportPath = "test-reports-$($env:PROJECT)-$($env:TEST_TYPE)-$($env:ENVIRONMENT)"
+                  $env:CUCUMBER_REPORT_URL = "${pagesBaseUrl}${reportPath}/cucumber-report.html"
+                  $reportLinksText = "[Latest Cucumber report]($($env:CUCUMBER_REPORT_URL))"
+                  Write-Host "Cucumber report: $($env:CUCUMBER_REPORT_URL)"
+                  $reportActions += @{
+                    type = "Action.OpenUrl"
+                    title = "View Latest Cucumber Report"
+                    url = $env:CUCUMBER_REPORT_URL
+                  }
+                  if ($env:RUN_MODE -eq "smoke_then_regression") {
+                    $env:SMOKE_REPORT_URL = "${pagesBaseUrl}${reportPath}/smoke/cucumber-report.html"
+                    $reportActions += @{
+                      type = "Action.OpenUrl"
+                      title = "View Smoke Cucumber Report"
+                      url = $env:SMOKE_REPORT_URL
+                    }
+                    $reportLinksText += " | [Smoke Cucumber report]($($env:SMOKE_REPORT_URL))"
+                    if (Test-Path "reports/regression/cucumber-report.html") {
+                      $env:REGRESSION_REPORT_URL = "${pagesBaseUrl}${reportPath}/regression/cucumber-report.html"
+                      $reportActions += @{
+                        type = "Action.OpenUrl"
+                        title = "View Regression Cucumber Report"
+                        url = $env:REGRESSION_REPORT_URL
+                      }
+                      $reportLinksText += " | [Regression Cucumber report]($($env:REGRESSION_REPORT_URL))"
+                    }
+                  }
+                  if (Test-Path "reports/allure-report/index.html") {
+                    $env:ALLURE_REPORT_URL = "${pagesBaseUrl}${reportPath}/allure/"
+                    Write-Host "Allure report: $($env:ALLURE_REPORT_URL)"
+                    $reportActions += @{
+                      type = "Action.OpenUrl"
+                      title = "View Allure Report"
+                      url = $env:ALLURE_REPORT_URL
+                    }
+                    $reportLinksText += " | [Allure report]($($env:ALLURE_REPORT_URL))"
+                  }
+                  $pagesAccessNote = "GitHub Pages reports require a GitHub sign-in with repository access."
+                } else {
+                  Write-Warning "Pages deployment URL was unavailable; report links will not be included."
+                  $reportLinksText = "GitHub Pages deployment failed; report links are unavailable for this run."
+                  $pagesAccessNote = "Check the workflow run for report artifacts."
+                }
+
+                $failed = if ($hasSummary -and $env:FAILED_TESTS) { [int]$env:FAILED_TESTS } else { 1 }
+
+                $statusColor = if (-not $hasSummary -or $failed -gt 0) {
+                  "Attention"
+                } else {
+                  "Good"
+                }
+
+                $card = @{
+                  type = "message"
+                  attachments = @(
+                    @{
+                      contentType = "application/vnd.microsoft.card.adaptive"
+                      content = @{
+                        '$schema' = "http://adaptivecards.io/schemas/adaptive-card.json"
+                        type = "AdaptiveCard"
+                        version = "1.4"
+
+                        body = @(
+                          @{
+                            type = "TextBlock"
+                            text = "KYC360 Automation Report"
+                            weight = "Bolder"
+                            size = "Large"
+                            color = $statusColor
+                          },
+                          @{
+                            type = "FactSet"
+                            facts = @(
+                              @{
+                                title = "Project"
+                                value = "$($env:PROJECT)"
+                              },
+                              @{
+                                title = "Environment"
+                                value = "$($env:ENVIRONMENT)"
+                              },
+                              @{
+                                title = "Test Type"
+                                value = "$($env:TEST_TYPE)"
+                              },
+                              @{
+                                title = "Total Tests"
+                                value = "$($env:TOTAL_TESTS)"
+                              },
+                              @{
+                                title = "Passed"
+                                value = "$($env:PASSED_TESTS)"
+                              },
+                              @{
+                                title = "Failed"
+                                value = "$($env:FAILED_TESTS)"
+                              },
+                              @{
+                                title = "Smoke Tests"
+                                value = $smokeSummaryText
+                              },
+                              @{
+                                title = "Workflow Run"
+                                value = "#$($env:GITHUB_RUN_NUMBER)"
+                              }
+                            )
+                          },
+                          @{
+                            type = "TextBlock"
+                            text = $reportLinksText
+                            wrap = $true
+                          },
+                          @{
+                            type = "TextBlock"
+                            text = $pagesAccessNote
+                            wrap = $true
+                            isSubtle = $true
+                          }
+                        )
+
+                        actions = $reportActions
+                      }
+                    }
+                  )
+                } | ConvertTo-Json -Depth 20
+
+                $teamsResponse = Invoke-WebRequest `
+                  -Uri $env:TEAMS_WEBHOOK_URL `
+                  -Method POST `
+                  -ContentType "application/json" `
+                  -Body $card `
+                  -TimeoutSec 30 `
+                  -SkipHttpErrorCheck `
+                  -ErrorAction Stop
+                $teamsStatusCode = [int]$teamsResponse.StatusCode
+
+                if ($teamsStatusCode -lt 200 -or $teamsStatusCode -ge 300) {
+                  $responseBody = [string]$teamsResponse.Content
+                  if ($responseBody.Length -gt 500) {
+                    $responseBody = $responseBody.Substring(0, 500)
+                  }
+                  throw "Teams webhook returned HTTP $teamsStatusCode. Response: $responseBody"
+                }
+
+                Write-Host "Teams webhook accepted the notification (HTTP $teamsStatusCode)."
+                Write-Host "This confirms webhook acceptance only. If the message is missing, inspect the matching Teams Workflows run and its post-message action."
