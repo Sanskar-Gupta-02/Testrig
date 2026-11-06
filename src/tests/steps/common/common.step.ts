@@ -5,10 +5,8 @@ import { Common } from "../../../Helper/utilities/ui.utils";
 import { pageFixture } from "../../../hooks/pagefixtures";
 import { APICommon } from "../../../Helper/utilities/api.utils";
 import { sprintf } from "sprintf-js";
-import { Dialog, Page } from "playwright";
-
-let otp: string;
-let firstTab: Page;
+import { Dialog } from "playwright";
+import { getScenarioContext } from "../../../hooks/scenarioContext";
 
 export interface CustomWorld extends IWorld {
     dialog?: Dialog;
@@ -87,11 +85,15 @@ Then("user should see {string} title on {string} page", async function (pageTitl
 When(
     "user get the Verification code from:{string} and to:{string} email",
     async function (fromEmailId: string, toEmailId: string) {
-        otp = await emailService.getOtp(fromEmailId, toEmailId);
+        getScenarioContext().stepData.otp = await emailService.getOtp(fromEmailId, toEmailId);
     },
 );
 
 When("user enter the Verification code", async function () {
+    const otp = getScenarioContext().stepData.otp;
+    if (!otp) {
+        throw new Error("Verification code has not been retrieved for this scenario");
+    }
     await Common.typeText("VerificationCode", "Onboarding", otp);
 });
 
@@ -795,6 +797,7 @@ When(
     async function (username: string, entityName: string, action: string) {
         // Create a new browser context and page
         const context = await pageFixture.page.context().browser().newContext();
+        getScenarioContext().page.additionalContexts.push(context);
         const newPage = await context.newPage();
 
         // Resolve and validate environment variables for login
@@ -894,6 +897,11 @@ When(
 
         await newPage.close();
         await context.close();
+        const additionalContexts = getScenarioContext().page.additionalContexts;
+        const contextIndex = additionalContexts.indexOf(context);
+        if (contextIndex >= 0) {
+            additionalContexts.splice(contextIndex, 1);
+        }
         await pageFixture.page.reload();
     }
 );
@@ -1059,7 +1067,7 @@ When(
 When(
     "user opens new tab",
     async function () {
-        firstTab = pageFixture.page;
+        getScenarioContext().stepData.firstTab = pageFixture.page;
         const ctx = pageFixture.page.context();
         pageFixture.page = await ctx.newPage();
         await pageFixture.page.bringToFront();
@@ -1069,6 +1077,7 @@ When(
 When(
     "user switches back to first tab",
     async function () {
+        const firstTab = getScenarioContext().stepData.firstTab;
         if (!firstTab) {
             throw new Error("First tab is not set. Call \"user opens new tab\" before switching back.");
         }

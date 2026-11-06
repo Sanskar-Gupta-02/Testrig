@@ -8,13 +8,7 @@ import { DateTime } from "ts-luxon";
 import { apiFixture } from "../../hooks/apifixtures";
 import FormData from "form-data";
 import { pageFixture } from "../../hooks/pagefixtures";
-
-interface ApiResponse {
-    status: () => number;
-    headers: () => Record<string, string>;
-    json: () => Promise<unknown>;
-    text: () => Promise<string>;
-}
+import { ApiResponse, getScenarioContext } from "../../hooks/scenarioContext";
 
 interface StoreData {
     [key: string]: string;
@@ -30,20 +24,60 @@ type FileInput = {
 
 class APICommon {
     // Stores the API endpoint URL for making requests.
-    private static endPoint = "";
+    private static get endPoint(): string {
+        return getScenarioContext().apiCommon.endPoint;
+    }
+    private static set endPoint(value: string) {
+        getScenarioContext().apiCommon.endPoint = value;
+    }
     // Stores the response received from the API after making a request.
-    private static response: ApiResponse | null = null;
+    private static get response(): ApiResponse | null {
+        return getScenarioContext().apiCommon.response;
+    }
+    private static set response(value: ApiResponse | null) {
+        getScenarioContext().apiCommon.response = value;
+    }
     // Stores the path parameter to be appended to the endpoint.
-    private static pathParam = "";
+    private static get pathParam(): string {
+        return getScenarioContext().apiCommon.pathParam;
+    }
+    private static set pathParam(value: string) {
+        getScenarioContext().apiCommon.pathParam = value;
+    }
     // Stores query parameters as key-value pairs for GET requests or any API request needing query parameters.
-    private static queryParams: Record<string, string> = {};
+    private static get queryParams(): Record<string, string> {
+        return getScenarioContext().apiCommon.queryParams;
+    }
+    private static set queryParams(value: Record<string, string>) {
+        getScenarioContext().apiCommon.queryParams = value;
+    }
     // Stores the request body as a key-value object for POST, PUT, PATCH, or DELETE requests.
-    private static requestBody: Record<string, string> = {};
+    private static get requestBody(): Record<string, string> {
+        return getScenarioContext().apiCommon.requestBody;
+    }
+    private static set requestBody(value: Record<string, string>) {
+        getScenarioContext().apiCommon.requestBody = value;
+    }
     // Stores request headers as key-value pairs to be included in API requests.
-    private static headers: Record<string, string> = {};
+    private static get headers(): Record<string, string> {
+        return getScenarioContext().apiCommon.headers;
+    }
+    private static set headers(value: Record<string, string>) {
+        getScenarioContext().apiCommon.headers = value;
+    }
     // Stores data extracted from API responses for reuse in future API requests.
-    private static storeData: StoreData = {};
-    private static rawPayload: unknown = null;
+    private static get storeData(): StoreData {
+        return getScenarioContext().apiCommon.storeData;
+    }
+    private static set storeData(value: StoreData) {
+        getScenarioContext().apiCommon.storeData = value;
+    }
+    private static get rawPayload(): unknown {
+        return getScenarioContext().apiCommon.rawPayload;
+    }
+    private static set rawPayload(value: unknown) {
+        getScenarioContext().apiCommon.rawPayload = value;
+    }
 
     // Constructs the file path for API test data based on the project and environment variables.
     private static apiTestdataFolderpath = path.join(
@@ -906,6 +940,7 @@ class APICommon {
         this.queryParams = {};
         this.requestBody = {};
         this.headers = {};
+        this.storeData = {};
         this.rawPayload = null;
         apiFixture.logger.info("Data cleared");
     }

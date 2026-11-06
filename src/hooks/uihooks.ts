@@ -4,7 +4,7 @@ import { pageFixture } from "./pagefixtures";
 import { invokeBrowser } from "../Helper/browsers/browserManager";
 import { getEnv } from "../env/env";
 import { createLogger } from "winston";
-import { getScenarioSafeName, options } from "../Helper/utilities/logger";
+import { options } from "../Helper/utilities/logger";
 import { FrameworkConstant } from "../env/frameworkConstant";
 import { saveLocalDateFormatPatternToFile } from "../Helper/utilities/Common.utils";
 import { APIRequestContext, request } from "@playwright/test";
@@ -14,13 +14,13 @@ import { APICommon } from "../Helper/utilities/api.utils";
 import { EmailService } from "../Helper/utilities/emailService";
 import { getEmailService } from "../Helper/utilities/emailServiceFactory";
 import { ZephyrUtility } from "../Helper/utilities/zephyrUtility";
+import { clearFeatureStoredData, getScenarioContext, startScenarioContext } from "./scenarioContext";
 
 export let emailService: EmailService;
 
 import * as fs from "fs-extra";
 
 let browser: Browser;
-let context: BrowserContext;
 let globalTestCycleKey: string | null = null;
 setDefaultTimeout(1000 * FrameworkConstant.FrameWorkMaxTime());
 
@@ -33,7 +33,8 @@ BeforeAll(async function () {
 });
 
 Before(async function ({ pickle }) {
-    context = await browser.newContext({
+    startScenarioContext(pickle.uri);
+    const context = await browser.newContext({
         //viewport: FrameworkConstant.viewportWidthHeight(),
         ignoreHTTPSErrors: true,
         recordVideo: {
@@ -41,9 +42,9 @@ Before(async function ({ pickle }) {
         },
     });
     await context.tracing.start({
-    screenshots: true,
-    snapshots: true,
-    sources: true,
+        screenshots: true,
+        snapshots: true,
+        sources: true,
     });
     context.setDefaultTimeout(1000 * FrameworkConstant.actionTimeout());
     pageFixture.page = await context.newPage();
@@ -89,7 +90,9 @@ async function handleDeleteAutocreatedProspect(pickle) {
 }
 
 async function handleDeletePkycAutocreatedProspect(pickle) {
-    const hasTag: boolean = (pickle.tags as { name: string }[]).some(tag => tag.name === "@deletePkycAutocreatedProspect");
+    const hasTag: boolean = (pickle.tags as { name: string }[]).some(
+        tag => tag.name === "@deletePkycAutocreatedProspect",
+    );
     if (!hasTag) return;
 
     await APICommon.deletePkycAutocreatedProspect();
@@ -119,79 +122,84 @@ async function handleDeleteDataRequest(pickle) {
 }
 
 After(async function ({ pickle, result }) {
-    await handleDeleteOnboarding(pickle);
-    await handleDeleteAutocreatedOnboarding(pickle);
-    await handleDeleteAutocreatedProspect(pickle);
-    await deleteCreatedProspect(pickle);
-    await handleDeleteDataRequest(pickle);
-    await handleDeletePkycOnboarding(pickle);
-    await handleDeletePkycAutocreatedProspect(pickle);
-    // Safe filename
-    const safeName = pickle.name.replace(/[^a-zA-Z0-9]/g, '_');
-    const timestamp = Date.now();
-    
+    const context = this.context as BrowserContext;
+    let apiRequest: APIRequestContext | undefined;
+    let videoPathPromise: Promise<string> | undefined;
     let img: Buffer | undefined;
     let videoBuffer: Buffer | undefined;
+    const safeName = pickle.name.replace(/[^a-zA-Z0-9]/g, "_");
+    const timestamp = Date.now();
 
-        try {
-        // STOP TRACING
+    try {
+        await handleDeleteOnboarding(pickle);
+        await handleDeleteAutocreatedOnboarding(pickle);
+        await handleDeleteAutocreatedProspect(pickle);
+        await deleteCreatedProspect(pickle);
+        await handleDeleteDataRequest(pickle);
+        await handleDeletePkycOnboarding(pickle);
+        await handleDeletePkycAutocreatedProspect(pickle);
+
         if (result?.status === Status.FAILED) {
             const tracePath = `traces/${safeName}-${timestamp}.zip`;
-
-            await context.tracing.stop({
-                path: tracePath,
-            });
+            await context.tracing.stop({ path: tracePath });
             console.log(`Trace saved: ${tracePath}`);
+            img = await pageFixture.page.screenshot({
+                path: `./reports/screenshots/${safeName}-${timestamp}.png`,
+            });
         } else {
             await context.tracing.stop();
         }
-        // Screenshot (on failure)
-        if (result?.status === Status.FAILED) {
-            img = await pageFixture.page.screenshot({
-                path: `./reports/screenshots/${safeName}-${timestamp}.png`
-            });
-        }
-        // Video handling (video is finalized on page/context close)
-        var videoPathPromise = pageFixture.page.video()?.path();
-    } catch (error) {
-        console.error("❌ Error in After Hook:", error);
-    }
-    // Close resources
-    await pageFixture.page.close();
-    await context.close();
+        videoPathPromise = pageFixture.page.video()?.path();
+        console.log(`Scenario: ${pickle.name}, Status: ${result?.status}`);
 
-    if (result?.status === Status.FAILED && videoPathPromise) {
-    const videoPath = await videoPathPromise;
-    videoBuffer = fs.readFileSync(videoPath);
-    }
-
-    // Attach artifacts to report
-    if (result?.status === Status.FAILED) {
-        if (img) {
-            await this.attach(img, "image/png");
+        if (process.env.ZEPHYR_SCALE_API_RUN_MODE?.toLowerCase() === "true") {
+            const status = result?.status === Status.PASSED ? "Pass" : "Fail";
+            try {
+                await ZephyrUtility.createTestExecution(pickle.name, status, globalTestCycleKey);
+                console.log(`📌 Zephyr updated for ${pickle.name} with status ${status}`);
+            } catch (err) {
+                console.error(`❌ Failed to update Zephyr for ${pickle.name}:`, err);
+            }
         }
-        if (videoBuffer) {
-            await this.attach(videoBuffer, "video/webm");
-        }
-    }
-    // Logging
-    console.log(`Scenario: ${pickle.name}, Status: ${result?.status}`);
-    // 🔗 Push execution results to Zephyr Scale
-    // Zephyr Integration
-    if (process.env.ZEPHYR_SCALE_API_RUN_MODE?.toLowerCase() === "true") {
-        const status = result?.status === Status.PASSED ? "Pass" : "Fail";
-        const scenarioName = pickle.name;
-
+    } finally {
+        apiRequest = getScenarioContext().api.request;
         try {
-            await ZephyrUtility.createTestExecution(scenarioName, status, globalTestCycleKey);
-            console.log(`📌 Zephyr updated for ${scenarioName} with status ${status}`);
-        } catch (err) {
-            console.error(`❌ Failed to update Zephyr for ${scenarioName}:`, err);
+            await pageFixture.page?.close();
+        } finally {
+            try {
+                await context?.close();
+            } finally {
+                try {
+                    if (apiRequest) {
+                        await apiRequest.dispose();
+                    }
+                } finally {
+                    try {
+                        await Promise.all(
+                            getScenarioContext().page.additionalContexts.map(extraContext => extraContext.close()),
+                        );
+                    } finally {
+                        APICommon.clearStoreData();
+                    }
+                }
+            }
         }
     }
-    APICommon.clearStoreData();
+
+    if (result?.status === Status.FAILED && videoPathPromise !== undefined) {
+        videoBuffer = fs.readFileSync(await videoPathPromise);
+    }
+
+    if (result?.status === Status.FAILED) {
+        if (img) this.attach(img, "image/png");
+        if (videoBuffer) this.attach(videoBuffer, "video/webm");
+    }
 });
 
 AfterAll(async function () {
-    await browser.close();
+    try {
+        await browser.close();
+    } finally {
+        clearFeatureStoredData();
+    }
 });
