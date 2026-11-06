@@ -1,5 +1,5 @@
 import { IWorld, world } from "@cucumber/cucumber";
-import { APIRequestContext, Dialog, Page } from "@playwright/test";
+import { APIRequestContext, BrowserContext, Dialog, Page } from "@playwright/test";
 import { Logger } from "winston";
 
 export interface ApiResponse {
@@ -19,6 +19,7 @@ export interface ScenarioContext {
         logger?: Logger;
         dialog?: Dialog;
         currentFeature?: string;
+        additionalContexts: BrowserContext[];
     };
     stepData: {
         otp?: string;
@@ -40,10 +41,20 @@ interface ScenarioWorld extends IWorld {
     scenarioContext?: ScenarioContext;
 }
 
-export function startScenarioContext(): ScenarioContext {
+const featureStoredData = new Map<string, Record<string, string>>();
+
+export function startScenarioContext(featureUri: string): ScenarioContext {
+    let storedData = featureStoredData.get(featureUri);
+    if (!storedData) {
+        storedData = {};
+        featureStoredData.set(featureUri, storedData);
+    }
+
     const state: ScenarioContext = {
         api: {},
-        page: {},
+        page: {
+            additionalContexts: [],
+        },
         stepData: {},
         apiCommon: {
             endPoint: "",
@@ -52,12 +63,16 @@ export function startScenarioContext(): ScenarioContext {
             queryParams: {},
             requestBody: {},
             headers: {},
-            storeData: {},
+            storeData: storedData,
             rawPayload: null,
         },
     };
     (world as ScenarioWorld).scenarioContext = state;
     return state;
+}
+
+export function clearFeatureStoredData(): void {
+    featureStoredData.clear();
 }
 
 export function getScenarioContext(): ScenarioContext {

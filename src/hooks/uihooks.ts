@@ -14,7 +14,7 @@ import { APICommon } from "../Helper/utilities/api.utils";
 import { EmailService } from "../Helper/utilities/emailService";
 import { getEmailService } from "../Helper/utilities/emailServiceFactory";
 import { ZephyrUtility } from "../Helper/utilities/zephyrUtility";
-import { getScenarioContext, startScenarioContext } from "./scenarioContext";
+import { clearFeatureStoredData, getScenarioContext, startScenarioContext } from "./scenarioContext";
 
 export let emailService: EmailService;
 
@@ -33,7 +33,7 @@ BeforeAll(async function () {
 });
 
 Before(async function ({ pickle }) {
-    startScenarioContext();
+    startScenarioContext(pickle.uri);
     const context = await browser.newContext({
         //viewport: FrameworkConstant.viewportWidthHeight(),
         ignoreHTTPSErrors: true,
@@ -174,7 +174,13 @@ After(async function ({ pickle, result }) {
                         await apiRequest.dispose();
                     }
                 } finally {
-                    APICommon.clearStoreData();
+                    try {
+                        await Promise.all(
+                            getScenarioContext().page.additionalContexts.map(extraContext => extraContext.close()),
+                        );
+                    } finally {
+                        APICommon.clearStoreData();
+                    }
                 }
             }
         }
@@ -191,5 +197,9 @@ After(async function ({ pickle, result }) {
 });
 
 AfterAll(async function () {
-    await browser.close();
+    try {
+        await browser.close();
+    } finally {
+        clearFeatureStoredData();
+    }
 });

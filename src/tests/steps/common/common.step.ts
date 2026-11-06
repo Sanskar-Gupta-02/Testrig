@@ -797,6 +797,7 @@ When(
     async function (username: string, entityName: string, action: string) {
         // Create a new browser context and page
         const context = await pageFixture.page.context().browser().newContext();
+        getScenarioContext().page.additionalContexts.push(context);
         const newPage = await context.newPage();
 
         // Resolve and validate environment variables for login
@@ -896,6 +897,11 @@ When(
 
         await newPage.close();
         await context.close();
+        const additionalContexts = getScenarioContext().page.additionalContexts;
+        const contextIndex = additionalContexts.indexOf(context);
+        if (contextIndex >= 0) {
+            additionalContexts.splice(contextIndex, 1);
+        }
         await pageFixture.page.reload();
     }
 );
